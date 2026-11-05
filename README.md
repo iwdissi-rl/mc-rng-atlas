@@ -17,6 +17,7 @@ atlas aims to cover every source, across versions, confirmed against the running
 | Stage | What | Status |
 |---|---|---|
 | 1 | Static bytecode scanner + interprocedural root resolver | **done: 26.3, 1.16.1, 1.12.2** |
+| 1b | Seed provenance: classify and rank what every generator is seeded from (`atlas seeds`) | **done** (interprocedural seed tracing: todo) |
 | 1c | Cross-check 1.12.2 against KillTheRNG's call-site list | todo |
 | 2 | Runtime logger (Java agent) + scripted headless scenarios | todo |
 | 3 | Confirmation engine: predict next N outputs from logged state, compare | todo |
@@ -71,8 +72,13 @@ Jars come from Mojang's version manifest. Mojang mappings come from the version 
 cargo build --release --manifest-path crates/atlas/Cargo.toml
 B=crates/atlas/target/release/atlas
 
+# All versions in parallel: scan + resolve + seed classification (about 1.3 s for all three)
+$B scan-all --jar 26.3=26.3-client.jar --jar 1.16.1=1.16.1-named.jar --jar 1.12.2=1.12.2-named.jar
+
+# Or one step at a time
 $B scan    --version 26.3 --jar path/to/26.3-client.jar
 $B resolve --version 26.3
+$B seeds   --version 26.3
 $B export  --out data/parquet          # sorted, zstd-compressed Parquet
 
 # Which generators feed the most draw sites?
@@ -91,6 +97,8 @@ $B query "SELECT class, method, target_owner||'.'||target_name FROM call_sites W
 | `rng_fields` | field holding a generator (`is_static` = process-wide) |
 | `call_sites` | RNG-related instruction: kind, target, generator identity, seed hints |
 | `draw_roots` | (call site, possible root generator) edge |
+| `seed_sources` | seed-taking site with seed categories (`game_time`, `entity_identity`, `position`, `world_seed`, `constant`, `wall_clock`, …) and an unusualness score |
+| `generator_roots` (view) | root generator with draw/reseed/fork counts and whether it is seeded, unseeded or process-global |
 | `classes`, `methods` | hierarchy used for dispatch resolution |
 
 ## Early findings (26.3)
@@ -102,6 +110,9 @@ $B query "SELECT class, method, target_owner||'.'||target_name FROM call_sites W
 - Piglin victory dances (`PiglinAi.wantsToDance`) are seeded with the world's **game time**, not the
   piglin's own generator. Every piglin that decides in the same tick gets the same roll, so on a
   given tick either all eligible piglins dance or none do. Anyone who knows the game time can predict it.
+- `FishingHook.syncronizedRandom` is reseeded every tick with `UUID.getLeastSignificantBits() ^ gameTime`.
+  The client knows both values, so it can reproduce the generator (it keeps the bobber's motion in sync).
+  The catch itself uses the hook's own `random`, which is not reseeded.
 - Goat horn variants are seeded with the goat's `UUID.hashCode()`, so they're fixed per goat.
 - Mob AI in `InsideBrownianWalk` and `LongJumpToRandomPos` uses `Collections.shuffle` with the JDK's
   global unseeded generator, so those outcomes can't be predicted from any game seed.

@@ -1,6 +1,7 @@
 mod db;
 mod resolve;
 mod scan;
+mod seeds;
 
 use anyhow::Result;
 use clap::{Parser, Subcommand};
@@ -26,6 +27,16 @@ enum Cmd {
     },
     /// Trace every draw back to its root generator(s) (builds the draw_roots table)
     Resolve {
+        #[arg(long)]
+        version: String,
+    },
+    /// Scan several versions in parallel: --jar 26.3=path.jar --jar 1.16.1=path.jar ...
+    ScanAll {
+        #[arg(long = "jar", required = true)]
+        jars: Vec<String>,
+    },
+    /// Classify every seed source and build the generator_roots view
+    Seeds {
         #[arg(long)]
         version: String,
     },
@@ -63,6 +74,32 @@ fn main() -> Result<()> {
             let t = std::time::Instant::now();
             let (sites, edges) = resolve::run(&mut conn, &version)?;
             println!("{version}: resolved {sites} sites into {edges} site->root edges in {:.2?}", t.elapsed());
+        }
+        Cmd::ScanAll { jars } => {
+            let t = std::time::Instant::now();
+            // Each version is scanned on its own thread (each scan is itself rayon-parallel over classes).
+            let results: Vec<(String, Result<scan::ScanResult>)> = std::thread::scope(|s| {
+                let hs: Vec<_> = jars
+                    .iter()
+                    .map(|vj| {
+                        let (v, j) = vj.split_once('=').expect("--jar takes VERSION=PATH");
+                        s.spawn(move || (v.to_string(), scan::scan_jar(j)))
+                    })
+                    .collect();
+                hs.into_iter().map(|h| h.join().unwrap()).collect()
+            });
+            for (v, r) in results {
+                let r = r?;
+                db::store(&mut conn, &v, &r)?;
+                let (sites, _) = resolve::run(&mut conn, &v)?;
+                let seeds = seeds::run(&mut conn, &v)?;
+                println!("{v}: {} classes, {} call sites, {sites} resolved draw sites, {seeds} seed sources", r.classes_scanned, r.sites.len());
+            }
+            println!("all versions in {:.2?}", t.elapsed());
+        }
+        Cmd::Seeds { version } => {
+            let n = seeds::run(&mut conn, &version)?;
+            println!("{version}: classified {n} seed sources");
         }
         Cmd::Export { out } => db::export_parquet(&conn, &out)?,
         Cmd::Query { sql } => {

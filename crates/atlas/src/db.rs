@@ -76,6 +76,7 @@ pub fn export_parquet(conn: &Connection, dir: &str) -> Result<()> {
         ("classes", "version, class"),
         ("methods", "version, class, name"),
         ("draw_roots", "version, root, class, method, bci"),
+        ("seed_sources", "version, score DESC, class, method, bci"),
     ] {
         let exists: i64 = conn.query_row(
             "SELECT count(*) FROM information_schema.tables WHERE table_name = ?",

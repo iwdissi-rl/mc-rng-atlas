@@ -347,6 +347,8 @@ fn scan_class(cf: &cafebabe::ClassFile, is_rng: &dyn Fn(&str) -> bool) -> (Vec<R
         let mut stack: Vec<String> = Vec::new(); // RNG values only
         let mut last_pushed = false;
         let mut hints: VecDeque<String> = VecDeque::new();
+        // primitive locals -> the expression that produced them (seed provenance through variables)
+        let mut prim_locals: HashMap<u16, String> = HashMap::new();
         let push_hint = |h: &mut VecDeque<String>, s: String| {
             if h.len() == 8 {
                 h.pop_front();
@@ -379,7 +381,32 @@ fn scan_class(cf: &cafebabe::ClassFile, is_rng: &dyn Fn(&str) -> bool) -> (Vec<R
                         pushed = true;
                     }
                 }
+                Opcode::Lstore(n) | Opcode::Istore(n) => {
+                    if !hints.is_empty() {
+                        prim_locals.insert(*n, hints.iter().cloned().collect::<Vec<_>>().join(" "));
+                    } else {
+                        prim_locals.remove(n);
+                    }
+                    hints.clear();
+                }
+                Opcode::Lload(n) | Opcode::Iload(n) => {
+                    let h = match prim_locals.get(n) {
+                        Some(e) => format!("[{e}]"),
+                        None if (*n as usize) < m.descriptor.parameters.len() + (!is_static) as usize => format!("arg{n}"),
+                        None => format!("local{n}"),
+                    };
+                    push_hint(&mut hints, h);
+                }
+                Opcode::Fstore(_) | Opcode::Dstore(_) | Opcode::Putfield(_) | Opcode::Putstatic(_)
+                | Opcode::Pop | Opcode::Pop2 | Opcode::Ifeq(_) | Opcode::Ifne(_) | Opcode::Iflt(_)
+                | Opcode::Ifge(_) | Opcode::Ifgt(_) | Opcode::Ifle(_) | Opcode::IfIcmpeq(_)
+                | Opcode::IfIcmpne(_) | Opcode::IfIcmplt(_) | Opcode::IfIcmpge(_) | Opcode::IfIcmpgt(_)
+                | Opcode::IfIcmple(_) | Opcode::IfAcmpeq(_) | Opcode::IfAcmpne(_) | Opcode::Ifnull(_)
+                | Opcode::Ifnonnull(_) | Opcode::Lookupswitch(_) | Opcode::Tableswitch(_) => {
+                    hints.clear();
+                }
                 Opcode::Astore(n) => {
+                    hints.clear();
                     if last_pushed {
                         let s = stack.pop().unwrap_or_else(|| "unknown".into());
                         locals.insert(*n, s);
@@ -540,6 +567,9 @@ fn scan_class(cf: &cafebabe::ClassFile, is_rng: &dyn Fn(&str) -> bool) -> (Vec<R
                             pushed = true;
                         }
                         push_hint(&mut hints, format!("call {}", member(t)));
+                    }
+                    if t.name_and_type.descriptor.ends_with(")V") && name != "<init>" {
+                        hints.clear();
                     }
                 }
                 Opcode::Areturn if last_pushed => {
