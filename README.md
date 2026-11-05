@@ -19,8 +19,8 @@ atlas aims to cover every source, across versions, confirmed against the running
 | 1 | Static bytecode scanner + interprocedural root resolver | **done: 26.3, 1.16.1, 1.12.2** |
 | 1b | Seed provenance: classify and rank what every generator is seeded from (`atlas seeds`) | **done** (interprocedural seed tracing: todo) |
 | 1c | Cross-check 1.12.2 against KillTheRNG's call-site list | todo |
-| 2 | Runtime logger (Java agent) + scripted headless scenarios | todo |
-| 3 | Confirmation engine: predict next N outputs from logged state, compare | todo |
+| 2 | Runtime logger (Java agent) + scripted headless scenarios | **done for 26.3** (server side) |
+| 3 | Confirmation engine: replay every generator's state machine, match sites to static table | **done** (chain replay); scenario coverage: in progress |
 | 4 | Correlation CLI: shared-generator graph, crackability scoring, anomaly search | todo |
 
 | Version | Names from | Classes | RNG types | Generator fields | Draw sites | Global (`Math.random` etc.) |
@@ -89,6 +89,44 @@ $B query "SELECT root, count(*) sites, count(DISTINCT class) classes
 $B query "SELECT class, method, target_owner||'.'||target_name FROM call_sites WHERE kind='global'"
 ```
 
+## Runtime confirmation (stage 2)
+
+`agent/` is a Java agent for the 26.3 server. It hooks the generator primitives
+(`LegacyRandomSource`/`SingleThreadedRandomSource`/`ThreadSafeLegacyRandomSource.next(bits)`,
+`setSeed`, `Xoroshiro128PlusPlus.nextLong` and its constructors) and tags every call on an RNG type
+with a site id at class-load time. Each event records generator id, global sequence, tick and
+pre-state. `atlas ingest` replays every generator: a draw is **confirmed** when its logged pre-state
+equals the state predicted from that generator's previous event, so any unlogged change shows up as
+a mismatch.
+
+```sh
+agent/build.sh
+python3 tools/gen_scenarios.py                       # scenarios from the jar's own data
+python3 tools/run_many.py --jobs 24 --cpus 4         # parallel headless servers + ingest
+crates/atlas/target/release/atlas coverage           # what the static catalog has confirmed
+```
+
+**First fleet (47 scenarios, 24 servers in parallel, 284 s):**
+
+| | |
+|---|---|
+| RNG events logged | 1,428,864,677 |
+| Generators observed | 89,928,441 |
+| Draws confirmed by replay | 1,295,109,177 |
+| Mismatches | **0** |
+| Server-side static draw sites exercised | 798 / 2,020 (39.5%) |
+| Client-only static draw sites (need a client) | 468, not yet exercised |
+
+Runtime sites that join with the static table: every tagged site. The only runtime-only sites are
+**functional-interface draws**: a generator method passed as a function (`random::nextInt` handed to
+`AbstractHorse.generateMaxHealth`, `XoroshiroRandomSource::new` stored in
+`WorldgenRandom$Algorithm`). The static table lists those at the method-reference creation site,
+and runtime sees them where the function is invoked.
+
+Not yet covered: player-only mechanics (enchanting tables, fishing, player combat, trading, raids)
+need a player. Block random ticks for most blocks, trial spawners, pandas and projectiles need
+targeted scenarios.
+
 ## Data model
 
 | Table | One row per |
@@ -100,6 +138,9 @@ $B query "SELECT class, method, target_owner||'.'||target_name FROM call_sites W
 | `seed_sources` | seed-taking site with seed categories (`game_time`, `entity_identity`, `position`, `world_seed`, `constant`, `wall_clock`, …) and an unusualness score |
 | `generator_roots` (view) | root generator with draw/reseed/fork counts and whether it is seeded, unseeded or process-global |
 | `classes`, `methods` | hierarchy used for dispatch resolution |
+| `rng_invokes` | every call on an RNG type with its per-method ordinal and bytecode offset (joins runtime tags to static sites) |
+| `rt_runs`, `rt_sites` | per runtime run / per runtime call site: events, confirmed, mismatched, generators |
+| `data/events/<run>/*.parquet` | every runtime event (`gen, seq, tick, type, a, b, bits, site, verdict, output`), not committed |
 
 ## Early findings (26.3)
 

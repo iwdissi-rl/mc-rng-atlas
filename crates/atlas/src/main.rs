@@ -53,6 +53,11 @@ enum Cmd {
         #[arg(long, default_value = "data/events")]
         events: String,
     },
+    /// Runtime coverage of the static catalog: confirmed sites, runtime-only sites, never-exercised sites
+    Coverage {
+        #[arg(long, default_value = "26.3")]
+        version: String,
+    },
     /// Export all tables to sorted, zstd-compressed Parquet
     Export {
         #[arg(long, default_value = "data/parquet")]
@@ -118,6 +123,28 @@ fn main() -> Result<()> {
             let p = std::path::Path::new(&dir);
             let run = name.unwrap_or_else(|| p.file_name().unwrap().to_string_lossy().into_owned());
             println!("{}", runtime::ingest(&mut conn, p, &run, &version, std::path::Path::new(&events))?);
+        }
+        Cmd::Coverage { version } => {
+            conn.execute_batch(&format!(
+                "CREATE OR REPLACE TEMP VIEW rt AS
+                   SELECT class, method, bci, sum(events) events, sum(confirmed) confirmed, sum(mismatched) mismatched,
+                          count(DISTINCT run) runs
+                   FROM rt_sites WHERE version = '{version}' GROUP BY ALL;
+                 CREATE OR REPLACE TEMP VIEW st AS
+                   SELECT class, method, bci, any_value(kind) kind FROM call_sites
+                   WHERE version = '{version}' AND kind IN ('draw','construct','reseed','fork','derive') GROUP BY ALL;"
+            ))?;
+            println!("== static sites exercised at runtime (by kind)");
+            print_query(&conn, "SELECT kind, count(*) static_sites, count(rt.class) exercised,
+                round(100.0 * count(rt.class) / count(*), 1) pct, sum(rt.confirmed) confirmed_draws, sum(rt.mismatched) mismatched
+                FROM st LEFT JOIN rt USING (class, method, bci) GROUP BY kind ORDER BY static_sites DESC")?;
+            println!("\n== runtime sites missing from the static table");
+            print_query(&conn, "SELECT rt.class, rt.method, rt.bci, rt.events FROM rt LEFT JOIN st USING (class, method, bci)
+                WHERE st.class IS NULL ORDER BY events DESC LIMIT 20")?;
+            println!("\n== packages with the most never-exercised draw sites");
+            print_query(&conn, "SELECT regexp_extract(class, '^(.*)/[^/]+$', 1) package, count(*) unexercised
+                FROM st LEFT JOIN rt USING (class, method, bci) WHERE rt.class IS NULL AND kind = 'draw'
+                GROUP BY ALL ORDER BY unexercised DESC LIMIT 15")?;
         }
         Cmd::Export { out } => db::export_parquet(&conn, &out)?,
         Cmd::Query { sql } => {
