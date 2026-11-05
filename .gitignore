@@ -1,0 +1,6 @@
+# Mojang jars, mappings and anything derived from game code stay local
+work/
+# Generated databases (regenerate with `atlas scan` + `atlas resolve`)
+data/*.duckdb
+data/*.duckdb.wal
+target/
