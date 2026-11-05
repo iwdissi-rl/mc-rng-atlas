@@ -1,0 +1,27 @@
+gamerule spawn_mobs false
+forceload add 0 0 15 15
+fill 0 -64 0 15 -60 15 minecraft:stone
+loot spawn 8 -59 8 loot minecraft:shearing/snow_golem
+loot spawn 8 -59 8 loot minecraft:shearing/snow_golem
+loot spawn 8 -59 8 loot minecraft:shearing/snow_golem
+loot spawn 8 -59 8 loot minecraft:spawners/ominous/trial_chamber/consumables
+loot spawn 8 -59 8 loot minecraft:spawners/ominous/trial_chamber/consumables
+loot spawn 8 -59 8 loot minecraft:spawners/ominous/trial_chamber/consumables
+loot spawn 8 -59 8 loot minecraft:spawners/ominous/trial_chamber/key
+loot spawn 8 -59 8 loot minecraft:spawners/ominous/trial_chamber/key
+loot spawn 8 -59 8 loot minecraft:spawners/ominous/trial_chamber/key
+loot spawn 8 -59 8 loot minecraft:spawners/trial_chamber/consumables
+loot spawn 8 -59 8 loot minecraft:spawners/trial_chamber/consumables
+loot spawn 8 -59 8 loot minecraft:spawners/trial_chamber/consumables
+loot spawn 8 -59 8 loot minecraft:spawners/trial_chamber/items_to_drop_when_ominous
+loot spawn 8 -59 8 loot minecraft:spawners/trial_chamber/items_to_drop_when_ominous
+loot spawn 8 -59 8 loot minecraft:spawners/trial_chamber/items_to_drop_when_ominous
+loot spawn 8 -59 8 loot minecraft:spawners/trial_chamber/key
+loot spawn 8 -59 8 loot minecraft:spawners/trial_chamber/key
+loot spawn 8 -59 8 loot minecraft:spawners/trial_chamber/key
+loot spawn 8 -59 8 loot minecraft:till/rooted_dirt
+loot spawn 8 -59 8 loot minecraft:till/rooted_dirt
+loot spawn 8 -59 8 loot minecraft:till/rooted_dirt
+kill @e[type=item]
+tick sprint 20
+#await Sprint completed

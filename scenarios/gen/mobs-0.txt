@@ -1,0 +1,85 @@
+gamerule spawn_mobs false
+forceload add -32 -32 31 31
+fill -30 99 -30 30 99 30 minecraft:grass_block
+fill -31 100 -31 31 104 31 minecraft:glass hollow
+fill -30 100 -30 30 104 30 minecraft:air
+summon minecraft:allay -8 101 -3
+summon minecraft:allay 0 101 -3
+summon minecraft:allay 8 101 -3
+summon minecraft:armadillo -8 101 -8
+summon minecraft:armadillo 0 101 -8
+summon minecraft:armadillo 8 101 -8
+summon minecraft:armor_stand -8 101 10
+summon minecraft:armor_stand 0 101 10
+summon minecraft:armor_stand 8 101 10
+summon minecraft:axolotl -8 101 12
+summon minecraft:axolotl 0 101 12
+summon minecraft:axolotl 8 101 12
+summon minecraft:bat -8 101 -5
+summon minecraft:bat 0 101 -5
+summon minecraft:bat 8 101 -5
+summon minecraft:bee -8 101 13
+summon minecraft:bee 0 101 13
+summon minecraft:bee 8 101 13
+summon minecraft:blaze -8 101 3
+summon minecraft:blaze 0 101 3
+summon minecraft:blaze 8 101 3
+summon minecraft:bogged -8 101 -10
+summon minecraft:bogged 0 101 -10
+summon minecraft:bogged 8 101 -10
+summon minecraft:breeze -8 101 0
+summon minecraft:breeze 0 101 0
+summon minecraft:breeze 8 101 0
+summon minecraft:camel -8 101 8
+summon minecraft:camel 0 101 8
+summon minecraft:camel 8 101 8
+summon minecraft:camel_husk -8 101 -1
+summon minecraft:camel_husk 0 101 -1
+summon minecraft:camel_husk 8 101 -1
+summon minecraft:cat -8 101 12
+summon minecraft:cat 0 101 12
+summon minecraft:cat 8 101 12
+summon minecraft:cave_spider -8 101 -2
+summon minecraft:cave_spider 0 101 -2
+summon minecraft:cave_spider 8 101 -2
+summon minecraft:chicken -8 101 0
+summon minecraft:chicken 0 101 0
+summon minecraft:chicken 8 101 0
+summon minecraft:cod -8 101 -18
+summon minecraft:cod 0 101 -18
+summon minecraft:cod 8 101 -18
+summon minecraft:copper_golem -8 101 4
+summon minecraft:copper_golem 0 101 4
+summon minecraft:copper_golem 8 101 4
+summon minecraft:cow -8 101 -16
+summon minecraft:cow 0 101 -16
+summon minecraft:cow 8 101 -16
+summon minecraft:creaking -8 101 4
+summon minecraft:creaking 0 101 4
+summon minecraft:creaking 8 101 4
+summon minecraft:creeper -8 101 -10
+summon minecraft:creeper 0 101 -10
+summon minecraft:creeper 8 101 -10
+summon minecraft:dolphin -8 101 18
+summon minecraft:dolphin 0 101 18
+summon minecraft:dolphin 8 101 18
+summon minecraft:donkey -8 101 -20
+summon minecraft:donkey 0 101 -20
+summon minecraft:donkey 8 101 -20
+summon minecraft:drowned -8 101 -18
+summon minecraft:drowned 0 101 -18
+summon minecraft:drowned 8 101 -18
+summon minecraft:elder_guardian -8 101 -15
+summon minecraft:elder_guardian 0 101 -15
+summon minecraft:elder_guardian 8 101 -15
+summon minecraft:ender_dragon -8 101 -8
+summon minecraft:ender_dragon 0 101 -8
+summon minecraft:ender_dragon 8 101 -8
+summon minecraft:enderman -8 101 -2
+summon minecraft:enderman 0 101 -2
+summon minecraft:enderman 8 101 -2
+tick sprint 1200
+#await Sprint completed
+kill @e[type=!item,type=!experience_orb]
+tick sprint 40
+#await Sprint completed

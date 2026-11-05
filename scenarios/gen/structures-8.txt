@@ -1,0 +1,11 @@
+gamerule spawn_mobs false
+forceload add -64 -64 63 63
+place structure minecraft:village_plains 0 64 0
+forceload add 192 -64 319 63
+place structure minecraft:village_savanna 256 64 0
+forceload add 448 -64 575 63
+place structure minecraft:village_snowy 512 64 0
+forceload add 704 -64 831 63
+place structure minecraft:village_taiga 768 64 0
+tick sprint 100
+#await Sprint completed

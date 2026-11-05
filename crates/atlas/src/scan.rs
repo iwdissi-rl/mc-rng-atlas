@@ -70,8 +70,19 @@ pub struct MethodInfo {
     pub is_abstract: bool,
 }
 
+#[derive(Debug, Clone)]
+pub struct RngInvoke {
+    pub class: String,
+    pub method: String,
+    pub desc: String,
+    pub ordinal: u32,
+    pub bci: u32,
+    pub name: String,
+}
+
 #[derive(Default)]
 pub struct ScanResult {
+    pub invokes: Vec<RngInvoke>,
     pub classes: Vec<ClassInfo>,
     pub methods: Vec<MethodInfo>,
     pub types: Vec<RngType>,
@@ -215,7 +226,7 @@ pub fn scan_jar(path: &str) -> Result<ScanResult> {
     let (rng, types) = rng_hierarchy(&classes);
     let is_rng = |c: &str| rng.contains_key(c);
 
-    let per_class: Vec<(Vec<RngField>, Vec<CallSite>, Option<(ClassInfo, Vec<MethodInfo>)>)> = {
+    let per_class: Vec<(Vec<RngField>, (Vec<CallSite>, Vec<RngInvoke>), Option<(ClassInfo, Vec<MethodInfo>)>)> = {
         use rayon::prelude::*;
         classes
             .par_iter()
@@ -226,7 +237,7 @@ pub fn scan_jar(path: &str) -> Result<ScanResult> {
                 }
                 Err(e) => {
                     eprintln!("parse error in {}: {e}", c.name);
-                    (vec![], vec![], None)
+                    (vec![], (vec![], vec![]), None)
                 }
             })
             .collect()
@@ -235,7 +246,8 @@ pub fn scan_jar(path: &str) -> Result<ScanResult> {
     let mut res = ScanResult { types, classes_scanned: classes.len(), ..Default::default() };
     for (f, s, h) in per_class {
         res.fields.extend(f);
-        res.sites.extend(s);
+        res.sites.extend(s.0);
+        res.invokes.extend(s.1);
         match h {
             Some((c, ms)) => {
                 res.classes.push(c);
@@ -277,7 +289,7 @@ fn short(c: &str) -> &str {
     c.rsplit('/').next().unwrap_or(c)
 }
 
-fn scan_class(cf: &cafebabe::ClassFile, is_rng: &dyn Fn(&str) -> bool) -> (Vec<RngField>, Vec<CallSite>) {
+fn scan_class(cf: &cafebabe::ClassFile, is_rng: &dyn Fn(&str) -> bool) -> (Vec<RngField>, (Vec<CallSite>, Vec<RngInvoke>)) {
     let class = cf.this_class.to_string();
     let source_file = cf
         .attributes
@@ -313,6 +325,7 @@ fn scan_class(cf: &cafebabe::ClassFile, is_rng: &dyn Fn(&str) -> bool) -> (Vec<R
     }
 
     let mut sites = Vec::new();
+    let mut invokes = Vec::new();
     for m in &cf.methods {
         let Some(code) = m.attributes.iter().find_map(|a| match &a.data {
             AttributeData::Code(c) => Some(c),
@@ -357,7 +370,22 @@ fn scan_class(cf: &cafebabe::ClassFile, is_rng: &dyn Fn(&str) -> bool) -> (Vec<R
         };
         let mdesc = m.descriptor.to_string();
 
+        let mut ordinal = 0u32;
         for (off, op) in &bc.opcodes {
+            // Number calls on RNG types in bytecode order; the runtime agent numbers them the same way.
+            if let Opcode::Invokevirtual(t) | Opcode::Invokeinterface(t, _) | Opcode::Invokestatic(t) | Opcode::Invokespecial(t) = op {
+                if is_rng(&t.class_name) && !class_is_rng {
+                    invokes.push(RngInvoke {
+                        class: class.clone(),
+                        method: m.name.to_string(),
+                        desc: m.descriptor.to_string(),
+                        ordinal,
+                        bci: *off as u32,
+                        name: t.name_and_type.name.to_string(),
+                    });
+                    ordinal += 1;
+                }
+            }
             let mut pushed = false;
             let mut emit = |kind: &'static str, t: &MemberRef, recv: String, hints: &VecDeque<String>| {
                 sites.push(CallSite {
@@ -592,5 +620,5 @@ fn scan_class(cf: &cafebabe::ClassFile, is_rng: &dyn Fn(&str) -> bool) -> (Vec<R
             last_pushed = pushed;
         }
     }
-    (fields, sites)
+    (fields, (sites, invokes))
 }

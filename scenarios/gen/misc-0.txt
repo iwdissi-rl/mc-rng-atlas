@@ -1,0 +1,18 @@
+gamerule spawn_mobs false
+forceload add -64 -64 63 63
+gamerule random_tick_speed 2000
+weather thunder
+random roll 1..2
+random roll 1..6
+random roll 1..20
+random roll 1..100
+random roll 1..1000
+random value 1..2 minecraft:atlas/seq2
+random value 1..6 minecraft:atlas/seq6
+random value 1..20 minecraft:atlas/seq20
+summon minecraft:pig 0 100 0
+summon minecraft:pig 4 100 0
+summon minecraft:pig 8 100 0
+spreadplayers 0 0 5 40 false @e[type=pig]
+tick sprint 1200
+#await Sprint completed

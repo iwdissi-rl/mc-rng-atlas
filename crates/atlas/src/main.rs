@@ -1,5 +1,6 @@
 mod db;
 mod resolve;
+mod runtime;
 mod scan;
 mod seeds;
 
@@ -39,6 +40,18 @@ enum Cmd {
     Seeds {
         #[arg(long)]
         version: String,
+    },
+    /// Ingest one agent run directory, replay every generator to confirm it, and store per-site results
+    Ingest {
+        /// run directory produced by tools/run_scenario.py
+        dir: String,
+        #[arg(long, default_value = "26.3")]
+        version: String,
+        /// run name (defaults to the directory name)
+        #[arg(long)]
+        name: Option<String>,
+        #[arg(long, default_value = "data/events")]
+        events: String,
     },
     /// Export all tables to sorted, zstd-compressed Parquet
     Export {
@@ -100,6 +113,11 @@ fn main() -> Result<()> {
         Cmd::Seeds { version } => {
             let n = seeds::run(&mut conn, &version)?;
             println!("{version}: classified {n} seed sources");
+        }
+        Cmd::Ingest { dir, version, name, events } => {
+            let p = std::path::Path::new(&dir);
+            let run = name.unwrap_or_else(|| p.file_name().unwrap().to_string_lossy().into_owned());
+            println!("{}", runtime::ingest(&mut conn, p, &run, &version, std::path::Path::new(&events))?);
         }
         Cmd::Export { out } => db::export_parquet(&conn, &out)?,
         Cmd::Query { sql } => {

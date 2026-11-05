@@ -1,0 +1,34 @@
+gamerule spawn_mobs false
+forceload add 0 0 1023 31
+execute positioned 16 0 16 positioned over world_surface run place feature minecraft:ice_patch
+execute positioned 48 0 16 positioned over world_surface run place feature minecraft:ice_spike
+execute positioned 80 0 16 positioned over world_surface run place feature minecraft:iceberg_blue
+execute positioned 112 0 16 positioned over world_surface run place feature minecraft:iceberg_packed
+execute positioned 144 0 16 positioned over world_surface run place feature minecraft:jungle_bush
+execute positioned 176 0 16 positioned over world_surface run place feature minecraft:jungle_tree
+execute positioned 208 0 16 positioned over world_surface run place feature minecraft:jungle_tree_no_vine
+execute positioned 240 0 16 positioned over world_surface run place feature minecraft:kelp
+execute positioned 272 0 16 positioned over world_surface run place feature minecraft:lake_lava
+execute positioned 304 0 16 positioned over world_surface run place feature minecraft:large_basalt_columns
+execute positioned 336 0 16 positioned over world_surface run place feature minecraft:large_dripstone
+execute positioned 368 0 16 positioned over world_surface run place feature minecraft:large_fern
+execute positioned 400 0 16 positioned over world_surface run place feature minecraft:leaf_litter
+execute positioned 432 0 16 positioned over world_surface run place feature minecraft:lush_caves_clay
+execute positioned 464 0 16 positioned over world_surface run place feature minecraft:mangrove
+execute positioned 496 0 16 positioned over world_surface run place feature minecraft:mangrove_vegetation
+execute positioned 528 0 16 positioned over world_surface run place feature minecraft:meadow_trees
+execute positioned 560 0 16 positioned over world_surface run place feature minecraft:mega_jungle_tree
+execute positioned 592 0 16 positioned over world_surface run place feature minecraft:mega_pine
+execute positioned 624 0 16 positioned over world_surface run place feature minecraft:mega_spruce
+execute positioned 656 0 16 positioned over world_surface run place feature minecraft:melon
+execute positioned 688 0 16 positioned over world_surface run place feature minecraft:monster_room
+execute positioned 720 0 16 positioned over world_surface run place feature minecraft:moss_patch
+execute positioned 752 0 16 positioned over world_surface run place feature minecraft:moss_patch_bonemeal
+execute positioned 784 0 16 positioned over world_surface run place feature minecraft:moss_patch_ceiling
+execute positioned 816 0 16 positioned over world_surface run place feature minecraft:moss_vegetation
+execute positioned 848 0 16 positioned over world_surface run place feature minecraft:mushroom_island_vegetation
+execute positioned 880 0 16 positioned over world_surface run place feature minecraft:nether_sprouts
+execute positioned 912 0 16 positioned over world_surface run place feature minecraft:nylium_bonemeal
+execute positioned 944 0 16 positioned over world_surface run place feature minecraft:oak
+tick sprint 100
+#await Sprint completed

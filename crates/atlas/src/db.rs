@@ -18,6 +18,9 @@ CREATE TABLE IF NOT EXISTS classes (
 CREATE TABLE IF NOT EXISTS methods (
     version VARCHAR, class VARCHAR, name VARCHAR, descr VARCHAR, is_static BOOLEAN, is_abstract BOOLEAN
 );
+CREATE TABLE IF NOT EXISTS rng_invokes (
+    version VARCHAR, class VARCHAR, method VARCHAR, descr VARCHAR, ordinal UINTEGER, bci UINTEGER, name VARCHAR
+);
 CREATE TABLE IF NOT EXISTS call_sites (
     version VARCHAR, class VARCHAR, method VARCHAR, method_desc VARCHAR, bci UINTEGER,
     kind VARCHAR, target_owner VARCHAR, target_name VARCHAR, target_desc VARCHAR,
@@ -33,7 +36,7 @@ pub fn open(path: &str) -> Result<Connection> {
 
 pub fn store(conn: &mut Connection, version: &str, r: &ScanResult) -> Result<()> {
     let tx = conn.transaction()?;
-    for t in ["rng_types", "rng_fields", "call_sites", "classes", "methods"] {
+    for t in ["rng_types", "rng_fields", "call_sites", "classes", "methods", "rng_invokes"] {
         tx.execute(&format!("DELETE FROM {t} WHERE version = ?"), params![version])?;
     }
     {
@@ -53,6 +56,10 @@ pub fn store(conn: &mut Connection, version: &str, r: &ScanResult) -> Result<()>
         let mut a = tx.appender("methods")?;
         for m in &r.methods {
             a.append_row(params![version, m.class, m.name, m.desc, m.is_static, m.is_abstract])?;
+        }
+        let mut a = tx.appender("rng_invokes")?;
+        for i in &r.invokes {
+            a.append_row(params![version, i.class, i.method, i.desc, i.ordinal, i.bci, i.name])?;
         }
         let mut a = tx.appender("call_sites")?;
         for s in &r.sites {

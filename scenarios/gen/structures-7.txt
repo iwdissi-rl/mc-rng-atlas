@@ -1,0 +1,15 @@
+gamerule spawn_mobs false
+forceload add -64 -64 63 63
+place structure minecraft:shipwreck_beached 0 64 0
+forceload add 192 -64 319 63
+place structure minecraft:stronghold 256 64 0
+forceload add 448 -64 575 63
+place structure minecraft:swamp_hut 512 64 0
+forceload add 704 -64 831 63
+place structure minecraft:trail_ruins 768 64 0
+forceload add 960 -64 1087 63
+place structure minecraft:trial_chambers 1024 64 0
+forceload add 1216 -64 1343 63
+place structure minecraft:village_desert 1280 64 0
+tick sprint 100
+#await Sprint completed
