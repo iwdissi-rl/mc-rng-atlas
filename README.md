@@ -16,15 +16,21 @@ atlas aims to cover every source, across versions, confirmed against the running
 
 | Stage | What | Status |
 |---|---|---|
-| 1 | Static bytecode scanner + interprocedural root resolver | **26.3 done** |
-| 1b | Same for 1.16.1 (Mojang mappings) and 1.12.2 (community mappings) | todo |
+| 1 | Static bytecode scanner + interprocedural root resolver | **done: 26.3, 1.16.1, 1.12.2** |
+| 1c | Cross-check 1.12.2 against KillTheRNG's call-site list | todo |
 | 2 | Runtime logger (Java agent) + scripted headless scenarios | todo |
 | 3 | Confirmation engine: predict next N outputs from logged state, compare | todo |
 | 4 | Correlation CLI: shared-generator graph, crackability scoring, anomaly search | todo |
 
-**26.3 snapshot:** 11,383 classes, 16 RNG types, 51 generator fields, 2,492 draw sites,
-resolving to about 96% concrete root generators. The remainder is lambdas called through
-functional interfaces, and a few cycles, flagged for review.
+| Version | Names from | Classes | RNG types | Generator fields | Draw sites | Global (`Math.random` etc.) |
+|---|---|---|---|---|---|---|
+| 26.3 | unobfuscated jar | 11,383 | 16 | 51 | 2,492 | 26 |
+| 1.16.1 | Mojang official mappings | 5,463 | 8 | 47 | 2,280 | 85 |
+| 1.12.2 | MCP `stable_39` (Forge names) | 3,310 | 7 | 41 | 2,003 | 84 |
+
+Each draw is traced to a root generator. Unresolved edges, mostly lambdas called through functional
+interfaces and a few cycles, are kept and flagged for review. Static edges are *possible* flows:
+virtual dispatch makes them over-approximate, and stage 2 confirms which ones actually happen.
 
 ## How it works
 
@@ -45,6 +51,19 @@ functional interfaces, and a few cycles, flagged for review.
    - `field:net/minecraft/world/level/Level.random`: one shared generator per dimension
    - `factory:RandomSource.create@EnderDragonFight.spawnExitPortal`: a fresh generator built at that call
    - `at(forkPositional(...))`: positional generators derived from a parent
+
+## Getting readable jars
+
+26.3+ ships unobfuscated. Older versions are remapped with `tools/remap/Remap.java` (tiny-remapper + mapping-io + ASM):
+
+```sh
+CP=$(ls work/tools/*.jar | tr '\n' ':')
+java -cp "$CP" tools/remap/Remap.java proguard 1.16.1-client.jar 1.16.1-named.jar 1.16.1-client_mappings.txt
+java -cp "$CP" tools/remap/Remap.java mcp 1.12.2-client.jar 1.12.2-named.jar joined.srg fields.csv methods.csv
+```
+
+Jars come from Mojang's version manifest. Mojang mappings come from the version JSON. MCP comes from
+`maven.minecraftforge.net` (`de.oceanlabs.mcp:mcp:1.12.2:srg`, `mcp_stable:39-1.12`). None are committed.
 
 ## Usage
 
@@ -82,6 +101,15 @@ $B query "SELECT class, method, target_owner||'.'||target_name FROM call_sites W
   known chain behind enchantment cracking, found by the scanner with no prior hints.
 - Mob AI in `InsideBrownianWalk` and `LongJumpToRandomPos` uses `Collections.shuffle` with the JDK's
   global unseeded generator, so those outcomes can't be predicted from any game seed.
+
+## Early findings (older versions)
+
+- **1.16.1 has a process-wide `static Item.random`** shared by every item. `BoneMealItem` passes it
+  into feature placement, so bone-meal growth draws from one global generator. Flows into specific
+  feature types are over-approximated by dispatch and still need runtime confirmation.
+- **Use of `Math.random` dropped over time.** Outside client code: 29 sites in 1.12.2 (XP orb and
+  item-drop motion, TNT fuse direction, `EntityLivingBase.<init>`, mob spawning), 16 in 1.16.1 and 2
+  in 26.3. In old versions those outcomes come from the JVM's single unseeded global generator.
 
 ## Credits / prior work
 
