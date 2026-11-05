@@ -522,7 +522,9 @@ fn scan_class(cf: &cafebabe::ClassFile, is_rng: &dyn Fn(&str) -> bool) -> (Vec<R
                         let kind = if ret_rng { "construct" } else if n_rng_params > 0 { "passthrough" } else { "draw" };
                         emit(kind, t, if args.is_empty() { format!("static:{owner}") } else { mapped.join(";") }, &hints);
                         if ret_rng {
-                            stack.push(format!("call:{}.{}", owner, name));
+                            // factories taking arguments (a seed) are seeded; "()" factories are not
+                            let seeded = if t.name_and_type.descriptor.starts_with("()") { "" } else { "(seeded)" };
+                            stack.push(format!("call:{}.{}{}", owner, name, seeded));
                             pushed = true;
                         }
                     } else {

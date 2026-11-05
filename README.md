@@ -99,14 +99,19 @@ $B query "SELECT class, method, target_owner||'.'||target_name FROM call_sites W
 - Enchanting: `EnchantmentMenu.random` is reseeded from `Player.enchantmentSeed`, which is
   re-rolled from the player's own `Entity.random` in `Player.onEnchantmentPerformed`. This is the
   known chain behind enchantment cracking, found by the scanner with no prior hints.
+- Piglin victory dances (`PiglinAi.wantsToDance`) are seeded with the world's **game time**, not the
+  piglin's own generator. Every piglin that decides in the same tick gets the same roll, so on a
+  given tick either all eligible piglins dance or none do. Anyone who knows the game time can predict it.
+- Goat horn variants are seeded with the goat's `UUID.hashCode()`, so they're fixed per goat.
 - Mob AI in `InsideBrownianWalk` and `LongJumpToRandomPos` uses `Collections.shuffle` with the JDK's
   global unseeded generator, so those outcomes can't be predicted from any game seed.
 
 ## Early findings (older versions)
 
-- **1.16.1 has a process-wide `static Item.random`** shared by every item. `BoneMealItem` passes it
-  into feature placement, so bone-meal growth draws from one global generator. Flows into specific
-  feature types are over-approximated by dispatch and still need runtime confirmation.
+- **1.16.1 has a process-wide `static Item.random`** shared by every item. Bytecode check:
+  underwater bone meal (`BoneMealItem.growWaterPlant`: seagrass and coral placement) draws from
+  it directly, while land bone meal (`growCrop`) uses `Level.random`. Other flows the resolver
+  reports into world features are over-approximated by dispatch and still need runtime confirmation.
 - **Use of `Math.random` dropped over time.** Outside client code: 29 sites in 1.12.2 (XP orb and
   item-drop motion, TNT fuse direction, `EntityLivingBase.<init>`, mob spawning), 16 in 1.16.1 and 2
   in 26.3. In old versions those outcomes come from the JVM's single unseeded global generator.

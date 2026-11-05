@@ -125,6 +125,10 @@ impl Resolver {
             }
         } else if let Some(m) = src.strip_prefix("call:") {
             let (owner, name) = split_member(m);
+            let (name, seeded) = match name.strip_suffix("(seeded)") {
+                Some(n) => (n, "(seeded)"),
+                None => (name, ""),
+            };
             let cands: Vec<(String, String)> = self.by_name_rng_ret.get(name).cloned().unwrap_or_default();
             let mut targets = Vec::new();
             for (c, d) in cands {
@@ -143,10 +147,10 @@ impl Resolver {
                 }
             }
             if sub.is_empty() {
-                out.insert(format!("call:{owner}.{name}"));
+                out.insert(format!("call:{owner}.{name}{seeded}"));
             } else if sub.iter().all(|r| r.starts_with("new:") || r.starts_with("factory:")) {
                 // the callee builds a fresh generator each time: the identity is this call site
-                out.insert(format!("factory:{}.{}@{}.{}", short(owner), name, short(&ctx.0), ctx.1));
+                out.insert(format!("factory:{}.{}{}@{}.{}", short(owner), name, seeded, short(&ctx.0), ctx.1));
             } else {
                 out.extend(sub);
             }
