@@ -203,3 +203,9 @@ Headline candidates (details, numbers and caveats in [docs/stage4-findings.md](d
 
 KillTheRNG (MinecraftTAS), Earthcomputer's clientcommands and RNG research, SeedcrackerX, the
 seedfinding community and Minecraft@Home. This project builds on what they found.
+
+## License
+
+MIT for this project's code and data (see [LICENSE](LICENSE)). Minecraft is a trademark of Mojang
+Studios; this project is not affiliated with Mojang or Microsoft. No game code, jars or mappings are
+distributed. The data contains only class and method names and this project's own analysis.
