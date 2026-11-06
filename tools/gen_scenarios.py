@@ -113,7 +113,7 @@ def main():
         "tick sprint 1200", SPRINT,
     ])
 
-    (out / "manifest.tsv").write_text("".join(f"{p}\t{s}\n" for p, s in manifest))
+    (out / "manifest.tsv").write_text("".join(f"{Path(p).resolve().relative_to(ROOT)}\t{s}\n" for p, s in manifest))
     fam = {}
     for p, _ in manifest:
         fam[p.stem.split("-")[0]] = fam.get(p.stem.split("-")[0], 0) + 1

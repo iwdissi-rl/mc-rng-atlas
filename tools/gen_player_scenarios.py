@@ -533,9 +533,9 @@ def main():
     if a.families:
         want = set(a.families.split(","))
         wave = [(p, sd) for p, sd in manifest if p.stem.split("-")[1] in want]
-        (out / "manifest-wave.tsv").write_text("".join(f"{p}\t{s}\n" for p, s in wave))
+        (out / "manifest-wave.tsv").write_text("".join(f"{Path(p).resolve().relative_to(ROOT)}\t{s}\n" for p, s in wave))
         print(f"wave manifest: {len(wave)} scenarios")
-    (out / "manifest-player.tsv").write_text("".join(f"{p}\t{s}\n" for p, s in manifest))
+    (out / "manifest-player.tsv").write_text("".join(f"{Path(p).resolve().relative_to(ROOT)}\t{s}\n" for p, s in manifest))
     print(f"{len(manifest)} driver scenarios ({len(FAMILIES)} player families x {len(SEEDS)} seeds + block/redstone shards)")
 
 

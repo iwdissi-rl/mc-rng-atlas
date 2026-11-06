@@ -28,8 +28,9 @@ def main():
     todo = []
     for line in Path(a.manifest).read_text().splitlines():
         scen, seed = line.split("\t")
-        if a.only in Path(scen).stem:
-            todo.append((Path(scen), seed))
+        path = Path(scen) if Path(scen).is_absolute() else ROOT / scen  # manifests store repo-relative paths
+        if a.only in path.stem:
+            todo.append((path, seed))
     print(f"{len(todo)} scenarios, {a.jobs} parallel servers x {a.cpus} cores", flush=True)
 
     def run(scen, seed):
