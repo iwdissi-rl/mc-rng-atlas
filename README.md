@@ -27,7 +27,7 @@ README with exact numbers generated from the data plus a short plain-language ex
 | [06-generator-graph](datasets/06-generator-graph/) | which mechanics share a random generator |
 | [07-crackability](datasets/07-crackability/) | how predictable each generator is |
 | [08-anomalies](datasets/08-anomalies/) | bias, serial correlation, identical streams |
-| [09-rediscovery](datasets/09-rediscovery/) | **18/18 community-known facts rediscovered** |
+| [09-rediscovery](datasets/09-rediscovery/) | **19/19 community-known facts rediscovered** (incl. jolt cracking) |
 | [10-findings](datasets/10-findings/) | piglin dance windows, enchanting slots, structure palettes, shared chunk seeds |
 | [11-mechanics](datasets/11-mechanics/) | 20 mechanic families with in-game screenshots |
 | [12-cross-version](datasets/12-cross-version/) | the whole process repeated on 26.1.2, 26.2, 26.3 |
@@ -36,11 +36,12 @@ README with exact numbers generated from the data plus a short plain-language ex
 
 <sub>In-game screenshot from the headless client `iwdissi` (spectator) watching fake player `iwdissi_ench7` enchant.</sub>
 
-**Does it find what's already known?** The atlas was never told about any known mechanic, yet it rediscovers all 18
+**Does it find what's already known?** The atlas was never told about any known mechanic, yet it rediscovers all 19
 checked facts (slime-chunk and structure salts, enchantment seed and re-roll, per-entity and per-dimension RNG,
 item-drop player RNG, fishing hook RNG, random ticks, stronghold rings, end spikes, bedrock positional RNG,
-decoration seeds, old `Math.random` TNT, goat horn UUID seed, piglin game-time seed, and that **hunger uses no
-randomness at all**), in every runtime version.
+decoration seeds, old `Math.random` TNT, goat horn UUID seed, piglin game-time seed, the **hunger-bar jolt** used by jolt cracking
+(HUD `Random` reseeded with `tickCount * 312871`, found statically in all 6 versions), and that server-side hunger
+uses no randomness at all), in every runtime version.
 
 **Do the findings hold across versions?**
 
@@ -49,7 +50,7 @@ randomness at all**), in every runtime version.
 | RNG events (all draws replay-confirmed) | 12.49 B | 12.48 B | 12.11 B |
 | Mismatches | 0 | 0 | 0 |
 | Server gameplay draw sites exercised | 76.6% | 76.6% | 79.0% |
-| Known facts rediscovered | 18/18 | 18/18 | 18/18 |
+| Known facts rediscovered | 19/19 | 19/19 | 19/19 |
 | Piglin dance seeded by game time | yes | yes | yes |
 | Enchanting slots: first-draw correlation r | 0.916 | 0.915 | 0.917 |
 | Structure palette correlation r | 0.504 | 0.504 | 0.502 |

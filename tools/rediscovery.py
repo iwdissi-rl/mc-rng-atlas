@@ -88,7 +88,12 @@ CHECKS = [
      "Mentioned in a third-party reimplementation PR (consequence not documented)",
      "SELECT count(*), string_agg(DISTINCT categories, ', ') FROM seed_sources WHERE version='{v}' "
      "AND class LIKE '%PiglinAi' AND categories LIKE '%game_time%'", lambda v: v >= 1),
-    ("hunger-no-rng", "Hunger (food level, saturation, the 80-tick heal/starve timer) uses no randomness at all",
+    ("hunger-jolt", "The hunger bar 'jolt' shake comes from a HUD Random reseeded every frame with tickCount * 312871 (client side)",
+     "Jolt cracking (Dart & repeater64; JoltCracker, Jolt Scan): recovering game uptime from hunger-bar shakes",
+     "SELECT count(DISTINCT version), string_agg(DISTINCT version || ':' || regexp_extract(class,'[^/]+$') || '.' || method, ', ') "
+     "FROM call_sites WHERE kind = 'reseed' AND hints LIKE '%312871%' AND (hints LIKE '%tickCount%' OR hints LIKE '%updateCounter%' OR hints LIKE '%getGuiTicks%' OR hints LIKE '%Tick%')",
+     lambda v: v >= 5),
+    ("hunger-no-rng", "Server-side hunger (food level, saturation, the 80-tick heal/starve timer) uses no randomness; only the client HUD shake does",
      "Minecraft Wiki (Hunger): deterministic tick timer",
      "SELECT count(*), 'RNG call sites in FoodData across all versions: ' || count(*) FROM call_sites WHERE class LIKE '%FoodData%' OR class LIKE '%FoodStats%'",
      lambda v: v == 0),

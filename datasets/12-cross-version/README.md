@@ -4,17 +4,17 @@ The whole runtime process (every scenario family, the replay check, the correlat
 
 ## In simple terms
 
-The researchers ran their tests on versions 26.1.2, 26.2, and 26.3 to see if previous findings still apply. All three versions showed zero mismatches and successfully rediscovered all eighteen known facts. Specific behaviors like piglin dances and enchantment slots remained consistent across these updates. The number of classes sharing random data changed slightly from 226 to 230 as the versions progressed.
+Researchers re-ran their full testing process on versions 26.1.2, 26.2, and 26.3 to see if previous findings still apply. All three versions showed zero mismatches and successfully rediscovered all 19 known facts. The tests confirmed that piglin dances are tied to game time and enchantment slots use specific reseeding rules. While the number of classes sharing random data increased slightly in newer versions, the core behaviors remained consistent across all releases.
 
 <sub>Written by a local LLM (Qwen3.8-Flash-Next via llama.cpp) from the key numbers below and automatically checked: every number in it appears in those facts. The numbers below are authoritative.</sub>
 
 ## Key numbers
 
-- 26.1.2: 146 runs, 12,493,552,328 events, 0 mismatches, coverage 76.6%, rediscovered 18 of 18 known facts
+- 26.1.2: 146 runs, 12,493,552,328 events, 0 mismatches, coverage 76.6%, rediscovered 19 of 19 known facts
 - 26.1.2: piglin dance seeded by game time = True, enchant slots reseeded seed+slot = True, enchant first-draw r = 0.916, structure palette r = 0.504, Level.random shared by 226 classes
-- 26.2: 145 runs, 12,478,981,084 events, 0 mismatches, coverage 76.6%, rediscovered 18 of 18 known facts
+- 26.2: 145 runs, 12,478,981,084 events, 0 mismatches, coverage 76.6%, rediscovered 19 of 19 known facts
 - 26.2: piglin dance seeded by game time = True, enchant slots reseeded seed+slot = True, enchant first-draw r = 0.915, structure palette r = 0.504, Level.random shared by 228 classes
-- 26.3: 148 runs, 12,111,530,459 events, 0 mismatches, coverage 79.0%, rediscovered 18 of 18 known facts
+- 26.3: 148 runs, 12,111,530,459 events, 0 mismatches, coverage 79.0%, rediscovered 19 of 19 known facts
 - 26.3: piglin dance seeded by game time = True, enchant slots reseeded seed+slot = True, enchant first-draw r = 0.917, structure palette r = 0.502, Level.random shared by 230 classes
 
 ![Coverage per version](coverage-by-version.png)
@@ -34,6 +34,6 @@ The researchers ran their tests on versions 26.1.2, 26.2, and 26.3 to see if pre
 
 | Version | Runs | Events | Mismatches | Coverage | Rediscovered | Piglin game-time seed | Enchant r | Palette r |
 |---|---|---|---|---|---|---|---|---|
-| 26.1.2 | 146 | 12,493,552,328 | 0 | 76.6% | 18/18 | True | 0.916 | 0.504 |
-| 26.2 | 145 | 12,478,981,084 | 0 | 76.6% | 18/18 | True | 0.915 | 0.504 |
-| 26.3 | 148 | 12,111,530,459 | 0 | 79.0% | 18/18 | True | 0.917 | 0.502 |
+| 26.1.2 | 146 | 12,493,552,328 | 0 | 76.6% | 19/19 | True | 0.916 | 0.504 |
+| 26.2 | 145 | 12,478,981,084 | 0 | 76.6% | 19/19 | True | 0.915 | 0.504 |
+| 26.3 | 148 | 12,111,530,459 | 0 | 79.0% | 19/19 | True | 0.917 | 0.502 |
