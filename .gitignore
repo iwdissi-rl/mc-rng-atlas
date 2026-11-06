@@ -7,3 +7,4 @@ target/
 agent/build/
 runs/
 data/events/
+data/duckdb-tmp/

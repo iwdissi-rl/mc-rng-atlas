@@ -21,7 +21,7 @@ atlas aims to cover every source, across versions, confirmed against the running
 | 1c | Cross-check 1.12.2 against KillTheRNG's call-site list | todo |
 | 2 | Runtime logger (Java agent) + scripted headless scenarios | **done for 26.3** (server side) |
 | 3 | Confirmation engine: replay every generator's state machine, match sites to static table | **done** (chain replay); scenario coverage: in progress |
-| 4 | Correlation CLI: shared-generator graph, crackability scoring, anomaly search | todo |
+| 4 | Correlation CLI: shared-generator graph, crackability scoring, anomaly search | **done**, see [docs/stage4-findings.md](docs/stage4-findings.md) |
 
 | Version | Names from | Classes | RNG types | Generator fields | Draw sites | Global (`Math.random` etc.) |
 |---|---|---|---|---|---|---|
@@ -140,6 +140,23 @@ Runtime sites that join with the static table: every tagged site. The only runti
 `AbstractHorse.generateJumpStrength`, `XoroshiroRandomSource::new` stored in
 `WorldgenRandom$Algorithm`). The static table lists those at the method-reference creation site,
 and runtime sees them where the function is invoked.
+
+## Correlation analysis (stage 4)
+
+```sh
+atlas analyze    # per-generator table, shared-generator graph, origins + tiers (~1 min, all cores)
+atlas segments   # one parallel pass over every reseed segment: bias, serial correlation, seed collisions
+atlas graph [--origin EnderDragonFight]   # which draw sites share generators from an origin
+atlas crack      # crackability tiers per generator origin
+atlas anomalies  # identical-stream collisions, first-draw bias, correlated consecutive reseeds
+```
+
+Headline candidates (details, numbers and caveats in [docs/stage4-findings.md](docs/stage4-findings.md)):
+- **Piglin victory dances come in time windows.** They're seeded with consecutive game times, so "dance"
+  ticks cluster into windows up to 51 s long with gaps up to 23 min. Still 10% overall, but not independent per kill.
+- **Enchanting-table slots share their first level modifier.** Seeds `s, s+1, s+2` give the same first
+  modifier on all three slots 99.5% of the time for enchantability 12–15 items (6.2% if independent).
+- **Structure template palettes and processors are spatially correlated** (r = 0.47 between consecutive placements).
 
 ## Data model
 
