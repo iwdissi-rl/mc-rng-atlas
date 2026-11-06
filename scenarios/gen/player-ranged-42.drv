@@ -1,0 +1,2709 @@
+1 cmd gamerule spawn_mobs false
+1 cmd gamerule advance_time false
+1 cmd gamerule advance_weather false
+2 cmd tick sprint 6100
+3 cmd forceload add -32 -32 31 31
+3 cmd forceload add 64 -32 127 31
+3 cmd forceload add 160 -32 223 31
+3 cmd forceload add 256 -32 319 31
+3 cmd forceload add 352 -32 415 31
+3 cmd forceload add 448 -32 511 31
+3 cmd forceload add 544 -32 607 31
+3 cmd forceload add 640 -32 703 31
+4 cmd fill -20 99 -20 20 99 20 minecraft:stone
+4 cmd fill -20 100 -20 20 104 20 minecraft:air
+4 cmd fill 76 99 -20 116 99 20 minecraft:stone
+4 cmd fill 76 100 -20 116 104 20 minecraft:air
+4 cmd fill 172 99 -20 212 99 20 minecraft:stone
+4 cmd fill 172 100 -20 212 104 20 minecraft:air
+4 cmd fill 268 99 -20 308 99 20 minecraft:stone
+4 cmd fill 268 100 -20 308 104 20 minecraft:air
+4 cmd fill 364 99 -20 404 99 20 minecraft:stone
+4 cmd fill 364 100 -20 404 104 20 minecraft:air
+4 cmd fill 460 99 -20 500 99 20 minecraft:stone
+4 cmd fill 460 100 -20 500 104 20 minecraft:air
+4 cmd fill 556 99 -20 596 99 20 minecraft:stone
+4 cmd fill 556 100 -20 596 104 20 minecraft:air
+4 cmd fill 652 99 -20 692 99 20 minecraft:stone
+4 cmd fill 652 100 -20 692 104 20 minecraft:air
+6 player archer0 0.5 100 0.5
+6 player archer1 96.5 100 0.5
+6 player archer2 192.5 100 0.5
+6 player archer3 288.5 100 0.5
+6 player archer4 384.5 100 0.5
+6 player archer5 480.5 100 0.5
+6 player archer6 576.5 100 0.5
+6 player archer7 672.5 100 0.5
+8 cmd effect give archer0 minecraft:resistance infinite 4 true
+8 cmd effect give archer0 minecraft:regeneration infinite 4 true
+8 cmd effect give archer0 minecraft:saturation infinite 0 true
+8 cmd effect give archer1 minecraft:resistance infinite 4 true
+8 cmd effect give archer1 minecraft:regeneration infinite 4 true
+8 cmd effect give archer1 minecraft:saturation infinite 0 true
+8 cmd effect give archer2 minecraft:resistance infinite 4 true
+8 cmd effect give archer2 minecraft:regeneration infinite 4 true
+8 cmd effect give archer2 minecraft:saturation infinite 0 true
+8 cmd effect give archer3 minecraft:resistance infinite 4 true
+8 cmd effect give archer3 minecraft:regeneration infinite 4 true
+8 cmd effect give archer3 minecraft:saturation infinite 0 true
+8 cmd effect give archer4 minecraft:resistance infinite 4 true
+8 cmd effect give archer4 minecraft:regeneration infinite 4 true
+8 cmd effect give archer4 minecraft:saturation infinite 0 true
+8 cmd effect give archer5 minecraft:resistance infinite 4 true
+8 cmd effect give archer5 minecraft:regeneration infinite 4 true
+8 cmd effect give archer5 minecraft:saturation infinite 0 true
+8 cmd effect give archer6 minecraft:resistance infinite 4 true
+8 cmd effect give archer6 minecraft:regeneration infinite 4 true
+8 cmd effect give archer6 minecraft:saturation infinite 0 true
+8 cmd effect give archer7 minecraft:resistance infinite 4 true
+8 cmd effect give archer7 minecraft:regeneration infinite 4 true
+8 cmd effect give archer7 minecraft:saturation infinite 0 true
+9 cmd item replace entity archer0 weapon.mainhand with minecraft:bow[minecraft:enchantments={"minecraft:power":5,"minecraft:punch":2,"minecraft:flame":1}]
+9 cmd give archer0 minecraft:arrow 640
+9 cmd item replace entity archer1 weapon.mainhand with minecraft:bow[minecraft:enchantments={"minecraft:infinity":1}]
+9 cmd give archer1 minecraft:arrow 640
+9 cmd item replace entity archer2 weapon.mainhand with minecraft:bow
+9 cmd give archer2 minecraft:arrow 640
+9 cmd item replace entity archer3 weapon.mainhand with minecraft:crossbow[minecraft:enchantments={"minecraft:multishot":1}]
+9 cmd give archer3 minecraft:arrow 640
+9 cmd item replace entity archer4 weapon.mainhand with minecraft:crossbow[minecraft:enchantments={"minecraft:piercing":4,"minecraft:quick_charge":3}]
+9 cmd give archer4 minecraft:arrow 640
+9 cmd item replace entity archer5 weapon.mainhand with minecraft:trident[minecraft:enchantments={"minecraft:loyalty":3}]
+9 cmd give archer5 minecraft:arrow 640
+9 cmd item replace entity archer6 weapon.mainhand with minecraft:trident[minecraft:enchantments={"minecraft:riptide":3}]
+9 cmd give archer6 minecraft:arrow 640
+9 cmd item replace entity archer7 weapon.mainhand with minecraft:crossbow
+9 cmd give archer7 minecraft:arrow 640
+10 look archer0 0 0
+10 look archer1 0 0
+10 look archer2 0 0
+10 look archer3 0 0
+10 look archer4 0 0
+10 look archer5 0 0
+10 look archer6 0 0
+10 look archer7 0 0
+20 cmd execute positioned 0 100 0 unless entity @e[type=minecraft:skeleton,distance=..24] run summon minecraft:skeleton 0 100 12 {PersistenceRequired:1b}
+20 cmd execute positioned 0 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 0 100 6 {NoAI:1b,PersistenceRequired:1b}
+20 use archer0
+20 cmd execute positioned 96 100 0 unless entity @e[type=minecraft:stray,distance=..24] run summon minecraft:stray 96 100 12 {PersistenceRequired:1b}
+20 cmd execute positioned 96 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 96 100 6 {NoAI:1b,PersistenceRequired:1b}
+20 use archer1
+20 cmd execute positioned 192 100 0 unless entity @e[type=minecraft:pillager,distance=..24] run summon minecraft:pillager 192 100 12 {PersistenceRequired:1b}
+20 cmd execute positioned 192 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 192 100 6 {NoAI:1b,PersistenceRequired:1b}
+20 use archer2
+20 cmd execute positioned 288 100 0 unless entity @e[type=minecraft:blaze,distance=..24] run summon minecraft:blaze 288 100 12 {PersistenceRequired:1b}
+20 cmd execute positioned 288 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 288 100 6 {NoAI:1b,PersistenceRequired:1b}
+20 use archer3
+20 cmd execute positioned 384 100 0 unless entity @e[type=minecraft:bogged,distance=..24] run summon minecraft:bogged 384 100 12 {PersistenceRequired:1b}
+20 cmd execute positioned 384 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 384 100 6 {NoAI:1b,PersistenceRequired:1b}
+20 use archer4
+20 cmd execute positioned 480 100 0 unless entity @e[type=minecraft:piglin,distance=..24] run summon minecraft:piglin 480 100 12 {PersistenceRequired:1b}
+20 cmd execute positioned 480 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 480 100 6 {NoAI:1b,PersistenceRequired:1b}
+20 use archer5
+20 cmd execute positioned 576 100 0 unless entity @e[type=minecraft:drowned,distance=..24] run summon minecraft:drowned 576 100 12 {PersistenceRequired:1b}
+20 cmd execute positioned 576 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 576 100 6 {NoAI:1b,PersistenceRequired:1b}
+20 use archer6
+20 cmd execute positioned 672 100 0 unless entity @e[type=minecraft:breeze,distance=..24] run summon minecraft:breeze 672 100 12 {PersistenceRequired:1b}
+20 cmd execute positioned 672 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 672 100 6 {NoAI:1b,PersistenceRequired:1b}
+20 use archer7
+45 release archer0
+45 release archer1
+45 release archer2
+45 release archer3
+45 release archer4
+45 release archer5
+45 release archer6
+45 release archer7
+60 use archer0
+60 use archer1
+60 use archer2
+60 use archer3
+60 use archer4
+60 use archer5
+60 use archer6
+60 use archer7
+85 release archer0
+85 release archer1
+85 release archer2
+85 release archer3
+85 release archer4
+85 release archer5
+85 release archer6
+85 release archer7
+100 use archer0
+100 use archer1
+100 use archer2
+100 use archer3
+100 use archer4
+100 use archer5
+100 use archer6
+100 use archer7
+125 release archer0
+125 release archer1
+125 release archer2
+125 release archer3
+125 release archer4
+125 release archer5
+125 release archer6
+125 release archer7
+140 use archer0
+140 use archer1
+140 use archer2
+140 use archer3
+140 use archer4
+140 use archer5
+140 use archer6
+140 use archer7
+165 release archer0
+165 release archer1
+165 release archer2
+165 release archer3
+165 release archer4
+165 release archer5
+165 release archer6
+165 release archer7
+180 use archer0
+180 use archer1
+180 use archer2
+180 use archer3
+180 use archer4
+180 use archer5
+180 use archer6
+180 use archer7
+205 release archer0
+205 release archer1
+205 release archer2
+205 release archer3
+205 release archer4
+205 release archer5
+205 release archer6
+205 release archer7
+220 use archer0
+220 use archer1
+220 use archer2
+220 use archer3
+220 use archer4
+220 use archer5
+220 use archer6
+220 use archer7
+245 release archer0
+245 release archer1
+245 release archer2
+245 release archer3
+245 release archer4
+245 release archer5
+245 release archer6
+245 release archer7
+260 use archer0
+260 use archer1
+260 use archer2
+260 use archer3
+260 use archer4
+260 use archer5
+260 use archer6
+260 use archer7
+285 release archer0
+285 release archer1
+285 release archer2
+285 release archer3
+285 release archer4
+285 release archer5
+285 release archer6
+285 release archer7
+300 use archer0
+300 use archer1
+300 use archer2
+300 use archer3
+300 use archer4
+300 use archer5
+300 use archer6
+300 use archer7
+325 release archer0
+325 release archer1
+325 release archer2
+325 release archer3
+325 release archer4
+325 release archer5
+325 release archer6
+325 release archer7
+340 use archer0
+340 use archer1
+340 use archer2
+340 use archer3
+340 use archer4
+340 use archer5
+340 use archer6
+340 use archer7
+365 release archer0
+365 release archer1
+365 release archer2
+365 release archer3
+365 release archer4
+365 release archer5
+365 release archer6
+365 release archer7
+380 use archer0
+380 use archer1
+380 use archer2
+380 use archer3
+380 use archer4
+380 use archer5
+380 use archer6
+380 use archer7
+405 release archer0
+405 release archer1
+405 release archer2
+405 release archer3
+405 release archer4
+405 release archer5
+405 release archer6
+405 release archer7
+420 cmd execute positioned 0 100 0 unless entity @e[type=minecraft:skeleton,distance=..24] run summon minecraft:skeleton 0 100 12 {PersistenceRequired:1b}
+420 cmd execute positioned 0 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 0 100 6 {NoAI:1b,PersistenceRequired:1b}
+420 use archer0
+420 cmd execute positioned 96 100 0 unless entity @e[type=minecraft:stray,distance=..24] run summon minecraft:stray 96 100 12 {PersistenceRequired:1b}
+420 cmd execute positioned 96 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 96 100 6 {NoAI:1b,PersistenceRequired:1b}
+420 use archer1
+420 cmd execute positioned 192 100 0 unless entity @e[type=minecraft:pillager,distance=..24] run summon minecraft:pillager 192 100 12 {PersistenceRequired:1b}
+420 cmd execute positioned 192 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 192 100 6 {NoAI:1b,PersistenceRequired:1b}
+420 use archer2
+420 cmd execute positioned 288 100 0 unless entity @e[type=minecraft:blaze,distance=..24] run summon minecraft:blaze 288 100 12 {PersistenceRequired:1b}
+420 cmd execute positioned 288 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 288 100 6 {NoAI:1b,PersistenceRequired:1b}
+420 use archer3
+420 cmd execute positioned 384 100 0 unless entity @e[type=minecraft:bogged,distance=..24] run summon minecraft:bogged 384 100 12 {PersistenceRequired:1b}
+420 cmd execute positioned 384 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 384 100 6 {NoAI:1b,PersistenceRequired:1b}
+420 use archer4
+420 cmd execute positioned 480 100 0 unless entity @e[type=minecraft:piglin,distance=..24] run summon minecraft:piglin 480 100 12 {PersistenceRequired:1b}
+420 cmd execute positioned 480 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 480 100 6 {NoAI:1b,PersistenceRequired:1b}
+420 use archer5
+420 cmd execute positioned 576 100 0 unless entity @e[type=minecraft:drowned,distance=..24] run summon minecraft:drowned 576 100 12 {PersistenceRequired:1b}
+420 cmd execute positioned 576 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 576 100 6 {NoAI:1b,PersistenceRequired:1b}
+420 use archer6
+420 cmd execute positioned 672 100 0 unless entity @e[type=minecraft:breeze,distance=..24] run summon minecraft:breeze 672 100 12 {PersistenceRequired:1b}
+420 cmd execute positioned 672 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 672 100 6 {NoAI:1b,PersistenceRequired:1b}
+420 use archer7
+445 release archer0
+445 release archer1
+445 release archer2
+445 release archer3
+445 release archer4
+445 release archer5
+445 release archer6
+445 release archer7
+460 use archer0
+460 use archer1
+460 use archer2
+460 use archer3
+460 use archer4
+460 use archer5
+460 use archer6
+460 use archer7
+485 release archer0
+485 release archer1
+485 release archer2
+485 release archer3
+485 release archer4
+485 release archer5
+485 release archer6
+485 release archer7
+500 use archer0
+500 use archer1
+500 use archer2
+500 use archer3
+500 use archer4
+500 use archer5
+500 use archer6
+500 use archer7
+525 release archer0
+525 release archer1
+525 release archer2
+525 release archer3
+525 release archer4
+525 release archer5
+525 release archer6
+525 release archer7
+540 use archer0
+540 use archer1
+540 use archer2
+540 use archer3
+540 use archer4
+540 use archer5
+540 use archer6
+540 use archer7
+565 release archer0
+565 release archer1
+565 release archer2
+565 release archer3
+565 release archer4
+565 release archer5
+565 release archer6
+565 release archer7
+580 use archer0
+580 use archer1
+580 use archer2
+580 use archer3
+580 use archer4
+580 use archer5
+580 use archer6
+580 use archer7
+605 release archer0
+605 release archer1
+605 release archer2
+605 release archer3
+605 release archer4
+605 release archer5
+605 release archer6
+605 release archer7
+620 use archer0
+620 use archer1
+620 use archer2
+620 use archer3
+620 use archer4
+620 use archer5
+620 use archer6
+620 use archer7
+645 release archer0
+645 release archer1
+645 release archer2
+645 release archer3
+645 release archer4
+645 release archer5
+645 release archer6
+645 release archer7
+660 use archer0
+660 use archer1
+660 use archer2
+660 use archer3
+660 use archer4
+660 use archer5
+660 use archer6
+660 use archer7
+685 release archer0
+685 release archer1
+685 release archer2
+685 release archer3
+685 release archer4
+685 release archer5
+685 release archer6
+685 release archer7
+700 use archer0
+700 use archer1
+700 use archer2
+700 use archer3
+700 use archer4
+700 use archer5
+700 use archer6
+700 use archer7
+725 release archer0
+725 release archer1
+725 release archer2
+725 release archer3
+725 release archer4
+725 release archer5
+725 release archer6
+725 release archer7
+740 use archer0
+740 use archer1
+740 use archer2
+740 use archer3
+740 use archer4
+740 use archer5
+740 use archer6
+740 use archer7
+765 release archer0
+765 release archer1
+765 release archer2
+765 release archer3
+765 release archer4
+765 release archer5
+765 release archer6
+765 release archer7
+780 use archer0
+780 use archer1
+780 use archer2
+780 use archer3
+780 use archer4
+780 use archer5
+780 use archer6
+780 use archer7
+805 release archer0
+805 release archer1
+805 release archer2
+805 release archer3
+805 release archer4
+805 release archer5
+805 release archer6
+805 release archer7
+820 cmd execute positioned 0 100 0 unless entity @e[type=minecraft:skeleton,distance=..24] run summon minecraft:skeleton 0 100 12 {PersistenceRequired:1b}
+820 cmd execute positioned 0 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 0 100 6 {NoAI:1b,PersistenceRequired:1b}
+820 use archer0
+820 cmd execute positioned 96 100 0 unless entity @e[type=minecraft:stray,distance=..24] run summon minecraft:stray 96 100 12 {PersistenceRequired:1b}
+820 cmd execute positioned 96 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 96 100 6 {NoAI:1b,PersistenceRequired:1b}
+820 use archer1
+820 cmd execute positioned 192 100 0 unless entity @e[type=minecraft:pillager,distance=..24] run summon minecraft:pillager 192 100 12 {PersistenceRequired:1b}
+820 cmd execute positioned 192 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 192 100 6 {NoAI:1b,PersistenceRequired:1b}
+820 use archer2
+820 cmd execute positioned 288 100 0 unless entity @e[type=minecraft:blaze,distance=..24] run summon minecraft:blaze 288 100 12 {PersistenceRequired:1b}
+820 cmd execute positioned 288 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 288 100 6 {NoAI:1b,PersistenceRequired:1b}
+820 use archer3
+820 cmd execute positioned 384 100 0 unless entity @e[type=minecraft:bogged,distance=..24] run summon minecraft:bogged 384 100 12 {PersistenceRequired:1b}
+820 cmd execute positioned 384 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 384 100 6 {NoAI:1b,PersistenceRequired:1b}
+820 use archer4
+820 cmd execute positioned 480 100 0 unless entity @e[type=minecraft:piglin,distance=..24] run summon minecraft:piglin 480 100 12 {PersistenceRequired:1b}
+820 cmd execute positioned 480 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 480 100 6 {NoAI:1b,PersistenceRequired:1b}
+820 use archer5
+820 cmd execute positioned 576 100 0 unless entity @e[type=minecraft:drowned,distance=..24] run summon minecraft:drowned 576 100 12 {PersistenceRequired:1b}
+820 cmd execute positioned 576 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 576 100 6 {NoAI:1b,PersistenceRequired:1b}
+820 use archer6
+820 cmd execute positioned 672 100 0 unless entity @e[type=minecraft:breeze,distance=..24] run summon minecraft:breeze 672 100 12 {PersistenceRequired:1b}
+820 cmd execute positioned 672 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 672 100 6 {NoAI:1b,PersistenceRequired:1b}
+820 use archer7
+845 release archer0
+845 release archer1
+845 release archer2
+845 release archer3
+845 release archer4
+845 release archer5
+845 release archer6
+845 release archer7
+860 use archer0
+860 use archer1
+860 use archer2
+860 use archer3
+860 use archer4
+860 use archer5
+860 use archer6
+860 use archer7
+885 release archer0
+885 release archer1
+885 release archer2
+885 release archer3
+885 release archer4
+885 release archer5
+885 release archer6
+885 release archer7
+900 use archer0
+900 use archer1
+900 use archer2
+900 use archer3
+900 use archer4
+900 use archer5
+900 use archer6
+900 use archer7
+925 release archer0
+925 release archer1
+925 release archer2
+925 release archer3
+925 release archer4
+925 release archer5
+925 release archer6
+925 release archer7
+940 use archer0
+940 use archer1
+940 use archer2
+940 use archer3
+940 use archer4
+940 use archer5
+940 use archer6
+940 use archer7
+965 release archer0
+965 release archer1
+965 release archer2
+965 release archer3
+965 release archer4
+965 release archer5
+965 release archer6
+965 release archer7
+980 use archer0
+980 use archer1
+980 use archer2
+980 use archer3
+980 use archer4
+980 use archer5
+980 use archer6
+980 use archer7
+1005 release archer0
+1005 release archer1
+1005 release archer2
+1005 release archer3
+1005 release archer4
+1005 release archer5
+1005 release archer6
+1005 release archer7
+1020 use archer0
+1020 use archer1
+1020 use archer2
+1020 use archer3
+1020 use archer4
+1020 use archer5
+1020 use archer6
+1020 use archer7
+1045 release archer0
+1045 release archer1
+1045 release archer2
+1045 release archer3
+1045 release archer4
+1045 release archer5
+1045 release archer6
+1045 release archer7
+1060 use archer0
+1060 use archer1
+1060 use archer2
+1060 use archer3
+1060 use archer4
+1060 use archer5
+1060 use archer6
+1060 use archer7
+1085 release archer0
+1085 release archer1
+1085 release archer2
+1085 release archer3
+1085 release archer4
+1085 release archer5
+1085 release archer6
+1085 release archer7
+1100 use archer0
+1100 use archer1
+1100 use archer2
+1100 use archer3
+1100 use archer4
+1100 use archer5
+1100 use archer6
+1100 use archer7
+1125 release archer0
+1125 release archer1
+1125 release archer2
+1125 release archer3
+1125 release archer4
+1125 release archer5
+1125 release archer6
+1125 release archer7
+1140 use archer0
+1140 use archer1
+1140 use archer2
+1140 use archer3
+1140 use archer4
+1140 use archer5
+1140 use archer6
+1140 use archer7
+1165 release archer0
+1165 release archer1
+1165 release archer2
+1165 release archer3
+1165 release archer4
+1165 release archer5
+1165 release archer6
+1165 release archer7
+1180 use archer0
+1180 use archer1
+1180 use archer2
+1180 use archer3
+1180 use archer4
+1180 use archer5
+1180 use archer6
+1180 use archer7
+1205 release archer0
+1205 release archer1
+1205 release archer2
+1205 release archer3
+1205 release archer4
+1205 release archer5
+1205 release archer6
+1205 release archer7
+1220 cmd execute positioned 0 100 0 unless entity @e[type=minecraft:skeleton,distance=..24] run summon minecraft:skeleton 0 100 12 {PersistenceRequired:1b}
+1220 cmd execute positioned 0 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 0 100 6 {NoAI:1b,PersistenceRequired:1b}
+1220 use archer0
+1220 cmd execute positioned 96 100 0 unless entity @e[type=minecraft:stray,distance=..24] run summon minecraft:stray 96 100 12 {PersistenceRequired:1b}
+1220 cmd execute positioned 96 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 96 100 6 {NoAI:1b,PersistenceRequired:1b}
+1220 use archer1
+1220 cmd execute positioned 192 100 0 unless entity @e[type=minecraft:pillager,distance=..24] run summon minecraft:pillager 192 100 12 {PersistenceRequired:1b}
+1220 cmd execute positioned 192 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 192 100 6 {NoAI:1b,PersistenceRequired:1b}
+1220 use archer2
+1220 cmd execute positioned 288 100 0 unless entity @e[type=minecraft:blaze,distance=..24] run summon minecraft:blaze 288 100 12 {PersistenceRequired:1b}
+1220 cmd execute positioned 288 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 288 100 6 {NoAI:1b,PersistenceRequired:1b}
+1220 use archer3
+1220 cmd execute positioned 384 100 0 unless entity @e[type=minecraft:bogged,distance=..24] run summon minecraft:bogged 384 100 12 {PersistenceRequired:1b}
+1220 cmd execute positioned 384 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 384 100 6 {NoAI:1b,PersistenceRequired:1b}
+1220 use archer4
+1220 cmd execute positioned 480 100 0 unless entity @e[type=minecraft:piglin,distance=..24] run summon minecraft:piglin 480 100 12 {PersistenceRequired:1b}
+1220 cmd execute positioned 480 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 480 100 6 {NoAI:1b,PersistenceRequired:1b}
+1220 use archer5
+1220 cmd execute positioned 576 100 0 unless entity @e[type=minecraft:drowned,distance=..24] run summon minecraft:drowned 576 100 12 {PersistenceRequired:1b}
+1220 cmd execute positioned 576 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 576 100 6 {NoAI:1b,PersistenceRequired:1b}
+1220 use archer6
+1220 cmd execute positioned 672 100 0 unless entity @e[type=minecraft:breeze,distance=..24] run summon minecraft:breeze 672 100 12 {PersistenceRequired:1b}
+1220 cmd execute positioned 672 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 672 100 6 {NoAI:1b,PersistenceRequired:1b}
+1220 use archer7
+1245 release archer0
+1245 release archer1
+1245 release archer2
+1245 release archer3
+1245 release archer4
+1245 release archer5
+1245 release archer6
+1245 release archer7
+1260 use archer0
+1260 use archer1
+1260 use archer2
+1260 use archer3
+1260 use archer4
+1260 use archer5
+1260 use archer6
+1260 use archer7
+1285 release archer0
+1285 release archer1
+1285 release archer2
+1285 release archer3
+1285 release archer4
+1285 release archer5
+1285 release archer6
+1285 release archer7
+1300 use archer0
+1300 use archer1
+1300 use archer2
+1300 use archer3
+1300 use archer4
+1300 use archer5
+1300 use archer6
+1300 use archer7
+1325 release archer0
+1325 release archer1
+1325 release archer2
+1325 release archer3
+1325 release archer4
+1325 release archer5
+1325 release archer6
+1325 release archer7
+1340 use archer0
+1340 use archer1
+1340 use archer2
+1340 use archer3
+1340 use archer4
+1340 use archer5
+1340 use archer6
+1340 use archer7
+1365 release archer0
+1365 release archer1
+1365 release archer2
+1365 release archer3
+1365 release archer4
+1365 release archer5
+1365 release archer6
+1365 release archer7
+1380 use archer0
+1380 use archer1
+1380 use archer2
+1380 use archer3
+1380 use archer4
+1380 use archer5
+1380 use archer6
+1380 use archer7
+1405 release archer0
+1405 release archer1
+1405 release archer2
+1405 release archer3
+1405 release archer4
+1405 release archer5
+1405 release archer6
+1405 release archer7
+1420 use archer0
+1420 use archer1
+1420 use archer2
+1420 use archer3
+1420 use archer4
+1420 use archer5
+1420 use archer6
+1420 use archer7
+1445 release archer0
+1445 release archer1
+1445 release archer2
+1445 release archer3
+1445 release archer4
+1445 release archer5
+1445 release archer6
+1445 release archer7
+1460 use archer0
+1460 use archer1
+1460 use archer2
+1460 use archer3
+1460 use archer4
+1460 use archer5
+1460 use archer6
+1460 use archer7
+1485 release archer0
+1485 release archer1
+1485 release archer2
+1485 release archer3
+1485 release archer4
+1485 release archer5
+1485 release archer6
+1485 release archer7
+1500 use archer0
+1500 use archer1
+1500 use archer2
+1500 use archer3
+1500 use archer4
+1500 use archer5
+1500 use archer6
+1500 use archer7
+1525 release archer0
+1525 release archer1
+1525 release archer2
+1525 release archer3
+1525 release archer4
+1525 release archer5
+1525 release archer6
+1525 release archer7
+1540 use archer0
+1540 use archer1
+1540 use archer2
+1540 use archer3
+1540 use archer4
+1540 use archer5
+1540 use archer6
+1540 use archer7
+1565 release archer0
+1565 release archer1
+1565 release archer2
+1565 release archer3
+1565 release archer4
+1565 release archer5
+1565 release archer6
+1565 release archer7
+1580 use archer0
+1580 use archer1
+1580 use archer2
+1580 use archer3
+1580 use archer4
+1580 use archer5
+1580 use archer6
+1580 use archer7
+1605 release archer0
+1605 release archer1
+1605 release archer2
+1605 release archer3
+1605 release archer4
+1605 release archer5
+1605 release archer6
+1605 release archer7
+1620 cmd execute positioned 0 100 0 unless entity @e[type=minecraft:skeleton,distance=..24] run summon minecraft:skeleton 0 100 12 {PersistenceRequired:1b}
+1620 cmd execute positioned 0 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 0 100 6 {NoAI:1b,PersistenceRequired:1b}
+1620 use archer0
+1620 cmd execute positioned 96 100 0 unless entity @e[type=minecraft:stray,distance=..24] run summon minecraft:stray 96 100 12 {PersistenceRequired:1b}
+1620 cmd execute positioned 96 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 96 100 6 {NoAI:1b,PersistenceRequired:1b}
+1620 use archer1
+1620 cmd execute positioned 192 100 0 unless entity @e[type=minecraft:pillager,distance=..24] run summon minecraft:pillager 192 100 12 {PersistenceRequired:1b}
+1620 cmd execute positioned 192 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 192 100 6 {NoAI:1b,PersistenceRequired:1b}
+1620 use archer2
+1620 cmd execute positioned 288 100 0 unless entity @e[type=minecraft:blaze,distance=..24] run summon minecraft:blaze 288 100 12 {PersistenceRequired:1b}
+1620 cmd execute positioned 288 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 288 100 6 {NoAI:1b,PersistenceRequired:1b}
+1620 use archer3
+1620 cmd execute positioned 384 100 0 unless entity @e[type=minecraft:bogged,distance=..24] run summon minecraft:bogged 384 100 12 {PersistenceRequired:1b}
+1620 cmd execute positioned 384 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 384 100 6 {NoAI:1b,PersistenceRequired:1b}
+1620 use archer4
+1620 cmd execute positioned 480 100 0 unless entity @e[type=minecraft:piglin,distance=..24] run summon minecraft:piglin 480 100 12 {PersistenceRequired:1b}
+1620 cmd execute positioned 480 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 480 100 6 {NoAI:1b,PersistenceRequired:1b}
+1620 use archer5
+1620 cmd execute positioned 576 100 0 unless entity @e[type=minecraft:drowned,distance=..24] run summon minecraft:drowned 576 100 12 {PersistenceRequired:1b}
+1620 cmd execute positioned 576 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 576 100 6 {NoAI:1b,PersistenceRequired:1b}
+1620 use archer6
+1620 cmd execute positioned 672 100 0 unless entity @e[type=minecraft:breeze,distance=..24] run summon minecraft:breeze 672 100 12 {PersistenceRequired:1b}
+1620 cmd execute positioned 672 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 672 100 6 {NoAI:1b,PersistenceRequired:1b}
+1620 use archer7
+1645 release archer0
+1645 release archer1
+1645 release archer2
+1645 release archer3
+1645 release archer4
+1645 release archer5
+1645 release archer6
+1645 release archer7
+1660 use archer0
+1660 use archer1
+1660 use archer2
+1660 use archer3
+1660 use archer4
+1660 use archer5
+1660 use archer6
+1660 use archer7
+1685 release archer0
+1685 release archer1
+1685 release archer2
+1685 release archer3
+1685 release archer4
+1685 release archer5
+1685 release archer6
+1685 release archer7
+1700 use archer0
+1700 use archer1
+1700 use archer2
+1700 use archer3
+1700 use archer4
+1700 use archer5
+1700 use archer6
+1700 use archer7
+1725 release archer0
+1725 release archer1
+1725 release archer2
+1725 release archer3
+1725 release archer4
+1725 release archer5
+1725 release archer6
+1725 release archer7
+1740 use archer0
+1740 use archer1
+1740 use archer2
+1740 use archer3
+1740 use archer4
+1740 use archer5
+1740 use archer6
+1740 use archer7
+1765 release archer0
+1765 release archer1
+1765 release archer2
+1765 release archer3
+1765 release archer4
+1765 release archer5
+1765 release archer6
+1765 release archer7
+1780 use archer0
+1780 use archer1
+1780 use archer2
+1780 use archer3
+1780 use archer4
+1780 use archer5
+1780 use archer6
+1780 use archer7
+1805 release archer0
+1805 release archer1
+1805 release archer2
+1805 release archer3
+1805 release archer4
+1805 release archer5
+1805 release archer6
+1805 release archer7
+1820 use archer0
+1820 use archer1
+1820 use archer2
+1820 use archer3
+1820 use archer4
+1820 use archer5
+1820 use archer6
+1820 use archer7
+1845 release archer0
+1845 release archer1
+1845 release archer2
+1845 release archer3
+1845 release archer4
+1845 release archer5
+1845 release archer6
+1845 release archer7
+1860 use archer0
+1860 use archer1
+1860 use archer2
+1860 use archer3
+1860 use archer4
+1860 use archer5
+1860 use archer6
+1860 use archer7
+1885 release archer0
+1885 release archer1
+1885 release archer2
+1885 release archer3
+1885 release archer4
+1885 release archer5
+1885 release archer6
+1885 release archer7
+1900 use archer0
+1900 use archer1
+1900 use archer2
+1900 use archer3
+1900 use archer4
+1900 use archer5
+1900 use archer6
+1900 use archer7
+1925 release archer0
+1925 release archer1
+1925 release archer2
+1925 release archer3
+1925 release archer4
+1925 release archer5
+1925 release archer6
+1925 release archer7
+1940 use archer0
+1940 use archer1
+1940 use archer2
+1940 use archer3
+1940 use archer4
+1940 use archer5
+1940 use archer6
+1940 use archer7
+1965 release archer0
+1965 release archer1
+1965 release archer2
+1965 release archer3
+1965 release archer4
+1965 release archer5
+1965 release archer6
+1965 release archer7
+1980 use archer0
+1980 use archer1
+1980 use archer2
+1980 use archer3
+1980 use archer4
+1980 use archer5
+1980 use archer6
+1980 use archer7
+2005 release archer0
+2005 release archer1
+2005 release archer2
+2005 release archer3
+2005 release archer4
+2005 release archer5
+2005 release archer6
+2005 release archer7
+2020 cmd execute positioned 0 100 0 unless entity @e[type=minecraft:skeleton,distance=..24] run summon minecraft:skeleton 0 100 12 {PersistenceRequired:1b}
+2020 cmd execute positioned 0 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 0 100 6 {NoAI:1b,PersistenceRequired:1b}
+2020 use archer0
+2020 cmd execute positioned 96 100 0 unless entity @e[type=minecraft:stray,distance=..24] run summon minecraft:stray 96 100 12 {PersistenceRequired:1b}
+2020 cmd execute positioned 96 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 96 100 6 {NoAI:1b,PersistenceRequired:1b}
+2020 use archer1
+2020 cmd execute positioned 192 100 0 unless entity @e[type=minecraft:pillager,distance=..24] run summon minecraft:pillager 192 100 12 {PersistenceRequired:1b}
+2020 cmd execute positioned 192 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 192 100 6 {NoAI:1b,PersistenceRequired:1b}
+2020 use archer2
+2020 cmd execute positioned 288 100 0 unless entity @e[type=minecraft:blaze,distance=..24] run summon minecraft:blaze 288 100 12 {PersistenceRequired:1b}
+2020 cmd execute positioned 288 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 288 100 6 {NoAI:1b,PersistenceRequired:1b}
+2020 use archer3
+2020 cmd execute positioned 384 100 0 unless entity @e[type=minecraft:bogged,distance=..24] run summon minecraft:bogged 384 100 12 {PersistenceRequired:1b}
+2020 cmd execute positioned 384 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 384 100 6 {NoAI:1b,PersistenceRequired:1b}
+2020 use archer4
+2020 cmd execute positioned 480 100 0 unless entity @e[type=minecraft:piglin,distance=..24] run summon minecraft:piglin 480 100 12 {PersistenceRequired:1b}
+2020 cmd execute positioned 480 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 480 100 6 {NoAI:1b,PersistenceRequired:1b}
+2020 use archer5
+2020 cmd execute positioned 576 100 0 unless entity @e[type=minecraft:drowned,distance=..24] run summon minecraft:drowned 576 100 12 {PersistenceRequired:1b}
+2020 cmd execute positioned 576 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 576 100 6 {NoAI:1b,PersistenceRequired:1b}
+2020 use archer6
+2020 cmd execute positioned 672 100 0 unless entity @e[type=minecraft:breeze,distance=..24] run summon minecraft:breeze 672 100 12 {PersistenceRequired:1b}
+2020 cmd execute positioned 672 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 672 100 6 {NoAI:1b,PersistenceRequired:1b}
+2020 use archer7
+2045 release archer0
+2045 release archer1
+2045 release archer2
+2045 release archer3
+2045 release archer4
+2045 release archer5
+2045 release archer6
+2045 release archer7
+2060 use archer0
+2060 use archer1
+2060 use archer2
+2060 use archer3
+2060 use archer4
+2060 use archer5
+2060 use archer6
+2060 use archer7
+2085 release archer0
+2085 release archer1
+2085 release archer2
+2085 release archer3
+2085 release archer4
+2085 release archer5
+2085 release archer6
+2085 release archer7
+2100 use archer0
+2100 use archer1
+2100 use archer2
+2100 use archer3
+2100 use archer4
+2100 use archer5
+2100 use archer6
+2100 use archer7
+2125 release archer0
+2125 release archer1
+2125 release archer2
+2125 release archer3
+2125 release archer4
+2125 release archer5
+2125 release archer6
+2125 release archer7
+2140 use archer0
+2140 use archer1
+2140 use archer2
+2140 use archer3
+2140 use archer4
+2140 use archer5
+2140 use archer6
+2140 use archer7
+2165 release archer0
+2165 release archer1
+2165 release archer2
+2165 release archer3
+2165 release archer4
+2165 release archer5
+2165 release archer6
+2165 release archer7
+2180 use archer0
+2180 use archer1
+2180 use archer2
+2180 use archer3
+2180 use archer4
+2180 use archer5
+2180 use archer6
+2180 use archer7
+2205 release archer0
+2205 release archer1
+2205 release archer2
+2205 release archer3
+2205 release archer4
+2205 release archer5
+2205 release archer6
+2205 release archer7
+2220 use archer0
+2220 use archer1
+2220 use archer2
+2220 use archer3
+2220 use archer4
+2220 use archer5
+2220 use archer6
+2220 use archer7
+2245 release archer0
+2245 release archer1
+2245 release archer2
+2245 release archer3
+2245 release archer4
+2245 release archer5
+2245 release archer6
+2245 release archer7
+2260 use archer0
+2260 use archer1
+2260 use archer2
+2260 use archer3
+2260 use archer4
+2260 use archer5
+2260 use archer6
+2260 use archer7
+2285 release archer0
+2285 release archer1
+2285 release archer2
+2285 release archer3
+2285 release archer4
+2285 release archer5
+2285 release archer6
+2285 release archer7
+2300 use archer0
+2300 use archer1
+2300 use archer2
+2300 use archer3
+2300 use archer4
+2300 use archer5
+2300 use archer6
+2300 use archer7
+2325 release archer0
+2325 release archer1
+2325 release archer2
+2325 release archer3
+2325 release archer4
+2325 release archer5
+2325 release archer6
+2325 release archer7
+2340 use archer0
+2340 use archer1
+2340 use archer2
+2340 use archer3
+2340 use archer4
+2340 use archer5
+2340 use archer6
+2340 use archer7
+2365 release archer0
+2365 release archer1
+2365 release archer2
+2365 release archer3
+2365 release archer4
+2365 release archer5
+2365 release archer6
+2365 release archer7
+2380 use archer0
+2380 use archer1
+2380 use archer2
+2380 use archer3
+2380 use archer4
+2380 use archer5
+2380 use archer6
+2380 use archer7
+2405 release archer0
+2405 release archer1
+2405 release archer2
+2405 release archer3
+2405 release archer4
+2405 release archer5
+2405 release archer6
+2405 release archer7
+2420 cmd execute positioned 0 100 0 unless entity @e[type=minecraft:skeleton,distance=..24] run summon minecraft:skeleton 0 100 12 {PersistenceRequired:1b}
+2420 cmd execute positioned 0 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 0 100 6 {NoAI:1b,PersistenceRequired:1b}
+2420 use archer0
+2420 cmd execute positioned 96 100 0 unless entity @e[type=minecraft:stray,distance=..24] run summon minecraft:stray 96 100 12 {PersistenceRequired:1b}
+2420 cmd execute positioned 96 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 96 100 6 {NoAI:1b,PersistenceRequired:1b}
+2420 use archer1
+2420 cmd execute positioned 192 100 0 unless entity @e[type=minecraft:pillager,distance=..24] run summon minecraft:pillager 192 100 12 {PersistenceRequired:1b}
+2420 cmd execute positioned 192 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 192 100 6 {NoAI:1b,PersistenceRequired:1b}
+2420 use archer2
+2420 cmd execute positioned 288 100 0 unless entity @e[type=minecraft:blaze,distance=..24] run summon minecraft:blaze 288 100 12 {PersistenceRequired:1b}
+2420 cmd execute positioned 288 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 288 100 6 {NoAI:1b,PersistenceRequired:1b}
+2420 use archer3
+2420 cmd execute positioned 384 100 0 unless entity @e[type=minecraft:bogged,distance=..24] run summon minecraft:bogged 384 100 12 {PersistenceRequired:1b}
+2420 cmd execute positioned 384 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 384 100 6 {NoAI:1b,PersistenceRequired:1b}
+2420 use archer4
+2420 cmd execute positioned 480 100 0 unless entity @e[type=minecraft:piglin,distance=..24] run summon minecraft:piglin 480 100 12 {PersistenceRequired:1b}
+2420 cmd execute positioned 480 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 480 100 6 {NoAI:1b,PersistenceRequired:1b}
+2420 use archer5
+2420 cmd execute positioned 576 100 0 unless entity @e[type=minecraft:drowned,distance=..24] run summon minecraft:drowned 576 100 12 {PersistenceRequired:1b}
+2420 cmd execute positioned 576 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 576 100 6 {NoAI:1b,PersistenceRequired:1b}
+2420 use archer6
+2420 cmd execute positioned 672 100 0 unless entity @e[type=minecraft:breeze,distance=..24] run summon minecraft:breeze 672 100 12 {PersistenceRequired:1b}
+2420 cmd execute positioned 672 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 672 100 6 {NoAI:1b,PersistenceRequired:1b}
+2420 use archer7
+2445 release archer0
+2445 release archer1
+2445 release archer2
+2445 release archer3
+2445 release archer4
+2445 release archer5
+2445 release archer6
+2445 release archer7
+2460 use archer0
+2460 use archer1
+2460 use archer2
+2460 use archer3
+2460 use archer4
+2460 use archer5
+2460 use archer6
+2460 use archer7
+2485 release archer0
+2485 release archer1
+2485 release archer2
+2485 release archer3
+2485 release archer4
+2485 release archer5
+2485 release archer6
+2485 release archer7
+2500 use archer0
+2500 use archer1
+2500 use archer2
+2500 use archer3
+2500 use archer4
+2500 use archer5
+2500 use archer6
+2500 use archer7
+2525 release archer0
+2525 release archer1
+2525 release archer2
+2525 release archer3
+2525 release archer4
+2525 release archer5
+2525 release archer6
+2525 release archer7
+2540 use archer0
+2540 use archer1
+2540 use archer2
+2540 use archer3
+2540 use archer4
+2540 use archer5
+2540 use archer6
+2540 use archer7
+2565 release archer0
+2565 release archer1
+2565 release archer2
+2565 release archer3
+2565 release archer4
+2565 release archer5
+2565 release archer6
+2565 release archer7
+2580 use archer0
+2580 use archer1
+2580 use archer2
+2580 use archer3
+2580 use archer4
+2580 use archer5
+2580 use archer6
+2580 use archer7
+2605 release archer0
+2605 release archer1
+2605 release archer2
+2605 release archer3
+2605 release archer4
+2605 release archer5
+2605 release archer6
+2605 release archer7
+2620 use archer0
+2620 use archer1
+2620 use archer2
+2620 use archer3
+2620 use archer4
+2620 use archer5
+2620 use archer6
+2620 use archer7
+2645 release archer0
+2645 release archer1
+2645 release archer2
+2645 release archer3
+2645 release archer4
+2645 release archer5
+2645 release archer6
+2645 release archer7
+2660 use archer0
+2660 use archer1
+2660 use archer2
+2660 use archer3
+2660 use archer4
+2660 use archer5
+2660 use archer6
+2660 use archer7
+2685 release archer0
+2685 release archer1
+2685 release archer2
+2685 release archer3
+2685 release archer4
+2685 release archer5
+2685 release archer6
+2685 release archer7
+2700 use archer0
+2700 use archer1
+2700 use archer2
+2700 use archer3
+2700 use archer4
+2700 use archer5
+2700 use archer6
+2700 use archer7
+2725 release archer0
+2725 release archer1
+2725 release archer2
+2725 release archer3
+2725 release archer4
+2725 release archer5
+2725 release archer6
+2725 release archer7
+2740 use archer0
+2740 use archer1
+2740 use archer2
+2740 use archer3
+2740 use archer4
+2740 use archer5
+2740 use archer6
+2740 use archer7
+2765 release archer0
+2765 release archer1
+2765 release archer2
+2765 release archer3
+2765 release archer4
+2765 release archer5
+2765 release archer6
+2765 release archer7
+2780 use archer0
+2780 use archer1
+2780 use archer2
+2780 use archer3
+2780 use archer4
+2780 use archer5
+2780 use archer6
+2780 use archer7
+2805 release archer0
+2805 release archer1
+2805 release archer2
+2805 release archer3
+2805 release archer4
+2805 release archer5
+2805 release archer6
+2805 release archer7
+2820 cmd execute positioned 0 100 0 unless entity @e[type=minecraft:skeleton,distance=..24] run summon minecraft:skeleton 0 100 12 {PersistenceRequired:1b}
+2820 cmd execute positioned 0 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 0 100 6 {NoAI:1b,PersistenceRequired:1b}
+2820 use archer0
+2820 cmd execute positioned 96 100 0 unless entity @e[type=minecraft:stray,distance=..24] run summon minecraft:stray 96 100 12 {PersistenceRequired:1b}
+2820 cmd execute positioned 96 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 96 100 6 {NoAI:1b,PersistenceRequired:1b}
+2820 use archer1
+2820 cmd execute positioned 192 100 0 unless entity @e[type=minecraft:pillager,distance=..24] run summon minecraft:pillager 192 100 12 {PersistenceRequired:1b}
+2820 cmd execute positioned 192 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 192 100 6 {NoAI:1b,PersistenceRequired:1b}
+2820 use archer2
+2820 cmd execute positioned 288 100 0 unless entity @e[type=minecraft:blaze,distance=..24] run summon minecraft:blaze 288 100 12 {PersistenceRequired:1b}
+2820 cmd execute positioned 288 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 288 100 6 {NoAI:1b,PersistenceRequired:1b}
+2820 use archer3
+2820 cmd execute positioned 384 100 0 unless entity @e[type=minecraft:bogged,distance=..24] run summon minecraft:bogged 384 100 12 {PersistenceRequired:1b}
+2820 cmd execute positioned 384 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 384 100 6 {NoAI:1b,PersistenceRequired:1b}
+2820 use archer4
+2820 cmd execute positioned 480 100 0 unless entity @e[type=minecraft:piglin,distance=..24] run summon minecraft:piglin 480 100 12 {PersistenceRequired:1b}
+2820 cmd execute positioned 480 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 480 100 6 {NoAI:1b,PersistenceRequired:1b}
+2820 use archer5
+2820 cmd execute positioned 576 100 0 unless entity @e[type=minecraft:drowned,distance=..24] run summon minecraft:drowned 576 100 12 {PersistenceRequired:1b}
+2820 cmd execute positioned 576 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 576 100 6 {NoAI:1b,PersistenceRequired:1b}
+2820 use archer6
+2820 cmd execute positioned 672 100 0 unless entity @e[type=minecraft:breeze,distance=..24] run summon minecraft:breeze 672 100 12 {PersistenceRequired:1b}
+2820 cmd execute positioned 672 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 672 100 6 {NoAI:1b,PersistenceRequired:1b}
+2820 use archer7
+2845 release archer0
+2845 release archer1
+2845 release archer2
+2845 release archer3
+2845 release archer4
+2845 release archer5
+2845 release archer6
+2845 release archer7
+2860 use archer0
+2860 use archer1
+2860 use archer2
+2860 use archer3
+2860 use archer4
+2860 use archer5
+2860 use archer6
+2860 use archer7
+2885 release archer0
+2885 release archer1
+2885 release archer2
+2885 release archer3
+2885 release archer4
+2885 release archer5
+2885 release archer6
+2885 release archer7
+2900 use archer0
+2900 use archer1
+2900 use archer2
+2900 use archer3
+2900 use archer4
+2900 use archer5
+2900 use archer6
+2900 use archer7
+2925 release archer0
+2925 release archer1
+2925 release archer2
+2925 release archer3
+2925 release archer4
+2925 release archer5
+2925 release archer6
+2925 release archer7
+2940 use archer0
+2940 use archer1
+2940 use archer2
+2940 use archer3
+2940 use archer4
+2940 use archer5
+2940 use archer6
+2940 use archer7
+2965 release archer0
+2965 release archer1
+2965 release archer2
+2965 release archer3
+2965 release archer4
+2965 release archer5
+2965 release archer6
+2965 release archer7
+2980 use archer0
+2980 use archer1
+2980 use archer2
+2980 use archer3
+2980 use archer4
+2980 use archer5
+2980 use archer6
+2980 use archer7
+3005 release archer0
+3005 release archer1
+3005 release archer2
+3005 release archer3
+3005 release archer4
+3005 release archer5
+3005 release archer6
+3005 release archer7
+3020 use archer0
+3020 use archer1
+3020 use archer2
+3020 use archer3
+3020 use archer4
+3020 use archer5
+3020 use archer6
+3020 use archer7
+3045 release archer0
+3045 release archer1
+3045 release archer2
+3045 release archer3
+3045 release archer4
+3045 release archer5
+3045 release archer6
+3045 release archer7
+3060 use archer0
+3060 use archer1
+3060 use archer2
+3060 use archer3
+3060 use archer4
+3060 use archer5
+3060 use archer6
+3060 use archer7
+3085 release archer0
+3085 release archer1
+3085 release archer2
+3085 release archer3
+3085 release archer4
+3085 release archer5
+3085 release archer6
+3085 release archer7
+3100 use archer0
+3100 use archer1
+3100 use archer2
+3100 use archer3
+3100 use archer4
+3100 use archer5
+3100 use archer6
+3100 use archer7
+3125 release archer0
+3125 release archer1
+3125 release archer2
+3125 release archer3
+3125 release archer4
+3125 release archer5
+3125 release archer6
+3125 release archer7
+3140 use archer0
+3140 use archer1
+3140 use archer2
+3140 use archer3
+3140 use archer4
+3140 use archer5
+3140 use archer6
+3140 use archer7
+3165 release archer0
+3165 release archer1
+3165 release archer2
+3165 release archer3
+3165 release archer4
+3165 release archer5
+3165 release archer6
+3165 release archer7
+3180 use archer0
+3180 use archer1
+3180 use archer2
+3180 use archer3
+3180 use archer4
+3180 use archer5
+3180 use archer6
+3180 use archer7
+3205 release archer0
+3205 release archer1
+3205 release archer2
+3205 release archer3
+3205 release archer4
+3205 release archer5
+3205 release archer6
+3205 release archer7
+3220 cmd execute positioned 0 100 0 unless entity @e[type=minecraft:skeleton,distance=..24] run summon minecraft:skeleton 0 100 12 {PersistenceRequired:1b}
+3220 cmd execute positioned 0 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 0 100 6 {NoAI:1b,PersistenceRequired:1b}
+3220 use archer0
+3220 cmd execute positioned 96 100 0 unless entity @e[type=minecraft:stray,distance=..24] run summon minecraft:stray 96 100 12 {PersistenceRequired:1b}
+3220 cmd execute positioned 96 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 96 100 6 {NoAI:1b,PersistenceRequired:1b}
+3220 use archer1
+3220 cmd execute positioned 192 100 0 unless entity @e[type=minecraft:pillager,distance=..24] run summon minecraft:pillager 192 100 12 {PersistenceRequired:1b}
+3220 cmd execute positioned 192 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 192 100 6 {NoAI:1b,PersistenceRequired:1b}
+3220 use archer2
+3220 cmd execute positioned 288 100 0 unless entity @e[type=minecraft:blaze,distance=..24] run summon minecraft:blaze 288 100 12 {PersistenceRequired:1b}
+3220 cmd execute positioned 288 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 288 100 6 {NoAI:1b,PersistenceRequired:1b}
+3220 use archer3
+3220 cmd execute positioned 384 100 0 unless entity @e[type=minecraft:bogged,distance=..24] run summon minecraft:bogged 384 100 12 {PersistenceRequired:1b}
+3220 cmd execute positioned 384 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 384 100 6 {NoAI:1b,PersistenceRequired:1b}
+3220 use archer4
+3220 cmd execute positioned 480 100 0 unless entity @e[type=minecraft:piglin,distance=..24] run summon minecraft:piglin 480 100 12 {PersistenceRequired:1b}
+3220 cmd execute positioned 480 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 480 100 6 {NoAI:1b,PersistenceRequired:1b}
+3220 use archer5
+3220 cmd execute positioned 576 100 0 unless entity @e[type=minecraft:drowned,distance=..24] run summon minecraft:drowned 576 100 12 {PersistenceRequired:1b}
+3220 cmd execute positioned 576 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 576 100 6 {NoAI:1b,PersistenceRequired:1b}
+3220 use archer6
+3220 cmd execute positioned 672 100 0 unless entity @e[type=minecraft:breeze,distance=..24] run summon minecraft:breeze 672 100 12 {PersistenceRequired:1b}
+3220 cmd execute positioned 672 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 672 100 6 {NoAI:1b,PersistenceRequired:1b}
+3220 use archer7
+3245 release archer0
+3245 release archer1
+3245 release archer2
+3245 release archer3
+3245 release archer4
+3245 release archer5
+3245 release archer6
+3245 release archer7
+3260 use archer0
+3260 use archer1
+3260 use archer2
+3260 use archer3
+3260 use archer4
+3260 use archer5
+3260 use archer6
+3260 use archer7
+3285 release archer0
+3285 release archer1
+3285 release archer2
+3285 release archer3
+3285 release archer4
+3285 release archer5
+3285 release archer6
+3285 release archer7
+3300 use archer0
+3300 use archer1
+3300 use archer2
+3300 use archer3
+3300 use archer4
+3300 use archer5
+3300 use archer6
+3300 use archer7
+3325 release archer0
+3325 release archer1
+3325 release archer2
+3325 release archer3
+3325 release archer4
+3325 release archer5
+3325 release archer6
+3325 release archer7
+3340 use archer0
+3340 use archer1
+3340 use archer2
+3340 use archer3
+3340 use archer4
+3340 use archer5
+3340 use archer6
+3340 use archer7
+3365 release archer0
+3365 release archer1
+3365 release archer2
+3365 release archer3
+3365 release archer4
+3365 release archer5
+3365 release archer6
+3365 release archer7
+3380 use archer0
+3380 use archer1
+3380 use archer2
+3380 use archer3
+3380 use archer4
+3380 use archer5
+3380 use archer6
+3380 use archer7
+3405 release archer0
+3405 release archer1
+3405 release archer2
+3405 release archer3
+3405 release archer4
+3405 release archer5
+3405 release archer6
+3405 release archer7
+3420 use archer0
+3420 use archer1
+3420 use archer2
+3420 use archer3
+3420 use archer4
+3420 use archer5
+3420 use archer6
+3420 use archer7
+3445 release archer0
+3445 release archer1
+3445 release archer2
+3445 release archer3
+3445 release archer4
+3445 release archer5
+3445 release archer6
+3445 release archer7
+3460 use archer0
+3460 use archer1
+3460 use archer2
+3460 use archer3
+3460 use archer4
+3460 use archer5
+3460 use archer6
+3460 use archer7
+3485 release archer0
+3485 release archer1
+3485 release archer2
+3485 release archer3
+3485 release archer4
+3485 release archer5
+3485 release archer6
+3485 release archer7
+3500 use archer0
+3500 use archer1
+3500 use archer2
+3500 use archer3
+3500 use archer4
+3500 use archer5
+3500 use archer6
+3500 use archer7
+3525 release archer0
+3525 release archer1
+3525 release archer2
+3525 release archer3
+3525 release archer4
+3525 release archer5
+3525 release archer6
+3525 release archer7
+3540 use archer0
+3540 use archer1
+3540 use archer2
+3540 use archer3
+3540 use archer4
+3540 use archer5
+3540 use archer6
+3540 use archer7
+3565 release archer0
+3565 release archer1
+3565 release archer2
+3565 release archer3
+3565 release archer4
+3565 release archer5
+3565 release archer6
+3565 release archer7
+3580 use archer0
+3580 use archer1
+3580 use archer2
+3580 use archer3
+3580 use archer4
+3580 use archer5
+3580 use archer6
+3580 use archer7
+3605 release archer0
+3605 release archer1
+3605 release archer2
+3605 release archer3
+3605 release archer4
+3605 release archer5
+3605 release archer6
+3605 release archer7
+3620 cmd execute positioned 0 100 0 unless entity @e[type=minecraft:skeleton,distance=..24] run summon minecraft:skeleton 0 100 12 {PersistenceRequired:1b}
+3620 cmd execute positioned 0 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 0 100 6 {NoAI:1b,PersistenceRequired:1b}
+3620 use archer0
+3620 cmd execute positioned 96 100 0 unless entity @e[type=minecraft:stray,distance=..24] run summon minecraft:stray 96 100 12 {PersistenceRequired:1b}
+3620 cmd execute positioned 96 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 96 100 6 {NoAI:1b,PersistenceRequired:1b}
+3620 use archer1
+3620 cmd execute positioned 192 100 0 unless entity @e[type=minecraft:pillager,distance=..24] run summon minecraft:pillager 192 100 12 {PersistenceRequired:1b}
+3620 cmd execute positioned 192 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 192 100 6 {NoAI:1b,PersistenceRequired:1b}
+3620 use archer2
+3620 cmd execute positioned 288 100 0 unless entity @e[type=minecraft:blaze,distance=..24] run summon minecraft:blaze 288 100 12 {PersistenceRequired:1b}
+3620 cmd execute positioned 288 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 288 100 6 {NoAI:1b,PersistenceRequired:1b}
+3620 use archer3
+3620 cmd execute positioned 384 100 0 unless entity @e[type=minecraft:bogged,distance=..24] run summon minecraft:bogged 384 100 12 {PersistenceRequired:1b}
+3620 cmd execute positioned 384 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 384 100 6 {NoAI:1b,PersistenceRequired:1b}
+3620 use archer4
+3620 cmd execute positioned 480 100 0 unless entity @e[type=minecraft:piglin,distance=..24] run summon minecraft:piglin 480 100 12 {PersistenceRequired:1b}
+3620 cmd execute positioned 480 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 480 100 6 {NoAI:1b,PersistenceRequired:1b}
+3620 use archer5
+3620 cmd execute positioned 576 100 0 unless entity @e[type=minecraft:drowned,distance=..24] run summon minecraft:drowned 576 100 12 {PersistenceRequired:1b}
+3620 cmd execute positioned 576 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 576 100 6 {NoAI:1b,PersistenceRequired:1b}
+3620 use archer6
+3620 cmd execute positioned 672 100 0 unless entity @e[type=minecraft:breeze,distance=..24] run summon minecraft:breeze 672 100 12 {PersistenceRequired:1b}
+3620 cmd execute positioned 672 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 672 100 6 {NoAI:1b,PersistenceRequired:1b}
+3620 use archer7
+3645 release archer0
+3645 release archer1
+3645 release archer2
+3645 release archer3
+3645 release archer4
+3645 release archer5
+3645 release archer6
+3645 release archer7
+3660 use archer0
+3660 use archer1
+3660 use archer2
+3660 use archer3
+3660 use archer4
+3660 use archer5
+3660 use archer6
+3660 use archer7
+3685 release archer0
+3685 release archer1
+3685 release archer2
+3685 release archer3
+3685 release archer4
+3685 release archer5
+3685 release archer6
+3685 release archer7
+3700 use archer0
+3700 use archer1
+3700 use archer2
+3700 use archer3
+3700 use archer4
+3700 use archer5
+3700 use archer6
+3700 use archer7
+3725 release archer0
+3725 release archer1
+3725 release archer2
+3725 release archer3
+3725 release archer4
+3725 release archer5
+3725 release archer6
+3725 release archer7
+3740 use archer0
+3740 use archer1
+3740 use archer2
+3740 use archer3
+3740 use archer4
+3740 use archer5
+3740 use archer6
+3740 use archer7
+3765 release archer0
+3765 release archer1
+3765 release archer2
+3765 release archer3
+3765 release archer4
+3765 release archer5
+3765 release archer6
+3765 release archer7
+3780 use archer0
+3780 use archer1
+3780 use archer2
+3780 use archer3
+3780 use archer4
+3780 use archer5
+3780 use archer6
+3780 use archer7
+3805 release archer0
+3805 release archer1
+3805 release archer2
+3805 release archer3
+3805 release archer4
+3805 release archer5
+3805 release archer6
+3805 release archer7
+3820 use archer0
+3820 use archer1
+3820 use archer2
+3820 use archer3
+3820 use archer4
+3820 use archer5
+3820 use archer6
+3820 use archer7
+3845 release archer0
+3845 release archer1
+3845 release archer2
+3845 release archer3
+3845 release archer4
+3845 release archer5
+3845 release archer6
+3845 release archer7
+3860 use archer0
+3860 use archer1
+3860 use archer2
+3860 use archer3
+3860 use archer4
+3860 use archer5
+3860 use archer6
+3860 use archer7
+3885 release archer0
+3885 release archer1
+3885 release archer2
+3885 release archer3
+3885 release archer4
+3885 release archer5
+3885 release archer6
+3885 release archer7
+3900 use archer0
+3900 use archer1
+3900 use archer2
+3900 use archer3
+3900 use archer4
+3900 use archer5
+3900 use archer6
+3900 use archer7
+3925 release archer0
+3925 release archer1
+3925 release archer2
+3925 release archer3
+3925 release archer4
+3925 release archer5
+3925 release archer6
+3925 release archer7
+3940 use archer0
+3940 use archer1
+3940 use archer2
+3940 use archer3
+3940 use archer4
+3940 use archer5
+3940 use archer6
+3940 use archer7
+3965 release archer0
+3965 release archer1
+3965 release archer2
+3965 release archer3
+3965 release archer4
+3965 release archer5
+3965 release archer6
+3965 release archer7
+3980 use archer0
+3980 use archer1
+3980 use archer2
+3980 use archer3
+3980 use archer4
+3980 use archer5
+3980 use archer6
+3980 use archer7
+4005 release archer0
+4005 release archer1
+4005 release archer2
+4005 release archer3
+4005 release archer4
+4005 release archer5
+4005 release archer6
+4005 release archer7
+4020 cmd execute positioned 0 100 0 unless entity @e[type=minecraft:skeleton,distance=..24] run summon minecraft:skeleton 0 100 12 {PersistenceRequired:1b}
+4020 cmd execute positioned 0 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 0 100 6 {NoAI:1b,PersistenceRequired:1b}
+4020 use archer0
+4020 cmd execute positioned 96 100 0 unless entity @e[type=minecraft:stray,distance=..24] run summon minecraft:stray 96 100 12 {PersistenceRequired:1b}
+4020 cmd execute positioned 96 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 96 100 6 {NoAI:1b,PersistenceRequired:1b}
+4020 use archer1
+4020 cmd execute positioned 192 100 0 unless entity @e[type=minecraft:pillager,distance=..24] run summon minecraft:pillager 192 100 12 {PersistenceRequired:1b}
+4020 cmd execute positioned 192 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 192 100 6 {NoAI:1b,PersistenceRequired:1b}
+4020 use archer2
+4020 cmd execute positioned 288 100 0 unless entity @e[type=minecraft:blaze,distance=..24] run summon minecraft:blaze 288 100 12 {PersistenceRequired:1b}
+4020 cmd execute positioned 288 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 288 100 6 {NoAI:1b,PersistenceRequired:1b}
+4020 use archer3
+4020 cmd execute positioned 384 100 0 unless entity @e[type=minecraft:bogged,distance=..24] run summon minecraft:bogged 384 100 12 {PersistenceRequired:1b}
+4020 cmd execute positioned 384 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 384 100 6 {NoAI:1b,PersistenceRequired:1b}
+4020 use archer4
+4020 cmd execute positioned 480 100 0 unless entity @e[type=minecraft:piglin,distance=..24] run summon minecraft:piglin 480 100 12 {PersistenceRequired:1b}
+4020 cmd execute positioned 480 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 480 100 6 {NoAI:1b,PersistenceRequired:1b}
+4020 use archer5
+4020 cmd execute positioned 576 100 0 unless entity @e[type=minecraft:drowned,distance=..24] run summon minecraft:drowned 576 100 12 {PersistenceRequired:1b}
+4020 cmd execute positioned 576 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 576 100 6 {NoAI:1b,PersistenceRequired:1b}
+4020 use archer6
+4020 cmd execute positioned 672 100 0 unless entity @e[type=minecraft:breeze,distance=..24] run summon minecraft:breeze 672 100 12 {PersistenceRequired:1b}
+4020 cmd execute positioned 672 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 672 100 6 {NoAI:1b,PersistenceRequired:1b}
+4020 use archer7
+4045 release archer0
+4045 release archer1
+4045 release archer2
+4045 release archer3
+4045 release archer4
+4045 release archer5
+4045 release archer6
+4045 release archer7
+4060 use archer0
+4060 use archer1
+4060 use archer2
+4060 use archer3
+4060 use archer4
+4060 use archer5
+4060 use archer6
+4060 use archer7
+4085 release archer0
+4085 release archer1
+4085 release archer2
+4085 release archer3
+4085 release archer4
+4085 release archer5
+4085 release archer6
+4085 release archer7
+4100 use archer0
+4100 use archer1
+4100 use archer2
+4100 use archer3
+4100 use archer4
+4100 use archer5
+4100 use archer6
+4100 use archer7
+4125 release archer0
+4125 release archer1
+4125 release archer2
+4125 release archer3
+4125 release archer4
+4125 release archer5
+4125 release archer6
+4125 release archer7
+4140 use archer0
+4140 use archer1
+4140 use archer2
+4140 use archer3
+4140 use archer4
+4140 use archer5
+4140 use archer6
+4140 use archer7
+4165 release archer0
+4165 release archer1
+4165 release archer2
+4165 release archer3
+4165 release archer4
+4165 release archer5
+4165 release archer6
+4165 release archer7
+4180 use archer0
+4180 use archer1
+4180 use archer2
+4180 use archer3
+4180 use archer4
+4180 use archer5
+4180 use archer6
+4180 use archer7
+4205 release archer0
+4205 release archer1
+4205 release archer2
+4205 release archer3
+4205 release archer4
+4205 release archer5
+4205 release archer6
+4205 release archer7
+4220 use archer0
+4220 use archer1
+4220 use archer2
+4220 use archer3
+4220 use archer4
+4220 use archer5
+4220 use archer6
+4220 use archer7
+4245 release archer0
+4245 release archer1
+4245 release archer2
+4245 release archer3
+4245 release archer4
+4245 release archer5
+4245 release archer6
+4245 release archer7
+4260 use archer0
+4260 use archer1
+4260 use archer2
+4260 use archer3
+4260 use archer4
+4260 use archer5
+4260 use archer6
+4260 use archer7
+4285 release archer0
+4285 release archer1
+4285 release archer2
+4285 release archer3
+4285 release archer4
+4285 release archer5
+4285 release archer6
+4285 release archer7
+4300 use archer0
+4300 use archer1
+4300 use archer2
+4300 use archer3
+4300 use archer4
+4300 use archer5
+4300 use archer6
+4300 use archer7
+4325 release archer0
+4325 release archer1
+4325 release archer2
+4325 release archer3
+4325 release archer4
+4325 release archer5
+4325 release archer6
+4325 release archer7
+4340 use archer0
+4340 use archer1
+4340 use archer2
+4340 use archer3
+4340 use archer4
+4340 use archer5
+4340 use archer6
+4340 use archer7
+4365 release archer0
+4365 release archer1
+4365 release archer2
+4365 release archer3
+4365 release archer4
+4365 release archer5
+4365 release archer6
+4365 release archer7
+4380 use archer0
+4380 use archer1
+4380 use archer2
+4380 use archer3
+4380 use archer4
+4380 use archer5
+4380 use archer6
+4380 use archer7
+4405 release archer0
+4405 release archer1
+4405 release archer2
+4405 release archer3
+4405 release archer4
+4405 release archer5
+4405 release archer6
+4405 release archer7
+4420 cmd execute positioned 0 100 0 unless entity @e[type=minecraft:skeleton,distance=..24] run summon minecraft:skeleton 0 100 12 {PersistenceRequired:1b}
+4420 cmd execute positioned 0 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 0 100 6 {NoAI:1b,PersistenceRequired:1b}
+4420 use archer0
+4420 cmd execute positioned 96 100 0 unless entity @e[type=minecraft:stray,distance=..24] run summon minecraft:stray 96 100 12 {PersistenceRequired:1b}
+4420 cmd execute positioned 96 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 96 100 6 {NoAI:1b,PersistenceRequired:1b}
+4420 use archer1
+4420 cmd execute positioned 192 100 0 unless entity @e[type=minecraft:pillager,distance=..24] run summon minecraft:pillager 192 100 12 {PersistenceRequired:1b}
+4420 cmd execute positioned 192 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 192 100 6 {NoAI:1b,PersistenceRequired:1b}
+4420 use archer2
+4420 cmd execute positioned 288 100 0 unless entity @e[type=minecraft:blaze,distance=..24] run summon minecraft:blaze 288 100 12 {PersistenceRequired:1b}
+4420 cmd execute positioned 288 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 288 100 6 {NoAI:1b,PersistenceRequired:1b}
+4420 use archer3
+4420 cmd execute positioned 384 100 0 unless entity @e[type=minecraft:bogged,distance=..24] run summon minecraft:bogged 384 100 12 {PersistenceRequired:1b}
+4420 cmd execute positioned 384 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 384 100 6 {NoAI:1b,PersistenceRequired:1b}
+4420 use archer4
+4420 cmd execute positioned 480 100 0 unless entity @e[type=minecraft:piglin,distance=..24] run summon minecraft:piglin 480 100 12 {PersistenceRequired:1b}
+4420 cmd execute positioned 480 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 480 100 6 {NoAI:1b,PersistenceRequired:1b}
+4420 use archer5
+4420 cmd execute positioned 576 100 0 unless entity @e[type=minecraft:drowned,distance=..24] run summon minecraft:drowned 576 100 12 {PersistenceRequired:1b}
+4420 cmd execute positioned 576 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 576 100 6 {NoAI:1b,PersistenceRequired:1b}
+4420 use archer6
+4420 cmd execute positioned 672 100 0 unless entity @e[type=minecraft:breeze,distance=..24] run summon minecraft:breeze 672 100 12 {PersistenceRequired:1b}
+4420 cmd execute positioned 672 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 672 100 6 {NoAI:1b,PersistenceRequired:1b}
+4420 use archer7
+4445 release archer0
+4445 release archer1
+4445 release archer2
+4445 release archer3
+4445 release archer4
+4445 release archer5
+4445 release archer6
+4445 release archer7
+4460 use archer0
+4460 use archer1
+4460 use archer2
+4460 use archer3
+4460 use archer4
+4460 use archer5
+4460 use archer6
+4460 use archer7
+4485 release archer0
+4485 release archer1
+4485 release archer2
+4485 release archer3
+4485 release archer4
+4485 release archer5
+4485 release archer6
+4485 release archer7
+4500 use archer0
+4500 use archer1
+4500 use archer2
+4500 use archer3
+4500 use archer4
+4500 use archer5
+4500 use archer6
+4500 use archer7
+4525 release archer0
+4525 release archer1
+4525 release archer2
+4525 release archer3
+4525 release archer4
+4525 release archer5
+4525 release archer6
+4525 release archer7
+4540 use archer0
+4540 use archer1
+4540 use archer2
+4540 use archer3
+4540 use archer4
+4540 use archer5
+4540 use archer6
+4540 use archer7
+4565 release archer0
+4565 release archer1
+4565 release archer2
+4565 release archer3
+4565 release archer4
+4565 release archer5
+4565 release archer6
+4565 release archer7
+4580 use archer0
+4580 use archer1
+4580 use archer2
+4580 use archer3
+4580 use archer4
+4580 use archer5
+4580 use archer6
+4580 use archer7
+4605 release archer0
+4605 release archer1
+4605 release archer2
+4605 release archer3
+4605 release archer4
+4605 release archer5
+4605 release archer6
+4605 release archer7
+4620 use archer0
+4620 use archer1
+4620 use archer2
+4620 use archer3
+4620 use archer4
+4620 use archer5
+4620 use archer6
+4620 use archer7
+4645 release archer0
+4645 release archer1
+4645 release archer2
+4645 release archer3
+4645 release archer4
+4645 release archer5
+4645 release archer6
+4645 release archer7
+4660 use archer0
+4660 use archer1
+4660 use archer2
+4660 use archer3
+4660 use archer4
+4660 use archer5
+4660 use archer6
+4660 use archer7
+4685 release archer0
+4685 release archer1
+4685 release archer2
+4685 release archer3
+4685 release archer4
+4685 release archer5
+4685 release archer6
+4685 release archer7
+4700 use archer0
+4700 use archer1
+4700 use archer2
+4700 use archer3
+4700 use archer4
+4700 use archer5
+4700 use archer6
+4700 use archer7
+4725 release archer0
+4725 release archer1
+4725 release archer2
+4725 release archer3
+4725 release archer4
+4725 release archer5
+4725 release archer6
+4725 release archer7
+4740 use archer0
+4740 use archer1
+4740 use archer2
+4740 use archer3
+4740 use archer4
+4740 use archer5
+4740 use archer6
+4740 use archer7
+4765 release archer0
+4765 release archer1
+4765 release archer2
+4765 release archer3
+4765 release archer4
+4765 release archer5
+4765 release archer6
+4765 release archer7
+4780 use archer0
+4780 use archer1
+4780 use archer2
+4780 use archer3
+4780 use archer4
+4780 use archer5
+4780 use archer6
+4780 use archer7
+4805 release archer0
+4805 release archer1
+4805 release archer2
+4805 release archer3
+4805 release archer4
+4805 release archer5
+4805 release archer6
+4805 release archer7
+4820 cmd execute positioned 0 100 0 unless entity @e[type=minecraft:skeleton,distance=..24] run summon minecraft:skeleton 0 100 12 {PersistenceRequired:1b}
+4820 cmd execute positioned 0 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 0 100 6 {NoAI:1b,PersistenceRequired:1b}
+4820 use archer0
+4820 cmd execute positioned 96 100 0 unless entity @e[type=minecraft:stray,distance=..24] run summon minecraft:stray 96 100 12 {PersistenceRequired:1b}
+4820 cmd execute positioned 96 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 96 100 6 {NoAI:1b,PersistenceRequired:1b}
+4820 use archer1
+4820 cmd execute positioned 192 100 0 unless entity @e[type=minecraft:pillager,distance=..24] run summon minecraft:pillager 192 100 12 {PersistenceRequired:1b}
+4820 cmd execute positioned 192 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 192 100 6 {NoAI:1b,PersistenceRequired:1b}
+4820 use archer2
+4820 cmd execute positioned 288 100 0 unless entity @e[type=minecraft:blaze,distance=..24] run summon minecraft:blaze 288 100 12 {PersistenceRequired:1b}
+4820 cmd execute positioned 288 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 288 100 6 {NoAI:1b,PersistenceRequired:1b}
+4820 use archer3
+4820 cmd execute positioned 384 100 0 unless entity @e[type=minecraft:bogged,distance=..24] run summon minecraft:bogged 384 100 12 {PersistenceRequired:1b}
+4820 cmd execute positioned 384 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 384 100 6 {NoAI:1b,PersistenceRequired:1b}
+4820 use archer4
+4820 cmd execute positioned 480 100 0 unless entity @e[type=minecraft:piglin,distance=..24] run summon minecraft:piglin 480 100 12 {PersistenceRequired:1b}
+4820 cmd execute positioned 480 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 480 100 6 {NoAI:1b,PersistenceRequired:1b}
+4820 use archer5
+4820 cmd execute positioned 576 100 0 unless entity @e[type=minecraft:drowned,distance=..24] run summon minecraft:drowned 576 100 12 {PersistenceRequired:1b}
+4820 cmd execute positioned 576 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 576 100 6 {NoAI:1b,PersistenceRequired:1b}
+4820 use archer6
+4820 cmd execute positioned 672 100 0 unless entity @e[type=minecraft:breeze,distance=..24] run summon minecraft:breeze 672 100 12 {PersistenceRequired:1b}
+4820 cmd execute positioned 672 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 672 100 6 {NoAI:1b,PersistenceRequired:1b}
+4820 use archer7
+4845 release archer0
+4845 release archer1
+4845 release archer2
+4845 release archer3
+4845 release archer4
+4845 release archer5
+4845 release archer6
+4845 release archer7
+4860 use archer0
+4860 use archer1
+4860 use archer2
+4860 use archer3
+4860 use archer4
+4860 use archer5
+4860 use archer6
+4860 use archer7
+4885 release archer0
+4885 release archer1
+4885 release archer2
+4885 release archer3
+4885 release archer4
+4885 release archer5
+4885 release archer6
+4885 release archer7
+4900 use archer0
+4900 use archer1
+4900 use archer2
+4900 use archer3
+4900 use archer4
+4900 use archer5
+4900 use archer6
+4900 use archer7
+4925 release archer0
+4925 release archer1
+4925 release archer2
+4925 release archer3
+4925 release archer4
+4925 release archer5
+4925 release archer6
+4925 release archer7
+4940 use archer0
+4940 use archer1
+4940 use archer2
+4940 use archer3
+4940 use archer4
+4940 use archer5
+4940 use archer6
+4940 use archer7
+4965 release archer0
+4965 release archer1
+4965 release archer2
+4965 release archer3
+4965 release archer4
+4965 release archer5
+4965 release archer6
+4965 release archer7
+4980 use archer0
+4980 use archer1
+4980 use archer2
+4980 use archer3
+4980 use archer4
+4980 use archer5
+4980 use archer6
+4980 use archer7
+5005 release archer0
+5005 release archer1
+5005 release archer2
+5005 release archer3
+5005 release archer4
+5005 release archer5
+5005 release archer6
+5005 release archer7
+5020 use archer0
+5020 use archer1
+5020 use archer2
+5020 use archer3
+5020 use archer4
+5020 use archer5
+5020 use archer6
+5020 use archer7
+5045 release archer0
+5045 release archer1
+5045 release archer2
+5045 release archer3
+5045 release archer4
+5045 release archer5
+5045 release archer6
+5045 release archer7
+5060 use archer0
+5060 use archer1
+5060 use archer2
+5060 use archer3
+5060 use archer4
+5060 use archer5
+5060 use archer6
+5060 use archer7
+5085 release archer0
+5085 release archer1
+5085 release archer2
+5085 release archer3
+5085 release archer4
+5085 release archer5
+5085 release archer6
+5085 release archer7
+5100 use archer0
+5100 use archer1
+5100 use archer2
+5100 use archer3
+5100 use archer4
+5100 use archer5
+5100 use archer6
+5100 use archer7
+5125 release archer0
+5125 release archer1
+5125 release archer2
+5125 release archer3
+5125 release archer4
+5125 release archer5
+5125 release archer6
+5125 release archer7
+5140 use archer0
+5140 use archer1
+5140 use archer2
+5140 use archer3
+5140 use archer4
+5140 use archer5
+5140 use archer6
+5140 use archer7
+5165 release archer0
+5165 release archer1
+5165 release archer2
+5165 release archer3
+5165 release archer4
+5165 release archer5
+5165 release archer6
+5165 release archer7
+5180 use archer0
+5180 use archer1
+5180 use archer2
+5180 use archer3
+5180 use archer4
+5180 use archer5
+5180 use archer6
+5180 use archer7
+5205 release archer0
+5205 release archer1
+5205 release archer2
+5205 release archer3
+5205 release archer4
+5205 release archer5
+5205 release archer6
+5205 release archer7
+5220 cmd execute positioned 0 100 0 unless entity @e[type=minecraft:skeleton,distance=..24] run summon minecraft:skeleton 0 100 12 {PersistenceRequired:1b}
+5220 cmd execute positioned 0 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 0 100 6 {NoAI:1b,PersistenceRequired:1b}
+5220 use archer0
+5220 cmd execute positioned 96 100 0 unless entity @e[type=minecraft:stray,distance=..24] run summon minecraft:stray 96 100 12 {PersistenceRequired:1b}
+5220 cmd execute positioned 96 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 96 100 6 {NoAI:1b,PersistenceRequired:1b}
+5220 use archer1
+5220 cmd execute positioned 192 100 0 unless entity @e[type=minecraft:pillager,distance=..24] run summon minecraft:pillager 192 100 12 {PersistenceRequired:1b}
+5220 cmd execute positioned 192 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 192 100 6 {NoAI:1b,PersistenceRequired:1b}
+5220 use archer2
+5220 cmd execute positioned 288 100 0 unless entity @e[type=minecraft:blaze,distance=..24] run summon minecraft:blaze 288 100 12 {PersistenceRequired:1b}
+5220 cmd execute positioned 288 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 288 100 6 {NoAI:1b,PersistenceRequired:1b}
+5220 use archer3
+5220 cmd execute positioned 384 100 0 unless entity @e[type=minecraft:bogged,distance=..24] run summon minecraft:bogged 384 100 12 {PersistenceRequired:1b}
+5220 cmd execute positioned 384 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 384 100 6 {NoAI:1b,PersistenceRequired:1b}
+5220 use archer4
+5220 cmd execute positioned 480 100 0 unless entity @e[type=minecraft:piglin,distance=..24] run summon minecraft:piglin 480 100 12 {PersistenceRequired:1b}
+5220 cmd execute positioned 480 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 480 100 6 {NoAI:1b,PersistenceRequired:1b}
+5220 use archer5
+5220 cmd execute positioned 576 100 0 unless entity @e[type=minecraft:drowned,distance=..24] run summon minecraft:drowned 576 100 12 {PersistenceRequired:1b}
+5220 cmd execute positioned 576 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 576 100 6 {NoAI:1b,PersistenceRequired:1b}
+5220 use archer6
+5220 cmd execute positioned 672 100 0 unless entity @e[type=minecraft:breeze,distance=..24] run summon minecraft:breeze 672 100 12 {PersistenceRequired:1b}
+5220 cmd execute positioned 672 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 672 100 6 {NoAI:1b,PersistenceRequired:1b}
+5220 use archer7
+5245 release archer0
+5245 release archer1
+5245 release archer2
+5245 release archer3
+5245 release archer4
+5245 release archer5
+5245 release archer6
+5245 release archer7
+5260 use archer0
+5260 use archer1
+5260 use archer2
+5260 use archer3
+5260 use archer4
+5260 use archer5
+5260 use archer6
+5260 use archer7
+5285 release archer0
+5285 release archer1
+5285 release archer2
+5285 release archer3
+5285 release archer4
+5285 release archer5
+5285 release archer6
+5285 release archer7
+5300 use archer0
+5300 use archer1
+5300 use archer2
+5300 use archer3
+5300 use archer4
+5300 use archer5
+5300 use archer6
+5300 use archer7
+5325 release archer0
+5325 release archer1
+5325 release archer2
+5325 release archer3
+5325 release archer4
+5325 release archer5
+5325 release archer6
+5325 release archer7
+5340 use archer0
+5340 use archer1
+5340 use archer2
+5340 use archer3
+5340 use archer4
+5340 use archer5
+5340 use archer6
+5340 use archer7
+5365 release archer0
+5365 release archer1
+5365 release archer2
+5365 release archer3
+5365 release archer4
+5365 release archer5
+5365 release archer6
+5365 release archer7
+5380 use archer0
+5380 use archer1
+5380 use archer2
+5380 use archer3
+5380 use archer4
+5380 use archer5
+5380 use archer6
+5380 use archer7
+5405 release archer0
+5405 release archer1
+5405 release archer2
+5405 release archer3
+5405 release archer4
+5405 release archer5
+5405 release archer6
+5405 release archer7
+5420 use archer0
+5420 use archer1
+5420 use archer2
+5420 use archer3
+5420 use archer4
+5420 use archer5
+5420 use archer6
+5420 use archer7
+5445 release archer0
+5445 release archer1
+5445 release archer2
+5445 release archer3
+5445 release archer4
+5445 release archer5
+5445 release archer6
+5445 release archer7
+5460 use archer0
+5460 use archer1
+5460 use archer2
+5460 use archer3
+5460 use archer4
+5460 use archer5
+5460 use archer6
+5460 use archer7
+5485 release archer0
+5485 release archer1
+5485 release archer2
+5485 release archer3
+5485 release archer4
+5485 release archer5
+5485 release archer6
+5485 release archer7
+5500 use archer0
+5500 use archer1
+5500 use archer2
+5500 use archer3
+5500 use archer4
+5500 use archer5
+5500 use archer6
+5500 use archer7
+5525 release archer0
+5525 release archer1
+5525 release archer2
+5525 release archer3
+5525 release archer4
+5525 release archer5
+5525 release archer6
+5525 release archer7
+5540 use archer0
+5540 use archer1
+5540 use archer2
+5540 use archer3
+5540 use archer4
+5540 use archer5
+5540 use archer6
+5540 use archer7
+5565 release archer0
+5565 release archer1
+5565 release archer2
+5565 release archer3
+5565 release archer4
+5565 release archer5
+5565 release archer6
+5565 release archer7
+5580 use archer0
+5580 use archer1
+5580 use archer2
+5580 use archer3
+5580 use archer4
+5580 use archer5
+5580 use archer6
+5580 use archer7
+5605 release archer0
+5605 release archer1
+5605 release archer2
+5605 release archer3
+5605 release archer4
+5605 release archer5
+5605 release archer6
+5605 release archer7
+5620 cmd execute positioned 0 100 0 unless entity @e[type=minecraft:skeleton,distance=..24] run summon minecraft:skeleton 0 100 12 {PersistenceRequired:1b}
+5620 cmd execute positioned 0 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 0 100 6 {NoAI:1b,PersistenceRequired:1b}
+5620 use archer0
+5620 cmd execute positioned 96 100 0 unless entity @e[type=minecraft:stray,distance=..24] run summon minecraft:stray 96 100 12 {PersistenceRequired:1b}
+5620 cmd execute positioned 96 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 96 100 6 {NoAI:1b,PersistenceRequired:1b}
+5620 use archer1
+5620 cmd execute positioned 192 100 0 unless entity @e[type=minecraft:pillager,distance=..24] run summon minecraft:pillager 192 100 12 {PersistenceRequired:1b}
+5620 cmd execute positioned 192 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 192 100 6 {NoAI:1b,PersistenceRequired:1b}
+5620 use archer2
+5620 cmd execute positioned 288 100 0 unless entity @e[type=minecraft:blaze,distance=..24] run summon minecraft:blaze 288 100 12 {PersistenceRequired:1b}
+5620 cmd execute positioned 288 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 288 100 6 {NoAI:1b,PersistenceRequired:1b}
+5620 use archer3
+5620 cmd execute positioned 384 100 0 unless entity @e[type=minecraft:bogged,distance=..24] run summon minecraft:bogged 384 100 12 {PersistenceRequired:1b}
+5620 cmd execute positioned 384 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 384 100 6 {NoAI:1b,PersistenceRequired:1b}
+5620 use archer4
+5620 cmd execute positioned 480 100 0 unless entity @e[type=minecraft:piglin,distance=..24] run summon minecraft:piglin 480 100 12 {PersistenceRequired:1b}
+5620 cmd execute positioned 480 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 480 100 6 {NoAI:1b,PersistenceRequired:1b}
+5620 use archer5
+5620 cmd execute positioned 576 100 0 unless entity @e[type=minecraft:drowned,distance=..24] run summon minecraft:drowned 576 100 12 {PersistenceRequired:1b}
+5620 cmd execute positioned 576 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 576 100 6 {NoAI:1b,PersistenceRequired:1b}
+5620 use archer6
+5620 cmd execute positioned 672 100 0 unless entity @e[type=minecraft:breeze,distance=..24] run summon minecraft:breeze 672 100 12 {PersistenceRequired:1b}
+5620 cmd execute positioned 672 100 0 unless entity @e[type=minecraft:husk,distance=..24] run summon minecraft:husk 672 100 6 {NoAI:1b,PersistenceRequired:1b}
+5620 use archer7
+5645 release archer0
+5645 release archer1
+5645 release archer2
+5645 release archer3
+5645 release archer4
+5645 release archer5
+5645 release archer6
+5645 release archer7
+5660 use archer0
+5660 use archer1
+5660 use archer2
+5660 use archer3
+5660 use archer4
+5660 use archer5
+5660 use archer6
+5660 use archer7
+5685 release archer0
+5685 release archer1
+5685 release archer2
+5685 release archer3
+5685 release archer4
+5685 release archer5
+5685 release archer6
+5685 release archer7
+5700 use archer0
+5700 use archer1
+5700 use archer2
+5700 use archer3
+5700 use archer4
+5700 use archer5
+5700 use archer6
+5700 use archer7
+5725 release archer0
+5725 release archer1
+5725 release archer2
+5725 release archer3
+5725 release archer4
+5725 release archer5
+5725 release archer6
+5725 release archer7
+5740 use archer0
+5740 use archer1
+5740 use archer2
+5740 use archer3
+5740 use archer4
+5740 use archer5
+5740 use archer6
+5740 use archer7
+5765 release archer0
+5765 release archer1
+5765 release archer2
+5765 release archer3
+5765 release archer4
+5765 release archer5
+5765 release archer6
+5765 release archer7
+5780 use archer0
+5780 use archer1
+5780 use archer2
+5780 use archer3
+5780 use archer4
+5780 use archer5
+5780 use archer6
+5780 use archer7
+5805 release archer0
+5805 release archer1
+5805 release archer2
+5805 release archer3
+5805 release archer4
+5805 release archer5
+5805 release archer6
+5805 release archer7
+5820 use archer0
+5820 use archer1
+5820 use archer2
+5820 use archer3
+5820 use archer4
+5820 use archer5
+5820 use archer6
+5820 use archer7
+5845 release archer0
+5845 release archer1
+5845 release archer2
+5845 release archer3
+5845 release archer4
+5845 release archer5
+5845 release archer6
+5845 release archer7
+5860 use archer0
+5860 use archer1
+5860 use archer2
+5860 use archer3
+5860 use archer4
+5860 use archer5
+5860 use archer6
+5860 use archer7
+5885 release archer0
+5885 release archer1
+5885 release archer2
+5885 release archer3
+5885 release archer4
+5885 release archer5
+5885 release archer6
+5885 release archer7
+5900 use archer0
+5900 use archer1
+5900 use archer2
+5900 use archer3
+5900 use archer4
+5900 use archer5
+5900 use archer6
+5900 use archer7
+5925 release archer0
+5925 release archer1
+5925 release archer2
+5925 release archer3
+5925 release archer4
+5925 release archer5
+5925 release archer6
+5925 release archer7
+5940 use archer0
+5940 use archer1
+5940 use archer2
+5940 use archer3
+5940 use archer4
+5940 use archer5
+5940 use archer6
+5940 use archer7
+5965 release archer0
+5965 release archer1
+5965 release archer2
+5965 release archer3
+5965 release archer4
+5965 release archer5
+5965 release archer6
+5965 release archer7
+6000 stop

@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
 """Run one headless Minecraft server with the atlas agent and a scripted command scenario.
 
-Scenario file: one server command per line. Directives:
+Scenario file (.txt): one server command per line, sent on the console. Directives:
     #sleep SECONDS       pause (lets ticks run)
     #await TEXT          wait until TEXT appears in the server log
     # anything else      comment
 The server is stopped with `stop` at the end so the agent flushes its logs.
+
+Driver script (.drv): timed fake-player actions run on the server thread by atlas.hook.Driver
+("TICK action args", see Driver.java). The script ends with a `stop` action; nothing is sent on the console.
 
     run_scenario.py --scenario scenarios/smoke.txt --seed 42 --out runs/smoke-42
 """
@@ -56,7 +59,8 @@ def main():
         *([f"-XX:ActiveProcessorCount={a.cpus}"] if a.cpus else []),
         f"-javaagent:{ROOT}/agent/build/atlas-agent.jar={ROOT}/agent/build/atlas-hook.jar",
         f"-Datlas.out={out / 'atlas'}",
-        f"-Datlas.rngTypes={RNG_TYPES}",
+        f"-Datlas.rngTypes={RNG_TYPES}", *os.environ.get("ATLAS_JVM_EXTRA", "").split(),
+        *([f"-Datlas.driver={Path(a.scenario).resolve()}"] if a.scenario.endswith(".drv") else []),
         "-jar", a.jar, "nogui",
     ]
     log = open(out / "server.log", "w")
@@ -87,7 +91,8 @@ def main():
 
     t0 = time.time()
     await_text("Done (")
-    for raw in Path(a.scenario).read_text().splitlines():
+    driver = a.scenario.endswith(".drv")
+    for raw in ([] if driver else Path(a.scenario).read_text().splitlines()):
         line = raw.strip()
         if not line:
             continue
@@ -99,8 +104,13 @@ def main():
             continue
         else:
             send(line)
-    send("stop")
-    p.wait(timeout=max(60, deadline - time.time()))
+    if not driver:
+        send("stop")
+    try:
+        p.wait(timeout=max(60, deadline - time.time()))
+    except subprocess.TimeoutExpired:
+        send("stop")
+        p.wait(timeout=120)
     meta = (out / "atlas" / "meta.txt")
     print(f"{out.name}: exit={p.returncode} in {time.time()-t0:.1f}s; " + (meta.read_text().replace("\n", " ") if meta.exists() else "no atlas meta"))
     sys.exit(p.returncode)

@@ -1,0 +1,5641 @@
+1 cmd gamerule spawn_mobs false
+1 cmd gamerule advance_time false
+1 cmd gamerule advance_weather false
+2 cmd tick sprint 6100
+3 cmd forceload add -32 -32 31 31
+3 cmd forceload add 64 -32 127 31
+3 cmd forceload add 160 -32 223 31
+3 cmd forceload add 256 -32 319 31
+3 cmd forceload add 352 -32 415 31
+3 cmd forceload add 448 -32 511 31
+3 cmd forceload add 544 -32 607 31
+3 cmd forceload add 640 -32 703 31
+4 cmd fill -14 99 -14 14 99 14 minecraft:stone
+4 cmd fill -14 100 -14 14 104 14 minecraft:air
+4 cmd fill 82 99 -14 110 99 14 minecraft:stone
+4 cmd fill 82 100 -14 110 104 14 minecraft:air
+4 cmd fill 178 99 -14 206 99 14 minecraft:stone
+4 cmd fill 178 100 -14 206 104 14 minecraft:air
+4 cmd fill 274 99 -14 302 99 14 minecraft:stone
+4 cmd fill 274 100 -14 302 104 14 minecraft:air
+4 cmd fill 370 99 -14 398 99 14 minecraft:stone
+4 cmd fill 370 100 -14 398 104 14 minecraft:air
+4 cmd fill 466 99 -14 494 99 14 minecraft:stone
+4 cmd fill 466 100 -14 494 104 14 minecraft:air
+4 cmd fill 562 99 -14 590 99 14 minecraft:stone
+4 cmd fill 562 100 -14 590 104 14 minecraft:air
+4 cmd fill 658 99 -14 686 99 14 minecraft:stone
+4 cmd fill 658 100 -14 686 104 14 minecraft:air
+6 player trial0 0.5 100 0.5
+6 player trial1 96.5 100 0.5
+6 player trial2 192.5 100 0.5
+6 player trial3 288.5 100 0.5
+6 player trial4 384.5 100 0.5
+6 player trial5 480.5 100 0.5
+6 player trial6 576.5 100 0.5
+6 player trial7 672.5 100 0.5
+8 cmd effect give trial0 minecraft:resistance infinite 4 true
+8 cmd effect give trial0 minecraft:regeneration infinite 4 true
+8 cmd effect give trial0 minecraft:saturation infinite 0 true
+8 cmd effect give trial1 minecraft:resistance infinite 4 true
+8 cmd effect give trial1 minecraft:regeneration infinite 4 true
+8 cmd effect give trial1 minecraft:saturation infinite 0 true
+8 cmd effect give trial2 minecraft:resistance infinite 4 true
+8 cmd effect give trial2 minecraft:regeneration infinite 4 true
+8 cmd effect give trial2 minecraft:saturation infinite 0 true
+8 cmd effect give trial3 minecraft:resistance infinite 4 true
+8 cmd effect give trial3 minecraft:regeneration infinite 4 true
+8 cmd effect give trial3 minecraft:saturation infinite 0 true
+8 cmd effect give trial4 minecraft:resistance infinite 4 true
+8 cmd effect give trial4 minecraft:regeneration infinite 4 true
+8 cmd effect give trial4 minecraft:saturation infinite 0 true
+8 cmd effect give trial5 minecraft:resistance infinite 4 true
+8 cmd effect give trial5 minecraft:regeneration infinite 4 true
+8 cmd effect give trial5 minecraft:saturation infinite 0 true
+8 cmd effect give trial6 minecraft:resistance infinite 4 true
+8 cmd effect give trial6 minecraft:regeneration infinite 4 true
+8 cmd effect give trial6 minecraft:saturation infinite 0 true
+8 cmd effect give trial7 minecraft:resistance infinite 4 true
+8 cmd effect give trial7 minecraft:regeneration infinite 4 true
+8 cmd effect give trial7 minecraft:saturation infinite 0 true
+9 cmd setblock 0 100 4 minecraft:trial_spawner[ominous=false]{normal_config:"minecraft:trial_chamber/melee/zombie/normal",ominous_config:"minecraft:trial_chamber/melee/zombie/ominous"}
+9 cmd setblock 4 100 0 minecraft:vault[ominous=false]
+9 cmd setblock 96 100 4 minecraft:trial_spawner[ominous=false]{normal_config:"minecraft:trial_chamber/melee/husk/normal",ominous_config:"minecraft:trial_chamber/melee/husk/ominous"}
+9 cmd setblock 100 100 0 minecraft:vault[ominous=false]
+9 cmd setblock 192 100 4 minecraft:trial_spawner[ominous=false]{normal_config:"minecraft:trial_chamber/ranged/skeleton/normal",ominous_config:"minecraft:trial_chamber/ranged/skeleton/ominous"}
+9 cmd setblock 196 100 0 minecraft:vault[ominous=false]
+9 cmd setblock 288 100 4 minecraft:trial_spawner[ominous=false]{normal_config:"minecraft:trial_chamber/small_melee/baby_zombie/normal",ominous_config:"minecraft:trial_chamber/small_melee/baby_zombie/ominous"}
+9 cmd setblock 292 100 0 minecraft:vault[ominous=false]
+9 cmd setblock 384 100 4 minecraft:trial_spawner[ominous=true]{normal_config:"minecraft:trial_chamber/breeze/normal",ominous_config:"minecraft:trial_chamber/breeze/ominous"}
+9 cmd setblock 388 100 0 minecraft:vault[ominous=true]
+9 cmd setblock 480 100 4 minecraft:trial_spawner[ominous=true]{normal_config:"minecraft:trial_chamber/melee/spider/normal",ominous_config:"minecraft:trial_chamber/melee/spider/ominous"}
+9 cmd setblock 484 100 0 minecraft:vault[ominous=true]
+9 cmd setblock 576 100 4 minecraft:trial_spawner[ominous=true]{normal_config:"minecraft:trial_chamber/ranged/stray/normal",ominous_config:"minecraft:trial_chamber/ranged/stray/ominous"}
+9 cmd setblock 580 100 0 minecraft:vault[ominous=true]
+9 cmd setblock 672 100 4 minecraft:trial_spawner[ominous=true]{normal_config:"minecraft:trial_chamber/small_melee/slime/normal",ominous_config:"minecraft:trial_chamber/small_melee/slime/ominous"}
+9 cmd setblock 676 100 0 minecraft:vault[ominous=true]
+10 cmd item replace entity trial0 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+10 cmd item replace entity trial1 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+10 cmd item replace entity trial2 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+10 cmd item replace entity trial3 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+10 cmd item replace entity trial4 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+10 cmd effect give trial4 minecraft:trial_omen 6000 0
+10 cmd item replace entity trial5 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+10 cmd effect give trial5 minecraft:trial_omen 6000 0
+10 cmd item replace entity trial6 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+10 cmd effect give trial6 minecraft:trial_omen 6000 0
+10 cmd item replace entity trial7 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+10 cmd effect give trial7 minecraft:trial_omen 6000 0
+40 attack trial0 8
+40 attack trial1 8
+40 attack trial2 8
+40 attack trial3 8
+40 attack trial4 8
+40 attack trial5 8
+40 attack trial6 8
+40 attack trial7 8
+50 attack trial0 8
+50 attack trial1 8
+50 attack trial2 8
+50 attack trial3 8
+50 attack trial4 8
+50 attack trial5 8
+50 attack trial6 8
+50 attack trial7 8
+60 attack trial0 8
+60 cmd item replace entity trial0 weapon.mainhand with minecraft:trial_key
+60 attack trial1 8
+60 cmd item replace entity trial1 weapon.mainhand with minecraft:trial_key
+60 attack trial2 8
+60 cmd item replace entity trial2 weapon.mainhand with minecraft:trial_key
+60 attack trial3 8
+60 cmd item replace entity trial3 weapon.mainhand with minecraft:trial_key
+60 attack trial4 8
+60 cmd item replace entity trial4 weapon.mainhand with minecraft:ominous_trial_key
+60 attack trial5 8
+60 cmd item replace entity trial5 weapon.mainhand with minecraft:ominous_trial_key
+60 attack trial6 8
+60 cmd item replace entity trial6 weapon.mainhand with minecraft:ominous_trial_key
+60 attack trial7 8
+60 cmd item replace entity trial7 weapon.mainhand with minecraft:ominous_trial_key
+61 useon trial0 4 100 0
+61 useon trial1 100 100 0
+61 useon trial2 196 100 0
+61 useon trial3 292 100 0
+61 useon trial4 388 100 0
+61 useon trial5 484 100 0
+61 useon trial6 580 100 0
+61 useon trial7 676 100 0
+62 cmd item replace entity trial0 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+62 cmd item replace entity trial1 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+62 cmd item replace entity trial2 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+62 cmd item replace entity trial3 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+62 cmd item replace entity trial4 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+62 cmd item replace entity trial5 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+62 cmd item replace entity trial6 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+62 cmd item replace entity trial7 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+70 attack trial0 8
+70 attack trial1 8
+70 attack trial2 8
+70 attack trial3 8
+70 attack trial4 8
+70 attack trial5 8
+70 attack trial6 8
+70 attack trial7 8
+80 attack trial0 8
+80 attack trial1 8
+80 attack trial2 8
+80 attack trial3 8
+80 attack trial4 8
+80 attack trial5 8
+80 attack trial6 8
+80 attack trial7 8
+90 attack trial0 8
+90 attack trial1 8
+90 attack trial2 8
+90 attack trial3 8
+90 attack trial4 8
+90 attack trial5 8
+90 attack trial6 8
+90 attack trial7 8
+100 attack trial0 8
+100 attack trial1 8
+100 attack trial2 8
+100 attack trial3 8
+100 attack trial4 8
+100 attack trial5 8
+100 attack trial6 8
+100 attack trial7 8
+110 attack trial0 8
+110 attack trial1 8
+110 attack trial2 8
+110 attack trial3 8
+110 attack trial4 8
+110 attack trial5 8
+110 attack trial6 8
+110 attack trial7 8
+120 attack trial0 8
+120 attack trial1 8
+120 attack trial2 8
+120 attack trial3 8
+120 attack trial4 8
+120 attack trial5 8
+120 attack trial6 8
+120 attack trial7 8
+130 attack trial0 8
+130 attack trial1 8
+130 attack trial2 8
+130 attack trial3 8
+130 attack trial4 8
+130 attack trial5 8
+130 attack trial6 8
+130 attack trial7 8
+140 attack trial0 8
+140 attack trial1 8
+140 attack trial2 8
+140 attack trial3 8
+140 attack trial4 8
+140 attack trial5 8
+140 attack trial6 8
+140 attack trial7 8
+150 attack trial0 8
+150 attack trial1 8
+150 attack trial2 8
+150 attack trial3 8
+150 attack trial4 8
+150 attack trial5 8
+150 attack trial6 8
+150 attack trial7 8
+160 attack trial0 8
+160 attack trial1 8
+160 attack trial2 8
+160 attack trial3 8
+160 attack trial4 8
+160 attack trial5 8
+160 attack trial6 8
+160 attack trial7 8
+170 attack trial0 8
+170 attack trial1 8
+170 attack trial2 8
+170 attack trial3 8
+170 attack trial4 8
+170 attack trial5 8
+170 attack trial6 8
+170 attack trial7 8
+180 attack trial0 8
+180 attack trial1 8
+180 attack trial2 8
+180 attack trial3 8
+180 attack trial4 8
+180 attack trial5 8
+180 attack trial6 8
+180 attack trial7 8
+190 attack trial0 8
+190 attack trial1 8
+190 attack trial2 8
+190 attack trial3 8
+190 attack trial4 8
+190 attack trial5 8
+190 attack trial6 8
+190 attack trial7 8
+200 attack trial0 8
+200 attack trial1 8
+200 attack trial2 8
+200 attack trial3 8
+200 attack trial4 8
+200 attack trial5 8
+200 attack trial6 8
+200 attack trial7 8
+210 attack trial0 8
+210 attack trial1 8
+210 attack trial2 8
+210 attack trial3 8
+210 attack trial4 8
+210 attack trial5 8
+210 attack trial6 8
+210 attack trial7 8
+220 attack trial0 8
+220 attack trial1 8
+220 attack trial2 8
+220 attack trial3 8
+220 attack trial4 8
+220 attack trial5 8
+220 attack trial6 8
+220 attack trial7 8
+230 attack trial0 8
+230 attack trial1 8
+230 attack trial2 8
+230 attack trial3 8
+230 attack trial4 8
+230 attack trial5 8
+230 attack trial6 8
+230 attack trial7 8
+240 attack trial0 8
+240 attack trial1 8
+240 attack trial2 8
+240 attack trial3 8
+240 attack trial4 8
+240 attack trial5 8
+240 attack trial6 8
+240 attack trial7 8
+250 attack trial0 8
+250 attack trial1 8
+250 attack trial2 8
+250 attack trial3 8
+250 attack trial4 8
+250 attack trial5 8
+250 attack trial6 8
+250 attack trial7 8
+260 attack trial0 8
+260 cmd item replace entity trial0 weapon.mainhand with minecraft:trial_key
+260 attack trial1 8
+260 cmd item replace entity trial1 weapon.mainhand with minecraft:trial_key
+260 attack trial2 8
+260 cmd item replace entity trial2 weapon.mainhand with minecraft:trial_key
+260 attack trial3 8
+260 cmd item replace entity trial3 weapon.mainhand with minecraft:trial_key
+260 attack trial4 8
+260 cmd item replace entity trial4 weapon.mainhand with minecraft:ominous_trial_key
+260 attack trial5 8
+260 cmd item replace entity trial5 weapon.mainhand with minecraft:ominous_trial_key
+260 attack trial6 8
+260 cmd item replace entity trial6 weapon.mainhand with minecraft:ominous_trial_key
+260 attack trial7 8
+260 cmd item replace entity trial7 weapon.mainhand with minecraft:ominous_trial_key
+261 useon trial0 4 100 0
+261 useon trial1 100 100 0
+261 useon trial2 196 100 0
+261 useon trial3 292 100 0
+261 useon trial4 388 100 0
+261 useon trial5 484 100 0
+261 useon trial6 580 100 0
+261 useon trial7 676 100 0
+262 cmd item replace entity trial0 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+262 cmd item replace entity trial1 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+262 cmd item replace entity trial2 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+262 cmd item replace entity trial3 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+262 cmd item replace entity trial4 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+262 cmd item replace entity trial5 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+262 cmd item replace entity trial6 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+262 cmd item replace entity trial7 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+270 attack trial0 8
+270 attack trial1 8
+270 attack trial2 8
+270 attack trial3 8
+270 attack trial4 8
+270 attack trial5 8
+270 attack trial6 8
+270 attack trial7 8
+280 attack trial0 8
+280 attack trial1 8
+280 attack trial2 8
+280 attack trial3 8
+280 attack trial4 8
+280 attack trial5 8
+280 attack trial6 8
+280 attack trial7 8
+290 attack trial0 8
+290 attack trial1 8
+290 attack trial2 8
+290 attack trial3 8
+290 attack trial4 8
+290 attack trial5 8
+290 attack trial6 8
+290 attack trial7 8
+300 attack trial0 8
+300 cmd setblock 0 100 4 minecraft:air
+300 attack trial1 8
+300 cmd setblock 96 100 4 minecraft:air
+300 attack trial2 8
+300 cmd setblock 192 100 4 minecraft:air
+300 attack trial3 8
+300 cmd setblock 288 100 4 minecraft:air
+300 attack trial4 8
+300 cmd setblock 384 100 4 minecraft:air
+300 attack trial5 8
+300 cmd setblock 480 100 4 minecraft:air
+300 attack trial6 8
+300 cmd setblock 576 100 4 minecraft:air
+300 attack trial7 8
+300 cmd setblock 672 100 4 minecraft:air
+301 cmd setblock 0 100 4 minecraft:trial_spawner[ominous=false]{normal_config:"minecraft:trial_chamber/melee/zombie/normal",ominous_config:"minecraft:trial_chamber/melee/zombie/ominous"}
+301 cmd setblock 96 100 4 minecraft:trial_spawner[ominous=false]{normal_config:"minecraft:trial_chamber/melee/husk/normal",ominous_config:"minecraft:trial_chamber/melee/husk/ominous"}
+301 cmd setblock 192 100 4 minecraft:trial_spawner[ominous=false]{normal_config:"minecraft:trial_chamber/ranged/skeleton/normal",ominous_config:"minecraft:trial_chamber/ranged/skeleton/ominous"}
+301 cmd setblock 288 100 4 minecraft:trial_spawner[ominous=false]{normal_config:"minecraft:trial_chamber/small_melee/baby_zombie/normal",ominous_config:"minecraft:trial_chamber/small_melee/baby_zombie/ominous"}
+301 cmd setblock 384 100 4 minecraft:trial_spawner[ominous=true]{normal_config:"minecraft:trial_chamber/breeze/normal",ominous_config:"minecraft:trial_chamber/breeze/ominous"}
+301 cmd setblock 480 100 4 minecraft:trial_spawner[ominous=true]{normal_config:"minecraft:trial_chamber/melee/spider/normal",ominous_config:"minecraft:trial_chamber/melee/spider/ominous"}
+301 cmd setblock 576 100 4 minecraft:trial_spawner[ominous=true]{normal_config:"minecraft:trial_chamber/ranged/stray/normal",ominous_config:"minecraft:trial_chamber/ranged/stray/ominous"}
+301 cmd setblock 672 100 4 minecraft:trial_spawner[ominous=true]{normal_config:"minecraft:trial_chamber/small_melee/slime/normal",ominous_config:"minecraft:trial_chamber/small_melee/slime/ominous"}
+310 attack trial0 8
+310 attack trial1 8
+310 attack trial2 8
+310 attack trial3 8
+310 attack trial4 8
+310 attack trial5 8
+310 attack trial6 8
+310 attack trial7 8
+320 attack trial0 8
+320 attack trial1 8
+320 attack trial2 8
+320 attack trial3 8
+320 attack trial4 8
+320 attack trial5 8
+320 attack trial6 8
+320 attack trial7 8
+330 attack trial0 8
+330 attack trial1 8
+330 attack trial2 8
+330 attack trial3 8
+330 attack trial4 8
+330 attack trial5 8
+330 attack trial6 8
+330 attack trial7 8
+340 attack trial0 8
+340 attack trial1 8
+340 attack trial2 8
+340 attack trial3 8
+340 attack trial4 8
+340 attack trial5 8
+340 attack trial6 8
+340 attack trial7 8
+350 attack trial0 8
+350 attack trial1 8
+350 attack trial2 8
+350 attack trial3 8
+350 attack trial4 8
+350 attack trial5 8
+350 attack trial6 8
+350 attack trial7 8
+360 attack trial0 8
+360 attack trial1 8
+360 attack trial2 8
+360 attack trial3 8
+360 attack trial4 8
+360 attack trial5 8
+360 attack trial6 8
+360 attack trial7 8
+370 attack trial0 8
+370 attack trial1 8
+370 attack trial2 8
+370 attack trial3 8
+370 attack trial4 8
+370 attack trial5 8
+370 attack trial6 8
+370 attack trial7 8
+380 attack trial0 8
+380 attack trial1 8
+380 attack trial2 8
+380 attack trial3 8
+380 attack trial4 8
+380 attack trial5 8
+380 attack trial6 8
+380 attack trial7 8
+390 attack trial0 8
+390 attack trial1 8
+390 attack trial2 8
+390 attack trial3 8
+390 attack trial4 8
+390 attack trial5 8
+390 attack trial6 8
+390 attack trial7 8
+400 attack trial0 8
+400 attack trial1 8
+400 attack trial2 8
+400 attack trial3 8
+400 attack trial4 8
+400 attack trial5 8
+400 attack trial6 8
+400 attack trial7 8
+410 attack trial0 8
+410 attack trial1 8
+410 attack trial2 8
+410 attack trial3 8
+410 attack trial4 8
+410 attack trial5 8
+410 attack trial6 8
+410 attack trial7 8
+420 attack trial0 8
+420 attack trial1 8
+420 attack trial2 8
+420 attack trial3 8
+420 attack trial4 8
+420 attack trial5 8
+420 attack trial6 8
+420 attack trial7 8
+430 attack trial0 8
+430 attack trial1 8
+430 attack trial2 8
+430 attack trial3 8
+430 attack trial4 8
+430 attack trial5 8
+430 attack trial6 8
+430 attack trial7 8
+440 attack trial0 8
+440 attack trial1 8
+440 attack trial2 8
+440 attack trial3 8
+440 attack trial4 8
+440 attack trial5 8
+440 attack trial6 8
+440 attack trial7 8
+450 attack trial0 8
+450 attack trial1 8
+450 attack trial2 8
+450 attack trial3 8
+450 attack trial4 8
+450 attack trial5 8
+450 attack trial6 8
+450 attack trial7 8
+460 attack trial0 8
+460 cmd item replace entity trial0 weapon.mainhand with minecraft:trial_key
+460 attack trial1 8
+460 cmd item replace entity trial1 weapon.mainhand with minecraft:trial_key
+460 attack trial2 8
+460 cmd item replace entity trial2 weapon.mainhand with minecraft:trial_key
+460 attack trial3 8
+460 cmd item replace entity trial3 weapon.mainhand with minecraft:trial_key
+460 attack trial4 8
+460 cmd item replace entity trial4 weapon.mainhand with minecraft:ominous_trial_key
+460 attack trial5 8
+460 cmd item replace entity trial5 weapon.mainhand with minecraft:ominous_trial_key
+460 attack trial6 8
+460 cmd item replace entity trial6 weapon.mainhand with minecraft:ominous_trial_key
+460 attack trial7 8
+460 cmd item replace entity trial7 weapon.mainhand with minecraft:ominous_trial_key
+461 useon trial0 4 100 0
+461 useon trial1 100 100 0
+461 useon trial2 196 100 0
+461 useon trial3 292 100 0
+461 useon trial4 388 100 0
+461 useon trial5 484 100 0
+461 useon trial6 580 100 0
+461 useon trial7 676 100 0
+462 cmd item replace entity trial0 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+462 cmd item replace entity trial1 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+462 cmd item replace entity trial2 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+462 cmd item replace entity trial3 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+462 cmd item replace entity trial4 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+462 cmd item replace entity trial5 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+462 cmd item replace entity trial6 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+462 cmd item replace entity trial7 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+470 attack trial0 8
+470 attack trial1 8
+470 attack trial2 8
+470 attack trial3 8
+470 attack trial4 8
+470 attack trial5 8
+470 attack trial6 8
+470 attack trial7 8
+480 attack trial0 8
+480 attack trial1 8
+480 attack trial2 8
+480 attack trial3 8
+480 attack trial4 8
+480 attack trial5 8
+480 attack trial6 8
+480 attack trial7 8
+490 attack trial0 8
+490 attack trial1 8
+490 attack trial2 8
+490 attack trial3 8
+490 attack trial4 8
+490 attack trial5 8
+490 attack trial6 8
+490 attack trial7 8
+500 attack trial0 8
+500 attack trial1 8
+500 attack trial2 8
+500 attack trial3 8
+500 attack trial4 8
+500 attack trial5 8
+500 attack trial6 8
+500 attack trial7 8
+510 attack trial0 8
+510 attack trial1 8
+510 attack trial2 8
+510 attack trial3 8
+510 attack trial4 8
+510 attack trial5 8
+510 attack trial6 8
+510 attack trial7 8
+520 attack trial0 8
+520 attack trial1 8
+520 attack trial2 8
+520 attack trial3 8
+520 attack trial4 8
+520 attack trial5 8
+520 attack trial6 8
+520 attack trial7 8
+530 attack trial0 8
+530 attack trial1 8
+530 attack trial2 8
+530 attack trial3 8
+530 attack trial4 8
+530 attack trial5 8
+530 attack trial6 8
+530 attack trial7 8
+540 attack trial0 8
+540 attack trial1 8
+540 attack trial2 8
+540 attack trial3 8
+540 attack trial4 8
+540 attack trial5 8
+540 attack trial6 8
+540 attack trial7 8
+550 attack trial0 8
+550 attack trial1 8
+550 attack trial2 8
+550 attack trial3 8
+550 attack trial4 8
+550 attack trial5 8
+550 attack trial6 8
+550 attack trial7 8
+560 attack trial0 8
+560 attack trial1 8
+560 attack trial2 8
+560 attack trial3 8
+560 attack trial4 8
+560 attack trial5 8
+560 attack trial6 8
+560 attack trial7 8
+570 attack trial0 8
+570 attack trial1 8
+570 attack trial2 8
+570 attack trial3 8
+570 attack trial4 8
+570 attack trial5 8
+570 attack trial6 8
+570 attack trial7 8
+580 attack trial0 8
+580 attack trial1 8
+580 attack trial2 8
+580 attack trial3 8
+580 attack trial4 8
+580 attack trial5 8
+580 attack trial6 8
+580 attack trial7 8
+590 attack trial0 8
+590 attack trial1 8
+590 attack trial2 8
+590 attack trial3 8
+590 attack trial4 8
+590 attack trial5 8
+590 attack trial6 8
+590 attack trial7 8
+600 attack trial0 8
+600 attack trial1 8
+600 attack trial2 8
+600 attack trial3 8
+600 attack trial4 8
+600 attack trial5 8
+600 attack trial6 8
+600 attack trial7 8
+610 attack trial0 8
+610 attack trial1 8
+610 attack trial2 8
+610 attack trial3 8
+610 attack trial4 8
+610 attack trial5 8
+610 attack trial6 8
+610 attack trial7 8
+620 attack trial0 8
+620 attack trial1 8
+620 attack trial2 8
+620 attack trial3 8
+620 attack trial4 8
+620 attack trial5 8
+620 attack trial6 8
+620 attack trial7 8
+630 attack trial0 8
+630 attack trial1 8
+630 attack trial2 8
+630 attack trial3 8
+630 attack trial4 8
+630 attack trial5 8
+630 attack trial6 8
+630 attack trial7 8
+640 attack trial0 8
+640 attack trial1 8
+640 attack trial2 8
+640 attack trial3 8
+640 attack trial4 8
+640 attack trial5 8
+640 attack trial6 8
+640 attack trial7 8
+650 attack trial0 8
+650 attack trial1 8
+650 attack trial2 8
+650 attack trial3 8
+650 attack trial4 8
+650 attack trial5 8
+650 attack trial6 8
+650 attack trial7 8
+660 attack trial0 8
+660 cmd item replace entity trial0 weapon.mainhand with minecraft:trial_key
+660 attack trial1 8
+660 cmd item replace entity trial1 weapon.mainhand with minecraft:trial_key
+660 attack trial2 8
+660 cmd item replace entity trial2 weapon.mainhand with minecraft:trial_key
+660 attack trial3 8
+660 cmd item replace entity trial3 weapon.mainhand with minecraft:trial_key
+660 attack trial4 8
+660 cmd item replace entity trial4 weapon.mainhand with minecraft:ominous_trial_key
+660 attack trial5 8
+660 cmd item replace entity trial5 weapon.mainhand with minecraft:ominous_trial_key
+660 attack trial6 8
+660 cmd item replace entity trial6 weapon.mainhand with minecraft:ominous_trial_key
+660 attack trial7 8
+660 cmd item replace entity trial7 weapon.mainhand with minecraft:ominous_trial_key
+661 useon trial0 4 100 0
+661 useon trial1 100 100 0
+661 useon trial2 196 100 0
+661 useon trial3 292 100 0
+661 useon trial4 388 100 0
+661 useon trial5 484 100 0
+661 useon trial6 580 100 0
+661 useon trial7 676 100 0
+662 cmd item replace entity trial0 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+662 cmd item replace entity trial1 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+662 cmd item replace entity trial2 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+662 cmd item replace entity trial3 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+662 cmd item replace entity trial4 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+662 cmd item replace entity trial5 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+662 cmd item replace entity trial6 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+662 cmd item replace entity trial7 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+670 attack trial0 8
+670 attack trial1 8
+670 attack trial2 8
+670 attack trial3 8
+670 attack trial4 8
+670 attack trial5 8
+670 attack trial6 8
+670 attack trial7 8
+680 attack trial0 8
+680 attack trial1 8
+680 attack trial2 8
+680 attack trial3 8
+680 attack trial4 8
+680 attack trial5 8
+680 attack trial6 8
+680 attack trial7 8
+690 attack trial0 8
+690 attack trial1 8
+690 attack trial2 8
+690 attack trial3 8
+690 attack trial4 8
+690 attack trial5 8
+690 attack trial6 8
+690 attack trial7 8
+700 attack trial0 8
+700 attack trial1 8
+700 attack trial2 8
+700 attack trial3 8
+700 attack trial4 8
+700 attack trial5 8
+700 attack trial6 8
+700 attack trial7 8
+710 attack trial0 8
+710 attack trial1 8
+710 attack trial2 8
+710 attack trial3 8
+710 attack trial4 8
+710 attack trial5 8
+710 attack trial6 8
+710 attack trial7 8
+720 attack trial0 8
+720 attack trial1 8
+720 attack trial2 8
+720 attack trial3 8
+720 attack trial4 8
+720 attack trial5 8
+720 attack trial6 8
+720 attack trial7 8
+730 attack trial0 8
+730 attack trial1 8
+730 attack trial2 8
+730 attack trial3 8
+730 attack trial4 8
+730 attack trial5 8
+730 attack trial6 8
+730 attack trial7 8
+740 attack trial0 8
+740 attack trial1 8
+740 attack trial2 8
+740 attack trial3 8
+740 attack trial4 8
+740 attack trial5 8
+740 attack trial6 8
+740 attack trial7 8
+750 attack trial0 8
+750 attack trial1 8
+750 attack trial2 8
+750 attack trial3 8
+750 attack trial4 8
+750 attack trial5 8
+750 attack trial6 8
+750 attack trial7 8
+760 attack trial0 8
+760 attack trial1 8
+760 attack trial2 8
+760 attack trial3 8
+760 attack trial4 8
+760 attack trial5 8
+760 attack trial6 8
+760 attack trial7 8
+770 attack trial0 8
+770 attack trial1 8
+770 attack trial2 8
+770 attack trial3 8
+770 attack trial4 8
+770 attack trial5 8
+770 attack trial6 8
+770 attack trial7 8
+780 attack trial0 8
+780 attack trial1 8
+780 attack trial2 8
+780 attack trial3 8
+780 attack trial4 8
+780 attack trial5 8
+780 attack trial6 8
+780 attack trial7 8
+790 attack trial0 8
+790 attack trial1 8
+790 attack trial2 8
+790 attack trial3 8
+790 attack trial4 8
+790 attack trial5 8
+790 attack trial6 8
+790 attack trial7 8
+800 attack trial0 8
+800 attack trial1 8
+800 attack trial2 8
+800 attack trial3 8
+800 attack trial4 8
+800 attack trial5 8
+800 attack trial6 8
+800 attack trial7 8
+810 attack trial0 8
+810 attack trial1 8
+810 attack trial2 8
+810 attack trial3 8
+810 attack trial4 8
+810 attack trial5 8
+810 attack trial6 8
+810 attack trial7 8
+820 attack trial0 8
+820 attack trial1 8
+820 attack trial2 8
+820 attack trial3 8
+820 attack trial4 8
+820 attack trial5 8
+820 attack trial6 8
+820 attack trial7 8
+830 attack trial0 8
+830 attack trial1 8
+830 attack trial2 8
+830 attack trial3 8
+830 attack trial4 8
+830 attack trial5 8
+830 attack trial6 8
+830 attack trial7 8
+840 attack trial0 8
+840 attack trial1 8
+840 attack trial2 8
+840 attack trial3 8
+840 attack trial4 8
+840 attack trial5 8
+840 attack trial6 8
+840 attack trial7 8
+850 attack trial0 8
+850 attack trial1 8
+850 attack trial2 8
+850 attack trial3 8
+850 attack trial4 8
+850 attack trial5 8
+850 attack trial6 8
+850 attack trial7 8
+860 attack trial0 8
+860 cmd item replace entity trial0 weapon.mainhand with minecraft:trial_key
+860 attack trial1 8
+860 cmd item replace entity trial1 weapon.mainhand with minecraft:trial_key
+860 attack trial2 8
+860 cmd item replace entity trial2 weapon.mainhand with minecraft:trial_key
+860 attack trial3 8
+860 cmd item replace entity trial3 weapon.mainhand with minecraft:trial_key
+860 attack trial4 8
+860 cmd item replace entity trial4 weapon.mainhand with minecraft:ominous_trial_key
+860 attack trial5 8
+860 cmd item replace entity trial5 weapon.mainhand with minecraft:ominous_trial_key
+860 attack trial6 8
+860 cmd item replace entity trial6 weapon.mainhand with minecraft:ominous_trial_key
+860 attack trial7 8
+860 cmd item replace entity trial7 weapon.mainhand with minecraft:ominous_trial_key
+861 useon trial0 4 100 0
+861 useon trial1 100 100 0
+861 useon trial2 196 100 0
+861 useon trial3 292 100 0
+861 useon trial4 388 100 0
+861 useon trial5 484 100 0
+861 useon trial6 580 100 0
+861 useon trial7 676 100 0
+862 cmd item replace entity trial0 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+862 cmd item replace entity trial1 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+862 cmd item replace entity trial2 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+862 cmd item replace entity trial3 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+862 cmd item replace entity trial4 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+862 cmd item replace entity trial5 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+862 cmd item replace entity trial6 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+862 cmd item replace entity trial7 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+870 attack trial0 8
+870 attack trial1 8
+870 attack trial2 8
+870 attack trial3 8
+870 attack trial4 8
+870 attack trial5 8
+870 attack trial6 8
+870 attack trial7 8
+880 attack trial0 8
+880 attack trial1 8
+880 attack trial2 8
+880 attack trial3 8
+880 attack trial4 8
+880 attack trial5 8
+880 attack trial6 8
+880 attack trial7 8
+890 attack trial0 8
+890 attack trial1 8
+890 attack trial2 8
+890 attack trial3 8
+890 attack trial4 8
+890 attack trial5 8
+890 attack trial6 8
+890 attack trial7 8
+900 attack trial0 8
+900 attack trial1 8
+900 attack trial2 8
+900 attack trial3 8
+900 attack trial4 8
+900 attack trial5 8
+900 attack trial6 8
+900 attack trial7 8
+910 attack trial0 8
+910 attack trial1 8
+910 attack trial2 8
+910 attack trial3 8
+910 attack trial4 8
+910 attack trial5 8
+910 attack trial6 8
+910 attack trial7 8
+920 attack trial0 8
+920 attack trial1 8
+920 attack trial2 8
+920 attack trial3 8
+920 attack trial4 8
+920 attack trial5 8
+920 attack trial6 8
+920 attack trial7 8
+930 attack trial0 8
+930 attack trial1 8
+930 attack trial2 8
+930 attack trial3 8
+930 attack trial4 8
+930 attack trial5 8
+930 attack trial6 8
+930 attack trial7 8
+940 attack trial0 8
+940 attack trial1 8
+940 attack trial2 8
+940 attack trial3 8
+940 attack trial4 8
+940 attack trial5 8
+940 attack trial6 8
+940 attack trial7 8
+950 attack trial0 8
+950 attack trial1 8
+950 attack trial2 8
+950 attack trial3 8
+950 attack trial4 8
+950 attack trial5 8
+950 attack trial6 8
+950 attack trial7 8
+960 attack trial0 8
+960 attack trial1 8
+960 attack trial2 8
+960 attack trial3 8
+960 attack trial4 8
+960 attack trial5 8
+960 attack trial6 8
+960 attack trial7 8
+970 attack trial0 8
+970 attack trial1 8
+970 attack trial2 8
+970 attack trial3 8
+970 attack trial4 8
+970 attack trial5 8
+970 attack trial6 8
+970 attack trial7 8
+980 attack trial0 8
+980 attack trial1 8
+980 attack trial2 8
+980 attack trial3 8
+980 attack trial4 8
+980 attack trial5 8
+980 attack trial6 8
+980 attack trial7 8
+990 attack trial0 8
+990 attack trial1 8
+990 attack trial2 8
+990 attack trial3 8
+990 attack trial4 8
+990 attack trial5 8
+990 attack trial6 8
+990 attack trial7 8
+1000 attack trial0 8
+1000 attack trial1 8
+1000 attack trial2 8
+1000 attack trial3 8
+1000 attack trial4 8
+1000 attack trial5 8
+1000 attack trial6 8
+1000 attack trial7 8
+1010 attack trial0 8
+1010 attack trial1 8
+1010 attack trial2 8
+1010 attack trial3 8
+1010 attack trial4 8
+1010 attack trial5 8
+1010 attack trial6 8
+1010 attack trial7 8
+1020 attack trial0 8
+1020 attack trial1 8
+1020 attack trial2 8
+1020 attack trial3 8
+1020 attack trial4 8
+1020 attack trial5 8
+1020 attack trial6 8
+1020 attack trial7 8
+1030 attack trial0 8
+1030 attack trial1 8
+1030 attack trial2 8
+1030 attack trial3 8
+1030 attack trial4 8
+1030 attack trial5 8
+1030 attack trial6 8
+1030 attack trial7 8
+1040 attack trial0 8
+1040 attack trial1 8
+1040 attack trial2 8
+1040 attack trial3 8
+1040 attack trial4 8
+1040 attack trial5 8
+1040 attack trial6 8
+1040 attack trial7 8
+1050 attack trial0 8
+1050 attack trial1 8
+1050 attack trial2 8
+1050 attack trial3 8
+1050 attack trial4 8
+1050 attack trial5 8
+1050 attack trial6 8
+1050 attack trial7 8
+1060 attack trial0 8
+1060 cmd item replace entity trial0 weapon.mainhand with minecraft:trial_key
+1060 attack trial1 8
+1060 cmd item replace entity trial1 weapon.mainhand with minecraft:trial_key
+1060 attack trial2 8
+1060 cmd item replace entity trial2 weapon.mainhand with minecraft:trial_key
+1060 attack trial3 8
+1060 cmd item replace entity trial3 weapon.mainhand with minecraft:trial_key
+1060 attack trial4 8
+1060 cmd item replace entity trial4 weapon.mainhand with minecraft:ominous_trial_key
+1060 attack trial5 8
+1060 cmd item replace entity trial5 weapon.mainhand with minecraft:ominous_trial_key
+1060 attack trial6 8
+1060 cmd item replace entity trial6 weapon.mainhand with minecraft:ominous_trial_key
+1060 attack trial7 8
+1060 cmd item replace entity trial7 weapon.mainhand with minecraft:ominous_trial_key
+1061 useon trial0 4 100 0
+1061 useon trial1 100 100 0
+1061 useon trial2 196 100 0
+1061 useon trial3 292 100 0
+1061 useon trial4 388 100 0
+1061 useon trial5 484 100 0
+1061 useon trial6 580 100 0
+1061 useon trial7 676 100 0
+1062 cmd item replace entity trial0 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1062 cmd item replace entity trial1 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1062 cmd item replace entity trial2 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1062 cmd item replace entity trial3 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1062 cmd item replace entity trial4 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1062 cmd item replace entity trial5 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1062 cmd item replace entity trial6 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1062 cmd item replace entity trial7 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1070 attack trial0 8
+1070 attack trial1 8
+1070 attack trial2 8
+1070 attack trial3 8
+1070 attack trial4 8
+1070 attack trial5 8
+1070 attack trial6 8
+1070 attack trial7 8
+1080 attack trial0 8
+1080 attack trial1 8
+1080 attack trial2 8
+1080 attack trial3 8
+1080 attack trial4 8
+1080 attack trial5 8
+1080 attack trial6 8
+1080 attack trial7 8
+1090 attack trial0 8
+1090 attack trial1 8
+1090 attack trial2 8
+1090 attack trial3 8
+1090 attack trial4 8
+1090 attack trial5 8
+1090 attack trial6 8
+1090 attack trial7 8
+1100 attack trial0 8
+1100 attack trial1 8
+1100 attack trial2 8
+1100 attack trial3 8
+1100 attack trial4 8
+1100 attack trial5 8
+1100 attack trial6 8
+1100 attack trial7 8
+1110 attack trial0 8
+1110 attack trial1 8
+1110 attack trial2 8
+1110 attack trial3 8
+1110 attack trial4 8
+1110 attack trial5 8
+1110 attack trial6 8
+1110 attack trial7 8
+1120 attack trial0 8
+1120 attack trial1 8
+1120 attack trial2 8
+1120 attack trial3 8
+1120 attack trial4 8
+1120 attack trial5 8
+1120 attack trial6 8
+1120 attack trial7 8
+1130 attack trial0 8
+1130 attack trial1 8
+1130 attack trial2 8
+1130 attack trial3 8
+1130 attack trial4 8
+1130 attack trial5 8
+1130 attack trial6 8
+1130 attack trial7 8
+1140 attack trial0 8
+1140 attack trial1 8
+1140 attack trial2 8
+1140 attack trial3 8
+1140 attack trial4 8
+1140 attack trial5 8
+1140 attack trial6 8
+1140 attack trial7 8
+1150 attack trial0 8
+1150 attack trial1 8
+1150 attack trial2 8
+1150 attack trial3 8
+1150 attack trial4 8
+1150 attack trial5 8
+1150 attack trial6 8
+1150 attack trial7 8
+1160 attack trial0 8
+1160 attack trial1 8
+1160 attack trial2 8
+1160 attack trial3 8
+1160 attack trial4 8
+1160 attack trial5 8
+1160 attack trial6 8
+1160 attack trial7 8
+1170 attack trial0 8
+1170 attack trial1 8
+1170 attack trial2 8
+1170 attack trial3 8
+1170 attack trial4 8
+1170 attack trial5 8
+1170 attack trial6 8
+1170 attack trial7 8
+1180 attack trial0 8
+1180 attack trial1 8
+1180 attack trial2 8
+1180 attack trial3 8
+1180 attack trial4 8
+1180 attack trial5 8
+1180 attack trial6 8
+1180 attack trial7 8
+1190 attack trial0 8
+1190 attack trial1 8
+1190 attack trial2 8
+1190 attack trial3 8
+1190 attack trial4 8
+1190 attack trial5 8
+1190 attack trial6 8
+1190 attack trial7 8
+1200 attack trial0 8
+1200 attack trial1 8
+1200 attack trial2 8
+1200 attack trial3 8
+1200 attack trial4 8
+1200 attack trial5 8
+1200 attack trial6 8
+1200 attack trial7 8
+1210 attack trial0 8
+1210 attack trial1 8
+1210 attack trial2 8
+1210 attack trial3 8
+1210 attack trial4 8
+1210 attack trial5 8
+1210 attack trial6 8
+1210 attack trial7 8
+1220 attack trial0 8
+1220 attack trial1 8
+1220 attack trial2 8
+1220 attack trial3 8
+1220 attack trial4 8
+1220 attack trial5 8
+1220 attack trial6 8
+1220 attack trial7 8
+1230 attack trial0 8
+1230 attack trial1 8
+1230 attack trial2 8
+1230 attack trial3 8
+1230 attack trial4 8
+1230 attack trial5 8
+1230 attack trial6 8
+1230 attack trial7 8
+1240 attack trial0 8
+1240 attack trial1 8
+1240 attack trial2 8
+1240 attack trial3 8
+1240 attack trial4 8
+1240 attack trial5 8
+1240 attack trial6 8
+1240 attack trial7 8
+1250 attack trial0 8
+1250 attack trial1 8
+1250 attack trial2 8
+1250 attack trial3 8
+1250 attack trial4 8
+1250 attack trial5 8
+1250 attack trial6 8
+1250 attack trial7 8
+1260 attack trial0 8
+1260 cmd item replace entity trial0 weapon.mainhand with minecraft:trial_key
+1260 attack trial1 8
+1260 cmd item replace entity trial1 weapon.mainhand with minecraft:trial_key
+1260 attack trial2 8
+1260 cmd item replace entity trial2 weapon.mainhand with minecraft:trial_key
+1260 attack trial3 8
+1260 cmd item replace entity trial3 weapon.mainhand with minecraft:trial_key
+1260 attack trial4 8
+1260 cmd item replace entity trial4 weapon.mainhand with minecraft:ominous_trial_key
+1260 attack trial5 8
+1260 cmd item replace entity trial5 weapon.mainhand with minecraft:ominous_trial_key
+1260 attack trial6 8
+1260 cmd item replace entity trial6 weapon.mainhand with minecraft:ominous_trial_key
+1260 attack trial7 8
+1260 cmd item replace entity trial7 weapon.mainhand with minecraft:ominous_trial_key
+1261 useon trial0 4 100 0
+1261 useon trial1 100 100 0
+1261 useon trial2 196 100 0
+1261 useon trial3 292 100 0
+1261 useon trial4 388 100 0
+1261 useon trial5 484 100 0
+1261 useon trial6 580 100 0
+1261 useon trial7 676 100 0
+1262 cmd item replace entity trial0 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1262 cmd item replace entity trial1 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1262 cmd item replace entity trial2 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1262 cmd item replace entity trial3 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1262 cmd item replace entity trial4 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1262 cmd item replace entity trial5 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1262 cmd item replace entity trial6 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1262 cmd item replace entity trial7 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1270 attack trial0 8
+1270 attack trial1 8
+1270 attack trial2 8
+1270 attack trial3 8
+1270 attack trial4 8
+1270 attack trial5 8
+1270 attack trial6 8
+1270 attack trial7 8
+1280 attack trial0 8
+1280 attack trial1 8
+1280 attack trial2 8
+1280 attack trial3 8
+1280 attack trial4 8
+1280 attack trial5 8
+1280 attack trial6 8
+1280 attack trial7 8
+1290 attack trial0 8
+1290 attack trial1 8
+1290 attack trial2 8
+1290 attack trial3 8
+1290 attack trial4 8
+1290 attack trial5 8
+1290 attack trial6 8
+1290 attack trial7 8
+1300 attack trial0 8
+1300 attack trial1 8
+1300 attack trial2 8
+1300 attack trial3 8
+1300 attack trial4 8
+1300 attack trial5 8
+1300 attack trial6 8
+1300 attack trial7 8
+1310 attack trial0 8
+1310 attack trial1 8
+1310 attack trial2 8
+1310 attack trial3 8
+1310 attack trial4 8
+1310 attack trial5 8
+1310 attack trial6 8
+1310 attack trial7 8
+1320 attack trial0 8
+1320 attack trial1 8
+1320 attack trial2 8
+1320 attack trial3 8
+1320 attack trial4 8
+1320 attack trial5 8
+1320 attack trial6 8
+1320 attack trial7 8
+1330 attack trial0 8
+1330 attack trial1 8
+1330 attack trial2 8
+1330 attack trial3 8
+1330 attack trial4 8
+1330 attack trial5 8
+1330 attack trial6 8
+1330 attack trial7 8
+1340 attack trial0 8
+1340 attack trial1 8
+1340 attack trial2 8
+1340 attack trial3 8
+1340 attack trial4 8
+1340 attack trial5 8
+1340 attack trial6 8
+1340 attack trial7 8
+1350 attack trial0 8
+1350 attack trial1 8
+1350 attack trial2 8
+1350 attack trial3 8
+1350 attack trial4 8
+1350 attack trial5 8
+1350 attack trial6 8
+1350 attack trial7 8
+1360 attack trial0 8
+1360 attack trial1 8
+1360 attack trial2 8
+1360 attack trial3 8
+1360 attack trial4 8
+1360 attack trial5 8
+1360 attack trial6 8
+1360 attack trial7 8
+1370 attack trial0 8
+1370 attack trial1 8
+1370 attack trial2 8
+1370 attack trial3 8
+1370 attack trial4 8
+1370 attack trial5 8
+1370 attack trial6 8
+1370 attack trial7 8
+1380 attack trial0 8
+1380 attack trial1 8
+1380 attack trial2 8
+1380 attack trial3 8
+1380 attack trial4 8
+1380 attack trial5 8
+1380 attack trial6 8
+1380 attack trial7 8
+1390 attack trial0 8
+1390 attack trial1 8
+1390 attack trial2 8
+1390 attack trial3 8
+1390 attack trial4 8
+1390 attack trial5 8
+1390 attack trial6 8
+1390 attack trial7 8
+1400 attack trial0 8
+1400 attack trial1 8
+1400 attack trial2 8
+1400 attack trial3 8
+1400 attack trial4 8
+1400 attack trial5 8
+1400 attack trial6 8
+1400 attack trial7 8
+1410 attack trial0 8
+1410 attack trial1 8
+1410 attack trial2 8
+1410 attack trial3 8
+1410 attack trial4 8
+1410 attack trial5 8
+1410 attack trial6 8
+1410 attack trial7 8
+1420 attack trial0 8
+1420 attack trial1 8
+1420 attack trial2 8
+1420 attack trial3 8
+1420 attack trial4 8
+1420 attack trial5 8
+1420 attack trial6 8
+1420 attack trial7 8
+1430 attack trial0 8
+1430 attack trial1 8
+1430 attack trial2 8
+1430 attack trial3 8
+1430 attack trial4 8
+1430 attack trial5 8
+1430 attack trial6 8
+1430 attack trial7 8
+1440 attack trial0 8
+1440 attack trial1 8
+1440 attack trial2 8
+1440 attack trial3 8
+1440 attack trial4 8
+1440 attack trial5 8
+1440 attack trial6 8
+1440 attack trial7 8
+1450 attack trial0 8
+1450 attack trial1 8
+1450 attack trial2 8
+1450 attack trial3 8
+1450 attack trial4 8
+1450 attack trial5 8
+1450 attack trial6 8
+1450 attack trial7 8
+1460 attack trial0 8
+1460 cmd item replace entity trial0 weapon.mainhand with minecraft:trial_key
+1460 attack trial1 8
+1460 cmd item replace entity trial1 weapon.mainhand with minecraft:trial_key
+1460 attack trial2 8
+1460 cmd item replace entity trial2 weapon.mainhand with minecraft:trial_key
+1460 attack trial3 8
+1460 cmd item replace entity trial3 weapon.mainhand with minecraft:trial_key
+1460 attack trial4 8
+1460 cmd item replace entity trial4 weapon.mainhand with minecraft:ominous_trial_key
+1460 attack trial5 8
+1460 cmd item replace entity trial5 weapon.mainhand with minecraft:ominous_trial_key
+1460 attack trial6 8
+1460 cmd item replace entity trial6 weapon.mainhand with minecraft:ominous_trial_key
+1460 attack trial7 8
+1460 cmd item replace entity trial7 weapon.mainhand with minecraft:ominous_trial_key
+1461 useon trial0 4 100 0
+1461 useon trial1 100 100 0
+1461 useon trial2 196 100 0
+1461 useon trial3 292 100 0
+1461 useon trial4 388 100 0
+1461 useon trial5 484 100 0
+1461 useon trial6 580 100 0
+1461 useon trial7 676 100 0
+1462 cmd item replace entity trial0 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1462 cmd item replace entity trial1 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1462 cmd item replace entity trial2 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1462 cmd item replace entity trial3 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1462 cmd item replace entity trial4 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1462 cmd item replace entity trial5 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1462 cmd item replace entity trial6 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1462 cmd item replace entity trial7 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1470 attack trial0 8
+1470 attack trial1 8
+1470 attack trial2 8
+1470 attack trial3 8
+1470 attack trial4 8
+1470 attack trial5 8
+1470 attack trial6 8
+1470 attack trial7 8
+1480 attack trial0 8
+1480 attack trial1 8
+1480 attack trial2 8
+1480 attack trial3 8
+1480 attack trial4 8
+1480 attack trial5 8
+1480 attack trial6 8
+1480 attack trial7 8
+1490 attack trial0 8
+1490 attack trial1 8
+1490 attack trial2 8
+1490 attack trial3 8
+1490 attack trial4 8
+1490 attack trial5 8
+1490 attack trial6 8
+1490 attack trial7 8
+1500 attack trial0 8
+1500 cmd setblock 0 100 4 minecraft:air
+1500 attack trial1 8
+1500 cmd setblock 96 100 4 minecraft:air
+1500 attack trial2 8
+1500 cmd setblock 192 100 4 minecraft:air
+1500 attack trial3 8
+1500 cmd setblock 288 100 4 minecraft:air
+1500 attack trial4 8
+1500 cmd setblock 384 100 4 minecraft:air
+1500 attack trial5 8
+1500 cmd setblock 480 100 4 minecraft:air
+1500 attack trial6 8
+1500 cmd setblock 576 100 4 minecraft:air
+1500 attack trial7 8
+1500 cmd setblock 672 100 4 minecraft:air
+1501 cmd setblock 0 100 4 minecraft:trial_spawner[ominous=false]{normal_config:"minecraft:trial_chamber/melee/zombie/normal",ominous_config:"minecraft:trial_chamber/melee/zombie/ominous"}
+1501 cmd setblock 96 100 4 minecraft:trial_spawner[ominous=false]{normal_config:"minecraft:trial_chamber/melee/husk/normal",ominous_config:"minecraft:trial_chamber/melee/husk/ominous"}
+1501 cmd setblock 192 100 4 minecraft:trial_spawner[ominous=false]{normal_config:"minecraft:trial_chamber/ranged/skeleton/normal",ominous_config:"minecraft:trial_chamber/ranged/skeleton/ominous"}
+1501 cmd setblock 288 100 4 minecraft:trial_spawner[ominous=false]{normal_config:"minecraft:trial_chamber/small_melee/baby_zombie/normal",ominous_config:"minecraft:trial_chamber/small_melee/baby_zombie/ominous"}
+1501 cmd setblock 384 100 4 minecraft:trial_spawner[ominous=true]{normal_config:"minecraft:trial_chamber/breeze/normal",ominous_config:"minecraft:trial_chamber/breeze/ominous"}
+1501 cmd setblock 480 100 4 minecraft:trial_spawner[ominous=true]{normal_config:"minecraft:trial_chamber/melee/spider/normal",ominous_config:"minecraft:trial_chamber/melee/spider/ominous"}
+1501 cmd setblock 576 100 4 minecraft:trial_spawner[ominous=true]{normal_config:"minecraft:trial_chamber/ranged/stray/normal",ominous_config:"minecraft:trial_chamber/ranged/stray/ominous"}
+1501 cmd setblock 672 100 4 minecraft:trial_spawner[ominous=true]{normal_config:"minecraft:trial_chamber/small_melee/slime/normal",ominous_config:"minecraft:trial_chamber/small_melee/slime/ominous"}
+1510 attack trial0 8
+1510 attack trial1 8
+1510 attack trial2 8
+1510 attack trial3 8
+1510 attack trial4 8
+1510 attack trial5 8
+1510 attack trial6 8
+1510 attack trial7 8
+1520 attack trial0 8
+1520 attack trial1 8
+1520 attack trial2 8
+1520 attack trial3 8
+1520 attack trial4 8
+1520 attack trial5 8
+1520 attack trial6 8
+1520 attack trial7 8
+1530 attack trial0 8
+1530 attack trial1 8
+1530 attack trial2 8
+1530 attack trial3 8
+1530 attack trial4 8
+1530 attack trial5 8
+1530 attack trial6 8
+1530 attack trial7 8
+1540 attack trial0 8
+1540 attack trial1 8
+1540 attack trial2 8
+1540 attack trial3 8
+1540 attack trial4 8
+1540 attack trial5 8
+1540 attack trial6 8
+1540 attack trial7 8
+1550 attack trial0 8
+1550 attack trial1 8
+1550 attack trial2 8
+1550 attack trial3 8
+1550 attack trial4 8
+1550 attack trial5 8
+1550 attack trial6 8
+1550 attack trial7 8
+1560 attack trial0 8
+1560 attack trial1 8
+1560 attack trial2 8
+1560 attack trial3 8
+1560 attack trial4 8
+1560 attack trial5 8
+1560 attack trial6 8
+1560 attack trial7 8
+1570 attack trial0 8
+1570 attack trial1 8
+1570 attack trial2 8
+1570 attack trial3 8
+1570 attack trial4 8
+1570 attack trial5 8
+1570 attack trial6 8
+1570 attack trial7 8
+1580 attack trial0 8
+1580 attack trial1 8
+1580 attack trial2 8
+1580 attack trial3 8
+1580 attack trial4 8
+1580 attack trial5 8
+1580 attack trial6 8
+1580 attack trial7 8
+1590 attack trial0 8
+1590 attack trial1 8
+1590 attack trial2 8
+1590 attack trial3 8
+1590 attack trial4 8
+1590 attack trial5 8
+1590 attack trial6 8
+1590 attack trial7 8
+1600 attack trial0 8
+1600 attack trial1 8
+1600 attack trial2 8
+1600 attack trial3 8
+1600 attack trial4 8
+1600 attack trial5 8
+1600 attack trial6 8
+1600 attack trial7 8
+1610 attack trial0 8
+1610 attack trial1 8
+1610 attack trial2 8
+1610 attack trial3 8
+1610 attack trial4 8
+1610 attack trial5 8
+1610 attack trial6 8
+1610 attack trial7 8
+1620 attack trial0 8
+1620 attack trial1 8
+1620 attack trial2 8
+1620 attack trial3 8
+1620 attack trial4 8
+1620 attack trial5 8
+1620 attack trial6 8
+1620 attack trial7 8
+1630 attack trial0 8
+1630 attack trial1 8
+1630 attack trial2 8
+1630 attack trial3 8
+1630 attack trial4 8
+1630 attack trial5 8
+1630 attack trial6 8
+1630 attack trial7 8
+1640 attack trial0 8
+1640 attack trial1 8
+1640 attack trial2 8
+1640 attack trial3 8
+1640 attack trial4 8
+1640 attack trial5 8
+1640 attack trial6 8
+1640 attack trial7 8
+1650 attack trial0 8
+1650 attack trial1 8
+1650 attack trial2 8
+1650 attack trial3 8
+1650 attack trial4 8
+1650 attack trial5 8
+1650 attack trial6 8
+1650 attack trial7 8
+1660 attack trial0 8
+1660 cmd item replace entity trial0 weapon.mainhand with minecraft:trial_key
+1660 attack trial1 8
+1660 cmd item replace entity trial1 weapon.mainhand with minecraft:trial_key
+1660 attack trial2 8
+1660 cmd item replace entity trial2 weapon.mainhand with minecraft:trial_key
+1660 attack trial3 8
+1660 cmd item replace entity trial3 weapon.mainhand with minecraft:trial_key
+1660 attack trial4 8
+1660 cmd item replace entity trial4 weapon.mainhand with minecraft:ominous_trial_key
+1660 attack trial5 8
+1660 cmd item replace entity trial5 weapon.mainhand with minecraft:ominous_trial_key
+1660 attack trial6 8
+1660 cmd item replace entity trial6 weapon.mainhand with minecraft:ominous_trial_key
+1660 attack trial7 8
+1660 cmd item replace entity trial7 weapon.mainhand with minecraft:ominous_trial_key
+1661 useon trial0 4 100 0
+1661 useon trial1 100 100 0
+1661 useon trial2 196 100 0
+1661 useon trial3 292 100 0
+1661 useon trial4 388 100 0
+1661 useon trial5 484 100 0
+1661 useon trial6 580 100 0
+1661 useon trial7 676 100 0
+1662 cmd item replace entity trial0 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1662 cmd item replace entity trial1 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1662 cmd item replace entity trial2 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1662 cmd item replace entity trial3 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1662 cmd item replace entity trial4 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1662 cmd item replace entity trial5 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1662 cmd item replace entity trial6 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1662 cmd item replace entity trial7 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1670 attack trial0 8
+1670 attack trial1 8
+1670 attack trial2 8
+1670 attack trial3 8
+1670 attack trial4 8
+1670 attack trial5 8
+1670 attack trial6 8
+1670 attack trial7 8
+1680 attack trial0 8
+1680 attack trial1 8
+1680 attack trial2 8
+1680 attack trial3 8
+1680 attack trial4 8
+1680 attack trial5 8
+1680 attack trial6 8
+1680 attack trial7 8
+1690 attack trial0 8
+1690 attack trial1 8
+1690 attack trial2 8
+1690 attack trial3 8
+1690 attack trial4 8
+1690 attack trial5 8
+1690 attack trial6 8
+1690 attack trial7 8
+1700 attack trial0 8
+1700 attack trial1 8
+1700 attack trial2 8
+1700 attack trial3 8
+1700 attack trial4 8
+1700 attack trial5 8
+1700 attack trial6 8
+1700 attack trial7 8
+1710 attack trial0 8
+1710 attack trial1 8
+1710 attack trial2 8
+1710 attack trial3 8
+1710 attack trial4 8
+1710 attack trial5 8
+1710 attack trial6 8
+1710 attack trial7 8
+1720 attack trial0 8
+1720 attack trial1 8
+1720 attack trial2 8
+1720 attack trial3 8
+1720 attack trial4 8
+1720 attack trial5 8
+1720 attack trial6 8
+1720 attack trial7 8
+1730 attack trial0 8
+1730 attack trial1 8
+1730 attack trial2 8
+1730 attack trial3 8
+1730 attack trial4 8
+1730 attack trial5 8
+1730 attack trial6 8
+1730 attack trial7 8
+1740 attack trial0 8
+1740 attack trial1 8
+1740 attack trial2 8
+1740 attack trial3 8
+1740 attack trial4 8
+1740 attack trial5 8
+1740 attack trial6 8
+1740 attack trial7 8
+1750 attack trial0 8
+1750 attack trial1 8
+1750 attack trial2 8
+1750 attack trial3 8
+1750 attack trial4 8
+1750 attack trial5 8
+1750 attack trial6 8
+1750 attack trial7 8
+1760 attack trial0 8
+1760 attack trial1 8
+1760 attack trial2 8
+1760 attack trial3 8
+1760 attack trial4 8
+1760 attack trial5 8
+1760 attack trial6 8
+1760 attack trial7 8
+1770 attack trial0 8
+1770 attack trial1 8
+1770 attack trial2 8
+1770 attack trial3 8
+1770 attack trial4 8
+1770 attack trial5 8
+1770 attack trial6 8
+1770 attack trial7 8
+1780 attack trial0 8
+1780 attack trial1 8
+1780 attack trial2 8
+1780 attack trial3 8
+1780 attack trial4 8
+1780 attack trial5 8
+1780 attack trial6 8
+1780 attack trial7 8
+1790 attack trial0 8
+1790 attack trial1 8
+1790 attack trial2 8
+1790 attack trial3 8
+1790 attack trial4 8
+1790 attack trial5 8
+1790 attack trial6 8
+1790 attack trial7 8
+1800 attack trial0 8
+1800 attack trial1 8
+1800 attack trial2 8
+1800 attack trial3 8
+1800 attack trial4 8
+1800 attack trial5 8
+1800 attack trial6 8
+1800 attack trial7 8
+1810 attack trial0 8
+1810 attack trial1 8
+1810 attack trial2 8
+1810 attack trial3 8
+1810 attack trial4 8
+1810 attack trial5 8
+1810 attack trial6 8
+1810 attack trial7 8
+1820 attack trial0 8
+1820 attack trial1 8
+1820 attack trial2 8
+1820 attack trial3 8
+1820 attack trial4 8
+1820 attack trial5 8
+1820 attack trial6 8
+1820 attack trial7 8
+1830 attack trial0 8
+1830 attack trial1 8
+1830 attack trial2 8
+1830 attack trial3 8
+1830 attack trial4 8
+1830 attack trial5 8
+1830 attack trial6 8
+1830 attack trial7 8
+1840 attack trial0 8
+1840 attack trial1 8
+1840 attack trial2 8
+1840 attack trial3 8
+1840 attack trial4 8
+1840 attack trial5 8
+1840 attack trial6 8
+1840 attack trial7 8
+1850 attack trial0 8
+1850 attack trial1 8
+1850 attack trial2 8
+1850 attack trial3 8
+1850 attack trial4 8
+1850 attack trial5 8
+1850 attack trial6 8
+1850 attack trial7 8
+1860 attack trial0 8
+1860 cmd item replace entity trial0 weapon.mainhand with minecraft:trial_key
+1860 attack trial1 8
+1860 cmd item replace entity trial1 weapon.mainhand with minecraft:trial_key
+1860 attack trial2 8
+1860 cmd item replace entity trial2 weapon.mainhand with minecraft:trial_key
+1860 attack trial3 8
+1860 cmd item replace entity trial3 weapon.mainhand with minecraft:trial_key
+1860 attack trial4 8
+1860 cmd item replace entity trial4 weapon.mainhand with minecraft:ominous_trial_key
+1860 attack trial5 8
+1860 cmd item replace entity trial5 weapon.mainhand with minecraft:ominous_trial_key
+1860 attack trial6 8
+1860 cmd item replace entity trial6 weapon.mainhand with minecraft:ominous_trial_key
+1860 attack trial7 8
+1860 cmd item replace entity trial7 weapon.mainhand with minecraft:ominous_trial_key
+1861 useon trial0 4 100 0
+1861 useon trial1 100 100 0
+1861 useon trial2 196 100 0
+1861 useon trial3 292 100 0
+1861 useon trial4 388 100 0
+1861 useon trial5 484 100 0
+1861 useon trial6 580 100 0
+1861 useon trial7 676 100 0
+1862 cmd item replace entity trial0 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1862 cmd item replace entity trial1 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1862 cmd item replace entity trial2 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1862 cmd item replace entity trial3 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1862 cmd item replace entity trial4 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1862 cmd item replace entity trial5 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1862 cmd item replace entity trial6 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1862 cmd item replace entity trial7 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+1870 attack trial0 8
+1870 attack trial1 8
+1870 attack trial2 8
+1870 attack trial3 8
+1870 attack trial4 8
+1870 attack trial5 8
+1870 attack trial6 8
+1870 attack trial7 8
+1880 attack trial0 8
+1880 attack trial1 8
+1880 attack trial2 8
+1880 attack trial3 8
+1880 attack trial4 8
+1880 attack trial5 8
+1880 attack trial6 8
+1880 attack trial7 8
+1890 attack trial0 8
+1890 attack trial1 8
+1890 attack trial2 8
+1890 attack trial3 8
+1890 attack trial4 8
+1890 attack trial5 8
+1890 attack trial6 8
+1890 attack trial7 8
+1900 attack trial0 8
+1900 attack trial1 8
+1900 attack trial2 8
+1900 attack trial3 8
+1900 attack trial4 8
+1900 attack trial5 8
+1900 attack trial6 8
+1900 attack trial7 8
+1910 attack trial0 8
+1910 attack trial1 8
+1910 attack trial2 8
+1910 attack trial3 8
+1910 attack trial4 8
+1910 attack trial5 8
+1910 attack trial6 8
+1910 attack trial7 8
+1920 attack trial0 8
+1920 attack trial1 8
+1920 attack trial2 8
+1920 attack trial3 8
+1920 attack trial4 8
+1920 attack trial5 8
+1920 attack trial6 8
+1920 attack trial7 8
+1930 attack trial0 8
+1930 attack trial1 8
+1930 attack trial2 8
+1930 attack trial3 8
+1930 attack trial4 8
+1930 attack trial5 8
+1930 attack trial6 8
+1930 attack trial7 8
+1940 attack trial0 8
+1940 attack trial1 8
+1940 attack trial2 8
+1940 attack trial3 8
+1940 attack trial4 8
+1940 attack trial5 8
+1940 attack trial6 8
+1940 attack trial7 8
+1950 attack trial0 8
+1950 attack trial1 8
+1950 attack trial2 8
+1950 attack trial3 8
+1950 attack trial4 8
+1950 attack trial5 8
+1950 attack trial6 8
+1950 attack trial7 8
+1960 attack trial0 8
+1960 attack trial1 8
+1960 attack trial2 8
+1960 attack trial3 8
+1960 attack trial4 8
+1960 attack trial5 8
+1960 attack trial6 8
+1960 attack trial7 8
+1970 attack trial0 8
+1970 attack trial1 8
+1970 attack trial2 8
+1970 attack trial3 8
+1970 attack trial4 8
+1970 attack trial5 8
+1970 attack trial6 8
+1970 attack trial7 8
+1980 attack trial0 8
+1980 attack trial1 8
+1980 attack trial2 8
+1980 attack trial3 8
+1980 attack trial4 8
+1980 attack trial5 8
+1980 attack trial6 8
+1980 attack trial7 8
+1990 attack trial0 8
+1990 attack trial1 8
+1990 attack trial2 8
+1990 attack trial3 8
+1990 attack trial4 8
+1990 attack trial5 8
+1990 attack trial6 8
+1990 attack trial7 8
+2000 attack trial0 8
+2000 attack trial1 8
+2000 attack trial2 8
+2000 attack trial3 8
+2000 attack trial4 8
+2000 attack trial5 8
+2000 attack trial6 8
+2000 attack trial7 8
+2010 attack trial0 8
+2010 attack trial1 8
+2010 attack trial2 8
+2010 attack trial3 8
+2010 attack trial4 8
+2010 attack trial5 8
+2010 attack trial6 8
+2010 attack trial7 8
+2020 attack trial0 8
+2020 attack trial1 8
+2020 attack trial2 8
+2020 attack trial3 8
+2020 attack trial4 8
+2020 attack trial5 8
+2020 attack trial6 8
+2020 attack trial7 8
+2030 attack trial0 8
+2030 attack trial1 8
+2030 attack trial2 8
+2030 attack trial3 8
+2030 attack trial4 8
+2030 attack trial5 8
+2030 attack trial6 8
+2030 attack trial7 8
+2040 attack trial0 8
+2040 attack trial1 8
+2040 attack trial2 8
+2040 attack trial3 8
+2040 attack trial4 8
+2040 attack trial5 8
+2040 attack trial6 8
+2040 attack trial7 8
+2050 attack trial0 8
+2050 attack trial1 8
+2050 attack trial2 8
+2050 attack trial3 8
+2050 attack trial4 8
+2050 attack trial5 8
+2050 attack trial6 8
+2050 attack trial7 8
+2060 attack trial0 8
+2060 cmd item replace entity trial0 weapon.mainhand with minecraft:trial_key
+2060 attack trial1 8
+2060 cmd item replace entity trial1 weapon.mainhand with minecraft:trial_key
+2060 attack trial2 8
+2060 cmd item replace entity trial2 weapon.mainhand with minecraft:trial_key
+2060 attack trial3 8
+2060 cmd item replace entity trial3 weapon.mainhand with minecraft:trial_key
+2060 attack trial4 8
+2060 cmd item replace entity trial4 weapon.mainhand with minecraft:ominous_trial_key
+2060 attack trial5 8
+2060 cmd item replace entity trial5 weapon.mainhand with minecraft:ominous_trial_key
+2060 attack trial6 8
+2060 cmd item replace entity trial6 weapon.mainhand with minecraft:ominous_trial_key
+2060 attack trial7 8
+2060 cmd item replace entity trial7 weapon.mainhand with minecraft:ominous_trial_key
+2061 useon trial0 4 100 0
+2061 useon trial1 100 100 0
+2061 useon trial2 196 100 0
+2061 useon trial3 292 100 0
+2061 useon trial4 388 100 0
+2061 useon trial5 484 100 0
+2061 useon trial6 580 100 0
+2061 useon trial7 676 100 0
+2062 cmd item replace entity trial0 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2062 cmd item replace entity trial1 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2062 cmd item replace entity trial2 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2062 cmd item replace entity trial3 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2062 cmd item replace entity trial4 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2062 cmd item replace entity trial5 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2062 cmd item replace entity trial6 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2062 cmd item replace entity trial7 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2070 attack trial0 8
+2070 attack trial1 8
+2070 attack trial2 8
+2070 attack trial3 8
+2070 attack trial4 8
+2070 attack trial5 8
+2070 attack trial6 8
+2070 attack trial7 8
+2080 attack trial0 8
+2080 attack trial1 8
+2080 attack trial2 8
+2080 attack trial3 8
+2080 attack trial4 8
+2080 attack trial5 8
+2080 attack trial6 8
+2080 attack trial7 8
+2090 attack trial0 8
+2090 attack trial1 8
+2090 attack trial2 8
+2090 attack trial3 8
+2090 attack trial4 8
+2090 attack trial5 8
+2090 attack trial6 8
+2090 attack trial7 8
+2100 attack trial0 8
+2100 attack trial1 8
+2100 attack trial2 8
+2100 attack trial3 8
+2100 attack trial4 8
+2100 attack trial5 8
+2100 attack trial6 8
+2100 attack trial7 8
+2110 attack trial0 8
+2110 attack trial1 8
+2110 attack trial2 8
+2110 attack trial3 8
+2110 attack trial4 8
+2110 attack trial5 8
+2110 attack trial6 8
+2110 attack trial7 8
+2120 attack trial0 8
+2120 attack trial1 8
+2120 attack trial2 8
+2120 attack trial3 8
+2120 attack trial4 8
+2120 attack trial5 8
+2120 attack trial6 8
+2120 attack trial7 8
+2130 attack trial0 8
+2130 attack trial1 8
+2130 attack trial2 8
+2130 attack trial3 8
+2130 attack trial4 8
+2130 attack trial5 8
+2130 attack trial6 8
+2130 attack trial7 8
+2140 attack trial0 8
+2140 attack trial1 8
+2140 attack trial2 8
+2140 attack trial3 8
+2140 attack trial4 8
+2140 attack trial5 8
+2140 attack trial6 8
+2140 attack trial7 8
+2150 attack trial0 8
+2150 attack trial1 8
+2150 attack trial2 8
+2150 attack trial3 8
+2150 attack trial4 8
+2150 attack trial5 8
+2150 attack trial6 8
+2150 attack trial7 8
+2160 attack trial0 8
+2160 attack trial1 8
+2160 attack trial2 8
+2160 attack trial3 8
+2160 attack trial4 8
+2160 attack trial5 8
+2160 attack trial6 8
+2160 attack trial7 8
+2170 attack trial0 8
+2170 attack trial1 8
+2170 attack trial2 8
+2170 attack trial3 8
+2170 attack trial4 8
+2170 attack trial5 8
+2170 attack trial6 8
+2170 attack trial7 8
+2180 attack trial0 8
+2180 attack trial1 8
+2180 attack trial2 8
+2180 attack trial3 8
+2180 attack trial4 8
+2180 attack trial5 8
+2180 attack trial6 8
+2180 attack trial7 8
+2190 attack trial0 8
+2190 attack trial1 8
+2190 attack trial2 8
+2190 attack trial3 8
+2190 attack trial4 8
+2190 attack trial5 8
+2190 attack trial6 8
+2190 attack trial7 8
+2200 attack trial0 8
+2200 attack trial1 8
+2200 attack trial2 8
+2200 attack trial3 8
+2200 attack trial4 8
+2200 attack trial5 8
+2200 attack trial6 8
+2200 attack trial7 8
+2210 attack trial0 8
+2210 attack trial1 8
+2210 attack trial2 8
+2210 attack trial3 8
+2210 attack trial4 8
+2210 attack trial5 8
+2210 attack trial6 8
+2210 attack trial7 8
+2220 attack trial0 8
+2220 attack trial1 8
+2220 attack trial2 8
+2220 attack trial3 8
+2220 attack trial4 8
+2220 attack trial5 8
+2220 attack trial6 8
+2220 attack trial7 8
+2230 attack trial0 8
+2230 attack trial1 8
+2230 attack trial2 8
+2230 attack trial3 8
+2230 attack trial4 8
+2230 attack trial5 8
+2230 attack trial6 8
+2230 attack trial7 8
+2240 attack trial0 8
+2240 attack trial1 8
+2240 attack trial2 8
+2240 attack trial3 8
+2240 attack trial4 8
+2240 attack trial5 8
+2240 attack trial6 8
+2240 attack trial7 8
+2250 attack trial0 8
+2250 attack trial1 8
+2250 attack trial2 8
+2250 attack trial3 8
+2250 attack trial4 8
+2250 attack trial5 8
+2250 attack trial6 8
+2250 attack trial7 8
+2260 attack trial0 8
+2260 cmd item replace entity trial0 weapon.mainhand with minecraft:trial_key
+2260 attack trial1 8
+2260 cmd item replace entity trial1 weapon.mainhand with minecraft:trial_key
+2260 attack trial2 8
+2260 cmd item replace entity trial2 weapon.mainhand with minecraft:trial_key
+2260 attack trial3 8
+2260 cmd item replace entity trial3 weapon.mainhand with minecraft:trial_key
+2260 attack trial4 8
+2260 cmd item replace entity trial4 weapon.mainhand with minecraft:ominous_trial_key
+2260 attack trial5 8
+2260 cmd item replace entity trial5 weapon.mainhand with minecraft:ominous_trial_key
+2260 attack trial6 8
+2260 cmd item replace entity trial6 weapon.mainhand with minecraft:ominous_trial_key
+2260 attack trial7 8
+2260 cmd item replace entity trial7 weapon.mainhand with minecraft:ominous_trial_key
+2261 useon trial0 4 100 0
+2261 useon trial1 100 100 0
+2261 useon trial2 196 100 0
+2261 useon trial3 292 100 0
+2261 useon trial4 388 100 0
+2261 useon trial5 484 100 0
+2261 useon trial6 580 100 0
+2261 useon trial7 676 100 0
+2262 cmd item replace entity trial0 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2262 cmd item replace entity trial1 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2262 cmd item replace entity trial2 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2262 cmd item replace entity trial3 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2262 cmd item replace entity trial4 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2262 cmd item replace entity trial5 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2262 cmd item replace entity trial6 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2262 cmd item replace entity trial7 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2270 attack trial0 8
+2270 attack trial1 8
+2270 attack trial2 8
+2270 attack trial3 8
+2270 attack trial4 8
+2270 attack trial5 8
+2270 attack trial6 8
+2270 attack trial7 8
+2280 attack trial0 8
+2280 attack trial1 8
+2280 attack trial2 8
+2280 attack trial3 8
+2280 attack trial4 8
+2280 attack trial5 8
+2280 attack trial6 8
+2280 attack trial7 8
+2290 attack trial0 8
+2290 attack trial1 8
+2290 attack trial2 8
+2290 attack trial3 8
+2290 attack trial4 8
+2290 attack trial5 8
+2290 attack trial6 8
+2290 attack trial7 8
+2300 attack trial0 8
+2300 attack trial1 8
+2300 attack trial2 8
+2300 attack trial3 8
+2300 attack trial4 8
+2300 attack trial5 8
+2300 attack trial6 8
+2300 attack trial7 8
+2310 attack trial0 8
+2310 attack trial1 8
+2310 attack trial2 8
+2310 attack trial3 8
+2310 attack trial4 8
+2310 attack trial5 8
+2310 attack trial6 8
+2310 attack trial7 8
+2320 attack trial0 8
+2320 attack trial1 8
+2320 attack trial2 8
+2320 attack trial3 8
+2320 attack trial4 8
+2320 attack trial5 8
+2320 attack trial6 8
+2320 attack trial7 8
+2330 attack trial0 8
+2330 attack trial1 8
+2330 attack trial2 8
+2330 attack trial3 8
+2330 attack trial4 8
+2330 attack trial5 8
+2330 attack trial6 8
+2330 attack trial7 8
+2340 attack trial0 8
+2340 attack trial1 8
+2340 attack trial2 8
+2340 attack trial3 8
+2340 attack trial4 8
+2340 attack trial5 8
+2340 attack trial6 8
+2340 attack trial7 8
+2350 attack trial0 8
+2350 attack trial1 8
+2350 attack trial2 8
+2350 attack trial3 8
+2350 attack trial4 8
+2350 attack trial5 8
+2350 attack trial6 8
+2350 attack trial7 8
+2360 attack trial0 8
+2360 attack trial1 8
+2360 attack trial2 8
+2360 attack trial3 8
+2360 attack trial4 8
+2360 attack trial5 8
+2360 attack trial6 8
+2360 attack trial7 8
+2370 attack trial0 8
+2370 attack trial1 8
+2370 attack trial2 8
+2370 attack trial3 8
+2370 attack trial4 8
+2370 attack trial5 8
+2370 attack trial6 8
+2370 attack trial7 8
+2380 attack trial0 8
+2380 attack trial1 8
+2380 attack trial2 8
+2380 attack trial3 8
+2380 attack trial4 8
+2380 attack trial5 8
+2380 attack trial6 8
+2380 attack trial7 8
+2390 attack trial0 8
+2390 attack trial1 8
+2390 attack trial2 8
+2390 attack trial3 8
+2390 attack trial4 8
+2390 attack trial5 8
+2390 attack trial6 8
+2390 attack trial7 8
+2400 attack trial0 8
+2400 attack trial1 8
+2400 attack trial2 8
+2400 attack trial3 8
+2400 attack trial4 8
+2400 attack trial5 8
+2400 attack trial6 8
+2400 attack trial7 8
+2410 attack trial0 8
+2410 attack trial1 8
+2410 attack trial2 8
+2410 attack trial3 8
+2410 attack trial4 8
+2410 attack trial5 8
+2410 attack trial6 8
+2410 attack trial7 8
+2420 attack trial0 8
+2420 attack trial1 8
+2420 attack trial2 8
+2420 attack trial3 8
+2420 attack trial4 8
+2420 attack trial5 8
+2420 attack trial6 8
+2420 attack trial7 8
+2430 attack trial0 8
+2430 attack trial1 8
+2430 attack trial2 8
+2430 attack trial3 8
+2430 attack trial4 8
+2430 attack trial5 8
+2430 attack trial6 8
+2430 attack trial7 8
+2440 attack trial0 8
+2440 attack trial1 8
+2440 attack trial2 8
+2440 attack trial3 8
+2440 attack trial4 8
+2440 attack trial5 8
+2440 attack trial6 8
+2440 attack trial7 8
+2450 attack trial0 8
+2450 attack trial1 8
+2450 attack trial2 8
+2450 attack trial3 8
+2450 attack trial4 8
+2450 attack trial5 8
+2450 attack trial6 8
+2450 attack trial7 8
+2460 attack trial0 8
+2460 cmd item replace entity trial0 weapon.mainhand with minecraft:trial_key
+2460 attack trial1 8
+2460 cmd item replace entity trial1 weapon.mainhand with minecraft:trial_key
+2460 attack trial2 8
+2460 cmd item replace entity trial2 weapon.mainhand with minecraft:trial_key
+2460 attack trial3 8
+2460 cmd item replace entity trial3 weapon.mainhand with minecraft:trial_key
+2460 attack trial4 8
+2460 cmd item replace entity trial4 weapon.mainhand with minecraft:ominous_trial_key
+2460 attack trial5 8
+2460 cmd item replace entity trial5 weapon.mainhand with minecraft:ominous_trial_key
+2460 attack trial6 8
+2460 cmd item replace entity trial6 weapon.mainhand with minecraft:ominous_trial_key
+2460 attack trial7 8
+2460 cmd item replace entity trial7 weapon.mainhand with minecraft:ominous_trial_key
+2461 useon trial0 4 100 0
+2461 useon trial1 100 100 0
+2461 useon trial2 196 100 0
+2461 useon trial3 292 100 0
+2461 useon trial4 388 100 0
+2461 useon trial5 484 100 0
+2461 useon trial6 580 100 0
+2461 useon trial7 676 100 0
+2462 cmd item replace entity trial0 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2462 cmd item replace entity trial1 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2462 cmd item replace entity trial2 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2462 cmd item replace entity trial3 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2462 cmd item replace entity trial4 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2462 cmd item replace entity trial5 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2462 cmd item replace entity trial6 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2462 cmd item replace entity trial7 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2470 attack trial0 8
+2470 attack trial1 8
+2470 attack trial2 8
+2470 attack trial3 8
+2470 attack trial4 8
+2470 attack trial5 8
+2470 attack trial6 8
+2470 attack trial7 8
+2480 attack trial0 8
+2480 attack trial1 8
+2480 attack trial2 8
+2480 attack trial3 8
+2480 attack trial4 8
+2480 attack trial5 8
+2480 attack trial6 8
+2480 attack trial7 8
+2490 attack trial0 8
+2490 attack trial1 8
+2490 attack trial2 8
+2490 attack trial3 8
+2490 attack trial4 8
+2490 attack trial5 8
+2490 attack trial6 8
+2490 attack trial7 8
+2500 attack trial0 8
+2500 attack trial1 8
+2500 attack trial2 8
+2500 attack trial3 8
+2500 attack trial4 8
+2500 attack trial5 8
+2500 attack trial6 8
+2500 attack trial7 8
+2510 attack trial0 8
+2510 attack trial1 8
+2510 attack trial2 8
+2510 attack trial3 8
+2510 attack trial4 8
+2510 attack trial5 8
+2510 attack trial6 8
+2510 attack trial7 8
+2520 attack trial0 8
+2520 attack trial1 8
+2520 attack trial2 8
+2520 attack trial3 8
+2520 attack trial4 8
+2520 attack trial5 8
+2520 attack trial6 8
+2520 attack trial7 8
+2530 attack trial0 8
+2530 attack trial1 8
+2530 attack trial2 8
+2530 attack trial3 8
+2530 attack trial4 8
+2530 attack trial5 8
+2530 attack trial6 8
+2530 attack trial7 8
+2540 attack trial0 8
+2540 attack trial1 8
+2540 attack trial2 8
+2540 attack trial3 8
+2540 attack trial4 8
+2540 attack trial5 8
+2540 attack trial6 8
+2540 attack trial7 8
+2550 attack trial0 8
+2550 attack trial1 8
+2550 attack trial2 8
+2550 attack trial3 8
+2550 attack trial4 8
+2550 attack trial5 8
+2550 attack trial6 8
+2550 attack trial7 8
+2560 attack trial0 8
+2560 attack trial1 8
+2560 attack trial2 8
+2560 attack trial3 8
+2560 attack trial4 8
+2560 attack trial5 8
+2560 attack trial6 8
+2560 attack trial7 8
+2570 attack trial0 8
+2570 attack trial1 8
+2570 attack trial2 8
+2570 attack trial3 8
+2570 attack trial4 8
+2570 attack trial5 8
+2570 attack trial6 8
+2570 attack trial7 8
+2580 attack trial0 8
+2580 attack trial1 8
+2580 attack trial2 8
+2580 attack trial3 8
+2580 attack trial4 8
+2580 attack trial5 8
+2580 attack trial6 8
+2580 attack trial7 8
+2590 attack trial0 8
+2590 attack trial1 8
+2590 attack trial2 8
+2590 attack trial3 8
+2590 attack trial4 8
+2590 attack trial5 8
+2590 attack trial6 8
+2590 attack trial7 8
+2600 attack trial0 8
+2600 attack trial1 8
+2600 attack trial2 8
+2600 attack trial3 8
+2600 attack trial4 8
+2600 attack trial5 8
+2600 attack trial6 8
+2600 attack trial7 8
+2610 attack trial0 8
+2610 attack trial1 8
+2610 attack trial2 8
+2610 attack trial3 8
+2610 attack trial4 8
+2610 attack trial5 8
+2610 attack trial6 8
+2610 attack trial7 8
+2620 attack trial0 8
+2620 attack trial1 8
+2620 attack trial2 8
+2620 attack trial3 8
+2620 attack trial4 8
+2620 attack trial5 8
+2620 attack trial6 8
+2620 attack trial7 8
+2630 attack trial0 8
+2630 attack trial1 8
+2630 attack trial2 8
+2630 attack trial3 8
+2630 attack trial4 8
+2630 attack trial5 8
+2630 attack trial6 8
+2630 attack trial7 8
+2640 attack trial0 8
+2640 attack trial1 8
+2640 attack trial2 8
+2640 attack trial3 8
+2640 attack trial4 8
+2640 attack trial5 8
+2640 attack trial6 8
+2640 attack trial7 8
+2650 attack trial0 8
+2650 attack trial1 8
+2650 attack trial2 8
+2650 attack trial3 8
+2650 attack trial4 8
+2650 attack trial5 8
+2650 attack trial6 8
+2650 attack trial7 8
+2660 attack trial0 8
+2660 cmd item replace entity trial0 weapon.mainhand with minecraft:trial_key
+2660 attack trial1 8
+2660 cmd item replace entity trial1 weapon.mainhand with minecraft:trial_key
+2660 attack trial2 8
+2660 cmd item replace entity trial2 weapon.mainhand with minecraft:trial_key
+2660 attack trial3 8
+2660 cmd item replace entity trial3 weapon.mainhand with minecraft:trial_key
+2660 attack trial4 8
+2660 cmd item replace entity trial4 weapon.mainhand with minecraft:ominous_trial_key
+2660 attack trial5 8
+2660 cmd item replace entity trial5 weapon.mainhand with minecraft:ominous_trial_key
+2660 attack trial6 8
+2660 cmd item replace entity trial6 weapon.mainhand with minecraft:ominous_trial_key
+2660 attack trial7 8
+2660 cmd item replace entity trial7 weapon.mainhand with minecraft:ominous_trial_key
+2661 useon trial0 4 100 0
+2661 useon trial1 100 100 0
+2661 useon trial2 196 100 0
+2661 useon trial3 292 100 0
+2661 useon trial4 388 100 0
+2661 useon trial5 484 100 0
+2661 useon trial6 580 100 0
+2661 useon trial7 676 100 0
+2662 cmd item replace entity trial0 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2662 cmd item replace entity trial1 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2662 cmd item replace entity trial2 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2662 cmd item replace entity trial3 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2662 cmd item replace entity trial4 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2662 cmd item replace entity trial5 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2662 cmd item replace entity trial6 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2662 cmd item replace entity trial7 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2670 attack trial0 8
+2670 attack trial1 8
+2670 attack trial2 8
+2670 attack trial3 8
+2670 attack trial4 8
+2670 attack trial5 8
+2670 attack trial6 8
+2670 attack trial7 8
+2680 attack trial0 8
+2680 attack trial1 8
+2680 attack trial2 8
+2680 attack trial3 8
+2680 attack trial4 8
+2680 attack trial5 8
+2680 attack trial6 8
+2680 attack trial7 8
+2690 attack trial0 8
+2690 attack trial1 8
+2690 attack trial2 8
+2690 attack trial3 8
+2690 attack trial4 8
+2690 attack trial5 8
+2690 attack trial6 8
+2690 attack trial7 8
+2700 attack trial0 8
+2700 cmd setblock 0 100 4 minecraft:air
+2700 attack trial1 8
+2700 cmd setblock 96 100 4 minecraft:air
+2700 attack trial2 8
+2700 cmd setblock 192 100 4 minecraft:air
+2700 attack trial3 8
+2700 cmd setblock 288 100 4 minecraft:air
+2700 attack trial4 8
+2700 cmd setblock 384 100 4 minecraft:air
+2700 attack trial5 8
+2700 cmd setblock 480 100 4 minecraft:air
+2700 attack trial6 8
+2700 cmd setblock 576 100 4 minecraft:air
+2700 attack trial7 8
+2700 cmd setblock 672 100 4 minecraft:air
+2701 cmd setblock 0 100 4 minecraft:trial_spawner[ominous=false]{normal_config:"minecraft:trial_chamber/melee/zombie/normal",ominous_config:"minecraft:trial_chamber/melee/zombie/ominous"}
+2701 cmd setblock 96 100 4 minecraft:trial_spawner[ominous=false]{normal_config:"minecraft:trial_chamber/melee/husk/normal",ominous_config:"minecraft:trial_chamber/melee/husk/ominous"}
+2701 cmd setblock 192 100 4 minecraft:trial_spawner[ominous=false]{normal_config:"minecraft:trial_chamber/ranged/skeleton/normal",ominous_config:"minecraft:trial_chamber/ranged/skeleton/ominous"}
+2701 cmd setblock 288 100 4 minecraft:trial_spawner[ominous=false]{normal_config:"minecraft:trial_chamber/small_melee/baby_zombie/normal",ominous_config:"minecraft:trial_chamber/small_melee/baby_zombie/ominous"}
+2701 cmd setblock 384 100 4 minecraft:trial_spawner[ominous=true]{normal_config:"minecraft:trial_chamber/breeze/normal",ominous_config:"minecraft:trial_chamber/breeze/ominous"}
+2701 cmd setblock 480 100 4 minecraft:trial_spawner[ominous=true]{normal_config:"minecraft:trial_chamber/melee/spider/normal",ominous_config:"minecraft:trial_chamber/melee/spider/ominous"}
+2701 cmd setblock 576 100 4 minecraft:trial_spawner[ominous=true]{normal_config:"minecraft:trial_chamber/ranged/stray/normal",ominous_config:"minecraft:trial_chamber/ranged/stray/ominous"}
+2701 cmd setblock 672 100 4 minecraft:trial_spawner[ominous=true]{normal_config:"minecraft:trial_chamber/small_melee/slime/normal",ominous_config:"minecraft:trial_chamber/small_melee/slime/ominous"}
+2710 attack trial0 8
+2710 attack trial1 8
+2710 attack trial2 8
+2710 attack trial3 8
+2710 attack trial4 8
+2710 attack trial5 8
+2710 attack trial6 8
+2710 attack trial7 8
+2720 attack trial0 8
+2720 attack trial1 8
+2720 attack trial2 8
+2720 attack trial3 8
+2720 attack trial4 8
+2720 attack trial5 8
+2720 attack trial6 8
+2720 attack trial7 8
+2730 attack trial0 8
+2730 attack trial1 8
+2730 attack trial2 8
+2730 attack trial3 8
+2730 attack trial4 8
+2730 attack trial5 8
+2730 attack trial6 8
+2730 attack trial7 8
+2740 attack trial0 8
+2740 attack trial1 8
+2740 attack trial2 8
+2740 attack trial3 8
+2740 attack trial4 8
+2740 attack trial5 8
+2740 attack trial6 8
+2740 attack trial7 8
+2750 attack trial0 8
+2750 attack trial1 8
+2750 attack trial2 8
+2750 attack trial3 8
+2750 attack trial4 8
+2750 attack trial5 8
+2750 attack trial6 8
+2750 attack trial7 8
+2760 attack trial0 8
+2760 attack trial1 8
+2760 attack trial2 8
+2760 attack trial3 8
+2760 attack trial4 8
+2760 attack trial5 8
+2760 attack trial6 8
+2760 attack trial7 8
+2770 attack trial0 8
+2770 attack trial1 8
+2770 attack trial2 8
+2770 attack trial3 8
+2770 attack trial4 8
+2770 attack trial5 8
+2770 attack trial6 8
+2770 attack trial7 8
+2780 attack trial0 8
+2780 attack trial1 8
+2780 attack trial2 8
+2780 attack trial3 8
+2780 attack trial4 8
+2780 attack trial5 8
+2780 attack trial6 8
+2780 attack trial7 8
+2790 attack trial0 8
+2790 attack trial1 8
+2790 attack trial2 8
+2790 attack trial3 8
+2790 attack trial4 8
+2790 attack trial5 8
+2790 attack trial6 8
+2790 attack trial7 8
+2800 attack trial0 8
+2800 attack trial1 8
+2800 attack trial2 8
+2800 attack trial3 8
+2800 attack trial4 8
+2800 attack trial5 8
+2800 attack trial6 8
+2800 attack trial7 8
+2810 attack trial0 8
+2810 attack trial1 8
+2810 attack trial2 8
+2810 attack trial3 8
+2810 attack trial4 8
+2810 attack trial5 8
+2810 attack trial6 8
+2810 attack trial7 8
+2820 attack trial0 8
+2820 attack trial1 8
+2820 attack trial2 8
+2820 attack trial3 8
+2820 attack trial4 8
+2820 attack trial5 8
+2820 attack trial6 8
+2820 attack trial7 8
+2830 attack trial0 8
+2830 attack trial1 8
+2830 attack trial2 8
+2830 attack trial3 8
+2830 attack trial4 8
+2830 attack trial5 8
+2830 attack trial6 8
+2830 attack trial7 8
+2840 attack trial0 8
+2840 attack trial1 8
+2840 attack trial2 8
+2840 attack trial3 8
+2840 attack trial4 8
+2840 attack trial5 8
+2840 attack trial6 8
+2840 attack trial7 8
+2850 attack trial0 8
+2850 attack trial1 8
+2850 attack trial2 8
+2850 attack trial3 8
+2850 attack trial4 8
+2850 attack trial5 8
+2850 attack trial6 8
+2850 attack trial7 8
+2860 attack trial0 8
+2860 cmd item replace entity trial0 weapon.mainhand with minecraft:trial_key
+2860 attack trial1 8
+2860 cmd item replace entity trial1 weapon.mainhand with minecraft:trial_key
+2860 attack trial2 8
+2860 cmd item replace entity trial2 weapon.mainhand with minecraft:trial_key
+2860 attack trial3 8
+2860 cmd item replace entity trial3 weapon.mainhand with minecraft:trial_key
+2860 attack trial4 8
+2860 cmd item replace entity trial4 weapon.mainhand with minecraft:ominous_trial_key
+2860 attack trial5 8
+2860 cmd item replace entity trial5 weapon.mainhand with minecraft:ominous_trial_key
+2860 attack trial6 8
+2860 cmd item replace entity trial6 weapon.mainhand with minecraft:ominous_trial_key
+2860 attack trial7 8
+2860 cmd item replace entity trial7 weapon.mainhand with minecraft:ominous_trial_key
+2861 useon trial0 4 100 0
+2861 useon trial1 100 100 0
+2861 useon trial2 196 100 0
+2861 useon trial3 292 100 0
+2861 useon trial4 388 100 0
+2861 useon trial5 484 100 0
+2861 useon trial6 580 100 0
+2861 useon trial7 676 100 0
+2862 cmd item replace entity trial0 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2862 cmd item replace entity trial1 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2862 cmd item replace entity trial2 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2862 cmd item replace entity trial3 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2862 cmd item replace entity trial4 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2862 cmd item replace entity trial5 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2862 cmd item replace entity trial6 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2862 cmd item replace entity trial7 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+2870 attack trial0 8
+2870 attack trial1 8
+2870 attack trial2 8
+2870 attack trial3 8
+2870 attack trial4 8
+2870 attack trial5 8
+2870 attack trial6 8
+2870 attack trial7 8
+2880 attack trial0 8
+2880 attack trial1 8
+2880 attack trial2 8
+2880 attack trial3 8
+2880 attack trial4 8
+2880 attack trial5 8
+2880 attack trial6 8
+2880 attack trial7 8
+2890 attack trial0 8
+2890 attack trial1 8
+2890 attack trial2 8
+2890 attack trial3 8
+2890 attack trial4 8
+2890 attack trial5 8
+2890 attack trial6 8
+2890 attack trial7 8
+2900 attack trial0 8
+2900 attack trial1 8
+2900 attack trial2 8
+2900 attack trial3 8
+2900 attack trial4 8
+2900 attack trial5 8
+2900 attack trial6 8
+2900 attack trial7 8
+2910 attack trial0 8
+2910 attack trial1 8
+2910 attack trial2 8
+2910 attack trial3 8
+2910 attack trial4 8
+2910 attack trial5 8
+2910 attack trial6 8
+2910 attack trial7 8
+2920 attack trial0 8
+2920 attack trial1 8
+2920 attack trial2 8
+2920 attack trial3 8
+2920 attack trial4 8
+2920 attack trial5 8
+2920 attack trial6 8
+2920 attack trial7 8
+2930 attack trial0 8
+2930 attack trial1 8
+2930 attack trial2 8
+2930 attack trial3 8
+2930 attack trial4 8
+2930 attack trial5 8
+2930 attack trial6 8
+2930 attack trial7 8
+2940 attack trial0 8
+2940 attack trial1 8
+2940 attack trial2 8
+2940 attack trial3 8
+2940 attack trial4 8
+2940 attack trial5 8
+2940 attack trial6 8
+2940 attack trial7 8
+2950 attack trial0 8
+2950 attack trial1 8
+2950 attack trial2 8
+2950 attack trial3 8
+2950 attack trial4 8
+2950 attack trial5 8
+2950 attack trial6 8
+2950 attack trial7 8
+2960 attack trial0 8
+2960 attack trial1 8
+2960 attack trial2 8
+2960 attack trial3 8
+2960 attack trial4 8
+2960 attack trial5 8
+2960 attack trial6 8
+2960 attack trial7 8
+2970 attack trial0 8
+2970 attack trial1 8
+2970 attack trial2 8
+2970 attack trial3 8
+2970 attack trial4 8
+2970 attack trial5 8
+2970 attack trial6 8
+2970 attack trial7 8
+2980 attack trial0 8
+2980 attack trial1 8
+2980 attack trial2 8
+2980 attack trial3 8
+2980 attack trial4 8
+2980 attack trial5 8
+2980 attack trial6 8
+2980 attack trial7 8
+2990 attack trial0 8
+2990 attack trial1 8
+2990 attack trial2 8
+2990 attack trial3 8
+2990 attack trial4 8
+2990 attack trial5 8
+2990 attack trial6 8
+2990 attack trial7 8
+3000 attack trial0 8
+3000 attack trial1 8
+3000 attack trial2 8
+3000 attack trial3 8
+3000 attack trial4 8
+3000 attack trial5 8
+3000 attack trial6 8
+3000 attack trial7 8
+3010 attack trial0 8
+3010 attack trial1 8
+3010 attack trial2 8
+3010 attack trial3 8
+3010 attack trial4 8
+3010 attack trial5 8
+3010 attack trial6 8
+3010 attack trial7 8
+3020 attack trial0 8
+3020 attack trial1 8
+3020 attack trial2 8
+3020 attack trial3 8
+3020 attack trial4 8
+3020 attack trial5 8
+3020 attack trial6 8
+3020 attack trial7 8
+3030 attack trial0 8
+3030 attack trial1 8
+3030 attack trial2 8
+3030 attack trial3 8
+3030 attack trial4 8
+3030 attack trial5 8
+3030 attack trial6 8
+3030 attack trial7 8
+3040 attack trial0 8
+3040 attack trial1 8
+3040 attack trial2 8
+3040 attack trial3 8
+3040 attack trial4 8
+3040 attack trial5 8
+3040 attack trial6 8
+3040 attack trial7 8
+3050 attack trial0 8
+3050 attack trial1 8
+3050 attack trial2 8
+3050 attack trial3 8
+3050 attack trial4 8
+3050 attack trial5 8
+3050 attack trial6 8
+3050 attack trial7 8
+3060 attack trial0 8
+3060 cmd item replace entity trial0 weapon.mainhand with minecraft:trial_key
+3060 attack trial1 8
+3060 cmd item replace entity trial1 weapon.mainhand with minecraft:trial_key
+3060 attack trial2 8
+3060 cmd item replace entity trial2 weapon.mainhand with minecraft:trial_key
+3060 attack trial3 8
+3060 cmd item replace entity trial3 weapon.mainhand with minecraft:trial_key
+3060 attack trial4 8
+3060 cmd item replace entity trial4 weapon.mainhand with minecraft:ominous_trial_key
+3060 attack trial5 8
+3060 cmd item replace entity trial5 weapon.mainhand with minecraft:ominous_trial_key
+3060 attack trial6 8
+3060 cmd item replace entity trial6 weapon.mainhand with minecraft:ominous_trial_key
+3060 attack trial7 8
+3060 cmd item replace entity trial7 weapon.mainhand with minecraft:ominous_trial_key
+3061 useon trial0 4 100 0
+3061 useon trial1 100 100 0
+3061 useon trial2 196 100 0
+3061 useon trial3 292 100 0
+3061 useon trial4 388 100 0
+3061 useon trial5 484 100 0
+3061 useon trial6 580 100 0
+3061 useon trial7 676 100 0
+3062 cmd item replace entity trial0 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3062 cmd item replace entity trial1 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3062 cmd item replace entity trial2 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3062 cmd item replace entity trial3 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3062 cmd item replace entity trial4 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3062 cmd item replace entity trial5 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3062 cmd item replace entity trial6 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3062 cmd item replace entity trial7 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3070 attack trial0 8
+3070 attack trial1 8
+3070 attack trial2 8
+3070 attack trial3 8
+3070 attack trial4 8
+3070 attack trial5 8
+3070 attack trial6 8
+3070 attack trial7 8
+3080 attack trial0 8
+3080 attack trial1 8
+3080 attack trial2 8
+3080 attack trial3 8
+3080 attack trial4 8
+3080 attack trial5 8
+3080 attack trial6 8
+3080 attack trial7 8
+3090 attack trial0 8
+3090 attack trial1 8
+3090 attack trial2 8
+3090 attack trial3 8
+3090 attack trial4 8
+3090 attack trial5 8
+3090 attack trial6 8
+3090 attack trial7 8
+3100 attack trial0 8
+3100 attack trial1 8
+3100 attack trial2 8
+3100 attack trial3 8
+3100 attack trial4 8
+3100 attack trial5 8
+3100 attack trial6 8
+3100 attack trial7 8
+3110 attack trial0 8
+3110 attack trial1 8
+3110 attack trial2 8
+3110 attack trial3 8
+3110 attack trial4 8
+3110 attack trial5 8
+3110 attack trial6 8
+3110 attack trial7 8
+3120 attack trial0 8
+3120 attack trial1 8
+3120 attack trial2 8
+3120 attack trial3 8
+3120 attack trial4 8
+3120 attack trial5 8
+3120 attack trial6 8
+3120 attack trial7 8
+3130 attack trial0 8
+3130 attack trial1 8
+3130 attack trial2 8
+3130 attack trial3 8
+3130 attack trial4 8
+3130 attack trial5 8
+3130 attack trial6 8
+3130 attack trial7 8
+3140 attack trial0 8
+3140 attack trial1 8
+3140 attack trial2 8
+3140 attack trial3 8
+3140 attack trial4 8
+3140 attack trial5 8
+3140 attack trial6 8
+3140 attack trial7 8
+3150 attack trial0 8
+3150 attack trial1 8
+3150 attack trial2 8
+3150 attack trial3 8
+3150 attack trial4 8
+3150 attack trial5 8
+3150 attack trial6 8
+3150 attack trial7 8
+3160 attack trial0 8
+3160 attack trial1 8
+3160 attack trial2 8
+3160 attack trial3 8
+3160 attack trial4 8
+3160 attack trial5 8
+3160 attack trial6 8
+3160 attack trial7 8
+3170 attack trial0 8
+3170 attack trial1 8
+3170 attack trial2 8
+3170 attack trial3 8
+3170 attack trial4 8
+3170 attack trial5 8
+3170 attack trial6 8
+3170 attack trial7 8
+3180 attack trial0 8
+3180 attack trial1 8
+3180 attack trial2 8
+3180 attack trial3 8
+3180 attack trial4 8
+3180 attack trial5 8
+3180 attack trial6 8
+3180 attack trial7 8
+3190 attack trial0 8
+3190 attack trial1 8
+3190 attack trial2 8
+3190 attack trial3 8
+3190 attack trial4 8
+3190 attack trial5 8
+3190 attack trial6 8
+3190 attack trial7 8
+3200 attack trial0 8
+3200 attack trial1 8
+3200 attack trial2 8
+3200 attack trial3 8
+3200 attack trial4 8
+3200 attack trial5 8
+3200 attack trial6 8
+3200 attack trial7 8
+3210 attack trial0 8
+3210 attack trial1 8
+3210 attack trial2 8
+3210 attack trial3 8
+3210 attack trial4 8
+3210 attack trial5 8
+3210 attack trial6 8
+3210 attack trial7 8
+3220 attack trial0 8
+3220 attack trial1 8
+3220 attack trial2 8
+3220 attack trial3 8
+3220 attack trial4 8
+3220 attack trial5 8
+3220 attack trial6 8
+3220 attack trial7 8
+3230 attack trial0 8
+3230 attack trial1 8
+3230 attack trial2 8
+3230 attack trial3 8
+3230 attack trial4 8
+3230 attack trial5 8
+3230 attack trial6 8
+3230 attack trial7 8
+3240 attack trial0 8
+3240 attack trial1 8
+3240 attack trial2 8
+3240 attack trial3 8
+3240 attack trial4 8
+3240 attack trial5 8
+3240 attack trial6 8
+3240 attack trial7 8
+3250 attack trial0 8
+3250 attack trial1 8
+3250 attack trial2 8
+3250 attack trial3 8
+3250 attack trial4 8
+3250 attack trial5 8
+3250 attack trial6 8
+3250 attack trial7 8
+3260 attack trial0 8
+3260 cmd item replace entity trial0 weapon.mainhand with minecraft:trial_key
+3260 attack trial1 8
+3260 cmd item replace entity trial1 weapon.mainhand with minecraft:trial_key
+3260 attack trial2 8
+3260 cmd item replace entity trial2 weapon.mainhand with minecraft:trial_key
+3260 attack trial3 8
+3260 cmd item replace entity trial3 weapon.mainhand with minecraft:trial_key
+3260 attack trial4 8
+3260 cmd item replace entity trial4 weapon.mainhand with minecraft:ominous_trial_key
+3260 attack trial5 8
+3260 cmd item replace entity trial5 weapon.mainhand with minecraft:ominous_trial_key
+3260 attack trial6 8
+3260 cmd item replace entity trial6 weapon.mainhand with minecraft:ominous_trial_key
+3260 attack trial7 8
+3260 cmd item replace entity trial7 weapon.mainhand with minecraft:ominous_trial_key
+3261 useon trial0 4 100 0
+3261 useon trial1 100 100 0
+3261 useon trial2 196 100 0
+3261 useon trial3 292 100 0
+3261 useon trial4 388 100 0
+3261 useon trial5 484 100 0
+3261 useon trial6 580 100 0
+3261 useon trial7 676 100 0
+3262 cmd item replace entity trial0 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3262 cmd item replace entity trial1 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3262 cmd item replace entity trial2 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3262 cmd item replace entity trial3 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3262 cmd item replace entity trial4 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3262 cmd item replace entity trial5 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3262 cmd item replace entity trial6 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3262 cmd item replace entity trial7 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3270 attack trial0 8
+3270 attack trial1 8
+3270 attack trial2 8
+3270 attack trial3 8
+3270 attack trial4 8
+3270 attack trial5 8
+3270 attack trial6 8
+3270 attack trial7 8
+3280 attack trial0 8
+3280 attack trial1 8
+3280 attack trial2 8
+3280 attack trial3 8
+3280 attack trial4 8
+3280 attack trial5 8
+3280 attack trial6 8
+3280 attack trial7 8
+3290 attack trial0 8
+3290 attack trial1 8
+3290 attack trial2 8
+3290 attack trial3 8
+3290 attack trial4 8
+3290 attack trial5 8
+3290 attack trial6 8
+3290 attack trial7 8
+3300 attack trial0 8
+3300 attack trial1 8
+3300 attack trial2 8
+3300 attack trial3 8
+3300 attack trial4 8
+3300 attack trial5 8
+3300 attack trial6 8
+3300 attack trial7 8
+3310 attack trial0 8
+3310 attack trial1 8
+3310 attack trial2 8
+3310 attack trial3 8
+3310 attack trial4 8
+3310 attack trial5 8
+3310 attack trial6 8
+3310 attack trial7 8
+3320 attack trial0 8
+3320 attack trial1 8
+3320 attack trial2 8
+3320 attack trial3 8
+3320 attack trial4 8
+3320 attack trial5 8
+3320 attack trial6 8
+3320 attack trial7 8
+3330 attack trial0 8
+3330 attack trial1 8
+3330 attack trial2 8
+3330 attack trial3 8
+3330 attack trial4 8
+3330 attack trial5 8
+3330 attack trial6 8
+3330 attack trial7 8
+3340 attack trial0 8
+3340 attack trial1 8
+3340 attack trial2 8
+3340 attack trial3 8
+3340 attack trial4 8
+3340 attack trial5 8
+3340 attack trial6 8
+3340 attack trial7 8
+3350 attack trial0 8
+3350 attack trial1 8
+3350 attack trial2 8
+3350 attack trial3 8
+3350 attack trial4 8
+3350 attack trial5 8
+3350 attack trial6 8
+3350 attack trial7 8
+3360 attack trial0 8
+3360 attack trial1 8
+3360 attack trial2 8
+3360 attack trial3 8
+3360 attack trial4 8
+3360 attack trial5 8
+3360 attack trial6 8
+3360 attack trial7 8
+3370 attack trial0 8
+3370 attack trial1 8
+3370 attack trial2 8
+3370 attack trial3 8
+3370 attack trial4 8
+3370 attack trial5 8
+3370 attack trial6 8
+3370 attack trial7 8
+3380 attack trial0 8
+3380 attack trial1 8
+3380 attack trial2 8
+3380 attack trial3 8
+3380 attack trial4 8
+3380 attack trial5 8
+3380 attack trial6 8
+3380 attack trial7 8
+3390 attack trial0 8
+3390 attack trial1 8
+3390 attack trial2 8
+3390 attack trial3 8
+3390 attack trial4 8
+3390 attack trial5 8
+3390 attack trial6 8
+3390 attack trial7 8
+3400 attack trial0 8
+3400 attack trial1 8
+3400 attack trial2 8
+3400 attack trial3 8
+3400 attack trial4 8
+3400 attack trial5 8
+3400 attack trial6 8
+3400 attack trial7 8
+3410 attack trial0 8
+3410 attack trial1 8
+3410 attack trial2 8
+3410 attack trial3 8
+3410 attack trial4 8
+3410 attack trial5 8
+3410 attack trial6 8
+3410 attack trial7 8
+3420 attack trial0 8
+3420 attack trial1 8
+3420 attack trial2 8
+3420 attack trial3 8
+3420 attack trial4 8
+3420 attack trial5 8
+3420 attack trial6 8
+3420 attack trial7 8
+3430 attack trial0 8
+3430 attack trial1 8
+3430 attack trial2 8
+3430 attack trial3 8
+3430 attack trial4 8
+3430 attack trial5 8
+3430 attack trial6 8
+3430 attack trial7 8
+3440 attack trial0 8
+3440 attack trial1 8
+3440 attack trial2 8
+3440 attack trial3 8
+3440 attack trial4 8
+3440 attack trial5 8
+3440 attack trial6 8
+3440 attack trial7 8
+3450 attack trial0 8
+3450 attack trial1 8
+3450 attack trial2 8
+3450 attack trial3 8
+3450 attack trial4 8
+3450 attack trial5 8
+3450 attack trial6 8
+3450 attack trial7 8
+3460 attack trial0 8
+3460 cmd item replace entity trial0 weapon.mainhand with minecraft:trial_key
+3460 attack trial1 8
+3460 cmd item replace entity trial1 weapon.mainhand with minecraft:trial_key
+3460 attack trial2 8
+3460 cmd item replace entity trial2 weapon.mainhand with minecraft:trial_key
+3460 attack trial3 8
+3460 cmd item replace entity trial3 weapon.mainhand with minecraft:trial_key
+3460 attack trial4 8
+3460 cmd item replace entity trial4 weapon.mainhand with minecraft:ominous_trial_key
+3460 attack trial5 8
+3460 cmd item replace entity trial5 weapon.mainhand with minecraft:ominous_trial_key
+3460 attack trial6 8
+3460 cmd item replace entity trial6 weapon.mainhand with minecraft:ominous_trial_key
+3460 attack trial7 8
+3460 cmd item replace entity trial7 weapon.mainhand with minecraft:ominous_trial_key
+3461 useon trial0 4 100 0
+3461 useon trial1 100 100 0
+3461 useon trial2 196 100 0
+3461 useon trial3 292 100 0
+3461 useon trial4 388 100 0
+3461 useon trial5 484 100 0
+3461 useon trial6 580 100 0
+3461 useon trial7 676 100 0
+3462 cmd item replace entity trial0 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3462 cmd item replace entity trial1 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3462 cmd item replace entity trial2 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3462 cmd item replace entity trial3 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3462 cmd item replace entity trial4 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3462 cmd item replace entity trial5 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3462 cmd item replace entity trial6 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3462 cmd item replace entity trial7 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3470 attack trial0 8
+3470 attack trial1 8
+3470 attack trial2 8
+3470 attack trial3 8
+3470 attack trial4 8
+3470 attack trial5 8
+3470 attack trial6 8
+3470 attack trial7 8
+3480 attack trial0 8
+3480 attack trial1 8
+3480 attack trial2 8
+3480 attack trial3 8
+3480 attack trial4 8
+3480 attack trial5 8
+3480 attack trial6 8
+3480 attack trial7 8
+3490 attack trial0 8
+3490 attack trial1 8
+3490 attack trial2 8
+3490 attack trial3 8
+3490 attack trial4 8
+3490 attack trial5 8
+3490 attack trial6 8
+3490 attack trial7 8
+3500 attack trial0 8
+3500 attack trial1 8
+3500 attack trial2 8
+3500 attack trial3 8
+3500 attack trial4 8
+3500 attack trial5 8
+3500 attack trial6 8
+3500 attack trial7 8
+3510 attack trial0 8
+3510 attack trial1 8
+3510 attack trial2 8
+3510 attack trial3 8
+3510 attack trial4 8
+3510 attack trial5 8
+3510 attack trial6 8
+3510 attack trial7 8
+3520 attack trial0 8
+3520 attack trial1 8
+3520 attack trial2 8
+3520 attack trial3 8
+3520 attack trial4 8
+3520 attack trial5 8
+3520 attack trial6 8
+3520 attack trial7 8
+3530 attack trial0 8
+3530 attack trial1 8
+3530 attack trial2 8
+3530 attack trial3 8
+3530 attack trial4 8
+3530 attack trial5 8
+3530 attack trial6 8
+3530 attack trial7 8
+3540 attack trial0 8
+3540 attack trial1 8
+3540 attack trial2 8
+3540 attack trial3 8
+3540 attack trial4 8
+3540 attack trial5 8
+3540 attack trial6 8
+3540 attack trial7 8
+3550 attack trial0 8
+3550 attack trial1 8
+3550 attack trial2 8
+3550 attack trial3 8
+3550 attack trial4 8
+3550 attack trial5 8
+3550 attack trial6 8
+3550 attack trial7 8
+3560 attack trial0 8
+3560 attack trial1 8
+3560 attack trial2 8
+3560 attack trial3 8
+3560 attack trial4 8
+3560 attack trial5 8
+3560 attack trial6 8
+3560 attack trial7 8
+3570 attack trial0 8
+3570 attack trial1 8
+3570 attack trial2 8
+3570 attack trial3 8
+3570 attack trial4 8
+3570 attack trial5 8
+3570 attack trial6 8
+3570 attack trial7 8
+3580 attack trial0 8
+3580 attack trial1 8
+3580 attack trial2 8
+3580 attack trial3 8
+3580 attack trial4 8
+3580 attack trial5 8
+3580 attack trial6 8
+3580 attack trial7 8
+3590 attack trial0 8
+3590 attack trial1 8
+3590 attack trial2 8
+3590 attack trial3 8
+3590 attack trial4 8
+3590 attack trial5 8
+3590 attack trial6 8
+3590 attack trial7 8
+3600 attack trial0 8
+3600 attack trial1 8
+3600 attack trial2 8
+3600 attack trial3 8
+3600 attack trial4 8
+3600 attack trial5 8
+3600 attack trial6 8
+3600 attack trial7 8
+3610 attack trial0 8
+3610 attack trial1 8
+3610 attack trial2 8
+3610 attack trial3 8
+3610 attack trial4 8
+3610 attack trial5 8
+3610 attack trial6 8
+3610 attack trial7 8
+3620 attack trial0 8
+3620 attack trial1 8
+3620 attack trial2 8
+3620 attack trial3 8
+3620 attack trial4 8
+3620 attack trial5 8
+3620 attack trial6 8
+3620 attack trial7 8
+3630 attack trial0 8
+3630 attack trial1 8
+3630 attack trial2 8
+3630 attack trial3 8
+3630 attack trial4 8
+3630 attack trial5 8
+3630 attack trial6 8
+3630 attack trial7 8
+3640 attack trial0 8
+3640 attack trial1 8
+3640 attack trial2 8
+3640 attack trial3 8
+3640 attack trial4 8
+3640 attack trial5 8
+3640 attack trial6 8
+3640 attack trial7 8
+3650 attack trial0 8
+3650 attack trial1 8
+3650 attack trial2 8
+3650 attack trial3 8
+3650 attack trial4 8
+3650 attack trial5 8
+3650 attack trial6 8
+3650 attack trial7 8
+3660 attack trial0 8
+3660 cmd item replace entity trial0 weapon.mainhand with minecraft:trial_key
+3660 attack trial1 8
+3660 cmd item replace entity trial1 weapon.mainhand with minecraft:trial_key
+3660 attack trial2 8
+3660 cmd item replace entity trial2 weapon.mainhand with minecraft:trial_key
+3660 attack trial3 8
+3660 cmd item replace entity trial3 weapon.mainhand with minecraft:trial_key
+3660 attack trial4 8
+3660 cmd item replace entity trial4 weapon.mainhand with minecraft:ominous_trial_key
+3660 attack trial5 8
+3660 cmd item replace entity trial5 weapon.mainhand with minecraft:ominous_trial_key
+3660 attack trial6 8
+3660 cmd item replace entity trial6 weapon.mainhand with minecraft:ominous_trial_key
+3660 attack trial7 8
+3660 cmd item replace entity trial7 weapon.mainhand with minecraft:ominous_trial_key
+3661 useon trial0 4 100 0
+3661 useon trial1 100 100 0
+3661 useon trial2 196 100 0
+3661 useon trial3 292 100 0
+3661 useon trial4 388 100 0
+3661 useon trial5 484 100 0
+3661 useon trial6 580 100 0
+3661 useon trial7 676 100 0
+3662 cmd item replace entity trial0 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3662 cmd item replace entity trial1 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3662 cmd item replace entity trial2 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3662 cmd item replace entity trial3 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3662 cmd item replace entity trial4 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3662 cmd item replace entity trial5 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3662 cmd item replace entity trial6 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3662 cmd item replace entity trial7 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3670 attack trial0 8
+3670 attack trial1 8
+3670 attack trial2 8
+3670 attack trial3 8
+3670 attack trial4 8
+3670 attack trial5 8
+3670 attack trial6 8
+3670 attack trial7 8
+3680 attack trial0 8
+3680 attack trial1 8
+3680 attack trial2 8
+3680 attack trial3 8
+3680 attack trial4 8
+3680 attack trial5 8
+3680 attack trial6 8
+3680 attack trial7 8
+3690 attack trial0 8
+3690 attack trial1 8
+3690 attack trial2 8
+3690 attack trial3 8
+3690 attack trial4 8
+3690 attack trial5 8
+3690 attack trial6 8
+3690 attack trial7 8
+3700 attack trial0 8
+3700 attack trial1 8
+3700 attack trial2 8
+3700 attack trial3 8
+3700 attack trial4 8
+3700 attack trial5 8
+3700 attack trial6 8
+3700 attack trial7 8
+3710 attack trial0 8
+3710 attack trial1 8
+3710 attack trial2 8
+3710 attack trial3 8
+3710 attack trial4 8
+3710 attack trial5 8
+3710 attack trial6 8
+3710 attack trial7 8
+3720 attack trial0 8
+3720 attack trial1 8
+3720 attack trial2 8
+3720 attack trial3 8
+3720 attack trial4 8
+3720 attack trial5 8
+3720 attack trial6 8
+3720 attack trial7 8
+3730 attack trial0 8
+3730 attack trial1 8
+3730 attack trial2 8
+3730 attack trial3 8
+3730 attack trial4 8
+3730 attack trial5 8
+3730 attack trial6 8
+3730 attack trial7 8
+3740 attack trial0 8
+3740 attack trial1 8
+3740 attack trial2 8
+3740 attack trial3 8
+3740 attack trial4 8
+3740 attack trial5 8
+3740 attack trial6 8
+3740 attack trial7 8
+3750 attack trial0 8
+3750 attack trial1 8
+3750 attack trial2 8
+3750 attack trial3 8
+3750 attack trial4 8
+3750 attack trial5 8
+3750 attack trial6 8
+3750 attack trial7 8
+3760 attack trial0 8
+3760 attack trial1 8
+3760 attack trial2 8
+3760 attack trial3 8
+3760 attack trial4 8
+3760 attack trial5 8
+3760 attack trial6 8
+3760 attack trial7 8
+3770 attack trial0 8
+3770 attack trial1 8
+3770 attack trial2 8
+3770 attack trial3 8
+3770 attack trial4 8
+3770 attack trial5 8
+3770 attack trial6 8
+3770 attack trial7 8
+3780 attack trial0 8
+3780 attack trial1 8
+3780 attack trial2 8
+3780 attack trial3 8
+3780 attack trial4 8
+3780 attack trial5 8
+3780 attack trial6 8
+3780 attack trial7 8
+3790 attack trial0 8
+3790 attack trial1 8
+3790 attack trial2 8
+3790 attack trial3 8
+3790 attack trial4 8
+3790 attack trial5 8
+3790 attack trial6 8
+3790 attack trial7 8
+3800 attack trial0 8
+3800 attack trial1 8
+3800 attack trial2 8
+3800 attack trial3 8
+3800 attack trial4 8
+3800 attack trial5 8
+3800 attack trial6 8
+3800 attack trial7 8
+3810 attack trial0 8
+3810 attack trial1 8
+3810 attack trial2 8
+3810 attack trial3 8
+3810 attack trial4 8
+3810 attack trial5 8
+3810 attack trial6 8
+3810 attack trial7 8
+3820 attack trial0 8
+3820 attack trial1 8
+3820 attack trial2 8
+3820 attack trial3 8
+3820 attack trial4 8
+3820 attack trial5 8
+3820 attack trial6 8
+3820 attack trial7 8
+3830 attack trial0 8
+3830 attack trial1 8
+3830 attack trial2 8
+3830 attack trial3 8
+3830 attack trial4 8
+3830 attack trial5 8
+3830 attack trial6 8
+3830 attack trial7 8
+3840 attack trial0 8
+3840 attack trial1 8
+3840 attack trial2 8
+3840 attack trial3 8
+3840 attack trial4 8
+3840 attack trial5 8
+3840 attack trial6 8
+3840 attack trial7 8
+3850 attack trial0 8
+3850 attack trial1 8
+3850 attack trial2 8
+3850 attack trial3 8
+3850 attack trial4 8
+3850 attack trial5 8
+3850 attack trial6 8
+3850 attack trial7 8
+3860 attack trial0 8
+3860 cmd item replace entity trial0 weapon.mainhand with minecraft:trial_key
+3860 attack trial1 8
+3860 cmd item replace entity trial1 weapon.mainhand with minecraft:trial_key
+3860 attack trial2 8
+3860 cmd item replace entity trial2 weapon.mainhand with minecraft:trial_key
+3860 attack trial3 8
+3860 cmd item replace entity trial3 weapon.mainhand with minecraft:trial_key
+3860 attack trial4 8
+3860 cmd item replace entity trial4 weapon.mainhand with minecraft:ominous_trial_key
+3860 attack trial5 8
+3860 cmd item replace entity trial5 weapon.mainhand with minecraft:ominous_trial_key
+3860 attack trial6 8
+3860 cmd item replace entity trial6 weapon.mainhand with minecraft:ominous_trial_key
+3860 attack trial7 8
+3860 cmd item replace entity trial7 weapon.mainhand with minecraft:ominous_trial_key
+3861 useon trial0 4 100 0
+3861 useon trial1 100 100 0
+3861 useon trial2 196 100 0
+3861 useon trial3 292 100 0
+3861 useon trial4 388 100 0
+3861 useon trial5 484 100 0
+3861 useon trial6 580 100 0
+3861 useon trial7 676 100 0
+3862 cmd item replace entity trial0 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3862 cmd item replace entity trial1 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3862 cmd item replace entity trial2 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3862 cmd item replace entity trial3 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3862 cmd item replace entity trial4 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3862 cmd item replace entity trial5 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3862 cmd item replace entity trial6 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3862 cmd item replace entity trial7 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+3870 attack trial0 8
+3870 attack trial1 8
+3870 attack trial2 8
+3870 attack trial3 8
+3870 attack trial4 8
+3870 attack trial5 8
+3870 attack trial6 8
+3870 attack trial7 8
+3880 attack trial0 8
+3880 attack trial1 8
+3880 attack trial2 8
+3880 attack trial3 8
+3880 attack trial4 8
+3880 attack trial5 8
+3880 attack trial6 8
+3880 attack trial7 8
+3890 attack trial0 8
+3890 attack trial1 8
+3890 attack trial2 8
+3890 attack trial3 8
+3890 attack trial4 8
+3890 attack trial5 8
+3890 attack trial6 8
+3890 attack trial7 8
+3900 attack trial0 8
+3900 cmd setblock 0 100 4 minecraft:air
+3900 attack trial1 8
+3900 cmd setblock 96 100 4 minecraft:air
+3900 attack trial2 8
+3900 cmd setblock 192 100 4 minecraft:air
+3900 attack trial3 8
+3900 cmd setblock 288 100 4 minecraft:air
+3900 attack trial4 8
+3900 cmd setblock 384 100 4 minecraft:air
+3900 attack trial5 8
+3900 cmd setblock 480 100 4 minecraft:air
+3900 attack trial6 8
+3900 cmd setblock 576 100 4 minecraft:air
+3900 attack trial7 8
+3900 cmd setblock 672 100 4 minecraft:air
+3901 cmd setblock 0 100 4 minecraft:trial_spawner[ominous=false]{normal_config:"minecraft:trial_chamber/melee/zombie/normal",ominous_config:"minecraft:trial_chamber/melee/zombie/ominous"}
+3901 cmd setblock 96 100 4 minecraft:trial_spawner[ominous=false]{normal_config:"minecraft:trial_chamber/melee/husk/normal",ominous_config:"minecraft:trial_chamber/melee/husk/ominous"}
+3901 cmd setblock 192 100 4 minecraft:trial_spawner[ominous=false]{normal_config:"minecraft:trial_chamber/ranged/skeleton/normal",ominous_config:"minecraft:trial_chamber/ranged/skeleton/ominous"}
+3901 cmd setblock 288 100 4 minecraft:trial_spawner[ominous=false]{normal_config:"minecraft:trial_chamber/small_melee/baby_zombie/normal",ominous_config:"minecraft:trial_chamber/small_melee/baby_zombie/ominous"}
+3901 cmd setblock 384 100 4 minecraft:trial_spawner[ominous=true]{normal_config:"minecraft:trial_chamber/breeze/normal",ominous_config:"minecraft:trial_chamber/breeze/ominous"}
+3901 cmd setblock 480 100 4 minecraft:trial_spawner[ominous=true]{normal_config:"minecraft:trial_chamber/melee/spider/normal",ominous_config:"minecraft:trial_chamber/melee/spider/ominous"}
+3901 cmd setblock 576 100 4 minecraft:trial_spawner[ominous=true]{normal_config:"minecraft:trial_chamber/ranged/stray/normal",ominous_config:"minecraft:trial_chamber/ranged/stray/ominous"}
+3901 cmd setblock 672 100 4 minecraft:trial_spawner[ominous=true]{normal_config:"minecraft:trial_chamber/small_melee/slime/normal",ominous_config:"minecraft:trial_chamber/small_melee/slime/ominous"}
+3910 attack trial0 8
+3910 attack trial1 8
+3910 attack trial2 8
+3910 attack trial3 8
+3910 attack trial4 8
+3910 attack trial5 8
+3910 attack trial6 8
+3910 attack trial7 8
+3920 attack trial0 8
+3920 attack trial1 8
+3920 attack trial2 8
+3920 attack trial3 8
+3920 attack trial4 8
+3920 attack trial5 8
+3920 attack trial6 8
+3920 attack trial7 8
+3930 attack trial0 8
+3930 attack trial1 8
+3930 attack trial2 8
+3930 attack trial3 8
+3930 attack trial4 8
+3930 attack trial5 8
+3930 attack trial6 8
+3930 attack trial7 8
+3940 attack trial0 8
+3940 attack trial1 8
+3940 attack trial2 8
+3940 attack trial3 8
+3940 attack trial4 8
+3940 attack trial5 8
+3940 attack trial6 8
+3940 attack trial7 8
+3950 attack trial0 8
+3950 attack trial1 8
+3950 attack trial2 8
+3950 attack trial3 8
+3950 attack trial4 8
+3950 attack trial5 8
+3950 attack trial6 8
+3950 attack trial7 8
+3960 attack trial0 8
+3960 attack trial1 8
+3960 attack trial2 8
+3960 attack trial3 8
+3960 attack trial4 8
+3960 attack trial5 8
+3960 attack trial6 8
+3960 attack trial7 8
+3970 attack trial0 8
+3970 attack trial1 8
+3970 attack trial2 8
+3970 attack trial3 8
+3970 attack trial4 8
+3970 attack trial5 8
+3970 attack trial6 8
+3970 attack trial7 8
+3980 attack trial0 8
+3980 attack trial1 8
+3980 attack trial2 8
+3980 attack trial3 8
+3980 attack trial4 8
+3980 attack trial5 8
+3980 attack trial6 8
+3980 attack trial7 8
+3990 attack trial0 8
+3990 attack trial1 8
+3990 attack trial2 8
+3990 attack trial3 8
+3990 attack trial4 8
+3990 attack trial5 8
+3990 attack trial6 8
+3990 attack trial7 8
+4000 attack trial0 8
+4000 attack trial1 8
+4000 attack trial2 8
+4000 attack trial3 8
+4000 attack trial4 8
+4000 attack trial5 8
+4000 attack trial6 8
+4000 attack trial7 8
+4010 attack trial0 8
+4010 attack trial1 8
+4010 attack trial2 8
+4010 attack trial3 8
+4010 attack trial4 8
+4010 attack trial5 8
+4010 attack trial6 8
+4010 attack trial7 8
+4020 attack trial0 8
+4020 attack trial1 8
+4020 attack trial2 8
+4020 attack trial3 8
+4020 attack trial4 8
+4020 attack trial5 8
+4020 attack trial6 8
+4020 attack trial7 8
+4030 attack trial0 8
+4030 attack trial1 8
+4030 attack trial2 8
+4030 attack trial3 8
+4030 attack trial4 8
+4030 attack trial5 8
+4030 attack trial6 8
+4030 attack trial7 8
+4040 attack trial0 8
+4040 attack trial1 8
+4040 attack trial2 8
+4040 attack trial3 8
+4040 attack trial4 8
+4040 attack trial5 8
+4040 attack trial6 8
+4040 attack trial7 8
+4050 attack trial0 8
+4050 attack trial1 8
+4050 attack trial2 8
+4050 attack trial3 8
+4050 attack trial4 8
+4050 attack trial5 8
+4050 attack trial6 8
+4050 attack trial7 8
+4060 attack trial0 8
+4060 cmd item replace entity trial0 weapon.mainhand with minecraft:trial_key
+4060 attack trial1 8
+4060 cmd item replace entity trial1 weapon.mainhand with minecraft:trial_key
+4060 attack trial2 8
+4060 cmd item replace entity trial2 weapon.mainhand with minecraft:trial_key
+4060 attack trial3 8
+4060 cmd item replace entity trial3 weapon.mainhand with minecraft:trial_key
+4060 attack trial4 8
+4060 cmd item replace entity trial4 weapon.mainhand with minecraft:ominous_trial_key
+4060 attack trial5 8
+4060 cmd item replace entity trial5 weapon.mainhand with minecraft:ominous_trial_key
+4060 attack trial6 8
+4060 cmd item replace entity trial6 weapon.mainhand with minecraft:ominous_trial_key
+4060 attack trial7 8
+4060 cmd item replace entity trial7 weapon.mainhand with minecraft:ominous_trial_key
+4061 useon trial0 4 100 0
+4061 useon trial1 100 100 0
+4061 useon trial2 196 100 0
+4061 useon trial3 292 100 0
+4061 useon trial4 388 100 0
+4061 useon trial5 484 100 0
+4061 useon trial6 580 100 0
+4061 useon trial7 676 100 0
+4062 cmd item replace entity trial0 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4062 cmd item replace entity trial1 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4062 cmd item replace entity trial2 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4062 cmd item replace entity trial3 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4062 cmd item replace entity trial4 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4062 cmd item replace entity trial5 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4062 cmd item replace entity trial6 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4062 cmd item replace entity trial7 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4070 attack trial0 8
+4070 attack trial1 8
+4070 attack trial2 8
+4070 attack trial3 8
+4070 attack trial4 8
+4070 attack trial5 8
+4070 attack trial6 8
+4070 attack trial7 8
+4080 attack trial0 8
+4080 attack trial1 8
+4080 attack trial2 8
+4080 attack trial3 8
+4080 attack trial4 8
+4080 attack trial5 8
+4080 attack trial6 8
+4080 attack trial7 8
+4090 attack trial0 8
+4090 attack trial1 8
+4090 attack trial2 8
+4090 attack trial3 8
+4090 attack trial4 8
+4090 attack trial5 8
+4090 attack trial6 8
+4090 attack trial7 8
+4100 attack trial0 8
+4100 attack trial1 8
+4100 attack trial2 8
+4100 attack trial3 8
+4100 attack trial4 8
+4100 attack trial5 8
+4100 attack trial6 8
+4100 attack trial7 8
+4110 attack trial0 8
+4110 attack trial1 8
+4110 attack trial2 8
+4110 attack trial3 8
+4110 attack trial4 8
+4110 attack trial5 8
+4110 attack trial6 8
+4110 attack trial7 8
+4120 attack trial0 8
+4120 attack trial1 8
+4120 attack trial2 8
+4120 attack trial3 8
+4120 attack trial4 8
+4120 attack trial5 8
+4120 attack trial6 8
+4120 attack trial7 8
+4130 attack trial0 8
+4130 attack trial1 8
+4130 attack trial2 8
+4130 attack trial3 8
+4130 attack trial4 8
+4130 attack trial5 8
+4130 attack trial6 8
+4130 attack trial7 8
+4140 attack trial0 8
+4140 attack trial1 8
+4140 attack trial2 8
+4140 attack trial3 8
+4140 attack trial4 8
+4140 attack trial5 8
+4140 attack trial6 8
+4140 attack trial7 8
+4150 attack trial0 8
+4150 attack trial1 8
+4150 attack trial2 8
+4150 attack trial3 8
+4150 attack trial4 8
+4150 attack trial5 8
+4150 attack trial6 8
+4150 attack trial7 8
+4160 attack trial0 8
+4160 attack trial1 8
+4160 attack trial2 8
+4160 attack trial3 8
+4160 attack trial4 8
+4160 attack trial5 8
+4160 attack trial6 8
+4160 attack trial7 8
+4170 attack trial0 8
+4170 attack trial1 8
+4170 attack trial2 8
+4170 attack trial3 8
+4170 attack trial4 8
+4170 attack trial5 8
+4170 attack trial6 8
+4170 attack trial7 8
+4180 attack trial0 8
+4180 attack trial1 8
+4180 attack trial2 8
+4180 attack trial3 8
+4180 attack trial4 8
+4180 attack trial5 8
+4180 attack trial6 8
+4180 attack trial7 8
+4190 attack trial0 8
+4190 attack trial1 8
+4190 attack trial2 8
+4190 attack trial3 8
+4190 attack trial4 8
+4190 attack trial5 8
+4190 attack trial6 8
+4190 attack trial7 8
+4200 attack trial0 8
+4200 attack trial1 8
+4200 attack trial2 8
+4200 attack trial3 8
+4200 attack trial4 8
+4200 attack trial5 8
+4200 attack trial6 8
+4200 attack trial7 8
+4210 attack trial0 8
+4210 attack trial1 8
+4210 attack trial2 8
+4210 attack trial3 8
+4210 attack trial4 8
+4210 attack trial5 8
+4210 attack trial6 8
+4210 attack trial7 8
+4220 attack trial0 8
+4220 attack trial1 8
+4220 attack trial2 8
+4220 attack trial3 8
+4220 attack trial4 8
+4220 attack trial5 8
+4220 attack trial6 8
+4220 attack trial7 8
+4230 attack trial0 8
+4230 attack trial1 8
+4230 attack trial2 8
+4230 attack trial3 8
+4230 attack trial4 8
+4230 attack trial5 8
+4230 attack trial6 8
+4230 attack trial7 8
+4240 attack trial0 8
+4240 attack trial1 8
+4240 attack trial2 8
+4240 attack trial3 8
+4240 attack trial4 8
+4240 attack trial5 8
+4240 attack trial6 8
+4240 attack trial7 8
+4250 attack trial0 8
+4250 attack trial1 8
+4250 attack trial2 8
+4250 attack trial3 8
+4250 attack trial4 8
+4250 attack trial5 8
+4250 attack trial6 8
+4250 attack trial7 8
+4260 attack trial0 8
+4260 cmd item replace entity trial0 weapon.mainhand with minecraft:trial_key
+4260 attack trial1 8
+4260 cmd item replace entity trial1 weapon.mainhand with minecraft:trial_key
+4260 attack trial2 8
+4260 cmd item replace entity trial2 weapon.mainhand with minecraft:trial_key
+4260 attack trial3 8
+4260 cmd item replace entity trial3 weapon.mainhand with minecraft:trial_key
+4260 attack trial4 8
+4260 cmd item replace entity trial4 weapon.mainhand with minecraft:ominous_trial_key
+4260 attack trial5 8
+4260 cmd item replace entity trial5 weapon.mainhand with minecraft:ominous_trial_key
+4260 attack trial6 8
+4260 cmd item replace entity trial6 weapon.mainhand with minecraft:ominous_trial_key
+4260 attack trial7 8
+4260 cmd item replace entity trial7 weapon.mainhand with minecraft:ominous_trial_key
+4261 useon trial0 4 100 0
+4261 useon trial1 100 100 0
+4261 useon trial2 196 100 0
+4261 useon trial3 292 100 0
+4261 useon trial4 388 100 0
+4261 useon trial5 484 100 0
+4261 useon trial6 580 100 0
+4261 useon trial7 676 100 0
+4262 cmd item replace entity trial0 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4262 cmd item replace entity trial1 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4262 cmd item replace entity trial2 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4262 cmd item replace entity trial3 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4262 cmd item replace entity trial4 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4262 cmd item replace entity trial5 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4262 cmd item replace entity trial6 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4262 cmd item replace entity trial7 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4270 attack trial0 8
+4270 attack trial1 8
+4270 attack trial2 8
+4270 attack trial3 8
+4270 attack trial4 8
+4270 attack trial5 8
+4270 attack trial6 8
+4270 attack trial7 8
+4280 attack trial0 8
+4280 attack trial1 8
+4280 attack trial2 8
+4280 attack trial3 8
+4280 attack trial4 8
+4280 attack trial5 8
+4280 attack trial6 8
+4280 attack trial7 8
+4290 attack trial0 8
+4290 attack trial1 8
+4290 attack trial2 8
+4290 attack trial3 8
+4290 attack trial4 8
+4290 attack trial5 8
+4290 attack trial6 8
+4290 attack trial7 8
+4300 attack trial0 8
+4300 attack trial1 8
+4300 attack trial2 8
+4300 attack trial3 8
+4300 attack trial4 8
+4300 attack trial5 8
+4300 attack trial6 8
+4300 attack trial7 8
+4310 attack trial0 8
+4310 attack trial1 8
+4310 attack trial2 8
+4310 attack trial3 8
+4310 attack trial4 8
+4310 attack trial5 8
+4310 attack trial6 8
+4310 attack trial7 8
+4320 attack trial0 8
+4320 attack trial1 8
+4320 attack trial2 8
+4320 attack trial3 8
+4320 attack trial4 8
+4320 attack trial5 8
+4320 attack trial6 8
+4320 attack trial7 8
+4330 attack trial0 8
+4330 attack trial1 8
+4330 attack trial2 8
+4330 attack trial3 8
+4330 attack trial4 8
+4330 attack trial5 8
+4330 attack trial6 8
+4330 attack trial7 8
+4340 attack trial0 8
+4340 attack trial1 8
+4340 attack trial2 8
+4340 attack trial3 8
+4340 attack trial4 8
+4340 attack trial5 8
+4340 attack trial6 8
+4340 attack trial7 8
+4350 attack trial0 8
+4350 attack trial1 8
+4350 attack trial2 8
+4350 attack trial3 8
+4350 attack trial4 8
+4350 attack trial5 8
+4350 attack trial6 8
+4350 attack trial7 8
+4360 attack trial0 8
+4360 attack trial1 8
+4360 attack trial2 8
+4360 attack trial3 8
+4360 attack trial4 8
+4360 attack trial5 8
+4360 attack trial6 8
+4360 attack trial7 8
+4370 attack trial0 8
+4370 attack trial1 8
+4370 attack trial2 8
+4370 attack trial3 8
+4370 attack trial4 8
+4370 attack trial5 8
+4370 attack trial6 8
+4370 attack trial7 8
+4380 attack trial0 8
+4380 attack trial1 8
+4380 attack trial2 8
+4380 attack trial3 8
+4380 attack trial4 8
+4380 attack trial5 8
+4380 attack trial6 8
+4380 attack trial7 8
+4390 attack trial0 8
+4390 attack trial1 8
+4390 attack trial2 8
+4390 attack trial3 8
+4390 attack trial4 8
+4390 attack trial5 8
+4390 attack trial6 8
+4390 attack trial7 8
+4400 attack trial0 8
+4400 attack trial1 8
+4400 attack trial2 8
+4400 attack trial3 8
+4400 attack trial4 8
+4400 attack trial5 8
+4400 attack trial6 8
+4400 attack trial7 8
+4410 attack trial0 8
+4410 attack trial1 8
+4410 attack trial2 8
+4410 attack trial3 8
+4410 attack trial4 8
+4410 attack trial5 8
+4410 attack trial6 8
+4410 attack trial7 8
+4420 attack trial0 8
+4420 attack trial1 8
+4420 attack trial2 8
+4420 attack trial3 8
+4420 attack trial4 8
+4420 attack trial5 8
+4420 attack trial6 8
+4420 attack trial7 8
+4430 attack trial0 8
+4430 attack trial1 8
+4430 attack trial2 8
+4430 attack trial3 8
+4430 attack trial4 8
+4430 attack trial5 8
+4430 attack trial6 8
+4430 attack trial7 8
+4440 attack trial0 8
+4440 attack trial1 8
+4440 attack trial2 8
+4440 attack trial3 8
+4440 attack trial4 8
+4440 attack trial5 8
+4440 attack trial6 8
+4440 attack trial7 8
+4450 attack trial0 8
+4450 attack trial1 8
+4450 attack trial2 8
+4450 attack trial3 8
+4450 attack trial4 8
+4450 attack trial5 8
+4450 attack trial6 8
+4450 attack trial7 8
+4460 attack trial0 8
+4460 cmd item replace entity trial0 weapon.mainhand with minecraft:trial_key
+4460 attack trial1 8
+4460 cmd item replace entity trial1 weapon.mainhand with minecraft:trial_key
+4460 attack trial2 8
+4460 cmd item replace entity trial2 weapon.mainhand with minecraft:trial_key
+4460 attack trial3 8
+4460 cmd item replace entity trial3 weapon.mainhand with minecraft:trial_key
+4460 attack trial4 8
+4460 cmd item replace entity trial4 weapon.mainhand with minecraft:ominous_trial_key
+4460 attack trial5 8
+4460 cmd item replace entity trial5 weapon.mainhand with minecraft:ominous_trial_key
+4460 attack trial6 8
+4460 cmd item replace entity trial6 weapon.mainhand with minecraft:ominous_trial_key
+4460 attack trial7 8
+4460 cmd item replace entity trial7 weapon.mainhand with minecraft:ominous_trial_key
+4461 useon trial0 4 100 0
+4461 useon trial1 100 100 0
+4461 useon trial2 196 100 0
+4461 useon trial3 292 100 0
+4461 useon trial4 388 100 0
+4461 useon trial5 484 100 0
+4461 useon trial6 580 100 0
+4461 useon trial7 676 100 0
+4462 cmd item replace entity trial0 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4462 cmd item replace entity trial1 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4462 cmd item replace entity trial2 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4462 cmd item replace entity trial3 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4462 cmd item replace entity trial4 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4462 cmd item replace entity trial5 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4462 cmd item replace entity trial6 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4462 cmd item replace entity trial7 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4470 attack trial0 8
+4470 attack trial1 8
+4470 attack trial2 8
+4470 attack trial3 8
+4470 attack trial4 8
+4470 attack trial5 8
+4470 attack trial6 8
+4470 attack trial7 8
+4480 attack trial0 8
+4480 attack trial1 8
+4480 attack trial2 8
+4480 attack trial3 8
+4480 attack trial4 8
+4480 attack trial5 8
+4480 attack trial6 8
+4480 attack trial7 8
+4490 attack trial0 8
+4490 attack trial1 8
+4490 attack trial2 8
+4490 attack trial3 8
+4490 attack trial4 8
+4490 attack trial5 8
+4490 attack trial6 8
+4490 attack trial7 8
+4500 attack trial0 8
+4500 attack trial1 8
+4500 attack trial2 8
+4500 attack trial3 8
+4500 attack trial4 8
+4500 attack trial5 8
+4500 attack trial6 8
+4500 attack trial7 8
+4510 attack trial0 8
+4510 attack trial1 8
+4510 attack trial2 8
+4510 attack trial3 8
+4510 attack trial4 8
+4510 attack trial5 8
+4510 attack trial6 8
+4510 attack trial7 8
+4520 attack trial0 8
+4520 attack trial1 8
+4520 attack trial2 8
+4520 attack trial3 8
+4520 attack trial4 8
+4520 attack trial5 8
+4520 attack trial6 8
+4520 attack trial7 8
+4530 attack trial0 8
+4530 attack trial1 8
+4530 attack trial2 8
+4530 attack trial3 8
+4530 attack trial4 8
+4530 attack trial5 8
+4530 attack trial6 8
+4530 attack trial7 8
+4540 attack trial0 8
+4540 attack trial1 8
+4540 attack trial2 8
+4540 attack trial3 8
+4540 attack trial4 8
+4540 attack trial5 8
+4540 attack trial6 8
+4540 attack trial7 8
+4550 attack trial0 8
+4550 attack trial1 8
+4550 attack trial2 8
+4550 attack trial3 8
+4550 attack trial4 8
+4550 attack trial5 8
+4550 attack trial6 8
+4550 attack trial7 8
+4560 attack trial0 8
+4560 attack trial1 8
+4560 attack trial2 8
+4560 attack trial3 8
+4560 attack trial4 8
+4560 attack trial5 8
+4560 attack trial6 8
+4560 attack trial7 8
+4570 attack trial0 8
+4570 attack trial1 8
+4570 attack trial2 8
+4570 attack trial3 8
+4570 attack trial4 8
+4570 attack trial5 8
+4570 attack trial6 8
+4570 attack trial7 8
+4580 attack trial0 8
+4580 attack trial1 8
+4580 attack trial2 8
+4580 attack trial3 8
+4580 attack trial4 8
+4580 attack trial5 8
+4580 attack trial6 8
+4580 attack trial7 8
+4590 attack trial0 8
+4590 attack trial1 8
+4590 attack trial2 8
+4590 attack trial3 8
+4590 attack trial4 8
+4590 attack trial5 8
+4590 attack trial6 8
+4590 attack trial7 8
+4600 attack trial0 8
+4600 attack trial1 8
+4600 attack trial2 8
+4600 attack trial3 8
+4600 attack trial4 8
+4600 attack trial5 8
+4600 attack trial6 8
+4600 attack trial7 8
+4610 attack trial0 8
+4610 attack trial1 8
+4610 attack trial2 8
+4610 attack trial3 8
+4610 attack trial4 8
+4610 attack trial5 8
+4610 attack trial6 8
+4610 attack trial7 8
+4620 attack trial0 8
+4620 attack trial1 8
+4620 attack trial2 8
+4620 attack trial3 8
+4620 attack trial4 8
+4620 attack trial5 8
+4620 attack trial6 8
+4620 attack trial7 8
+4630 attack trial0 8
+4630 attack trial1 8
+4630 attack trial2 8
+4630 attack trial3 8
+4630 attack trial4 8
+4630 attack trial5 8
+4630 attack trial6 8
+4630 attack trial7 8
+4640 attack trial0 8
+4640 attack trial1 8
+4640 attack trial2 8
+4640 attack trial3 8
+4640 attack trial4 8
+4640 attack trial5 8
+4640 attack trial6 8
+4640 attack trial7 8
+4650 attack trial0 8
+4650 attack trial1 8
+4650 attack trial2 8
+4650 attack trial3 8
+4650 attack trial4 8
+4650 attack trial5 8
+4650 attack trial6 8
+4650 attack trial7 8
+4660 attack trial0 8
+4660 cmd item replace entity trial0 weapon.mainhand with minecraft:trial_key
+4660 attack trial1 8
+4660 cmd item replace entity trial1 weapon.mainhand with minecraft:trial_key
+4660 attack trial2 8
+4660 cmd item replace entity trial2 weapon.mainhand with minecraft:trial_key
+4660 attack trial3 8
+4660 cmd item replace entity trial3 weapon.mainhand with minecraft:trial_key
+4660 attack trial4 8
+4660 cmd item replace entity trial4 weapon.mainhand with minecraft:ominous_trial_key
+4660 attack trial5 8
+4660 cmd item replace entity trial5 weapon.mainhand with minecraft:ominous_trial_key
+4660 attack trial6 8
+4660 cmd item replace entity trial6 weapon.mainhand with minecraft:ominous_trial_key
+4660 attack trial7 8
+4660 cmd item replace entity trial7 weapon.mainhand with minecraft:ominous_trial_key
+4661 useon trial0 4 100 0
+4661 useon trial1 100 100 0
+4661 useon trial2 196 100 0
+4661 useon trial3 292 100 0
+4661 useon trial4 388 100 0
+4661 useon trial5 484 100 0
+4661 useon trial6 580 100 0
+4661 useon trial7 676 100 0
+4662 cmd item replace entity trial0 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4662 cmd item replace entity trial1 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4662 cmd item replace entity trial2 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4662 cmd item replace entity trial3 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4662 cmd item replace entity trial4 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4662 cmd item replace entity trial5 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4662 cmd item replace entity trial6 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4662 cmd item replace entity trial7 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4670 attack trial0 8
+4670 attack trial1 8
+4670 attack trial2 8
+4670 attack trial3 8
+4670 attack trial4 8
+4670 attack trial5 8
+4670 attack trial6 8
+4670 attack trial7 8
+4680 attack trial0 8
+4680 attack trial1 8
+4680 attack trial2 8
+4680 attack trial3 8
+4680 attack trial4 8
+4680 attack trial5 8
+4680 attack trial6 8
+4680 attack trial7 8
+4690 attack trial0 8
+4690 attack trial1 8
+4690 attack trial2 8
+4690 attack trial3 8
+4690 attack trial4 8
+4690 attack trial5 8
+4690 attack trial6 8
+4690 attack trial7 8
+4700 attack trial0 8
+4700 attack trial1 8
+4700 attack trial2 8
+4700 attack trial3 8
+4700 attack trial4 8
+4700 attack trial5 8
+4700 attack trial6 8
+4700 attack trial7 8
+4710 attack trial0 8
+4710 attack trial1 8
+4710 attack trial2 8
+4710 attack trial3 8
+4710 attack trial4 8
+4710 attack trial5 8
+4710 attack trial6 8
+4710 attack trial7 8
+4720 attack trial0 8
+4720 attack trial1 8
+4720 attack trial2 8
+4720 attack trial3 8
+4720 attack trial4 8
+4720 attack trial5 8
+4720 attack trial6 8
+4720 attack trial7 8
+4730 attack trial0 8
+4730 attack trial1 8
+4730 attack trial2 8
+4730 attack trial3 8
+4730 attack trial4 8
+4730 attack trial5 8
+4730 attack trial6 8
+4730 attack trial7 8
+4740 attack trial0 8
+4740 attack trial1 8
+4740 attack trial2 8
+4740 attack trial3 8
+4740 attack trial4 8
+4740 attack trial5 8
+4740 attack trial6 8
+4740 attack trial7 8
+4750 attack trial0 8
+4750 attack trial1 8
+4750 attack trial2 8
+4750 attack trial3 8
+4750 attack trial4 8
+4750 attack trial5 8
+4750 attack trial6 8
+4750 attack trial7 8
+4760 attack trial0 8
+4760 attack trial1 8
+4760 attack trial2 8
+4760 attack trial3 8
+4760 attack trial4 8
+4760 attack trial5 8
+4760 attack trial6 8
+4760 attack trial7 8
+4770 attack trial0 8
+4770 attack trial1 8
+4770 attack trial2 8
+4770 attack trial3 8
+4770 attack trial4 8
+4770 attack trial5 8
+4770 attack trial6 8
+4770 attack trial7 8
+4780 attack trial0 8
+4780 attack trial1 8
+4780 attack trial2 8
+4780 attack trial3 8
+4780 attack trial4 8
+4780 attack trial5 8
+4780 attack trial6 8
+4780 attack trial7 8
+4790 attack trial0 8
+4790 attack trial1 8
+4790 attack trial2 8
+4790 attack trial3 8
+4790 attack trial4 8
+4790 attack trial5 8
+4790 attack trial6 8
+4790 attack trial7 8
+4800 attack trial0 8
+4800 attack trial1 8
+4800 attack trial2 8
+4800 attack trial3 8
+4800 attack trial4 8
+4800 attack trial5 8
+4800 attack trial6 8
+4800 attack trial7 8
+4810 attack trial0 8
+4810 attack trial1 8
+4810 attack trial2 8
+4810 attack trial3 8
+4810 attack trial4 8
+4810 attack trial5 8
+4810 attack trial6 8
+4810 attack trial7 8
+4820 attack trial0 8
+4820 attack trial1 8
+4820 attack trial2 8
+4820 attack trial3 8
+4820 attack trial4 8
+4820 attack trial5 8
+4820 attack trial6 8
+4820 attack trial7 8
+4830 attack trial0 8
+4830 attack trial1 8
+4830 attack trial2 8
+4830 attack trial3 8
+4830 attack trial4 8
+4830 attack trial5 8
+4830 attack trial6 8
+4830 attack trial7 8
+4840 attack trial0 8
+4840 attack trial1 8
+4840 attack trial2 8
+4840 attack trial3 8
+4840 attack trial4 8
+4840 attack trial5 8
+4840 attack trial6 8
+4840 attack trial7 8
+4850 attack trial0 8
+4850 attack trial1 8
+4850 attack trial2 8
+4850 attack trial3 8
+4850 attack trial4 8
+4850 attack trial5 8
+4850 attack trial6 8
+4850 attack trial7 8
+4860 attack trial0 8
+4860 cmd item replace entity trial0 weapon.mainhand with minecraft:trial_key
+4860 attack trial1 8
+4860 cmd item replace entity trial1 weapon.mainhand with minecraft:trial_key
+4860 attack trial2 8
+4860 cmd item replace entity trial2 weapon.mainhand with minecraft:trial_key
+4860 attack trial3 8
+4860 cmd item replace entity trial3 weapon.mainhand with minecraft:trial_key
+4860 attack trial4 8
+4860 cmd item replace entity trial4 weapon.mainhand with minecraft:ominous_trial_key
+4860 attack trial5 8
+4860 cmd item replace entity trial5 weapon.mainhand with minecraft:ominous_trial_key
+4860 attack trial6 8
+4860 cmd item replace entity trial6 weapon.mainhand with minecraft:ominous_trial_key
+4860 attack trial7 8
+4860 cmd item replace entity trial7 weapon.mainhand with minecraft:ominous_trial_key
+4861 useon trial0 4 100 0
+4861 useon trial1 100 100 0
+4861 useon trial2 196 100 0
+4861 useon trial3 292 100 0
+4861 useon trial4 388 100 0
+4861 useon trial5 484 100 0
+4861 useon trial6 580 100 0
+4861 useon trial7 676 100 0
+4862 cmd item replace entity trial0 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4862 cmd item replace entity trial1 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4862 cmd item replace entity trial2 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4862 cmd item replace entity trial3 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4862 cmd item replace entity trial4 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4862 cmd item replace entity trial5 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4862 cmd item replace entity trial6 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4862 cmd item replace entity trial7 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+4870 attack trial0 8
+4870 attack trial1 8
+4870 attack trial2 8
+4870 attack trial3 8
+4870 attack trial4 8
+4870 attack trial5 8
+4870 attack trial6 8
+4870 attack trial7 8
+4880 attack trial0 8
+4880 attack trial1 8
+4880 attack trial2 8
+4880 attack trial3 8
+4880 attack trial4 8
+4880 attack trial5 8
+4880 attack trial6 8
+4880 attack trial7 8
+4890 attack trial0 8
+4890 attack trial1 8
+4890 attack trial2 8
+4890 attack trial3 8
+4890 attack trial4 8
+4890 attack trial5 8
+4890 attack trial6 8
+4890 attack trial7 8
+4900 attack trial0 8
+4900 attack trial1 8
+4900 attack trial2 8
+4900 attack trial3 8
+4900 attack trial4 8
+4900 attack trial5 8
+4900 attack trial6 8
+4900 attack trial7 8
+4910 attack trial0 8
+4910 attack trial1 8
+4910 attack trial2 8
+4910 attack trial3 8
+4910 attack trial4 8
+4910 attack trial5 8
+4910 attack trial6 8
+4910 attack trial7 8
+4920 attack trial0 8
+4920 attack trial1 8
+4920 attack trial2 8
+4920 attack trial3 8
+4920 attack trial4 8
+4920 attack trial5 8
+4920 attack trial6 8
+4920 attack trial7 8
+4930 attack trial0 8
+4930 attack trial1 8
+4930 attack trial2 8
+4930 attack trial3 8
+4930 attack trial4 8
+4930 attack trial5 8
+4930 attack trial6 8
+4930 attack trial7 8
+4940 attack trial0 8
+4940 attack trial1 8
+4940 attack trial2 8
+4940 attack trial3 8
+4940 attack trial4 8
+4940 attack trial5 8
+4940 attack trial6 8
+4940 attack trial7 8
+4950 attack trial0 8
+4950 attack trial1 8
+4950 attack trial2 8
+4950 attack trial3 8
+4950 attack trial4 8
+4950 attack trial5 8
+4950 attack trial6 8
+4950 attack trial7 8
+4960 attack trial0 8
+4960 attack trial1 8
+4960 attack trial2 8
+4960 attack trial3 8
+4960 attack trial4 8
+4960 attack trial5 8
+4960 attack trial6 8
+4960 attack trial7 8
+4970 attack trial0 8
+4970 attack trial1 8
+4970 attack trial2 8
+4970 attack trial3 8
+4970 attack trial4 8
+4970 attack trial5 8
+4970 attack trial6 8
+4970 attack trial7 8
+4980 attack trial0 8
+4980 attack trial1 8
+4980 attack trial2 8
+4980 attack trial3 8
+4980 attack trial4 8
+4980 attack trial5 8
+4980 attack trial6 8
+4980 attack trial7 8
+4990 attack trial0 8
+4990 attack trial1 8
+4990 attack trial2 8
+4990 attack trial3 8
+4990 attack trial4 8
+4990 attack trial5 8
+4990 attack trial6 8
+4990 attack trial7 8
+5000 attack trial0 8
+5000 attack trial1 8
+5000 attack trial2 8
+5000 attack trial3 8
+5000 attack trial4 8
+5000 attack trial5 8
+5000 attack trial6 8
+5000 attack trial7 8
+5010 attack trial0 8
+5010 attack trial1 8
+5010 attack trial2 8
+5010 attack trial3 8
+5010 attack trial4 8
+5010 attack trial5 8
+5010 attack trial6 8
+5010 attack trial7 8
+5020 attack trial0 8
+5020 attack trial1 8
+5020 attack trial2 8
+5020 attack trial3 8
+5020 attack trial4 8
+5020 attack trial5 8
+5020 attack trial6 8
+5020 attack trial7 8
+5030 attack trial0 8
+5030 attack trial1 8
+5030 attack trial2 8
+5030 attack trial3 8
+5030 attack trial4 8
+5030 attack trial5 8
+5030 attack trial6 8
+5030 attack trial7 8
+5040 attack trial0 8
+5040 attack trial1 8
+5040 attack trial2 8
+5040 attack trial3 8
+5040 attack trial4 8
+5040 attack trial5 8
+5040 attack trial6 8
+5040 attack trial7 8
+5050 attack trial0 8
+5050 attack trial1 8
+5050 attack trial2 8
+5050 attack trial3 8
+5050 attack trial4 8
+5050 attack trial5 8
+5050 attack trial6 8
+5050 attack trial7 8
+5060 attack trial0 8
+5060 cmd item replace entity trial0 weapon.mainhand with minecraft:trial_key
+5060 attack trial1 8
+5060 cmd item replace entity trial1 weapon.mainhand with minecraft:trial_key
+5060 attack trial2 8
+5060 cmd item replace entity trial2 weapon.mainhand with minecraft:trial_key
+5060 attack trial3 8
+5060 cmd item replace entity trial3 weapon.mainhand with minecraft:trial_key
+5060 attack trial4 8
+5060 cmd item replace entity trial4 weapon.mainhand with minecraft:ominous_trial_key
+5060 attack trial5 8
+5060 cmd item replace entity trial5 weapon.mainhand with minecraft:ominous_trial_key
+5060 attack trial6 8
+5060 cmd item replace entity trial6 weapon.mainhand with minecraft:ominous_trial_key
+5060 attack trial7 8
+5060 cmd item replace entity trial7 weapon.mainhand with minecraft:ominous_trial_key
+5061 useon trial0 4 100 0
+5061 useon trial1 100 100 0
+5061 useon trial2 196 100 0
+5061 useon trial3 292 100 0
+5061 useon trial4 388 100 0
+5061 useon trial5 484 100 0
+5061 useon trial6 580 100 0
+5061 useon trial7 676 100 0
+5062 cmd item replace entity trial0 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5062 cmd item replace entity trial1 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5062 cmd item replace entity trial2 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5062 cmd item replace entity trial3 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5062 cmd item replace entity trial4 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5062 cmd item replace entity trial5 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5062 cmd item replace entity trial6 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5062 cmd item replace entity trial7 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5070 attack trial0 8
+5070 attack trial1 8
+5070 attack trial2 8
+5070 attack trial3 8
+5070 attack trial4 8
+5070 attack trial5 8
+5070 attack trial6 8
+5070 attack trial7 8
+5080 attack trial0 8
+5080 attack trial1 8
+5080 attack trial2 8
+5080 attack trial3 8
+5080 attack trial4 8
+5080 attack trial5 8
+5080 attack trial6 8
+5080 attack trial7 8
+5090 attack trial0 8
+5090 attack trial1 8
+5090 attack trial2 8
+5090 attack trial3 8
+5090 attack trial4 8
+5090 attack trial5 8
+5090 attack trial6 8
+5090 attack trial7 8
+5100 attack trial0 8
+5100 cmd setblock 0 100 4 minecraft:air
+5100 attack trial1 8
+5100 cmd setblock 96 100 4 minecraft:air
+5100 attack trial2 8
+5100 cmd setblock 192 100 4 minecraft:air
+5100 attack trial3 8
+5100 cmd setblock 288 100 4 minecraft:air
+5100 attack trial4 8
+5100 cmd setblock 384 100 4 minecraft:air
+5100 attack trial5 8
+5100 cmd setblock 480 100 4 minecraft:air
+5100 attack trial6 8
+5100 cmd setblock 576 100 4 minecraft:air
+5100 attack trial7 8
+5100 cmd setblock 672 100 4 minecraft:air
+5101 cmd setblock 0 100 4 minecraft:trial_spawner[ominous=false]{normal_config:"minecraft:trial_chamber/melee/zombie/normal",ominous_config:"minecraft:trial_chamber/melee/zombie/ominous"}
+5101 cmd setblock 96 100 4 minecraft:trial_spawner[ominous=false]{normal_config:"minecraft:trial_chamber/melee/husk/normal",ominous_config:"minecraft:trial_chamber/melee/husk/ominous"}
+5101 cmd setblock 192 100 4 minecraft:trial_spawner[ominous=false]{normal_config:"minecraft:trial_chamber/ranged/skeleton/normal",ominous_config:"minecraft:trial_chamber/ranged/skeleton/ominous"}
+5101 cmd setblock 288 100 4 minecraft:trial_spawner[ominous=false]{normal_config:"minecraft:trial_chamber/small_melee/baby_zombie/normal",ominous_config:"minecraft:trial_chamber/small_melee/baby_zombie/ominous"}
+5101 cmd setblock 384 100 4 minecraft:trial_spawner[ominous=true]{normal_config:"minecraft:trial_chamber/breeze/normal",ominous_config:"minecraft:trial_chamber/breeze/ominous"}
+5101 cmd setblock 480 100 4 minecraft:trial_spawner[ominous=true]{normal_config:"minecraft:trial_chamber/melee/spider/normal",ominous_config:"minecraft:trial_chamber/melee/spider/ominous"}
+5101 cmd setblock 576 100 4 minecraft:trial_spawner[ominous=true]{normal_config:"minecraft:trial_chamber/ranged/stray/normal",ominous_config:"minecraft:trial_chamber/ranged/stray/ominous"}
+5101 cmd setblock 672 100 4 minecraft:trial_spawner[ominous=true]{normal_config:"minecraft:trial_chamber/small_melee/slime/normal",ominous_config:"minecraft:trial_chamber/small_melee/slime/ominous"}
+5110 attack trial0 8
+5110 attack trial1 8
+5110 attack trial2 8
+5110 attack trial3 8
+5110 attack trial4 8
+5110 attack trial5 8
+5110 attack trial6 8
+5110 attack trial7 8
+5120 attack trial0 8
+5120 attack trial1 8
+5120 attack trial2 8
+5120 attack trial3 8
+5120 attack trial4 8
+5120 attack trial5 8
+5120 attack trial6 8
+5120 attack trial7 8
+5130 attack trial0 8
+5130 attack trial1 8
+5130 attack trial2 8
+5130 attack trial3 8
+5130 attack trial4 8
+5130 attack trial5 8
+5130 attack trial6 8
+5130 attack trial7 8
+5140 attack trial0 8
+5140 attack trial1 8
+5140 attack trial2 8
+5140 attack trial3 8
+5140 attack trial4 8
+5140 attack trial5 8
+5140 attack trial6 8
+5140 attack trial7 8
+5150 attack trial0 8
+5150 attack trial1 8
+5150 attack trial2 8
+5150 attack trial3 8
+5150 attack trial4 8
+5150 attack trial5 8
+5150 attack trial6 8
+5150 attack trial7 8
+5160 attack trial0 8
+5160 attack trial1 8
+5160 attack trial2 8
+5160 attack trial3 8
+5160 attack trial4 8
+5160 attack trial5 8
+5160 attack trial6 8
+5160 attack trial7 8
+5170 attack trial0 8
+5170 attack trial1 8
+5170 attack trial2 8
+5170 attack trial3 8
+5170 attack trial4 8
+5170 attack trial5 8
+5170 attack trial6 8
+5170 attack trial7 8
+5180 attack trial0 8
+5180 attack trial1 8
+5180 attack trial2 8
+5180 attack trial3 8
+5180 attack trial4 8
+5180 attack trial5 8
+5180 attack trial6 8
+5180 attack trial7 8
+5190 attack trial0 8
+5190 attack trial1 8
+5190 attack trial2 8
+5190 attack trial3 8
+5190 attack trial4 8
+5190 attack trial5 8
+5190 attack trial6 8
+5190 attack trial7 8
+5200 attack trial0 8
+5200 attack trial1 8
+5200 attack trial2 8
+5200 attack trial3 8
+5200 attack trial4 8
+5200 attack trial5 8
+5200 attack trial6 8
+5200 attack trial7 8
+5210 attack trial0 8
+5210 attack trial1 8
+5210 attack trial2 8
+5210 attack trial3 8
+5210 attack trial4 8
+5210 attack trial5 8
+5210 attack trial6 8
+5210 attack trial7 8
+5220 attack trial0 8
+5220 attack trial1 8
+5220 attack trial2 8
+5220 attack trial3 8
+5220 attack trial4 8
+5220 attack trial5 8
+5220 attack trial6 8
+5220 attack trial7 8
+5230 attack trial0 8
+5230 attack trial1 8
+5230 attack trial2 8
+5230 attack trial3 8
+5230 attack trial4 8
+5230 attack trial5 8
+5230 attack trial6 8
+5230 attack trial7 8
+5240 attack trial0 8
+5240 attack trial1 8
+5240 attack trial2 8
+5240 attack trial3 8
+5240 attack trial4 8
+5240 attack trial5 8
+5240 attack trial6 8
+5240 attack trial7 8
+5250 attack trial0 8
+5250 attack trial1 8
+5250 attack trial2 8
+5250 attack trial3 8
+5250 attack trial4 8
+5250 attack trial5 8
+5250 attack trial6 8
+5250 attack trial7 8
+5260 attack trial0 8
+5260 cmd item replace entity trial0 weapon.mainhand with minecraft:trial_key
+5260 attack trial1 8
+5260 cmd item replace entity trial1 weapon.mainhand with minecraft:trial_key
+5260 attack trial2 8
+5260 cmd item replace entity trial2 weapon.mainhand with minecraft:trial_key
+5260 attack trial3 8
+5260 cmd item replace entity trial3 weapon.mainhand with minecraft:trial_key
+5260 attack trial4 8
+5260 cmd item replace entity trial4 weapon.mainhand with minecraft:ominous_trial_key
+5260 attack trial5 8
+5260 cmd item replace entity trial5 weapon.mainhand with minecraft:ominous_trial_key
+5260 attack trial6 8
+5260 cmd item replace entity trial6 weapon.mainhand with minecraft:ominous_trial_key
+5260 attack trial7 8
+5260 cmd item replace entity trial7 weapon.mainhand with minecraft:ominous_trial_key
+5261 useon trial0 4 100 0
+5261 useon trial1 100 100 0
+5261 useon trial2 196 100 0
+5261 useon trial3 292 100 0
+5261 useon trial4 388 100 0
+5261 useon trial5 484 100 0
+5261 useon trial6 580 100 0
+5261 useon trial7 676 100 0
+5262 cmd item replace entity trial0 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5262 cmd item replace entity trial1 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5262 cmd item replace entity trial2 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5262 cmd item replace entity trial3 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5262 cmd item replace entity trial4 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5262 cmd item replace entity trial5 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5262 cmd item replace entity trial6 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5262 cmd item replace entity trial7 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5270 attack trial0 8
+5270 attack trial1 8
+5270 attack trial2 8
+5270 attack trial3 8
+5270 attack trial4 8
+5270 attack trial5 8
+5270 attack trial6 8
+5270 attack trial7 8
+5280 attack trial0 8
+5280 attack trial1 8
+5280 attack trial2 8
+5280 attack trial3 8
+5280 attack trial4 8
+5280 attack trial5 8
+5280 attack trial6 8
+5280 attack trial7 8
+5290 attack trial0 8
+5290 attack trial1 8
+5290 attack trial2 8
+5290 attack trial3 8
+5290 attack trial4 8
+5290 attack trial5 8
+5290 attack trial6 8
+5290 attack trial7 8
+5300 attack trial0 8
+5300 attack trial1 8
+5300 attack trial2 8
+5300 attack trial3 8
+5300 attack trial4 8
+5300 attack trial5 8
+5300 attack trial6 8
+5300 attack trial7 8
+5310 attack trial0 8
+5310 attack trial1 8
+5310 attack trial2 8
+5310 attack trial3 8
+5310 attack trial4 8
+5310 attack trial5 8
+5310 attack trial6 8
+5310 attack trial7 8
+5320 attack trial0 8
+5320 attack trial1 8
+5320 attack trial2 8
+5320 attack trial3 8
+5320 attack trial4 8
+5320 attack trial5 8
+5320 attack trial6 8
+5320 attack trial7 8
+5330 attack trial0 8
+5330 attack trial1 8
+5330 attack trial2 8
+5330 attack trial3 8
+5330 attack trial4 8
+5330 attack trial5 8
+5330 attack trial6 8
+5330 attack trial7 8
+5340 attack trial0 8
+5340 attack trial1 8
+5340 attack trial2 8
+5340 attack trial3 8
+5340 attack trial4 8
+5340 attack trial5 8
+5340 attack trial6 8
+5340 attack trial7 8
+5350 attack trial0 8
+5350 attack trial1 8
+5350 attack trial2 8
+5350 attack trial3 8
+5350 attack trial4 8
+5350 attack trial5 8
+5350 attack trial6 8
+5350 attack trial7 8
+5360 attack trial0 8
+5360 attack trial1 8
+5360 attack trial2 8
+5360 attack trial3 8
+5360 attack trial4 8
+5360 attack trial5 8
+5360 attack trial6 8
+5360 attack trial7 8
+5370 attack trial0 8
+5370 attack trial1 8
+5370 attack trial2 8
+5370 attack trial3 8
+5370 attack trial4 8
+5370 attack trial5 8
+5370 attack trial6 8
+5370 attack trial7 8
+5380 attack trial0 8
+5380 attack trial1 8
+5380 attack trial2 8
+5380 attack trial3 8
+5380 attack trial4 8
+5380 attack trial5 8
+5380 attack trial6 8
+5380 attack trial7 8
+5390 attack trial0 8
+5390 attack trial1 8
+5390 attack trial2 8
+5390 attack trial3 8
+5390 attack trial4 8
+5390 attack trial5 8
+5390 attack trial6 8
+5390 attack trial7 8
+5400 attack trial0 8
+5400 attack trial1 8
+5400 attack trial2 8
+5400 attack trial3 8
+5400 attack trial4 8
+5400 attack trial5 8
+5400 attack trial6 8
+5400 attack trial7 8
+5410 attack trial0 8
+5410 attack trial1 8
+5410 attack trial2 8
+5410 attack trial3 8
+5410 attack trial4 8
+5410 attack trial5 8
+5410 attack trial6 8
+5410 attack trial7 8
+5420 attack trial0 8
+5420 attack trial1 8
+5420 attack trial2 8
+5420 attack trial3 8
+5420 attack trial4 8
+5420 attack trial5 8
+5420 attack trial6 8
+5420 attack trial7 8
+5430 attack trial0 8
+5430 attack trial1 8
+5430 attack trial2 8
+5430 attack trial3 8
+5430 attack trial4 8
+5430 attack trial5 8
+5430 attack trial6 8
+5430 attack trial7 8
+5440 attack trial0 8
+5440 attack trial1 8
+5440 attack trial2 8
+5440 attack trial3 8
+5440 attack trial4 8
+5440 attack trial5 8
+5440 attack trial6 8
+5440 attack trial7 8
+5450 attack trial0 8
+5450 attack trial1 8
+5450 attack trial2 8
+5450 attack trial3 8
+5450 attack trial4 8
+5450 attack trial5 8
+5450 attack trial6 8
+5450 attack trial7 8
+5460 attack trial0 8
+5460 cmd item replace entity trial0 weapon.mainhand with minecraft:trial_key
+5460 attack trial1 8
+5460 cmd item replace entity trial1 weapon.mainhand with minecraft:trial_key
+5460 attack trial2 8
+5460 cmd item replace entity trial2 weapon.mainhand with minecraft:trial_key
+5460 attack trial3 8
+5460 cmd item replace entity trial3 weapon.mainhand with minecraft:trial_key
+5460 attack trial4 8
+5460 cmd item replace entity trial4 weapon.mainhand with minecraft:ominous_trial_key
+5460 attack trial5 8
+5460 cmd item replace entity trial5 weapon.mainhand with minecraft:ominous_trial_key
+5460 attack trial6 8
+5460 cmd item replace entity trial6 weapon.mainhand with minecraft:ominous_trial_key
+5460 attack trial7 8
+5460 cmd item replace entity trial7 weapon.mainhand with minecraft:ominous_trial_key
+5461 useon trial0 4 100 0
+5461 useon trial1 100 100 0
+5461 useon trial2 196 100 0
+5461 useon trial3 292 100 0
+5461 useon trial4 388 100 0
+5461 useon trial5 484 100 0
+5461 useon trial6 580 100 0
+5461 useon trial7 676 100 0
+5462 cmd item replace entity trial0 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5462 cmd item replace entity trial1 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5462 cmd item replace entity trial2 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5462 cmd item replace entity trial3 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5462 cmd item replace entity trial4 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5462 cmd item replace entity trial5 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5462 cmd item replace entity trial6 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5462 cmd item replace entity trial7 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5470 attack trial0 8
+5470 attack trial1 8
+5470 attack trial2 8
+5470 attack trial3 8
+5470 attack trial4 8
+5470 attack trial5 8
+5470 attack trial6 8
+5470 attack trial7 8
+5480 attack trial0 8
+5480 attack trial1 8
+5480 attack trial2 8
+5480 attack trial3 8
+5480 attack trial4 8
+5480 attack trial5 8
+5480 attack trial6 8
+5480 attack trial7 8
+5490 attack trial0 8
+5490 attack trial1 8
+5490 attack trial2 8
+5490 attack trial3 8
+5490 attack trial4 8
+5490 attack trial5 8
+5490 attack trial6 8
+5490 attack trial7 8
+5500 attack trial0 8
+5500 attack trial1 8
+5500 attack trial2 8
+5500 attack trial3 8
+5500 attack trial4 8
+5500 attack trial5 8
+5500 attack trial6 8
+5500 attack trial7 8
+5510 attack trial0 8
+5510 attack trial1 8
+5510 attack trial2 8
+5510 attack trial3 8
+5510 attack trial4 8
+5510 attack trial5 8
+5510 attack trial6 8
+5510 attack trial7 8
+5520 attack trial0 8
+5520 attack trial1 8
+5520 attack trial2 8
+5520 attack trial3 8
+5520 attack trial4 8
+5520 attack trial5 8
+5520 attack trial6 8
+5520 attack trial7 8
+5530 attack trial0 8
+5530 attack trial1 8
+5530 attack trial2 8
+5530 attack trial3 8
+5530 attack trial4 8
+5530 attack trial5 8
+5530 attack trial6 8
+5530 attack trial7 8
+5540 attack trial0 8
+5540 attack trial1 8
+5540 attack trial2 8
+5540 attack trial3 8
+5540 attack trial4 8
+5540 attack trial5 8
+5540 attack trial6 8
+5540 attack trial7 8
+5550 attack trial0 8
+5550 attack trial1 8
+5550 attack trial2 8
+5550 attack trial3 8
+5550 attack trial4 8
+5550 attack trial5 8
+5550 attack trial6 8
+5550 attack trial7 8
+5560 attack trial0 8
+5560 attack trial1 8
+5560 attack trial2 8
+5560 attack trial3 8
+5560 attack trial4 8
+5560 attack trial5 8
+5560 attack trial6 8
+5560 attack trial7 8
+5570 attack trial0 8
+5570 attack trial1 8
+5570 attack trial2 8
+5570 attack trial3 8
+5570 attack trial4 8
+5570 attack trial5 8
+5570 attack trial6 8
+5570 attack trial7 8
+5580 attack trial0 8
+5580 attack trial1 8
+5580 attack trial2 8
+5580 attack trial3 8
+5580 attack trial4 8
+5580 attack trial5 8
+5580 attack trial6 8
+5580 attack trial7 8
+5590 attack trial0 8
+5590 attack trial1 8
+5590 attack trial2 8
+5590 attack trial3 8
+5590 attack trial4 8
+5590 attack trial5 8
+5590 attack trial6 8
+5590 attack trial7 8
+5600 attack trial0 8
+5600 attack trial1 8
+5600 attack trial2 8
+5600 attack trial3 8
+5600 attack trial4 8
+5600 attack trial5 8
+5600 attack trial6 8
+5600 attack trial7 8
+5610 attack trial0 8
+5610 attack trial1 8
+5610 attack trial2 8
+5610 attack trial3 8
+5610 attack trial4 8
+5610 attack trial5 8
+5610 attack trial6 8
+5610 attack trial7 8
+5620 attack trial0 8
+5620 attack trial1 8
+5620 attack trial2 8
+5620 attack trial3 8
+5620 attack trial4 8
+5620 attack trial5 8
+5620 attack trial6 8
+5620 attack trial7 8
+5630 attack trial0 8
+5630 attack trial1 8
+5630 attack trial2 8
+5630 attack trial3 8
+5630 attack trial4 8
+5630 attack trial5 8
+5630 attack trial6 8
+5630 attack trial7 8
+5640 attack trial0 8
+5640 attack trial1 8
+5640 attack trial2 8
+5640 attack trial3 8
+5640 attack trial4 8
+5640 attack trial5 8
+5640 attack trial6 8
+5640 attack trial7 8
+5650 attack trial0 8
+5650 attack trial1 8
+5650 attack trial2 8
+5650 attack trial3 8
+5650 attack trial4 8
+5650 attack trial5 8
+5650 attack trial6 8
+5650 attack trial7 8
+5660 attack trial0 8
+5660 cmd item replace entity trial0 weapon.mainhand with minecraft:trial_key
+5660 attack trial1 8
+5660 cmd item replace entity trial1 weapon.mainhand with minecraft:trial_key
+5660 attack trial2 8
+5660 cmd item replace entity trial2 weapon.mainhand with minecraft:trial_key
+5660 attack trial3 8
+5660 cmd item replace entity trial3 weapon.mainhand with minecraft:trial_key
+5660 attack trial4 8
+5660 cmd item replace entity trial4 weapon.mainhand with minecraft:ominous_trial_key
+5660 attack trial5 8
+5660 cmd item replace entity trial5 weapon.mainhand with minecraft:ominous_trial_key
+5660 attack trial6 8
+5660 cmd item replace entity trial6 weapon.mainhand with minecraft:ominous_trial_key
+5660 attack trial7 8
+5660 cmd item replace entity trial7 weapon.mainhand with minecraft:ominous_trial_key
+5661 useon trial0 4 100 0
+5661 useon trial1 100 100 0
+5661 useon trial2 196 100 0
+5661 useon trial3 292 100 0
+5661 useon trial4 388 100 0
+5661 useon trial5 484 100 0
+5661 useon trial6 580 100 0
+5661 useon trial7 676 100 0
+5662 cmd item replace entity trial0 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5662 cmd item replace entity trial1 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5662 cmd item replace entity trial2 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5662 cmd item replace entity trial3 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5662 cmd item replace entity trial4 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5662 cmd item replace entity trial5 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5662 cmd item replace entity trial6 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5662 cmd item replace entity trial7 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5670 attack trial0 8
+5670 attack trial1 8
+5670 attack trial2 8
+5670 attack trial3 8
+5670 attack trial4 8
+5670 attack trial5 8
+5670 attack trial6 8
+5670 attack trial7 8
+5680 attack trial0 8
+5680 attack trial1 8
+5680 attack trial2 8
+5680 attack trial3 8
+5680 attack trial4 8
+5680 attack trial5 8
+5680 attack trial6 8
+5680 attack trial7 8
+5690 attack trial0 8
+5690 attack trial1 8
+5690 attack trial2 8
+5690 attack trial3 8
+5690 attack trial4 8
+5690 attack trial5 8
+5690 attack trial6 8
+5690 attack trial7 8
+5700 attack trial0 8
+5700 attack trial1 8
+5700 attack trial2 8
+5700 attack trial3 8
+5700 attack trial4 8
+5700 attack trial5 8
+5700 attack trial6 8
+5700 attack trial7 8
+5710 attack trial0 8
+5710 attack trial1 8
+5710 attack trial2 8
+5710 attack trial3 8
+5710 attack trial4 8
+5710 attack trial5 8
+5710 attack trial6 8
+5710 attack trial7 8
+5720 attack trial0 8
+5720 attack trial1 8
+5720 attack trial2 8
+5720 attack trial3 8
+5720 attack trial4 8
+5720 attack trial5 8
+5720 attack trial6 8
+5720 attack trial7 8
+5730 attack trial0 8
+5730 attack trial1 8
+5730 attack trial2 8
+5730 attack trial3 8
+5730 attack trial4 8
+5730 attack trial5 8
+5730 attack trial6 8
+5730 attack trial7 8
+5740 attack trial0 8
+5740 attack trial1 8
+5740 attack trial2 8
+5740 attack trial3 8
+5740 attack trial4 8
+5740 attack trial5 8
+5740 attack trial6 8
+5740 attack trial7 8
+5750 attack trial0 8
+5750 attack trial1 8
+5750 attack trial2 8
+5750 attack trial3 8
+5750 attack trial4 8
+5750 attack trial5 8
+5750 attack trial6 8
+5750 attack trial7 8
+5760 attack trial0 8
+5760 attack trial1 8
+5760 attack trial2 8
+5760 attack trial3 8
+5760 attack trial4 8
+5760 attack trial5 8
+5760 attack trial6 8
+5760 attack trial7 8
+5770 attack trial0 8
+5770 attack trial1 8
+5770 attack trial2 8
+5770 attack trial3 8
+5770 attack trial4 8
+5770 attack trial5 8
+5770 attack trial6 8
+5770 attack trial7 8
+5780 attack trial0 8
+5780 attack trial1 8
+5780 attack trial2 8
+5780 attack trial3 8
+5780 attack trial4 8
+5780 attack trial5 8
+5780 attack trial6 8
+5780 attack trial7 8
+5790 attack trial0 8
+5790 attack trial1 8
+5790 attack trial2 8
+5790 attack trial3 8
+5790 attack trial4 8
+5790 attack trial5 8
+5790 attack trial6 8
+5790 attack trial7 8
+5800 attack trial0 8
+5800 attack trial1 8
+5800 attack trial2 8
+5800 attack trial3 8
+5800 attack trial4 8
+5800 attack trial5 8
+5800 attack trial6 8
+5800 attack trial7 8
+5810 attack trial0 8
+5810 attack trial1 8
+5810 attack trial2 8
+5810 attack trial3 8
+5810 attack trial4 8
+5810 attack trial5 8
+5810 attack trial6 8
+5810 attack trial7 8
+5820 attack trial0 8
+5820 attack trial1 8
+5820 attack trial2 8
+5820 attack trial3 8
+5820 attack trial4 8
+5820 attack trial5 8
+5820 attack trial6 8
+5820 attack trial7 8
+5830 attack trial0 8
+5830 attack trial1 8
+5830 attack trial2 8
+5830 attack trial3 8
+5830 attack trial4 8
+5830 attack trial5 8
+5830 attack trial6 8
+5830 attack trial7 8
+5840 attack trial0 8
+5840 attack trial1 8
+5840 attack trial2 8
+5840 attack trial3 8
+5840 attack trial4 8
+5840 attack trial5 8
+5840 attack trial6 8
+5840 attack trial7 8
+5850 attack trial0 8
+5850 attack trial1 8
+5850 attack trial2 8
+5850 attack trial3 8
+5850 attack trial4 8
+5850 attack trial5 8
+5850 attack trial6 8
+5850 attack trial7 8
+5860 attack trial0 8
+5860 cmd item replace entity trial0 weapon.mainhand with minecraft:trial_key
+5860 attack trial1 8
+5860 cmd item replace entity trial1 weapon.mainhand with minecraft:trial_key
+5860 attack trial2 8
+5860 cmd item replace entity trial2 weapon.mainhand with minecraft:trial_key
+5860 attack trial3 8
+5860 cmd item replace entity trial3 weapon.mainhand with minecraft:trial_key
+5860 attack trial4 8
+5860 cmd item replace entity trial4 weapon.mainhand with minecraft:ominous_trial_key
+5860 attack trial5 8
+5860 cmd item replace entity trial5 weapon.mainhand with minecraft:ominous_trial_key
+5860 attack trial6 8
+5860 cmd item replace entity trial6 weapon.mainhand with minecraft:ominous_trial_key
+5860 attack trial7 8
+5860 cmd item replace entity trial7 weapon.mainhand with minecraft:ominous_trial_key
+5861 useon trial0 4 100 0
+5861 useon trial1 100 100 0
+5861 useon trial2 196 100 0
+5861 useon trial3 292 100 0
+5861 useon trial4 388 100 0
+5861 useon trial5 484 100 0
+5861 useon trial6 580 100 0
+5861 useon trial7 676 100 0
+5862 cmd item replace entity trial0 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5862 cmd item replace entity trial1 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5862 cmd item replace entity trial2 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5862 cmd item replace entity trial3 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5862 cmd item replace entity trial4 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5862 cmd item replace entity trial5 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5862 cmd item replace entity trial6 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5862 cmd item replace entity trial7 weapon.mainhand with minecraft:netherite_sword[minecraft:enchantments={"minecraft:sharpness":5}]
+5870 attack trial0 8
+5870 attack trial1 8
+5870 attack trial2 8
+5870 attack trial3 8
+5870 attack trial4 8
+5870 attack trial5 8
+5870 attack trial6 8
+5870 attack trial7 8
+5880 attack trial0 8
+5880 attack trial1 8
+5880 attack trial2 8
+5880 attack trial3 8
+5880 attack trial4 8
+5880 attack trial5 8
+5880 attack trial6 8
+5880 attack trial7 8
+5890 attack trial0 8
+5890 attack trial1 8
+5890 attack trial2 8
+5890 attack trial3 8
+5890 attack trial4 8
+5890 attack trial5 8
+5890 attack trial6 8
+5890 attack trial7 8
+5900 attack trial0 8
+5900 attack trial1 8
+5900 attack trial2 8
+5900 attack trial3 8
+5900 attack trial4 8
+5900 attack trial5 8
+5900 attack trial6 8
+5900 attack trial7 8
+5910 attack trial0 8
+5910 attack trial1 8
+5910 attack trial2 8
+5910 attack trial3 8
+5910 attack trial4 8
+5910 attack trial5 8
+5910 attack trial6 8
+5910 attack trial7 8
+5920 attack trial0 8
+5920 attack trial1 8
+5920 attack trial2 8
+5920 attack trial3 8
+5920 attack trial4 8
+5920 attack trial5 8
+5920 attack trial6 8
+5920 attack trial7 8
+5930 attack trial0 8
+5930 attack trial1 8
+5930 attack trial2 8
+5930 attack trial3 8
+5930 attack trial4 8
+5930 attack trial5 8
+5930 attack trial6 8
+5930 attack trial7 8
+5940 attack trial0 8
+5940 attack trial1 8
+5940 attack trial2 8
+5940 attack trial3 8
+5940 attack trial4 8
+5940 attack trial5 8
+5940 attack trial6 8
+5940 attack trial7 8
+5950 attack trial0 8
+5950 attack trial1 8
+5950 attack trial2 8
+5950 attack trial3 8
+5950 attack trial4 8
+5950 attack trial5 8
+5950 attack trial6 8
+5950 attack trial7 8
+5960 attack trial0 8
+5960 attack trial1 8
+5960 attack trial2 8
+5960 attack trial3 8
+5960 attack trial4 8
+5960 attack trial5 8
+5960 attack trial6 8
+5960 attack trial7 8
+5970 attack trial0 8
+5970 attack trial1 8
+5970 attack trial2 8
+5970 attack trial3 8
+5970 attack trial4 8
+5970 attack trial5 8
+5970 attack trial6 8
+5970 attack trial7 8
+6000 stop

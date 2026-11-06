@@ -84,7 +84,10 @@ public final class Agent {
             public MethodVisitor visitMethod(int acc, String name, String desc, String sig, String[] ex) {
                 MethodVisitor mv = super.visitMethod(acc, name, desc, sig, ex);
                 if (owner.equals(SERVER)) {
-                    if (name.equals("tickServer")) return new Entry(mv, () -> mv.visitMethodInsn(Opcodes.INVOKESTATIC, HOOK, "tick", "()V", false));
+                    if (name.equals("tickServer")) return new Entry(mv, () -> {
+                        mv.visitVarInsn(Opcodes.ALOAD, 0);
+                        mv.visitMethodInsn(Opcodes.INVOKESTATIC, HOOK, "tick", "(Ljava/lang/Object;)V", false);
+                    });
                     return mv;
                 }
                 if (name.equals("<init>")) return new Ctor(mv, owner, desc);

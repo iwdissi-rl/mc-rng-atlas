@@ -89,8 +89,10 @@ public final class Hook {
         BUF.get().site = id;
     }
 
-    public static void tick() {
+    /** Called at the start of every MinecraftServer.tickServer with the server instance. */
+    public static void tick(Object server) {
         tick++;
+        Driver.tick(server, tick);
     }
 
     public static void lcgNext(long gen, int cls, long seed, int bits) {
