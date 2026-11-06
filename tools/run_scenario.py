@@ -12,7 +12,7 @@ Driver script (.drv): timed fake-player actions run on the server thread by atla
 
     run_scenario.py --scenario scenarios/smoke.txt --seed 42 --out runs/smoke-42
 """
-import argparse, os, shutil, subprocess, sys, threading, time, zlib
+import argparse, os, shutil, socket, subprocess, sys, threading, time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -29,13 +29,29 @@ def ensure_rng_types():
         RNG_TYPES.write_text("\n".join(q.stdout.splitlines()[1:]) + "\n")
 
 
+def free_port():
+    with socket.socket() as sk:
+        sk.bind(("", 0))
+        return sk.getsockname()[1]
+
+
 def main():
+    # A port can still be taken between free_port() and the server binding it; retry a few times.
+    for attempt in range(4):
+        rc = run_once()
+        if rc != 75:
+            sys.exit(rc)
+        print(f"port bind failed, retrying ({attempt + 1})", file=sys.stderr)
+    sys.exit(1)
+
+
+def run_once():
     ap = argparse.ArgumentParser()
     ap.add_argument("--scenario", required=True)
     ap.add_argument("--seed", default="42")
     ap.add_argument("--out", required=True, help="run directory (server files + atlas logs)")
     ap.add_argument("--jar", default=str(ROOT / "work/versions/26.3-server.jar"))
-    ap.add_argument("--port", type=int, default=0, help="0 = derive from seed")
+    ap.add_argument("--port", type=int, default=0, help="0 = ask the OS for a free port")
     ap.add_argument("--xmx", default="4G")
     ap.add_argument("--cpus", type=int, default=0, help="limit the JVM's visible cores (sizes worker pools); 0 = all")
     ap.add_argument("--timeout", type=int, default=1800)
@@ -47,7 +63,7 @@ def main():
         shutil.rmtree(out)
     srv = out / "server"
     srv.mkdir(parents=True)
-    port = a.port or 30000 + (zlib.crc32(f"{a.seed}{a.scenario}{out}".encode()) % 20000)
+    port = a.port or free_port()
     (srv / "eula.txt").write_text("eula=true\n")
     (srv / "server.properties").write_text(
         f"level-seed={a.seed}\nserver-port={port}\nonline-mode=false\nenable-query=false\n"
@@ -81,6 +97,9 @@ def main():
     def await_text(text):
         with cond:
             while not any(text in l for l in lines):
+                if any("FAILED TO BIND TO PORT" in l for l in lines):
+                    p.wait(timeout=60)
+                    raise BindFailed()
                 if p.poll() is not None or time.time() > deadline:
                     raise SystemExit(f"server exited or timed out waiting for {text!r}; see {out/'server.log'}")
                 cond.wait(1)
@@ -90,7 +109,10 @@ def main():
         p.stdin.flush()
 
     t0 = time.time()
-    await_text("Done (")
+    try:
+        await_text("Done (")
+    except BindFailed:
+        return 75
     driver = a.scenario.endswith(".drv")
     for raw in ([] if driver else Path(a.scenario).read_text().splitlines()):
         line = raw.strip()
@@ -113,7 +135,11 @@ def main():
         p.wait(timeout=120)
     meta = (out / "atlas" / "meta.txt")
     print(f"{out.name}: exit={p.returncode} in {time.time()-t0:.1f}s; " + (meta.read_text().replace("\n", " ") if meta.exists() else "no atlas meta"))
-    sys.exit(p.returncode)
+    return p.returncode
+
+
+class BindFailed(Exception):
+    pass
 
 
 if __name__ == "__main__":

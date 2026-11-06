@@ -1,0 +1,60 @@
+1 cmd difficulty hard
+1 cmd gamerule spawn_mobs false
+1 cmd gamerule advance_time false
+1 cmd gamerule advance_weather false
+2 cmd tick sprint 6100
+3 cmd forceload add -64 -3064 63 -2937
+3 cmd forceload add 448 -3064 575 -2937
+3 cmd forceload add 960 -3064 1087 -2937
+3 cmd forceload add 1472 -3064 1599 -2937
+3 cmd forceload add 1984 -3064 2111 -2937
+3 cmd forceload add 2496 -3064 2623 -2937
+3 cmd forceload add 3008 -3064 3135 -2937
+3 cmd forceload add 3520 -3064 3647 -2937
+6 player wanderer0 0.5 140 -2999.5
+6 player wanderer1 512.5 140 -2999.5
+6 player wanderer2 1024.5 140 -2999.5
+6 player wanderer3 1536.5 140 -2999.5
+6 player wanderer4 2048.5 140 -2999.5
+6 player wanderer5 2560.5 140 -2999.5
+6 player wanderer6 3072.5 140 -2999.5
+6 player wanderer7 3584.5 140 -2999.5
+8 cmd effect give wanderer0 minecraft:resistance infinite 255 true
+8 cmd execute as wanderer0 at @s positioned over motion_blocking run tp @s ~ ~ ~
+8 cmd effect give wanderer1 minecraft:resistance infinite 255 true
+8 cmd execute as wanderer1 at @s positioned over motion_blocking run tp @s ~ ~ ~
+8 cmd effect give wanderer2 minecraft:resistance infinite 255 true
+8 cmd execute as wanderer2 at @s positioned over motion_blocking run tp @s ~ ~ ~
+8 cmd effect give wanderer3 minecraft:resistance infinite 255 true
+8 cmd execute as wanderer3 at @s positioned over motion_blocking run tp @s ~ ~ ~
+8 cmd effect give wanderer4 minecraft:resistance infinite 255 true
+8 cmd execute as wanderer4 at @s positioned over motion_blocking run tp @s ~ ~ ~
+8 cmd effect give wanderer5 minecraft:resistance infinite 255 true
+8 cmd execute as wanderer5 at @s positioned over motion_blocking run tp @s ~ ~ ~
+8 cmd effect give wanderer6 minecraft:resistance infinite 255 true
+8 cmd execute as wanderer6 at @s positioned over motion_blocking run tp @s ~ ~ ~
+8 cmd effect give wanderer7 minecraft:resistance infinite 255 true
+8 cmd execute as wanderer7 at @s positioned over motion_blocking run tp @s ~ ~ ~
+9 cmd effect give wanderer4 minecraft:bad_omen 120000 0
+9 cmd effect give wanderer5 minecraft:bad_omen 120000 0
+9 cmd effect give wanderer6 minecraft:bad_omen 120000 0
+9 cmd effect give wanderer7 minecraft:bad_omen 120000 0
+10 cmd gamerule spawn_mobs true
+10 cmd gamerule advance_time true
+10 cmd gamerule advance_weather true
+10 cmd gamerule spawn_patrols true
+10 cmd gamerule spawn_wandering_traders true
+10 cmd gamerule spawn_phantoms true
+100 cmd weather thunder
+600 cmd time add 12000
+1100 cmd weather thunder
+1600 cmd time add 12000
+2100 cmd weather thunder
+2600 cmd time add 12000
+3100 cmd weather thunder
+3600 cmd time add 12000
+4100 cmd weather thunder
+4600 cmd time add 12000
+5100 cmd weather thunder
+5600 cmd time add 12000
+6000 stop

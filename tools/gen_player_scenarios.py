@@ -332,8 +332,131 @@ def trials(s):
             s.cmd(t + 1, f"setblock {x} {Y} {z + 4} minecraft:trial_spawner[ominous={'true' if ominous else 'false'}]" + cfg(kinds[i]))
 
 
+def breeding(s):
+    pairs = [("cow", "wheat"), ("sheep", "wheat"), ("pig", "carrot"), ("chicken", "wheat_seeds"), ("wolf", "bone"),
+             ("cat", "cod"), ("horse", "golden_carrot"), ("llama", "hay_block"), ("fox", "sweet_berries"),
+             ("panda", "bamboo"), ("rabbit", "dandelion"), ("turtle", "seagrass"), ("goat", "wheat"), ("axolotl", "tropical_fish_bucket"),
+             ("frog", "slime_ball"), ("bee", "dandelion"), ("camel", "cactus"), ("armadillo", "spider_eye"), ("sniffer", "torchflower_seeds"),
+             ("strider", "warped_fungus"), ("parrot", "wheat_seeds"), ("ocelot", "cod"), ("donkey", "golden_carrot"), ("mule", "golden_carrot")]
+    for i in range(8):
+        p = f"breeder{i}"
+        x, z = station(s, i, p, floor="minecraft:grass_block", r=14)
+        s.cmd(9, f"fill {x - 9} {Y} {z - 9} {x + 9} {Y + 3} {z + 9} minecraft:oak_fence hollow")
+        s.cmd(9, f"fill {x - 8} {Y} {z - 8} {x + 8} {Y + 3} {z + 8} minecraft:air")
+        s.cmd(9, f"fill {x - 8} {Y - 1} {z + 6} {x - 6} {Y - 1} {z + 8} minecraft:water")  # turtles/axolotls/frogs
+        mine = pairs[i * 3:(i + 1) * 3]
+        for t in range(20, DURATION - 60, 600):
+            for j, (mob, food) in enumerate(mine):
+                for k in range(2):  # two adults with AI so they can find each other and breed
+                    s.cmd(t, f"summon minecraft:{mob} {x - 4 + j * 4} {Y} {z + k * 2 - 1} {{Age:0,PersistenceRequired:1b}}")
+        for t in range(40, DURATION - 40, 20):
+            mob, food = mine[(t // 20) % len(mine)]
+            hand(s, t, p, f"minecraft:{food} 64")
+            s.at(t + 1, "interact", p, 9)  # feed (love mode / taming attempts / horse mounting)
+        for t in range(1200, DURATION - 40, 1200):
+            s.cmd(t, f"kill @e[type=!minecraft:player,x={x},y={Y},z={z},distance=..12]")
+
+
+def bosses(s):
+    fights = [("wither", ench("netherite_sword", sharpness=5, smite=5)), ("ender_dragon", ench("netherite_sword", sharpness=5)),
+              ("ravager", ench("netherite_axe", sharpness=5)), ("evoker", "minecraft:netherite_sword"),
+              ("elder_guardian", ench("trident", impaling=5)), ("warden", ench("netherite_sword", sharpness=5)),
+              ("piglin_brute", "minecraft:netherite_sword"), ("vindicator", ench("netherite_sword", sweeping_edge=3))]
+    s.cmd(1, "difficulty hard")
+    for i, (boss, weapon) in enumerate(fights):
+        p = f"boss{i}"
+        x, z = station(s, i, p, r=20)
+        hand(s, 9, p, weapon)
+        s.cmd(9, f"item replace entity {p} armor.chest with {ench('netherite_chestplate', protection=4)}")
+        s.cmd(9, f"effect give {p} minecraft:resistance infinite 255 true")
+        if boss == "elder_guardian":
+            s.cmd(9, f"fill {x - 10} {Y - 6} {z - 10} {x + 10} {Y + 6} {z + 10} minecraft:water replace minecraft:air")
+        for t in range(20, DURATION - 20, 900):
+            s.cmd(t, f"execute positioned {x} {Y} {z} unless entity @e[type=minecraft:{boss},distance=..40] run "
+                     f"summon minecraft:{boss} {x} {Y + (6 if boss in ('wither', 'ender_dragon') else 0)} {z + 6} {{PersistenceRequired:1b}}")
+        for t in range(30, DURATION - 20, 12):
+            s.at(t, "attack", p, 16)
+
+
+def natural(s):
+    """Natural spawning with time and weather running: patrols, wandering traders, lightning, mob spawns."""
+    s.cmd(1, "difficulty hard")
+    for i in range(8):
+        p = f"wanderer{i}"
+        x, z = i * 512, -3000
+        s.cmd(3, f"forceload add {x - 64} {z - 64} {x + 63} {z + 63}")
+        s.at(6, "player", p, x + 0.5, 140, z + 0.5)
+        s.cmd(8, f"effect give {p} minecraft:resistance infinite 255 true")
+        s.cmd(8, f"execute as {p} at @s positioned over motion_blocking run tp @s ~ ~ ~")
+        if i >= 4:
+            s.cmd(9, f"effect give {p} minecraft:bad_omen 120000 0")
+    s.cmd(10, "gamerule spawn_mobs true")
+    s.cmd(10, "gamerule advance_time true")
+    s.cmd(10, "gamerule advance_weather true")
+    s.cmd(10, "gamerule spawn_patrols true")
+    s.cmd(10, "gamerule spawn_wandering_traders true")
+    s.cmd(10, "gamerule spawn_phantoms true")
+    for t in range(100, DURATION, 1000):
+        s.cmd(t, "weather thunder")
+        s.cmd(t + 500, "time add 12000")
+
+
+def hazards(s):
+    s.cmd(1, "difficulty hard")
+    for i in range(8):
+        p = f"hazard{i}"
+        x, z = station(s, i, p, r=14)
+        if i == 0:  # drowning
+            s.cmd(9, f"fill {x - 3} {Y} {z - 3} {x + 3} {Y + 4} {z + 3} minecraft:water")
+            s.cmd(9, f"effect give {p} minecraft:resistance infinite 255 true")
+        elif i == 1:  # tools on their last durability point
+            for t in range(20, DURATION - 20, 6):
+                hand(s, t, p, "minecraft:diamond_pickaxe[minecraft:damage=1560,minecraft:enchantments={\"minecraft:unbreaking\":3}]")
+                s.cmd(t + 1, f"setblock {x} {Y} {z + 2} minecraft:stone")
+                s.at(t + 2, "break", p, x, Y, z + 2)
+        elif i == 2:  # lightning on copper, villagers, pigs, creepers, turtles
+            for t in range(20, DURATION - 20, 60):
+                s.cmd(t, f"setblock {x + 4} {Y} {z} minecraft:lightning_rod")
+                s.cmd(t, f"setblock {x + 4} {Y - 1} {z} minecraft:copper_block")
+                s.cmd(t, f"summon minecraft:{['villager', 'pig', 'creeper', 'turtle', 'mooshroom'][(t // 60) % 5]} {x + 4} {Y + 1} {z + 1}")
+                s.cmd(t + 1, f"summon minecraft:lightning_bolt {x + 4} {Y + 1} {z}")
+        elif i == 3:  # zombie sieges: zombies vs villagers (infection), reinforcements on hit
+            for t in range(20, DURATION - 20, 300):
+                s.cmd(t, f"summon minecraft:villager {x + 2} {Y} {z + 2}")
+                s.cmd(t, f"summon minecraft:zombie {x - 2} {Y} {z + 2}")
+                s.cmd(t, f"summon minecraft:drowned {x - 2} {Y} {z - 2}")
+            hand(s, 9, p, "minecraft:wooden_sword")
+            for t in range(30, DURATION - 20, 15):
+                s.at(t, "attack", p, 8)
+        elif i == 4:  # fire spread and burning entities
+            s.cmd(9, f"fill {x - 5} {Y} {z + 2} {x + 5} {Y} {z + 6} minecraft:oak_planks")
+            for t in range(20, DURATION - 20, 200):
+                s.cmd(t, f"fill {x - 5} {Y} {z + 2} {x + 5} {Y} {z + 6} minecraft:oak_planks replace minecraft:air")
+                s.cmd(t + 1, f"setblock {x} {Y + 1} {z + 4} minecraft:fire")
+                s.cmd(t + 1, f"summon minecraft:cow {x + 1} {Y + 1} {z + 4} {{Fire:200s}}")
+        elif i == 5:  # player damage, armor durability, totem, death drops
+            s.cmd(9, f"item replace entity {p} armor.chest with minecraft:diamond_chestplate[minecraft:enchantments={{\"minecraft:thorns\":3}}]")
+            for t in range(20, DURATION - 20, 40):
+                s.cmd(t, f"summon minecraft:{['zombie', 'skeleton', 'spider', 'husk', 'vindicator'][(t // 40) % 5]} {x + 2} {Y} {z} {{PersistenceRequired:1b}}")
+        elif i == 6:  # elytra, riptide, ender pearl, chorus teleport
+            for t in range(20, DURATION - 20, 50):
+                hand(s, t, p, "minecraft:chorus_fruit")
+                s.at(t + 1, "use", p)
+                hand(s, t + 40, p, "minecraft:ender_pearl")
+                s.at(t + 41, "look", p, (t * 7) % 360, -30)
+                s.at(t + 42, "use", p)
+        else:  # suspicious sand/gravel brushing and decorated pots
+            for t in range(20, DURATION - 20, 120):
+                s.cmd(t, f"setblock {x} {Y} {z + 2} minecraft:suspicious_sand{{LootTable:\"minecraft:archaeology/desert_pyramid\"}}")
+                s.cmd(t, f"setblock {x + 2} {Y} {z + 2} minecraft:suspicious_gravel{{LootTable:\"minecraft:archaeology/trail_ruins_rare\"}}")
+                hand(s, t + 1, p, "minecraft:brush")
+                for k in range(0, 100, 2):
+                    s.at(t + 2 + k, "useon", p, x if k < 50 else x + 2, Y, z + 2)
+
+
 FAMILIES = {"fishing": fishing, "enchanting": enchanting, "combat": combat, "ranged": ranged, "trading": trading,
-            "mining": mining, "itemuse": itemuse, "bartering": bartering, "raids": raids, "trials": trials}
+            "mining": mining, "itemuse": itemuse, "bartering": bartering, "raids": raids, "trials": trials,
+            "breeding": breeding, "bosses": bosses, "natural": natural, "hazards": hazards}
 
 
 def blocks_scenarios(jar, out):
@@ -388,6 +511,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--jar", default=str(ROOT / "work/versions/26.3-client.jar"))
     ap.add_argument("--out", default=str(ROOT / "scenarios/gen"))
+    ap.add_argument("--families", default="", help="comma list: write only these to manifest-wave.tsv")
     a = ap.parse_args()
     out = Path(a.out)
     out.mkdir(parents=True, exist_ok=True)
@@ -406,6 +530,11 @@ def main():
             p = out / f"{name}-{seed}.drv"
             p.write_text(text)
             manifest.append((p, seed))
+    if a.families:
+        want = set(a.families.split(","))
+        wave = [(p, sd) for p, sd in manifest if p.stem.split("-")[1] in want]
+        (out / "manifest-wave.tsv").write_text("".join(f"{p}\t{s}\n" for p, s in wave))
+        print(f"wave manifest: {len(wave)} scenarios")
     (out / "manifest-player.tsv").write_text("".join(f"{p}\t{s}\n" for p, s in manifest))
     print(f"{len(manifest)} driver scenarios ({len(FAMILIES)} player families x {len(SEEDS)} seeds + block/redstone shards)")
 

@@ -106,26 +106,40 @@ python3 tools/run_many.py --jobs 24 --cpus 4         # parallel headless servers
 crates/atlas/target/release/atlas coverage           # what the static catalog has confirmed
 ```
 
-**First fleet (47 scenarios, 24 servers in parallel, 284 s):**
+**Coverage so far** (124 runs on up to 32 parallel servers):
 
 | | |
 |---|---|
-| RNG events logged | 1,428,864,677 |
-| Generators observed | 89,928,441 |
-| Draws confirmed by replay | 1,295,109,177 |
+| RNG events logged | 5,908,701,550 |
+| Generators observed | 323,265,227 |
+| Draws confirmed by replay | 5,423,670,161 |
 | Mismatches | **0** |
-| Server-side static draw sites exercised | 798 / 2,020 (39.5%) |
-| Client-only static draw sites (need a client) | 468, not yet exercised |
+| Server gameplay draw sites exercised | **1,108 / 1,650 (67.2%)** |
+| Client-side methods in shared classes (`animateTick`, particles, `handleEntityEvent`, …) | 36 / 370, need a client |
+| Client packages | 0 / 468, need a client |
+
+Scenario families: world generation (3 dimensions × 4 seeds), every configured feature and structure,
+every loot table, every mob type, random ticks for every block, dispensers and droppers, and
+fake-player families. **Fake players** (`agent/src/hook/atlas/hook/Driver.java`) are real `ServerPlayer`s
+placed through an embedded connection, the way Mojang's gametest framework does it, and driven by
+timed scripts. They fish (reeling on each bite), enchant at tables with 0 to 15 bookshelves, trade
+with every profession and level, mine with fortune, silk touch and unbreaking tools, fight melee and
+ranged (bows, crossbows, tridents), throw and eat items, barter with piglins, trigger raids, trial
+spawners and vaults, breed and tame animals, fight bosses, and survive hazards (drowning, lightning,
+fire, zombie sieges, breaking tools, brushing suspicious blocks), plus natural spawning with time and
+weather running.
+
+```sh
+python3 tools/gen_scenarios.py && python3 tools/gen_player_scenarios.py
+python3 tools/run_many.py --manifest scenarios/gen/manifest.tsv        --jobs 24 --cpus 4
+python3 tools/run_many.py --manifest scenarios/gen/manifest-player.tsv --jobs 32 --cpus 4 --xmx 5G
+```
 
 Runtime sites that join with the static table: every tagged site. The only runtime-only sites are
 **functional-interface draws**: a generator method passed as a function (`random::nextInt` handed to
-`AbstractHorse.generateMaxHealth`, `XoroshiroRandomSource::new` stored in
+`AbstractHorse.generateJumpStrength`, `XoroshiroRandomSource::new` stored in
 `WorldgenRandom$Algorithm`). The static table lists those at the method-reference creation site,
 and runtime sees them where the function is invoked.
-
-Not yet covered: player-only mechanics (enchanting tables, fishing, player combat, trading, raids)
-need a player. Block random ticks for most blocks, trial spawners, pandas and projectiles need
-targeted scenarios.
 
 ## Data model
 
