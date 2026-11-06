@@ -17,6 +17,9 @@ before calling anything new.
 
 ## Candidates
 
+All four candidates were re-measured on 26.1.2, 26.2 and 26.3 with the same results (see
+[datasets/12-cross-version](../datasets/12-cross-version/)).
+
 ### 1. Piglin victory dances come in time windows, not as independent 10% rolls
 `PiglinAi.wantsToDance` uses `RandomSource.createThreadLocalInstance(level.getGameTime()).nextFloat() < 0.1f`.
 The LCG's first output after `setSeed(t)` changes by only about 2^-13.5 of its range per tick, so

@@ -1,0 +1,3205 @@
+1 cmd gamerule spawn_mobs false
+1 cmd gamerule advance_time false
+1 cmd gamerule advance_weather false
+2 cmd tick sprint 6100
+3 cmd forceload add -32 -32 31 31
+3 cmd forceload add 64 -32 127 31
+3 cmd forceload add 160 -32 223 31
+3 cmd forceload add 256 -32 319 31
+3 cmd forceload add 352 -32 415 31
+3 cmd forceload add 448 -32 511 31
+3 cmd forceload add 544 -32 607 31
+3 cmd forceload add 640 -32 703 31
+4 cmd fill -16 99 -16 16 99 16 minecraft:grass_block
+4 cmd fill -16 100 -16 16 104 16 minecraft:air
+4 cmd fill 80 99 -16 112 99 16 minecraft:grass_block
+4 cmd fill 80 100 -16 112 104 16 minecraft:air
+4 cmd fill 176 99 -16 208 99 16 minecraft:grass_block
+4 cmd fill 176 100 -16 208 104 16 minecraft:air
+4 cmd fill 272 99 -16 304 99 16 minecraft:grass_block
+4 cmd fill 272 100 -16 304 104 16 minecraft:air
+4 cmd fill 368 99 -16 400 99 16 minecraft:grass_block
+4 cmd fill 368 100 -16 400 104 16 minecraft:air
+4 cmd fill 464 99 -16 496 99 16 minecraft:grass_block
+4 cmd fill 464 100 -16 496 104 16 minecraft:air
+4 cmd fill 560 99 -16 592 99 16 minecraft:grass_block
+4 cmd fill 560 100 -16 592 104 16 minecraft:air
+4 cmd fill 656 99 -16 688 99 16 minecraft:grass_block
+4 cmd fill 656 100 -16 688 104 16 minecraft:air
+6 player iwdissi_keeper0 0.5 100 0.5
+6 player iwdissi_keeper1 96.5 100 0.5
+6 player iwdissi_keeper2 192.5 100 0.5
+6 player iwdissi_keeper3 288.5 100 0.5
+6 player iwdissi_keeper4 384.5 100 0.5
+6 player iwdissi_keeper5 480.5 100 0.5
+6 player iwdissi_keeper6 576.5 100 0.5
+6 player iwdissi_keeper7 672.5 100 0.5
+8 cmd effect give iwdissi_keeper0 minecraft:resistance infinite 4 true
+8 cmd effect give iwdissi_keeper0 minecraft:regeneration infinite 4 true
+8 cmd effect give iwdissi_keeper0 minecraft:saturation infinite 0 true
+8 cmd effect give iwdissi_keeper1 minecraft:resistance infinite 4 true
+8 cmd effect give iwdissi_keeper1 minecraft:regeneration infinite 4 true
+8 cmd effect give iwdissi_keeper1 minecraft:saturation infinite 0 true
+8 cmd effect give iwdissi_keeper2 minecraft:resistance infinite 4 true
+8 cmd effect give iwdissi_keeper2 minecraft:regeneration infinite 4 true
+8 cmd effect give iwdissi_keeper2 minecraft:saturation infinite 0 true
+8 cmd effect give iwdissi_keeper3 minecraft:resistance infinite 4 true
+8 cmd effect give iwdissi_keeper3 minecraft:regeneration infinite 4 true
+8 cmd effect give iwdissi_keeper3 minecraft:saturation infinite 0 true
+8 cmd effect give iwdissi_keeper4 minecraft:resistance infinite 4 true
+8 cmd effect give iwdissi_keeper4 minecraft:regeneration infinite 4 true
+8 cmd effect give iwdissi_keeper4 minecraft:saturation infinite 0 true
+8 cmd effect give iwdissi_keeper5 minecraft:resistance infinite 4 true
+8 cmd effect give iwdissi_keeper5 minecraft:regeneration infinite 4 true
+8 cmd effect give iwdissi_keeper5 minecraft:saturation infinite 0 true
+8 cmd effect give iwdissi_keeper6 minecraft:resistance infinite 4 true
+8 cmd effect give iwdissi_keeper6 minecraft:regeneration infinite 4 true
+8 cmd effect give iwdissi_keeper6 minecraft:saturation infinite 0 true
+8 cmd effect give iwdissi_keeper7 minecraft:resistance infinite 4 true
+8 cmd effect give iwdissi_keeper7 minecraft:regeneration infinite 4 true
+8 cmd effect give iwdissi_keeper7 minecraft:saturation infinite 0 true
+9 cmd fill -10 100 -10 10 102 10 minecraft:oak_fence hollow
+9 cmd fill -9 100 -9 9 102 9 minecraft:air
+9 cmd fill -9 97 5 -3 99 9 minecraft:water
+9 cmd fill 3 99 5 9 99 9 minecraft:sand
+9 cmd fill -8 100 -8 -4 100 -4 minecraft:bamboo
+9 cmd setblock 6 100 -6 minecraft:beehive
+9 cmd fill 2 100 -9 8 100 -9 minecraft:poppy
+9 cmd fill 86 100 -10 106 102 10 minecraft:oak_fence hollow
+9 cmd fill 87 100 -9 105 102 9 minecraft:air
+9 cmd fill 87 97 5 93 99 9 minecraft:water
+9 cmd fill 99 99 5 105 99 9 minecraft:sand
+9 cmd fill 88 100 -8 92 100 -4 minecraft:bamboo
+9 cmd setblock 102 100 -6 minecraft:beehive
+9 cmd fill 98 100 -9 104 100 -9 minecraft:poppy
+9 cmd fill 182 100 -10 202 102 10 minecraft:oak_fence hollow
+9 cmd fill 183 100 -9 201 102 9 minecraft:air
+9 cmd fill 183 97 5 189 99 9 minecraft:water
+9 cmd fill 195 99 5 201 99 9 minecraft:sand
+9 cmd fill 184 100 -8 188 100 -4 minecraft:bamboo
+9 cmd setblock 198 100 -6 minecraft:beehive
+9 cmd fill 194 100 -9 200 100 -9 minecraft:poppy
+9 cmd fill 278 100 -10 298 102 10 minecraft:oak_fence hollow
+9 cmd fill 279 100 -9 297 102 9 minecraft:air
+9 cmd fill 279 97 5 285 99 9 minecraft:water
+9 cmd fill 291 99 5 297 99 9 minecraft:sand
+9 cmd fill 280 100 -8 284 100 -4 minecraft:bamboo
+9 cmd setblock 294 100 -6 minecraft:beehive
+9 cmd fill 290 100 -9 296 100 -9 minecraft:poppy
+9 cmd fill 374 100 -10 394 102 10 minecraft:oak_fence hollow
+9 cmd fill 375 100 -9 393 102 9 minecraft:air
+9 cmd fill 375 97 5 381 99 9 minecraft:water
+9 cmd fill 387 99 5 393 99 9 minecraft:sand
+9 cmd fill 376 100 -8 380 100 -4 minecraft:bamboo
+9 cmd setblock 390 100 -6 minecraft:beehive
+9 cmd fill 386 100 -9 392 100 -9 minecraft:poppy
+9 cmd fill 470 100 -10 490 102 10 minecraft:oak_fence hollow
+9 cmd fill 471 100 -9 489 102 9 minecraft:air
+9 cmd fill 471 97 5 477 99 9 minecraft:water
+9 cmd fill 483 99 5 489 99 9 minecraft:sand
+9 cmd fill 472 100 -8 476 100 -4 minecraft:bamboo
+9 cmd setblock 486 100 -6 minecraft:beehive
+9 cmd fill 482 100 -9 488 100 -9 minecraft:poppy
+9 cmd fill 566 100 -10 586 102 10 minecraft:oak_fence hollow
+9 cmd fill 567 100 -9 585 102 9 minecraft:air
+9 cmd fill 567 97 5 573 99 9 minecraft:water
+9 cmd fill 579 99 5 585 99 9 minecraft:sand
+9 cmd fill 568 100 -8 572 100 -4 minecraft:bamboo
+9 cmd setblock 582 100 -6 minecraft:beehive
+9 cmd fill 578 100 -9 584 100 -9 minecraft:poppy
+9 cmd fill 662 100 -10 682 102 10 minecraft:oak_fence hollow
+9 cmd fill 663 100 -9 681 102 9 minecraft:air
+9 cmd fill 663 97 5 669 99 9 minecraft:water
+9 cmd fill 675 99 5 681 99 9 minecraft:sand
+9 cmd fill 664 100 -8 668 100 -4 minecraft:bamboo
+9 cmd setblock 678 100 -6 minecraft:beehive
+9 cmd fill 674 100 -9 680 100 -9 minecraft:poppy
+12 cmd item replace entity iwdissi_keeper0 weapon.mainhand with minecraft:golden_apple 64
+12 cmd item replace entity iwdissi_keeper1 weapon.mainhand with minecraft:golden_apple 64
+12 cmd item replace entity iwdissi_keeper2 weapon.mainhand with minecraft:golden_apple 64
+12 cmd item replace entity iwdissi_keeper3 weapon.mainhand with minecraft:golden_apple 64
+12 cmd item replace entity iwdissi_keeper4 weapon.mainhand with minecraft:golden_apple 64
+12 cmd item replace entity iwdissi_keeper5 weapon.mainhand with minecraft:golden_apple 64
+12 cmd item replace entity iwdissi_keeper6 weapon.mainhand with minecraft:golden_apple 64
+12 cmd item replace entity iwdissi_keeper7 weapon.mainhand with minecraft:golden_apple 64
+20 cmd summon minecraft:horse -6 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+20 cmd summon minecraft:horse -6 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+20 cmd summon minecraft:horse -6 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+20 cmd summon minecraft:donkey 0 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+20 cmd summon minecraft:donkey 0 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+20 cmd summon minecraft:donkey 0 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+20 cmd summon minecraft:llama 6 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+20 cmd summon minecraft:llama 6 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+20 cmd summon minecraft:llama 6 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+20 cmd summon minecraft:cat 90 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+20 cmd summon minecraft:cat 90 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+20 cmd summon minecraft:cat 90 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+20 cmd summon minecraft:wolf 96 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+20 cmd summon minecraft:wolf 96 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+20 cmd summon minecraft:wolf 96 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+20 cmd summon minecraft:parrot 102 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+20 cmd summon minecraft:parrot 102 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+20 cmd summon minecraft:parrot 102 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+20 cmd summon minecraft:fox 186 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+20 cmd summon minecraft:fox 186 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+20 cmd summon minecraft:fox 186 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+20 cmd summon minecraft:rabbit 192 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+20 cmd summon minecraft:rabbit 192 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+20 cmd summon minecraft:rabbit 192 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+20 cmd summon minecraft:axolotl 198 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+20 cmd summon minecraft:axolotl 198 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+20 cmd summon minecraft:axolotl 198 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+20 cmd summon minecraft:mooshroom 282 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+20 cmd summon minecraft:mooshroom 282 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+20 cmd summon minecraft:mooshroom 282 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+20 cmd summon minecraft:panda 288 100 -2 {MainGene:"lazy",HiddenGene:"weak",Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+20 cmd summon minecraft:panda 288 100 0 {MainGene:"worried",HiddenGene:"brown",Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+20 cmd summon minecraft:panda 288 100 2 {MainGene:"playful",HiddenGene:"normal",Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+20 cmd summon minecraft:goat 294 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+20 cmd summon minecraft:goat 294 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+20 cmd summon minecraft:goat 294 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+20 cmd summon minecraft:villager 378 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+20 cmd summon minecraft:villager 378 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+20 cmd summon minecraft:villager 378 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+20 cmd summon minecraft:sheep 384 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+20 cmd summon minecraft:sheep 384 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+20 cmd summon minecraft:sheep 384 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+20 cmd summon minecraft:pig 390 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+20 cmd summon minecraft:pig 390 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+20 cmd summon minecraft:pig 390 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+20 cmd summon minecraft:turtle 474 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+20 cmd summon minecraft:turtle 474 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+20 cmd summon minecraft:turtle 474 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+20 cmd summon minecraft:frog 480 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+20 cmd summon minecraft:frog 480 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+20 cmd summon minecraft:frog 480 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+20 cmd summon minecraft:sniffer 486 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+20 cmd summon minecraft:sniffer 486 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+20 cmd summon minecraft:sniffer 486 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+20 cmd summon minecraft:camel 570 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+20 cmd summon minecraft:camel 570 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+20 cmd summon minecraft:camel 570 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+20 cmd summon minecraft:armadillo 576 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+20 cmd summon minecraft:armadillo 576 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+20 cmd summon minecraft:armadillo 576 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+20 cmd summon minecraft:bee 582 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+20 cmd summon minecraft:bee 582 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+20 cmd summon minecraft:bee 582 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+20 cmd summon minecraft:mule 666 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+20 cmd summon minecraft:mule 666 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+20 cmd summon minecraft:mule 666 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+20 cmd summon minecraft:trader_llama 672 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+20 cmd summon minecraft:trader_llama 672 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+20 cmd summon minecraft:trader_llama 672 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+20 cmd summon minecraft:ocelot 678 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+20 cmd summon minecraft:ocelot 678 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+20 cmd summon minecraft:ocelot 678 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+22 cmd execute as @e[tag=atlas0,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+22 cmd execute as @e[tag=atlas0] run data modify entity @s Owner set from entity iwdissi_keeper0 UUID
+22 cmd execute as @e[tag=atlas1,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+22 cmd execute as @e[tag=atlas1] run data modify entity @s Owner set from entity iwdissi_keeper1 UUID
+22 cmd execute as @e[tag=atlas2,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+22 cmd execute as @e[tag=atlas2] run data modify entity @s Owner set from entity iwdissi_keeper2 UUID
+22 cmd execute as @e[tag=atlas3,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+22 cmd execute as @e[tag=atlas3] run data modify entity @s Owner set from entity iwdissi_keeper3 UUID
+22 cmd execute as @e[tag=atlas4,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+22 cmd execute as @e[tag=atlas4] run data modify entity @s Owner set from entity iwdissi_keeper4 UUID
+22 cmd execute as @e[tag=atlas5,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+22 cmd execute as @e[tag=atlas5] run data modify entity @s Owner set from entity iwdissi_keeper5 UUID
+22 cmd execute as @e[tag=atlas6,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+22 cmd execute as @e[tag=atlas6] run data modify entity @s Owner set from entity iwdissi_keeper6 UUID
+22 cmd execute as @e[tag=atlas7,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+22 cmd execute as @e[tag=atlas7] run data modify entity @s Owner set from entity iwdissi_keeper7 UUID
+25 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+25 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+25 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+25 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+25 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+25 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+25 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+25 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+30 interact iwdissi_keeper0 10
+30 interact iwdissi_keeper1 10
+30 interact iwdissi_keeper2 10
+30 interact iwdissi_keeper3 10
+30 interact iwdissi_keeper4 10
+30 interact iwdissi_keeper5 10
+30 interact iwdissi_keeper6 10
+30 interact iwdissi_keeper7 10
+55 interact iwdissi_keeper0 10
+55 interact iwdissi_keeper1 10
+55 interact iwdissi_keeper2 10
+55 interact iwdissi_keeper3 10
+55 interact iwdissi_keeper4 10
+55 interact iwdissi_keeper5 10
+55 interact iwdissi_keeper6 10
+55 interact iwdissi_keeper7 10
+80 interact iwdissi_keeper0 10
+80 interact iwdissi_keeper1 10
+80 interact iwdissi_keeper2 10
+80 interact iwdissi_keeper3 10
+80 interact iwdissi_keeper4 10
+80 interact iwdissi_keeper5 10
+80 interact iwdissi_keeper6 10
+80 interact iwdissi_keeper7 10
+105 interact iwdissi_keeper0 10
+105 interact iwdissi_keeper1 10
+105 interact iwdissi_keeper2 10
+105 interact iwdissi_keeper3 10
+105 interact iwdissi_keeper4 10
+105 interact iwdissi_keeper5 10
+105 interact iwdissi_keeper6 10
+105 interact iwdissi_keeper7 10
+125 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+125 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+125 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+125 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+125 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+125 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+125 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+125 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+130 interact iwdissi_keeper0 10
+130 interact iwdissi_keeper1 10
+130 interact iwdissi_keeper2 10
+130 interact iwdissi_keeper3 10
+130 interact iwdissi_keeper4 10
+130 interact iwdissi_keeper5 10
+130 interact iwdissi_keeper6 10
+130 interact iwdissi_keeper7 10
+155 interact iwdissi_keeper0 10
+155 interact iwdissi_keeper1 10
+155 interact iwdissi_keeper2 10
+155 interact iwdissi_keeper3 10
+155 interact iwdissi_keeper4 10
+155 interact iwdissi_keeper5 10
+155 interact iwdissi_keeper6 10
+155 interact iwdissi_keeper7 10
+180 interact iwdissi_keeper0 10
+180 interact iwdissi_keeper1 10
+180 interact iwdissi_keeper2 10
+180 interact iwdissi_keeper3 10
+180 interact iwdissi_keeper4 10
+180 interact iwdissi_keeper5 10
+180 interact iwdissi_keeper6 10
+180 interact iwdissi_keeper7 10
+205 interact iwdissi_keeper0 10
+205 interact iwdissi_keeper1 10
+205 interact iwdissi_keeper2 10
+205 interact iwdissi_keeper3 10
+205 interact iwdissi_keeper4 10
+205 interact iwdissi_keeper5 10
+205 interact iwdissi_keeper6 10
+205 interact iwdissi_keeper7 10
+225 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+225 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+225 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+225 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+225 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+225 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+225 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+225 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+230 interact iwdissi_keeper0 10
+230 interact iwdissi_keeper1 10
+230 interact iwdissi_keeper2 10
+230 interact iwdissi_keeper3 10
+230 interact iwdissi_keeper4 10
+230 interact iwdissi_keeper5 10
+230 interact iwdissi_keeper6 10
+230 interact iwdissi_keeper7 10
+255 interact iwdissi_keeper0 10
+255 interact iwdissi_keeper1 10
+255 interact iwdissi_keeper2 10
+255 interact iwdissi_keeper3 10
+255 interact iwdissi_keeper4 10
+255 interact iwdissi_keeper5 10
+255 interact iwdissi_keeper6 10
+255 interact iwdissi_keeper7 10
+280 interact iwdissi_keeper0 10
+280 interact iwdissi_keeper1 10
+280 interact iwdissi_keeper2 10
+280 interact iwdissi_keeper3 10
+280 interact iwdissi_keeper4 10
+280 interact iwdissi_keeper5 10
+280 interact iwdissi_keeper6 10
+280 interact iwdissi_keeper7 10
+305 interact iwdissi_keeper0 10
+305 interact iwdissi_keeper1 10
+305 interact iwdissi_keeper2 10
+305 interact iwdissi_keeper3 10
+305 interact iwdissi_keeper4 10
+305 interact iwdissi_keeper5 10
+305 interact iwdissi_keeper6 10
+305 interact iwdissi_keeper7 10
+325 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+325 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+325 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+325 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+325 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+325 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+325 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+325 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+330 interact iwdissi_keeper0 10
+330 interact iwdissi_keeper1 10
+330 interact iwdissi_keeper2 10
+330 interact iwdissi_keeper3 10
+330 interact iwdissi_keeper4 10
+330 interact iwdissi_keeper5 10
+330 interact iwdissi_keeper6 10
+330 interact iwdissi_keeper7 10
+355 interact iwdissi_keeper0 10
+355 interact iwdissi_keeper1 10
+355 interact iwdissi_keeper2 10
+355 interact iwdissi_keeper3 10
+355 interact iwdissi_keeper4 10
+355 interact iwdissi_keeper5 10
+355 interact iwdissi_keeper6 10
+355 interact iwdissi_keeper7 10
+380 interact iwdissi_keeper0 10
+380 interact iwdissi_keeper1 10
+380 interact iwdissi_keeper2 10
+380 interact iwdissi_keeper3 10
+380 interact iwdissi_keeper4 10
+380 interact iwdissi_keeper5 10
+380 interact iwdissi_keeper6 10
+380 interact iwdissi_keeper7 10
+405 interact iwdissi_keeper0 10
+405 interact iwdissi_keeper1 10
+405 interact iwdissi_keeper2 10
+405 interact iwdissi_keeper3 10
+405 interact iwdissi_keeper4 10
+405 interact iwdissi_keeper5 10
+405 interact iwdissi_keeper6 10
+405 interact iwdissi_keeper7 10
+425 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+425 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+425 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+425 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+425 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+425 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+425 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+425 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+430 interact iwdissi_keeper0 10
+430 interact iwdissi_keeper1 10
+430 interact iwdissi_keeper2 10
+430 interact iwdissi_keeper3 10
+430 interact iwdissi_keeper4 10
+430 interact iwdissi_keeper5 10
+430 interact iwdissi_keeper6 10
+430 interact iwdissi_keeper7 10
+455 interact iwdissi_keeper0 10
+455 interact iwdissi_keeper1 10
+455 interact iwdissi_keeper2 10
+455 interact iwdissi_keeper3 10
+455 interact iwdissi_keeper4 10
+455 interact iwdissi_keeper5 10
+455 interact iwdissi_keeper6 10
+455 interact iwdissi_keeper7 10
+480 interact iwdissi_keeper0 10
+480 interact iwdissi_keeper1 10
+480 interact iwdissi_keeper2 10
+480 interact iwdissi_keeper3 10
+480 interact iwdissi_keeper4 10
+480 interact iwdissi_keeper5 10
+480 interact iwdissi_keeper6 10
+480 interact iwdissi_keeper7 10
+505 interact iwdissi_keeper0 10
+505 interact iwdissi_keeper1 10
+505 interact iwdissi_keeper2 10
+505 interact iwdissi_keeper3 10
+505 interact iwdissi_keeper4 10
+505 interact iwdissi_keeper5 10
+505 interact iwdissi_keeper6 10
+505 interact iwdissi_keeper7 10
+525 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+525 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+525 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+525 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+525 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+525 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+525 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+525 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+530 interact iwdissi_keeper0 10
+530 interact iwdissi_keeper1 10
+530 interact iwdissi_keeper2 10
+530 interact iwdissi_keeper3 10
+530 interact iwdissi_keeper4 10
+530 interact iwdissi_keeper5 10
+530 interact iwdissi_keeper6 10
+530 interact iwdissi_keeper7 10
+555 interact iwdissi_keeper0 10
+555 interact iwdissi_keeper1 10
+555 interact iwdissi_keeper2 10
+555 interact iwdissi_keeper3 10
+555 interact iwdissi_keeper4 10
+555 interact iwdissi_keeper5 10
+555 interact iwdissi_keeper6 10
+555 interact iwdissi_keeper7 10
+580 interact iwdissi_keeper0 10
+580 interact iwdissi_keeper1 10
+580 interact iwdissi_keeper2 10
+580 interact iwdissi_keeper3 10
+580 interact iwdissi_keeper4 10
+580 interact iwdissi_keeper5 10
+580 interact iwdissi_keeper6 10
+580 interact iwdissi_keeper7 10
+605 interact iwdissi_keeper0 10
+605 interact iwdissi_keeper1 10
+605 interact iwdissi_keeper2 10
+605 interact iwdissi_keeper3 10
+605 interact iwdissi_keeper4 10
+605 interact iwdissi_keeper5 10
+605 interact iwdissi_keeper6 10
+605 interact iwdissi_keeper7 10
+625 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+625 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+625 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+625 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+625 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+625 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+625 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+625 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+630 interact iwdissi_keeper0 10
+630 interact iwdissi_keeper1 10
+630 interact iwdissi_keeper2 10
+630 interact iwdissi_keeper3 10
+630 interact iwdissi_keeper4 10
+630 interact iwdissi_keeper5 10
+630 interact iwdissi_keeper6 10
+630 interact iwdissi_keeper7 10
+655 interact iwdissi_keeper0 10
+655 interact iwdissi_keeper1 10
+655 interact iwdissi_keeper2 10
+655 interact iwdissi_keeper3 10
+655 interact iwdissi_keeper4 10
+655 interact iwdissi_keeper5 10
+655 interact iwdissi_keeper6 10
+655 interact iwdissi_keeper7 10
+680 interact iwdissi_keeper0 10
+680 interact iwdissi_keeper1 10
+680 interact iwdissi_keeper2 10
+680 interact iwdissi_keeper3 10
+680 interact iwdissi_keeper4 10
+680 interact iwdissi_keeper5 10
+680 interact iwdissi_keeper6 10
+680 interact iwdissi_keeper7 10
+705 interact iwdissi_keeper0 10
+705 interact iwdissi_keeper1 10
+705 interact iwdissi_keeper2 10
+705 interact iwdissi_keeper3 10
+705 interact iwdissi_keeper4 10
+705 interact iwdissi_keeper5 10
+705 interact iwdissi_keeper6 10
+705 interact iwdissi_keeper7 10
+725 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+725 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+725 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+725 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+725 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+725 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+725 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+725 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+730 interact iwdissi_keeper0 10
+730 interact iwdissi_keeper1 10
+730 interact iwdissi_keeper2 10
+730 interact iwdissi_keeper3 10
+730 interact iwdissi_keeper4 10
+730 interact iwdissi_keeper5 10
+730 interact iwdissi_keeper6 10
+730 interact iwdissi_keeper7 10
+755 interact iwdissi_keeper0 10
+755 interact iwdissi_keeper1 10
+755 interact iwdissi_keeper2 10
+755 interact iwdissi_keeper3 10
+755 interact iwdissi_keeper4 10
+755 interact iwdissi_keeper5 10
+755 interact iwdissi_keeper6 10
+755 interact iwdissi_keeper7 10
+780 interact iwdissi_keeper0 10
+780 interact iwdissi_keeper1 10
+780 interact iwdissi_keeper2 10
+780 interact iwdissi_keeper3 10
+780 interact iwdissi_keeper4 10
+780 interact iwdissi_keeper5 10
+780 interact iwdissi_keeper6 10
+780 interact iwdissi_keeper7 10
+805 interact iwdissi_keeper0 10
+805 interact iwdissi_keeper1 10
+805 interact iwdissi_keeper2 10
+805 interact iwdissi_keeper3 10
+805 interact iwdissi_keeper4 10
+805 interact iwdissi_keeper5 10
+805 interact iwdissi_keeper6 10
+805 interact iwdissi_keeper7 10
+830 interact iwdissi_keeper0 10
+830 interact iwdissi_keeper1 10
+830 interact iwdissi_keeper2 10
+830 interact iwdissi_keeper3 10
+830 interact iwdissi_keeper4 10
+830 interact iwdissi_keeper5 10
+830 interact iwdissi_keeper6 10
+830 interact iwdissi_keeper7 10
+855 interact iwdissi_keeper0 10
+855 interact iwdissi_keeper1 10
+855 interact iwdissi_keeper2 10
+855 interact iwdissi_keeper3 10
+855 interact iwdissi_keeper4 10
+855 interact iwdissi_keeper5 10
+855 interact iwdissi_keeper6 10
+855 interact iwdissi_keeper7 10
+870 cmd kill @e[tag=atlas0]
+870 cmd kill @e[tag=atlas1]
+870 cmd kill @e[tag=atlas2]
+870 cmd kill @e[tag=atlas3]
+870 cmd kill @e[tag=atlas4]
+870 cmd kill @e[tag=atlas5]
+870 cmd kill @e[tag=atlas6]
+870 cmd kill @e[tag=atlas7]
+871 cmd kill @e[type=minecraft:item,x=0,y=100,z=0,distance=..14]
+871 cmd kill @e[type=minecraft:item,x=96,y=100,z=0,distance=..14]
+871 cmd kill @e[type=minecraft:item,x=192,y=100,z=0,distance=..14]
+871 cmd kill @e[type=minecraft:item,x=288,y=100,z=0,distance=..14]
+871 cmd kill @e[type=minecraft:item,x=384,y=100,z=0,distance=..14]
+871 cmd kill @e[type=minecraft:item,x=480,y=100,z=0,distance=..14]
+871 cmd kill @e[type=minecraft:item,x=576,y=100,z=0,distance=..14]
+871 cmd kill @e[type=minecraft:item,x=672,y=100,z=0,distance=..14]
+880 interact iwdissi_keeper0 10
+880 interact iwdissi_keeper1 10
+880 interact iwdissi_keeper2 10
+880 interact iwdissi_keeper3 10
+880 interact iwdissi_keeper4 10
+880 interact iwdissi_keeper5 10
+880 interact iwdissi_keeper6 10
+880 interact iwdissi_keeper7 10
+905 interact iwdissi_keeper0 10
+905 interact iwdissi_keeper1 10
+905 interact iwdissi_keeper2 10
+905 interact iwdissi_keeper3 10
+905 interact iwdissi_keeper4 10
+905 interact iwdissi_keeper5 10
+905 interact iwdissi_keeper6 10
+905 interact iwdissi_keeper7 10
+920 cmd summon minecraft:horse -6 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+920 cmd summon minecraft:horse -6 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+920 cmd summon minecraft:horse -6 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+920 cmd summon minecraft:donkey 0 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+920 cmd summon minecraft:donkey 0 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+920 cmd summon minecraft:donkey 0 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+920 cmd summon minecraft:llama 6 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+920 cmd summon minecraft:llama 6 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+920 cmd summon minecraft:llama 6 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+920 cmd summon minecraft:cat 90 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+920 cmd summon minecraft:cat 90 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+920 cmd summon minecraft:cat 90 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+920 cmd summon minecraft:wolf 96 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+920 cmd summon minecraft:wolf 96 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+920 cmd summon minecraft:wolf 96 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+920 cmd summon minecraft:parrot 102 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+920 cmd summon minecraft:parrot 102 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+920 cmd summon minecraft:parrot 102 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+920 cmd summon minecraft:fox 186 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+920 cmd summon minecraft:fox 186 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+920 cmd summon minecraft:fox 186 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+920 cmd summon minecraft:rabbit 192 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+920 cmd summon minecraft:rabbit 192 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+920 cmd summon minecraft:rabbit 192 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+920 cmd summon minecraft:axolotl 198 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+920 cmd summon minecraft:axolotl 198 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+920 cmd summon minecraft:axolotl 198 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+920 cmd summon minecraft:mooshroom 282 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+920 cmd summon minecraft:mooshroom 282 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+920 cmd summon minecraft:mooshroom 282 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+920 cmd summon minecraft:panda 288 100 -2 {MainGene:"worried",HiddenGene:"weak",Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+920 cmd summon minecraft:panda 288 100 0 {MainGene:"playful",HiddenGene:"brown",Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+920 cmd summon minecraft:panda 288 100 2 {MainGene:"aggressive",HiddenGene:"normal",Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+920 cmd summon minecraft:goat 294 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+920 cmd summon minecraft:goat 294 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+920 cmd summon minecraft:goat 294 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+920 cmd summon minecraft:villager 378 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+920 cmd summon minecraft:villager 378 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+920 cmd summon minecraft:villager 378 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+920 cmd summon minecraft:sheep 384 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+920 cmd summon minecraft:sheep 384 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+920 cmd summon minecraft:sheep 384 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+920 cmd summon minecraft:pig 390 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+920 cmd summon minecraft:pig 390 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+920 cmd summon minecraft:pig 390 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+920 cmd summon minecraft:turtle 474 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+920 cmd summon minecraft:turtle 474 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+920 cmd summon minecraft:turtle 474 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+920 cmd summon minecraft:frog 480 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+920 cmd summon minecraft:frog 480 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+920 cmd summon minecraft:frog 480 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+920 cmd summon minecraft:sniffer 486 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+920 cmd summon minecraft:sniffer 486 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+920 cmd summon minecraft:sniffer 486 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+920 cmd summon minecraft:camel 570 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+920 cmd summon minecraft:camel 570 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+920 cmd summon minecraft:camel 570 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+920 cmd summon minecraft:armadillo 576 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+920 cmd summon minecraft:armadillo 576 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+920 cmd summon minecraft:armadillo 576 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+920 cmd summon minecraft:bee 582 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+920 cmd summon minecraft:bee 582 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+920 cmd summon minecraft:bee 582 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+920 cmd summon minecraft:mule 666 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+920 cmd summon minecraft:mule 666 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+920 cmd summon minecraft:mule 666 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+920 cmd summon minecraft:trader_llama 672 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+920 cmd summon minecraft:trader_llama 672 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+920 cmd summon minecraft:trader_llama 672 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+920 cmd summon minecraft:ocelot 678 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+920 cmd summon minecraft:ocelot 678 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+920 cmd summon minecraft:ocelot 678 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+922 cmd execute as @e[tag=atlas0,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+922 cmd execute as @e[tag=atlas0] run data modify entity @s Owner set from entity iwdissi_keeper0 UUID
+922 cmd execute as @e[tag=atlas1,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+922 cmd execute as @e[tag=atlas1] run data modify entity @s Owner set from entity iwdissi_keeper1 UUID
+922 cmd execute as @e[tag=atlas2,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+922 cmd execute as @e[tag=atlas2] run data modify entity @s Owner set from entity iwdissi_keeper2 UUID
+922 cmd execute as @e[tag=atlas3,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+922 cmd execute as @e[tag=atlas3] run data modify entity @s Owner set from entity iwdissi_keeper3 UUID
+922 cmd execute as @e[tag=atlas4,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+922 cmd execute as @e[tag=atlas4] run data modify entity @s Owner set from entity iwdissi_keeper4 UUID
+922 cmd execute as @e[tag=atlas5,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+922 cmd execute as @e[tag=atlas5] run data modify entity @s Owner set from entity iwdissi_keeper5 UUID
+922 cmd execute as @e[tag=atlas6,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+922 cmd execute as @e[tag=atlas6] run data modify entity @s Owner set from entity iwdissi_keeper6 UUID
+922 cmd execute as @e[tag=atlas7,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+922 cmd execute as @e[tag=atlas7] run data modify entity @s Owner set from entity iwdissi_keeper7 UUID
+925 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+925 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+925 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+925 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+925 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+925 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+925 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+925 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+930 interact iwdissi_keeper0 10
+930 interact iwdissi_keeper1 10
+930 interact iwdissi_keeper2 10
+930 interact iwdissi_keeper3 10
+930 interact iwdissi_keeper4 10
+930 interact iwdissi_keeper5 10
+930 interact iwdissi_keeper6 10
+930 interact iwdissi_keeper7 10
+955 interact iwdissi_keeper0 10
+955 interact iwdissi_keeper1 10
+955 interact iwdissi_keeper2 10
+955 interact iwdissi_keeper3 10
+955 interact iwdissi_keeper4 10
+955 interact iwdissi_keeper5 10
+955 interact iwdissi_keeper6 10
+955 interact iwdissi_keeper7 10
+980 interact iwdissi_keeper0 10
+980 interact iwdissi_keeper1 10
+980 interact iwdissi_keeper2 10
+980 interact iwdissi_keeper3 10
+980 interact iwdissi_keeper4 10
+980 interact iwdissi_keeper5 10
+980 interact iwdissi_keeper6 10
+980 interact iwdissi_keeper7 10
+1005 interact iwdissi_keeper0 10
+1005 interact iwdissi_keeper1 10
+1005 interact iwdissi_keeper2 10
+1005 interact iwdissi_keeper3 10
+1005 interact iwdissi_keeper4 10
+1005 interact iwdissi_keeper5 10
+1005 interact iwdissi_keeper6 10
+1005 interact iwdissi_keeper7 10
+1025 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+1025 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+1025 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+1025 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+1025 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+1025 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+1025 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+1025 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+1030 interact iwdissi_keeper0 10
+1030 interact iwdissi_keeper1 10
+1030 interact iwdissi_keeper2 10
+1030 interact iwdissi_keeper3 10
+1030 interact iwdissi_keeper4 10
+1030 interact iwdissi_keeper5 10
+1030 interact iwdissi_keeper6 10
+1030 interact iwdissi_keeper7 10
+1055 interact iwdissi_keeper0 10
+1055 interact iwdissi_keeper1 10
+1055 interact iwdissi_keeper2 10
+1055 interact iwdissi_keeper3 10
+1055 interact iwdissi_keeper4 10
+1055 interact iwdissi_keeper5 10
+1055 interact iwdissi_keeper6 10
+1055 interact iwdissi_keeper7 10
+1080 interact iwdissi_keeper0 10
+1080 interact iwdissi_keeper1 10
+1080 interact iwdissi_keeper2 10
+1080 interact iwdissi_keeper3 10
+1080 interact iwdissi_keeper4 10
+1080 interact iwdissi_keeper5 10
+1080 interact iwdissi_keeper6 10
+1080 interact iwdissi_keeper7 10
+1105 interact iwdissi_keeper0 10
+1105 interact iwdissi_keeper1 10
+1105 interact iwdissi_keeper2 10
+1105 interact iwdissi_keeper3 10
+1105 interact iwdissi_keeper4 10
+1105 interact iwdissi_keeper5 10
+1105 interact iwdissi_keeper6 10
+1105 interact iwdissi_keeper7 10
+1125 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+1125 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+1125 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+1125 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+1125 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+1125 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+1125 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+1125 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+1130 interact iwdissi_keeper0 10
+1130 interact iwdissi_keeper1 10
+1130 interact iwdissi_keeper2 10
+1130 interact iwdissi_keeper3 10
+1130 interact iwdissi_keeper4 10
+1130 interact iwdissi_keeper5 10
+1130 interact iwdissi_keeper6 10
+1130 interact iwdissi_keeper7 10
+1155 interact iwdissi_keeper0 10
+1155 interact iwdissi_keeper1 10
+1155 interact iwdissi_keeper2 10
+1155 interact iwdissi_keeper3 10
+1155 interact iwdissi_keeper4 10
+1155 interact iwdissi_keeper5 10
+1155 interact iwdissi_keeper6 10
+1155 interact iwdissi_keeper7 10
+1180 interact iwdissi_keeper0 10
+1180 interact iwdissi_keeper1 10
+1180 interact iwdissi_keeper2 10
+1180 interact iwdissi_keeper3 10
+1180 interact iwdissi_keeper4 10
+1180 interact iwdissi_keeper5 10
+1180 interact iwdissi_keeper6 10
+1180 interact iwdissi_keeper7 10
+1205 interact iwdissi_keeper0 10
+1205 interact iwdissi_keeper1 10
+1205 interact iwdissi_keeper2 10
+1205 interact iwdissi_keeper3 10
+1205 interact iwdissi_keeper4 10
+1205 interact iwdissi_keeper5 10
+1205 interact iwdissi_keeper6 10
+1205 interact iwdissi_keeper7 10
+1225 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+1225 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+1225 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+1225 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+1225 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+1225 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+1225 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+1225 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+1230 interact iwdissi_keeper0 10
+1230 interact iwdissi_keeper1 10
+1230 interact iwdissi_keeper2 10
+1230 interact iwdissi_keeper3 10
+1230 interact iwdissi_keeper4 10
+1230 interact iwdissi_keeper5 10
+1230 interact iwdissi_keeper6 10
+1230 interact iwdissi_keeper7 10
+1255 interact iwdissi_keeper0 10
+1255 interact iwdissi_keeper1 10
+1255 interact iwdissi_keeper2 10
+1255 interact iwdissi_keeper3 10
+1255 interact iwdissi_keeper4 10
+1255 interact iwdissi_keeper5 10
+1255 interact iwdissi_keeper6 10
+1255 interact iwdissi_keeper7 10
+1280 interact iwdissi_keeper0 10
+1280 interact iwdissi_keeper1 10
+1280 interact iwdissi_keeper2 10
+1280 interact iwdissi_keeper3 10
+1280 interact iwdissi_keeper4 10
+1280 interact iwdissi_keeper5 10
+1280 interact iwdissi_keeper6 10
+1280 interact iwdissi_keeper7 10
+1305 interact iwdissi_keeper0 10
+1305 interact iwdissi_keeper1 10
+1305 interact iwdissi_keeper2 10
+1305 interact iwdissi_keeper3 10
+1305 interact iwdissi_keeper4 10
+1305 interact iwdissi_keeper5 10
+1305 interact iwdissi_keeper6 10
+1305 interact iwdissi_keeper7 10
+1325 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+1325 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+1325 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+1325 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+1325 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+1325 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+1325 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+1325 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+1330 interact iwdissi_keeper0 10
+1330 interact iwdissi_keeper1 10
+1330 interact iwdissi_keeper2 10
+1330 interact iwdissi_keeper3 10
+1330 interact iwdissi_keeper4 10
+1330 interact iwdissi_keeper5 10
+1330 interact iwdissi_keeper6 10
+1330 interact iwdissi_keeper7 10
+1355 interact iwdissi_keeper0 10
+1355 interact iwdissi_keeper1 10
+1355 interact iwdissi_keeper2 10
+1355 interact iwdissi_keeper3 10
+1355 interact iwdissi_keeper4 10
+1355 interact iwdissi_keeper5 10
+1355 interact iwdissi_keeper6 10
+1355 interact iwdissi_keeper7 10
+1380 interact iwdissi_keeper0 10
+1380 interact iwdissi_keeper1 10
+1380 interact iwdissi_keeper2 10
+1380 interact iwdissi_keeper3 10
+1380 interact iwdissi_keeper4 10
+1380 interact iwdissi_keeper5 10
+1380 interact iwdissi_keeper6 10
+1380 interact iwdissi_keeper7 10
+1405 interact iwdissi_keeper0 10
+1405 interact iwdissi_keeper1 10
+1405 interact iwdissi_keeper2 10
+1405 interact iwdissi_keeper3 10
+1405 interact iwdissi_keeper4 10
+1405 interact iwdissi_keeper5 10
+1405 interact iwdissi_keeper6 10
+1405 interact iwdissi_keeper7 10
+1425 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+1425 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+1425 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+1425 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+1425 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+1425 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+1425 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+1425 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+1430 interact iwdissi_keeper0 10
+1430 interact iwdissi_keeper1 10
+1430 interact iwdissi_keeper2 10
+1430 interact iwdissi_keeper3 10
+1430 interact iwdissi_keeper4 10
+1430 interact iwdissi_keeper5 10
+1430 interact iwdissi_keeper6 10
+1430 interact iwdissi_keeper7 10
+1455 interact iwdissi_keeper0 10
+1455 interact iwdissi_keeper1 10
+1455 interact iwdissi_keeper2 10
+1455 interact iwdissi_keeper3 10
+1455 interact iwdissi_keeper4 10
+1455 interact iwdissi_keeper5 10
+1455 interact iwdissi_keeper6 10
+1455 interact iwdissi_keeper7 10
+1480 interact iwdissi_keeper0 10
+1480 interact iwdissi_keeper1 10
+1480 interact iwdissi_keeper2 10
+1480 interact iwdissi_keeper3 10
+1480 interact iwdissi_keeper4 10
+1480 interact iwdissi_keeper5 10
+1480 interact iwdissi_keeper6 10
+1480 interact iwdissi_keeper7 10
+1505 interact iwdissi_keeper0 10
+1505 interact iwdissi_keeper1 10
+1505 interact iwdissi_keeper2 10
+1505 interact iwdissi_keeper3 10
+1505 interact iwdissi_keeper4 10
+1505 interact iwdissi_keeper5 10
+1505 interact iwdissi_keeper6 10
+1505 interact iwdissi_keeper7 10
+1525 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+1525 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+1525 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+1525 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+1525 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+1525 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+1525 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+1525 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+1530 interact iwdissi_keeper0 10
+1530 interact iwdissi_keeper1 10
+1530 interact iwdissi_keeper2 10
+1530 interact iwdissi_keeper3 10
+1530 interact iwdissi_keeper4 10
+1530 interact iwdissi_keeper5 10
+1530 interact iwdissi_keeper6 10
+1530 interact iwdissi_keeper7 10
+1555 interact iwdissi_keeper0 10
+1555 interact iwdissi_keeper1 10
+1555 interact iwdissi_keeper2 10
+1555 interact iwdissi_keeper3 10
+1555 interact iwdissi_keeper4 10
+1555 interact iwdissi_keeper5 10
+1555 interact iwdissi_keeper6 10
+1555 interact iwdissi_keeper7 10
+1580 interact iwdissi_keeper0 10
+1580 interact iwdissi_keeper1 10
+1580 interact iwdissi_keeper2 10
+1580 interact iwdissi_keeper3 10
+1580 interact iwdissi_keeper4 10
+1580 interact iwdissi_keeper5 10
+1580 interact iwdissi_keeper6 10
+1580 interact iwdissi_keeper7 10
+1605 interact iwdissi_keeper0 10
+1605 interact iwdissi_keeper1 10
+1605 interact iwdissi_keeper2 10
+1605 interact iwdissi_keeper3 10
+1605 interact iwdissi_keeper4 10
+1605 interact iwdissi_keeper5 10
+1605 interact iwdissi_keeper6 10
+1605 interact iwdissi_keeper7 10
+1625 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+1625 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+1625 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+1625 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+1625 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+1625 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+1625 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+1625 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+1630 interact iwdissi_keeper0 10
+1630 interact iwdissi_keeper1 10
+1630 interact iwdissi_keeper2 10
+1630 interact iwdissi_keeper3 10
+1630 interact iwdissi_keeper4 10
+1630 interact iwdissi_keeper5 10
+1630 interact iwdissi_keeper6 10
+1630 interact iwdissi_keeper7 10
+1655 interact iwdissi_keeper0 10
+1655 interact iwdissi_keeper1 10
+1655 interact iwdissi_keeper2 10
+1655 interact iwdissi_keeper3 10
+1655 interact iwdissi_keeper4 10
+1655 interact iwdissi_keeper5 10
+1655 interact iwdissi_keeper6 10
+1655 interact iwdissi_keeper7 10
+1680 interact iwdissi_keeper0 10
+1680 interact iwdissi_keeper1 10
+1680 interact iwdissi_keeper2 10
+1680 interact iwdissi_keeper3 10
+1680 interact iwdissi_keeper4 10
+1680 interact iwdissi_keeper5 10
+1680 interact iwdissi_keeper6 10
+1680 interact iwdissi_keeper7 10
+1705 interact iwdissi_keeper0 10
+1705 interact iwdissi_keeper1 10
+1705 interact iwdissi_keeper2 10
+1705 interact iwdissi_keeper3 10
+1705 interact iwdissi_keeper4 10
+1705 interact iwdissi_keeper5 10
+1705 interact iwdissi_keeper6 10
+1705 interact iwdissi_keeper7 10
+1730 interact iwdissi_keeper0 10
+1730 interact iwdissi_keeper1 10
+1730 interact iwdissi_keeper2 10
+1730 interact iwdissi_keeper3 10
+1730 interact iwdissi_keeper4 10
+1730 interact iwdissi_keeper5 10
+1730 interact iwdissi_keeper6 10
+1730 interact iwdissi_keeper7 10
+1755 interact iwdissi_keeper0 10
+1755 interact iwdissi_keeper1 10
+1755 interact iwdissi_keeper2 10
+1755 interact iwdissi_keeper3 10
+1755 interact iwdissi_keeper4 10
+1755 interact iwdissi_keeper5 10
+1755 interact iwdissi_keeper6 10
+1755 interact iwdissi_keeper7 10
+1770 cmd kill @e[tag=atlas0]
+1770 cmd kill @e[tag=atlas1]
+1770 cmd kill @e[tag=atlas2]
+1770 cmd kill @e[tag=atlas3]
+1770 cmd kill @e[tag=atlas4]
+1770 cmd kill @e[tag=atlas5]
+1770 cmd kill @e[tag=atlas6]
+1770 cmd kill @e[tag=atlas7]
+1771 cmd kill @e[type=minecraft:item,x=0,y=100,z=0,distance=..14]
+1771 cmd kill @e[type=minecraft:item,x=96,y=100,z=0,distance=..14]
+1771 cmd kill @e[type=minecraft:item,x=192,y=100,z=0,distance=..14]
+1771 cmd kill @e[type=minecraft:item,x=288,y=100,z=0,distance=..14]
+1771 cmd kill @e[type=minecraft:item,x=384,y=100,z=0,distance=..14]
+1771 cmd kill @e[type=minecraft:item,x=480,y=100,z=0,distance=..14]
+1771 cmd kill @e[type=minecraft:item,x=576,y=100,z=0,distance=..14]
+1771 cmd kill @e[type=minecraft:item,x=672,y=100,z=0,distance=..14]
+1780 interact iwdissi_keeper0 10
+1780 interact iwdissi_keeper1 10
+1780 interact iwdissi_keeper2 10
+1780 interact iwdissi_keeper3 10
+1780 interact iwdissi_keeper4 10
+1780 interact iwdissi_keeper5 10
+1780 interact iwdissi_keeper6 10
+1780 interact iwdissi_keeper7 10
+1805 interact iwdissi_keeper0 10
+1805 interact iwdissi_keeper1 10
+1805 interact iwdissi_keeper2 10
+1805 interact iwdissi_keeper3 10
+1805 interact iwdissi_keeper4 10
+1805 interact iwdissi_keeper5 10
+1805 interact iwdissi_keeper6 10
+1805 interact iwdissi_keeper7 10
+1820 cmd summon minecraft:horse -6 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+1820 cmd summon minecraft:horse -6 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+1820 cmd summon minecraft:horse -6 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+1820 cmd summon minecraft:donkey 0 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+1820 cmd summon minecraft:donkey 0 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+1820 cmd summon minecraft:donkey 0 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+1820 cmd summon minecraft:llama 6 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+1820 cmd summon minecraft:llama 6 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+1820 cmd summon minecraft:llama 6 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+1820 cmd summon minecraft:cat 90 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+1820 cmd summon minecraft:cat 90 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+1820 cmd summon minecraft:cat 90 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+1820 cmd summon minecraft:wolf 96 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+1820 cmd summon minecraft:wolf 96 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+1820 cmd summon minecraft:wolf 96 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+1820 cmd summon minecraft:parrot 102 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+1820 cmd summon minecraft:parrot 102 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+1820 cmd summon minecraft:parrot 102 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+1820 cmd summon minecraft:fox 186 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+1820 cmd summon minecraft:fox 186 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+1820 cmd summon minecraft:fox 186 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+1820 cmd summon minecraft:rabbit 192 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+1820 cmd summon minecraft:rabbit 192 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+1820 cmd summon minecraft:rabbit 192 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+1820 cmd summon minecraft:axolotl 198 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+1820 cmd summon minecraft:axolotl 198 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+1820 cmd summon minecraft:axolotl 198 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+1820 cmd summon minecraft:mooshroom 282 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+1820 cmd summon minecraft:mooshroom 282 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+1820 cmd summon minecraft:mooshroom 282 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+1820 cmd summon minecraft:panda 288 100 -2 {MainGene:"playful",HiddenGene:"weak",Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+1820 cmd summon minecraft:panda 288 100 0 {MainGene:"aggressive",HiddenGene:"brown",Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+1820 cmd summon minecraft:panda 288 100 2 {MainGene:"weak",HiddenGene:"normal",Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+1820 cmd summon minecraft:goat 294 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+1820 cmd summon minecraft:goat 294 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+1820 cmd summon minecraft:goat 294 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+1820 cmd summon minecraft:villager 378 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+1820 cmd summon minecraft:villager 378 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+1820 cmd summon minecraft:villager 378 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+1820 cmd summon minecraft:sheep 384 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+1820 cmd summon minecraft:sheep 384 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+1820 cmd summon minecraft:sheep 384 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+1820 cmd summon minecraft:pig 390 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+1820 cmd summon minecraft:pig 390 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+1820 cmd summon minecraft:pig 390 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+1820 cmd summon minecraft:turtle 474 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+1820 cmd summon minecraft:turtle 474 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+1820 cmd summon minecraft:turtle 474 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+1820 cmd summon minecraft:frog 480 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+1820 cmd summon minecraft:frog 480 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+1820 cmd summon minecraft:frog 480 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+1820 cmd summon minecraft:sniffer 486 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+1820 cmd summon minecraft:sniffer 486 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+1820 cmd summon minecraft:sniffer 486 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+1820 cmd summon minecraft:camel 570 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+1820 cmd summon minecraft:camel 570 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+1820 cmd summon minecraft:camel 570 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+1820 cmd summon minecraft:armadillo 576 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+1820 cmd summon minecraft:armadillo 576 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+1820 cmd summon minecraft:armadillo 576 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+1820 cmd summon minecraft:bee 582 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+1820 cmd summon minecraft:bee 582 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+1820 cmd summon minecraft:bee 582 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+1820 cmd summon minecraft:mule 666 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+1820 cmd summon minecraft:mule 666 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+1820 cmd summon minecraft:mule 666 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+1820 cmd summon minecraft:trader_llama 672 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+1820 cmd summon minecraft:trader_llama 672 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+1820 cmd summon minecraft:trader_llama 672 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+1820 cmd summon minecraft:ocelot 678 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+1820 cmd summon minecraft:ocelot 678 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+1820 cmd summon minecraft:ocelot 678 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+1822 cmd execute as @e[tag=atlas0,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+1822 cmd execute as @e[tag=atlas0] run data modify entity @s Owner set from entity iwdissi_keeper0 UUID
+1822 cmd execute as @e[tag=atlas1,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+1822 cmd execute as @e[tag=atlas1] run data modify entity @s Owner set from entity iwdissi_keeper1 UUID
+1822 cmd execute as @e[tag=atlas2,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+1822 cmd execute as @e[tag=atlas2] run data modify entity @s Owner set from entity iwdissi_keeper2 UUID
+1822 cmd execute as @e[tag=atlas3,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+1822 cmd execute as @e[tag=atlas3] run data modify entity @s Owner set from entity iwdissi_keeper3 UUID
+1822 cmd execute as @e[tag=atlas4,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+1822 cmd execute as @e[tag=atlas4] run data modify entity @s Owner set from entity iwdissi_keeper4 UUID
+1822 cmd execute as @e[tag=atlas5,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+1822 cmd execute as @e[tag=atlas5] run data modify entity @s Owner set from entity iwdissi_keeper5 UUID
+1822 cmd execute as @e[tag=atlas6,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+1822 cmd execute as @e[tag=atlas6] run data modify entity @s Owner set from entity iwdissi_keeper6 UUID
+1822 cmd execute as @e[tag=atlas7,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+1822 cmd execute as @e[tag=atlas7] run data modify entity @s Owner set from entity iwdissi_keeper7 UUID
+1825 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+1825 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+1825 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+1825 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+1825 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+1825 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+1825 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+1825 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+1830 interact iwdissi_keeper0 10
+1830 interact iwdissi_keeper1 10
+1830 interact iwdissi_keeper2 10
+1830 interact iwdissi_keeper3 10
+1830 interact iwdissi_keeper4 10
+1830 interact iwdissi_keeper5 10
+1830 interact iwdissi_keeper6 10
+1830 interact iwdissi_keeper7 10
+1855 interact iwdissi_keeper0 10
+1855 interact iwdissi_keeper1 10
+1855 interact iwdissi_keeper2 10
+1855 interact iwdissi_keeper3 10
+1855 interact iwdissi_keeper4 10
+1855 interact iwdissi_keeper5 10
+1855 interact iwdissi_keeper6 10
+1855 interact iwdissi_keeper7 10
+1880 interact iwdissi_keeper0 10
+1880 interact iwdissi_keeper1 10
+1880 interact iwdissi_keeper2 10
+1880 interact iwdissi_keeper3 10
+1880 interact iwdissi_keeper4 10
+1880 interact iwdissi_keeper5 10
+1880 interact iwdissi_keeper6 10
+1880 interact iwdissi_keeper7 10
+1905 interact iwdissi_keeper0 10
+1905 interact iwdissi_keeper1 10
+1905 interact iwdissi_keeper2 10
+1905 interact iwdissi_keeper3 10
+1905 interact iwdissi_keeper4 10
+1905 interact iwdissi_keeper5 10
+1905 interact iwdissi_keeper6 10
+1905 interact iwdissi_keeper7 10
+1925 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+1925 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+1925 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+1925 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+1925 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+1925 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+1925 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+1925 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+1930 interact iwdissi_keeper0 10
+1930 interact iwdissi_keeper1 10
+1930 interact iwdissi_keeper2 10
+1930 interact iwdissi_keeper3 10
+1930 interact iwdissi_keeper4 10
+1930 interact iwdissi_keeper5 10
+1930 interact iwdissi_keeper6 10
+1930 interact iwdissi_keeper7 10
+1955 interact iwdissi_keeper0 10
+1955 interact iwdissi_keeper1 10
+1955 interact iwdissi_keeper2 10
+1955 interact iwdissi_keeper3 10
+1955 interact iwdissi_keeper4 10
+1955 interact iwdissi_keeper5 10
+1955 interact iwdissi_keeper6 10
+1955 interact iwdissi_keeper7 10
+1980 interact iwdissi_keeper0 10
+1980 interact iwdissi_keeper1 10
+1980 interact iwdissi_keeper2 10
+1980 interact iwdissi_keeper3 10
+1980 interact iwdissi_keeper4 10
+1980 interact iwdissi_keeper5 10
+1980 interact iwdissi_keeper6 10
+1980 interact iwdissi_keeper7 10
+2005 interact iwdissi_keeper0 10
+2005 interact iwdissi_keeper1 10
+2005 interact iwdissi_keeper2 10
+2005 interact iwdissi_keeper3 10
+2005 interact iwdissi_keeper4 10
+2005 interact iwdissi_keeper5 10
+2005 interact iwdissi_keeper6 10
+2005 interact iwdissi_keeper7 10
+2025 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+2025 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+2025 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+2025 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+2025 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+2025 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+2025 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+2025 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+2030 interact iwdissi_keeper0 10
+2030 interact iwdissi_keeper1 10
+2030 interact iwdissi_keeper2 10
+2030 interact iwdissi_keeper3 10
+2030 interact iwdissi_keeper4 10
+2030 interact iwdissi_keeper5 10
+2030 interact iwdissi_keeper6 10
+2030 interact iwdissi_keeper7 10
+2055 interact iwdissi_keeper0 10
+2055 interact iwdissi_keeper1 10
+2055 interact iwdissi_keeper2 10
+2055 interact iwdissi_keeper3 10
+2055 interact iwdissi_keeper4 10
+2055 interact iwdissi_keeper5 10
+2055 interact iwdissi_keeper6 10
+2055 interact iwdissi_keeper7 10
+2080 interact iwdissi_keeper0 10
+2080 interact iwdissi_keeper1 10
+2080 interact iwdissi_keeper2 10
+2080 interact iwdissi_keeper3 10
+2080 interact iwdissi_keeper4 10
+2080 interact iwdissi_keeper5 10
+2080 interact iwdissi_keeper6 10
+2080 interact iwdissi_keeper7 10
+2105 interact iwdissi_keeper0 10
+2105 interact iwdissi_keeper1 10
+2105 interact iwdissi_keeper2 10
+2105 interact iwdissi_keeper3 10
+2105 interact iwdissi_keeper4 10
+2105 interact iwdissi_keeper5 10
+2105 interact iwdissi_keeper6 10
+2105 interact iwdissi_keeper7 10
+2125 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+2125 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+2125 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+2125 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+2125 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+2125 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+2125 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+2125 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+2130 interact iwdissi_keeper0 10
+2130 interact iwdissi_keeper1 10
+2130 interact iwdissi_keeper2 10
+2130 interact iwdissi_keeper3 10
+2130 interact iwdissi_keeper4 10
+2130 interact iwdissi_keeper5 10
+2130 interact iwdissi_keeper6 10
+2130 interact iwdissi_keeper7 10
+2155 interact iwdissi_keeper0 10
+2155 interact iwdissi_keeper1 10
+2155 interact iwdissi_keeper2 10
+2155 interact iwdissi_keeper3 10
+2155 interact iwdissi_keeper4 10
+2155 interact iwdissi_keeper5 10
+2155 interact iwdissi_keeper6 10
+2155 interact iwdissi_keeper7 10
+2180 interact iwdissi_keeper0 10
+2180 interact iwdissi_keeper1 10
+2180 interact iwdissi_keeper2 10
+2180 interact iwdissi_keeper3 10
+2180 interact iwdissi_keeper4 10
+2180 interact iwdissi_keeper5 10
+2180 interact iwdissi_keeper6 10
+2180 interact iwdissi_keeper7 10
+2205 interact iwdissi_keeper0 10
+2205 interact iwdissi_keeper1 10
+2205 interact iwdissi_keeper2 10
+2205 interact iwdissi_keeper3 10
+2205 interact iwdissi_keeper4 10
+2205 interact iwdissi_keeper5 10
+2205 interact iwdissi_keeper6 10
+2205 interact iwdissi_keeper7 10
+2225 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+2225 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+2225 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+2225 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+2225 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+2225 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+2225 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+2225 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+2230 interact iwdissi_keeper0 10
+2230 interact iwdissi_keeper1 10
+2230 interact iwdissi_keeper2 10
+2230 interact iwdissi_keeper3 10
+2230 interact iwdissi_keeper4 10
+2230 interact iwdissi_keeper5 10
+2230 interact iwdissi_keeper6 10
+2230 interact iwdissi_keeper7 10
+2255 interact iwdissi_keeper0 10
+2255 interact iwdissi_keeper1 10
+2255 interact iwdissi_keeper2 10
+2255 interact iwdissi_keeper3 10
+2255 interact iwdissi_keeper4 10
+2255 interact iwdissi_keeper5 10
+2255 interact iwdissi_keeper6 10
+2255 interact iwdissi_keeper7 10
+2280 interact iwdissi_keeper0 10
+2280 interact iwdissi_keeper1 10
+2280 interact iwdissi_keeper2 10
+2280 interact iwdissi_keeper3 10
+2280 interact iwdissi_keeper4 10
+2280 interact iwdissi_keeper5 10
+2280 interact iwdissi_keeper6 10
+2280 interact iwdissi_keeper7 10
+2305 interact iwdissi_keeper0 10
+2305 interact iwdissi_keeper1 10
+2305 interact iwdissi_keeper2 10
+2305 interact iwdissi_keeper3 10
+2305 interact iwdissi_keeper4 10
+2305 interact iwdissi_keeper5 10
+2305 interact iwdissi_keeper6 10
+2305 interact iwdissi_keeper7 10
+2325 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+2325 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+2325 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+2325 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+2325 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+2325 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+2325 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+2325 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+2330 interact iwdissi_keeper0 10
+2330 interact iwdissi_keeper1 10
+2330 interact iwdissi_keeper2 10
+2330 interact iwdissi_keeper3 10
+2330 interact iwdissi_keeper4 10
+2330 interact iwdissi_keeper5 10
+2330 interact iwdissi_keeper6 10
+2330 interact iwdissi_keeper7 10
+2355 interact iwdissi_keeper0 10
+2355 interact iwdissi_keeper1 10
+2355 interact iwdissi_keeper2 10
+2355 interact iwdissi_keeper3 10
+2355 interact iwdissi_keeper4 10
+2355 interact iwdissi_keeper5 10
+2355 interact iwdissi_keeper6 10
+2355 interact iwdissi_keeper7 10
+2380 interact iwdissi_keeper0 10
+2380 interact iwdissi_keeper1 10
+2380 interact iwdissi_keeper2 10
+2380 interact iwdissi_keeper3 10
+2380 interact iwdissi_keeper4 10
+2380 interact iwdissi_keeper5 10
+2380 interact iwdissi_keeper6 10
+2380 interact iwdissi_keeper7 10
+2405 interact iwdissi_keeper0 10
+2405 interact iwdissi_keeper1 10
+2405 interact iwdissi_keeper2 10
+2405 interact iwdissi_keeper3 10
+2405 interact iwdissi_keeper4 10
+2405 interact iwdissi_keeper5 10
+2405 interact iwdissi_keeper6 10
+2405 interact iwdissi_keeper7 10
+2425 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+2425 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+2425 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+2425 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+2425 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+2425 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+2425 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+2425 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+2430 interact iwdissi_keeper0 10
+2430 interact iwdissi_keeper1 10
+2430 interact iwdissi_keeper2 10
+2430 interact iwdissi_keeper3 10
+2430 interact iwdissi_keeper4 10
+2430 interact iwdissi_keeper5 10
+2430 interact iwdissi_keeper6 10
+2430 interact iwdissi_keeper7 10
+2455 interact iwdissi_keeper0 10
+2455 interact iwdissi_keeper1 10
+2455 interact iwdissi_keeper2 10
+2455 interact iwdissi_keeper3 10
+2455 interact iwdissi_keeper4 10
+2455 interact iwdissi_keeper5 10
+2455 interact iwdissi_keeper6 10
+2455 interact iwdissi_keeper7 10
+2480 interact iwdissi_keeper0 10
+2480 interact iwdissi_keeper1 10
+2480 interact iwdissi_keeper2 10
+2480 interact iwdissi_keeper3 10
+2480 interact iwdissi_keeper4 10
+2480 interact iwdissi_keeper5 10
+2480 interact iwdissi_keeper6 10
+2480 interact iwdissi_keeper7 10
+2505 interact iwdissi_keeper0 10
+2505 interact iwdissi_keeper1 10
+2505 interact iwdissi_keeper2 10
+2505 interact iwdissi_keeper3 10
+2505 interact iwdissi_keeper4 10
+2505 interact iwdissi_keeper5 10
+2505 interact iwdissi_keeper6 10
+2505 interact iwdissi_keeper7 10
+2525 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+2525 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+2525 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+2525 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+2525 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+2525 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+2525 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+2525 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+2530 interact iwdissi_keeper0 10
+2530 interact iwdissi_keeper1 10
+2530 interact iwdissi_keeper2 10
+2530 interact iwdissi_keeper3 10
+2530 interact iwdissi_keeper4 10
+2530 interact iwdissi_keeper5 10
+2530 interact iwdissi_keeper6 10
+2530 interact iwdissi_keeper7 10
+2555 interact iwdissi_keeper0 10
+2555 interact iwdissi_keeper1 10
+2555 interact iwdissi_keeper2 10
+2555 interact iwdissi_keeper3 10
+2555 interact iwdissi_keeper4 10
+2555 interact iwdissi_keeper5 10
+2555 interact iwdissi_keeper6 10
+2555 interact iwdissi_keeper7 10
+2580 interact iwdissi_keeper0 10
+2580 interact iwdissi_keeper1 10
+2580 interact iwdissi_keeper2 10
+2580 interact iwdissi_keeper3 10
+2580 interact iwdissi_keeper4 10
+2580 interact iwdissi_keeper5 10
+2580 interact iwdissi_keeper6 10
+2580 interact iwdissi_keeper7 10
+2605 interact iwdissi_keeper0 10
+2605 interact iwdissi_keeper1 10
+2605 interact iwdissi_keeper2 10
+2605 interact iwdissi_keeper3 10
+2605 interact iwdissi_keeper4 10
+2605 interact iwdissi_keeper5 10
+2605 interact iwdissi_keeper6 10
+2605 interact iwdissi_keeper7 10
+2630 interact iwdissi_keeper0 10
+2630 interact iwdissi_keeper1 10
+2630 interact iwdissi_keeper2 10
+2630 interact iwdissi_keeper3 10
+2630 interact iwdissi_keeper4 10
+2630 interact iwdissi_keeper5 10
+2630 interact iwdissi_keeper6 10
+2630 interact iwdissi_keeper7 10
+2655 interact iwdissi_keeper0 10
+2655 interact iwdissi_keeper1 10
+2655 interact iwdissi_keeper2 10
+2655 interact iwdissi_keeper3 10
+2655 interact iwdissi_keeper4 10
+2655 interact iwdissi_keeper5 10
+2655 interact iwdissi_keeper6 10
+2655 interact iwdissi_keeper7 10
+2670 cmd kill @e[tag=atlas0]
+2670 cmd kill @e[tag=atlas1]
+2670 cmd kill @e[tag=atlas2]
+2670 cmd kill @e[tag=atlas3]
+2670 cmd kill @e[tag=atlas4]
+2670 cmd kill @e[tag=atlas5]
+2670 cmd kill @e[tag=atlas6]
+2670 cmd kill @e[tag=atlas7]
+2671 cmd kill @e[type=minecraft:item,x=0,y=100,z=0,distance=..14]
+2671 cmd kill @e[type=minecraft:item,x=96,y=100,z=0,distance=..14]
+2671 cmd kill @e[type=minecraft:item,x=192,y=100,z=0,distance=..14]
+2671 cmd kill @e[type=minecraft:item,x=288,y=100,z=0,distance=..14]
+2671 cmd kill @e[type=minecraft:item,x=384,y=100,z=0,distance=..14]
+2671 cmd kill @e[type=minecraft:item,x=480,y=100,z=0,distance=..14]
+2671 cmd kill @e[type=minecraft:item,x=576,y=100,z=0,distance=..14]
+2671 cmd kill @e[type=minecraft:item,x=672,y=100,z=0,distance=..14]
+2680 interact iwdissi_keeper0 10
+2680 interact iwdissi_keeper1 10
+2680 interact iwdissi_keeper2 10
+2680 interact iwdissi_keeper3 10
+2680 interact iwdissi_keeper4 10
+2680 interact iwdissi_keeper5 10
+2680 interact iwdissi_keeper6 10
+2680 interact iwdissi_keeper7 10
+2705 interact iwdissi_keeper0 10
+2705 interact iwdissi_keeper1 10
+2705 interact iwdissi_keeper2 10
+2705 interact iwdissi_keeper3 10
+2705 interact iwdissi_keeper4 10
+2705 interact iwdissi_keeper5 10
+2705 interact iwdissi_keeper6 10
+2705 interact iwdissi_keeper7 10
+2720 cmd summon minecraft:horse -6 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+2720 cmd summon minecraft:horse -6 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+2720 cmd summon minecraft:horse -6 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+2720 cmd summon minecraft:donkey 0 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+2720 cmd summon minecraft:donkey 0 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+2720 cmd summon minecraft:donkey 0 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+2720 cmd summon minecraft:llama 6 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+2720 cmd summon minecraft:llama 6 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+2720 cmd summon minecraft:llama 6 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+2720 cmd summon minecraft:cat 90 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+2720 cmd summon minecraft:cat 90 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+2720 cmd summon minecraft:cat 90 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+2720 cmd summon minecraft:wolf 96 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+2720 cmd summon minecraft:wolf 96 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+2720 cmd summon minecraft:wolf 96 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+2720 cmd summon minecraft:parrot 102 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+2720 cmd summon minecraft:parrot 102 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+2720 cmd summon minecraft:parrot 102 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+2720 cmd summon minecraft:fox 186 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+2720 cmd summon minecraft:fox 186 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+2720 cmd summon minecraft:fox 186 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+2720 cmd summon minecraft:rabbit 192 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+2720 cmd summon minecraft:rabbit 192 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+2720 cmd summon minecraft:rabbit 192 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+2720 cmd summon minecraft:axolotl 198 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+2720 cmd summon minecraft:axolotl 198 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+2720 cmd summon minecraft:axolotl 198 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+2720 cmd summon minecraft:mooshroom 282 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+2720 cmd summon minecraft:mooshroom 282 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+2720 cmd summon minecraft:mooshroom 282 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+2720 cmd summon minecraft:panda 288 100 -2 {MainGene:"aggressive",HiddenGene:"weak",Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+2720 cmd summon minecraft:panda 288 100 0 {MainGene:"weak",HiddenGene:"brown",Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+2720 cmd summon minecraft:panda 288 100 2 {MainGene:"brown",HiddenGene:"normal",Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+2720 cmd summon minecraft:goat 294 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+2720 cmd summon minecraft:goat 294 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+2720 cmd summon minecraft:goat 294 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+2720 cmd summon minecraft:villager 378 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+2720 cmd summon minecraft:villager 378 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+2720 cmd summon minecraft:villager 378 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+2720 cmd summon minecraft:sheep 384 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+2720 cmd summon minecraft:sheep 384 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+2720 cmd summon minecraft:sheep 384 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+2720 cmd summon minecraft:pig 390 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+2720 cmd summon minecraft:pig 390 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+2720 cmd summon minecraft:pig 390 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+2720 cmd summon minecraft:turtle 474 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+2720 cmd summon minecraft:turtle 474 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+2720 cmd summon minecraft:turtle 474 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+2720 cmd summon minecraft:frog 480 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+2720 cmd summon minecraft:frog 480 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+2720 cmd summon minecraft:frog 480 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+2720 cmd summon minecraft:sniffer 486 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+2720 cmd summon minecraft:sniffer 486 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+2720 cmd summon minecraft:sniffer 486 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+2720 cmd summon minecraft:camel 570 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+2720 cmd summon minecraft:camel 570 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+2720 cmd summon minecraft:camel 570 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+2720 cmd summon minecraft:armadillo 576 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+2720 cmd summon minecraft:armadillo 576 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+2720 cmd summon minecraft:armadillo 576 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+2720 cmd summon minecraft:bee 582 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+2720 cmd summon minecraft:bee 582 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+2720 cmd summon minecraft:bee 582 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+2720 cmd summon minecraft:mule 666 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+2720 cmd summon minecraft:mule 666 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+2720 cmd summon minecraft:mule 666 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+2720 cmd summon minecraft:trader_llama 672 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+2720 cmd summon minecraft:trader_llama 672 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+2720 cmd summon minecraft:trader_llama 672 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+2720 cmd summon minecraft:ocelot 678 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+2720 cmd summon minecraft:ocelot 678 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+2720 cmd summon minecraft:ocelot 678 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+2722 cmd execute as @e[tag=atlas0,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+2722 cmd execute as @e[tag=atlas0] run data modify entity @s Owner set from entity iwdissi_keeper0 UUID
+2722 cmd execute as @e[tag=atlas1,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+2722 cmd execute as @e[tag=atlas1] run data modify entity @s Owner set from entity iwdissi_keeper1 UUID
+2722 cmd execute as @e[tag=atlas2,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+2722 cmd execute as @e[tag=atlas2] run data modify entity @s Owner set from entity iwdissi_keeper2 UUID
+2722 cmd execute as @e[tag=atlas3,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+2722 cmd execute as @e[tag=atlas3] run data modify entity @s Owner set from entity iwdissi_keeper3 UUID
+2722 cmd execute as @e[tag=atlas4,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+2722 cmd execute as @e[tag=atlas4] run data modify entity @s Owner set from entity iwdissi_keeper4 UUID
+2722 cmd execute as @e[tag=atlas5,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+2722 cmd execute as @e[tag=atlas5] run data modify entity @s Owner set from entity iwdissi_keeper5 UUID
+2722 cmd execute as @e[tag=atlas6,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+2722 cmd execute as @e[tag=atlas6] run data modify entity @s Owner set from entity iwdissi_keeper6 UUID
+2722 cmd execute as @e[tag=atlas7,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+2722 cmd execute as @e[tag=atlas7] run data modify entity @s Owner set from entity iwdissi_keeper7 UUID
+2725 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+2725 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+2725 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+2725 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+2725 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+2725 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+2725 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+2725 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+2730 interact iwdissi_keeper0 10
+2730 interact iwdissi_keeper1 10
+2730 interact iwdissi_keeper2 10
+2730 interact iwdissi_keeper3 10
+2730 interact iwdissi_keeper4 10
+2730 interact iwdissi_keeper5 10
+2730 interact iwdissi_keeper6 10
+2730 interact iwdissi_keeper7 10
+2755 interact iwdissi_keeper0 10
+2755 interact iwdissi_keeper1 10
+2755 interact iwdissi_keeper2 10
+2755 interact iwdissi_keeper3 10
+2755 interact iwdissi_keeper4 10
+2755 interact iwdissi_keeper5 10
+2755 interact iwdissi_keeper6 10
+2755 interact iwdissi_keeper7 10
+2780 interact iwdissi_keeper0 10
+2780 interact iwdissi_keeper1 10
+2780 interact iwdissi_keeper2 10
+2780 interact iwdissi_keeper3 10
+2780 interact iwdissi_keeper4 10
+2780 interact iwdissi_keeper5 10
+2780 interact iwdissi_keeper6 10
+2780 interact iwdissi_keeper7 10
+2805 interact iwdissi_keeper0 10
+2805 interact iwdissi_keeper1 10
+2805 interact iwdissi_keeper2 10
+2805 interact iwdissi_keeper3 10
+2805 interact iwdissi_keeper4 10
+2805 interact iwdissi_keeper5 10
+2805 interact iwdissi_keeper6 10
+2805 interact iwdissi_keeper7 10
+2825 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+2825 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+2825 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+2825 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+2825 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+2825 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+2825 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+2825 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+2830 interact iwdissi_keeper0 10
+2830 interact iwdissi_keeper1 10
+2830 interact iwdissi_keeper2 10
+2830 interact iwdissi_keeper3 10
+2830 interact iwdissi_keeper4 10
+2830 interact iwdissi_keeper5 10
+2830 interact iwdissi_keeper6 10
+2830 interact iwdissi_keeper7 10
+2855 interact iwdissi_keeper0 10
+2855 interact iwdissi_keeper1 10
+2855 interact iwdissi_keeper2 10
+2855 interact iwdissi_keeper3 10
+2855 interact iwdissi_keeper4 10
+2855 interact iwdissi_keeper5 10
+2855 interact iwdissi_keeper6 10
+2855 interact iwdissi_keeper7 10
+2880 interact iwdissi_keeper0 10
+2880 interact iwdissi_keeper1 10
+2880 interact iwdissi_keeper2 10
+2880 interact iwdissi_keeper3 10
+2880 interact iwdissi_keeper4 10
+2880 interact iwdissi_keeper5 10
+2880 interact iwdissi_keeper6 10
+2880 interact iwdissi_keeper7 10
+2905 interact iwdissi_keeper0 10
+2905 interact iwdissi_keeper1 10
+2905 interact iwdissi_keeper2 10
+2905 interact iwdissi_keeper3 10
+2905 interact iwdissi_keeper4 10
+2905 interact iwdissi_keeper5 10
+2905 interact iwdissi_keeper6 10
+2905 interact iwdissi_keeper7 10
+2925 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+2925 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+2925 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+2925 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+2925 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+2925 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+2925 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+2925 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+2930 interact iwdissi_keeper0 10
+2930 interact iwdissi_keeper1 10
+2930 interact iwdissi_keeper2 10
+2930 interact iwdissi_keeper3 10
+2930 interact iwdissi_keeper4 10
+2930 interact iwdissi_keeper5 10
+2930 interact iwdissi_keeper6 10
+2930 interact iwdissi_keeper7 10
+2955 interact iwdissi_keeper0 10
+2955 interact iwdissi_keeper1 10
+2955 interact iwdissi_keeper2 10
+2955 interact iwdissi_keeper3 10
+2955 interact iwdissi_keeper4 10
+2955 interact iwdissi_keeper5 10
+2955 interact iwdissi_keeper6 10
+2955 interact iwdissi_keeper7 10
+2980 interact iwdissi_keeper0 10
+2980 interact iwdissi_keeper1 10
+2980 interact iwdissi_keeper2 10
+2980 interact iwdissi_keeper3 10
+2980 interact iwdissi_keeper4 10
+2980 interact iwdissi_keeper5 10
+2980 interact iwdissi_keeper6 10
+2980 interact iwdissi_keeper7 10
+3005 interact iwdissi_keeper0 10
+3005 interact iwdissi_keeper1 10
+3005 interact iwdissi_keeper2 10
+3005 interact iwdissi_keeper3 10
+3005 interact iwdissi_keeper4 10
+3005 interact iwdissi_keeper5 10
+3005 interact iwdissi_keeper6 10
+3005 interact iwdissi_keeper7 10
+3025 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+3025 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+3025 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+3025 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+3025 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+3025 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+3025 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+3025 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+3030 interact iwdissi_keeper0 10
+3030 interact iwdissi_keeper1 10
+3030 interact iwdissi_keeper2 10
+3030 interact iwdissi_keeper3 10
+3030 interact iwdissi_keeper4 10
+3030 interact iwdissi_keeper5 10
+3030 interact iwdissi_keeper6 10
+3030 interact iwdissi_keeper7 10
+3055 interact iwdissi_keeper0 10
+3055 interact iwdissi_keeper1 10
+3055 interact iwdissi_keeper2 10
+3055 interact iwdissi_keeper3 10
+3055 interact iwdissi_keeper4 10
+3055 interact iwdissi_keeper5 10
+3055 interact iwdissi_keeper6 10
+3055 interact iwdissi_keeper7 10
+3080 interact iwdissi_keeper0 10
+3080 interact iwdissi_keeper1 10
+3080 interact iwdissi_keeper2 10
+3080 interact iwdissi_keeper3 10
+3080 interact iwdissi_keeper4 10
+3080 interact iwdissi_keeper5 10
+3080 interact iwdissi_keeper6 10
+3080 interact iwdissi_keeper7 10
+3105 interact iwdissi_keeper0 10
+3105 interact iwdissi_keeper1 10
+3105 interact iwdissi_keeper2 10
+3105 interact iwdissi_keeper3 10
+3105 interact iwdissi_keeper4 10
+3105 interact iwdissi_keeper5 10
+3105 interact iwdissi_keeper6 10
+3105 interact iwdissi_keeper7 10
+3125 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+3125 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+3125 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+3125 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+3125 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+3125 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+3125 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+3125 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+3130 interact iwdissi_keeper0 10
+3130 interact iwdissi_keeper1 10
+3130 interact iwdissi_keeper2 10
+3130 interact iwdissi_keeper3 10
+3130 interact iwdissi_keeper4 10
+3130 interact iwdissi_keeper5 10
+3130 interact iwdissi_keeper6 10
+3130 interact iwdissi_keeper7 10
+3155 interact iwdissi_keeper0 10
+3155 interact iwdissi_keeper1 10
+3155 interact iwdissi_keeper2 10
+3155 interact iwdissi_keeper3 10
+3155 interact iwdissi_keeper4 10
+3155 interact iwdissi_keeper5 10
+3155 interact iwdissi_keeper6 10
+3155 interact iwdissi_keeper7 10
+3180 interact iwdissi_keeper0 10
+3180 interact iwdissi_keeper1 10
+3180 interact iwdissi_keeper2 10
+3180 interact iwdissi_keeper3 10
+3180 interact iwdissi_keeper4 10
+3180 interact iwdissi_keeper5 10
+3180 interact iwdissi_keeper6 10
+3180 interact iwdissi_keeper7 10
+3205 interact iwdissi_keeper0 10
+3205 interact iwdissi_keeper1 10
+3205 interact iwdissi_keeper2 10
+3205 interact iwdissi_keeper3 10
+3205 interact iwdissi_keeper4 10
+3205 interact iwdissi_keeper5 10
+3205 interact iwdissi_keeper6 10
+3205 interact iwdissi_keeper7 10
+3225 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+3225 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+3225 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+3225 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+3225 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+3225 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+3225 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+3225 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+3230 interact iwdissi_keeper0 10
+3230 interact iwdissi_keeper1 10
+3230 interact iwdissi_keeper2 10
+3230 interact iwdissi_keeper3 10
+3230 interact iwdissi_keeper4 10
+3230 interact iwdissi_keeper5 10
+3230 interact iwdissi_keeper6 10
+3230 interact iwdissi_keeper7 10
+3255 interact iwdissi_keeper0 10
+3255 interact iwdissi_keeper1 10
+3255 interact iwdissi_keeper2 10
+3255 interact iwdissi_keeper3 10
+3255 interact iwdissi_keeper4 10
+3255 interact iwdissi_keeper5 10
+3255 interact iwdissi_keeper6 10
+3255 interact iwdissi_keeper7 10
+3280 interact iwdissi_keeper0 10
+3280 interact iwdissi_keeper1 10
+3280 interact iwdissi_keeper2 10
+3280 interact iwdissi_keeper3 10
+3280 interact iwdissi_keeper4 10
+3280 interact iwdissi_keeper5 10
+3280 interact iwdissi_keeper6 10
+3280 interact iwdissi_keeper7 10
+3305 interact iwdissi_keeper0 10
+3305 interact iwdissi_keeper1 10
+3305 interact iwdissi_keeper2 10
+3305 interact iwdissi_keeper3 10
+3305 interact iwdissi_keeper4 10
+3305 interact iwdissi_keeper5 10
+3305 interact iwdissi_keeper6 10
+3305 interact iwdissi_keeper7 10
+3325 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+3325 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+3325 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+3325 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+3325 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+3325 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+3325 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+3325 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+3330 interact iwdissi_keeper0 10
+3330 interact iwdissi_keeper1 10
+3330 interact iwdissi_keeper2 10
+3330 interact iwdissi_keeper3 10
+3330 interact iwdissi_keeper4 10
+3330 interact iwdissi_keeper5 10
+3330 interact iwdissi_keeper6 10
+3330 interact iwdissi_keeper7 10
+3355 interact iwdissi_keeper0 10
+3355 interact iwdissi_keeper1 10
+3355 interact iwdissi_keeper2 10
+3355 interact iwdissi_keeper3 10
+3355 interact iwdissi_keeper4 10
+3355 interact iwdissi_keeper5 10
+3355 interact iwdissi_keeper6 10
+3355 interact iwdissi_keeper7 10
+3380 interact iwdissi_keeper0 10
+3380 interact iwdissi_keeper1 10
+3380 interact iwdissi_keeper2 10
+3380 interact iwdissi_keeper3 10
+3380 interact iwdissi_keeper4 10
+3380 interact iwdissi_keeper5 10
+3380 interact iwdissi_keeper6 10
+3380 interact iwdissi_keeper7 10
+3405 interact iwdissi_keeper0 10
+3405 interact iwdissi_keeper1 10
+3405 interact iwdissi_keeper2 10
+3405 interact iwdissi_keeper3 10
+3405 interact iwdissi_keeper4 10
+3405 interact iwdissi_keeper5 10
+3405 interact iwdissi_keeper6 10
+3405 interact iwdissi_keeper7 10
+3425 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+3425 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+3425 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+3425 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+3425 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+3425 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+3425 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+3425 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+3430 interact iwdissi_keeper0 10
+3430 interact iwdissi_keeper1 10
+3430 interact iwdissi_keeper2 10
+3430 interact iwdissi_keeper3 10
+3430 interact iwdissi_keeper4 10
+3430 interact iwdissi_keeper5 10
+3430 interact iwdissi_keeper6 10
+3430 interact iwdissi_keeper7 10
+3455 interact iwdissi_keeper0 10
+3455 interact iwdissi_keeper1 10
+3455 interact iwdissi_keeper2 10
+3455 interact iwdissi_keeper3 10
+3455 interact iwdissi_keeper4 10
+3455 interact iwdissi_keeper5 10
+3455 interact iwdissi_keeper6 10
+3455 interact iwdissi_keeper7 10
+3480 interact iwdissi_keeper0 10
+3480 interact iwdissi_keeper1 10
+3480 interact iwdissi_keeper2 10
+3480 interact iwdissi_keeper3 10
+3480 interact iwdissi_keeper4 10
+3480 interact iwdissi_keeper5 10
+3480 interact iwdissi_keeper6 10
+3480 interact iwdissi_keeper7 10
+3505 interact iwdissi_keeper0 10
+3505 interact iwdissi_keeper1 10
+3505 interact iwdissi_keeper2 10
+3505 interact iwdissi_keeper3 10
+3505 interact iwdissi_keeper4 10
+3505 interact iwdissi_keeper5 10
+3505 interact iwdissi_keeper6 10
+3505 interact iwdissi_keeper7 10
+3530 interact iwdissi_keeper0 10
+3530 interact iwdissi_keeper1 10
+3530 interact iwdissi_keeper2 10
+3530 interact iwdissi_keeper3 10
+3530 interact iwdissi_keeper4 10
+3530 interact iwdissi_keeper5 10
+3530 interact iwdissi_keeper6 10
+3530 interact iwdissi_keeper7 10
+3555 interact iwdissi_keeper0 10
+3555 interact iwdissi_keeper1 10
+3555 interact iwdissi_keeper2 10
+3555 interact iwdissi_keeper3 10
+3555 interact iwdissi_keeper4 10
+3555 interact iwdissi_keeper5 10
+3555 interact iwdissi_keeper6 10
+3555 interact iwdissi_keeper7 10
+3570 cmd kill @e[tag=atlas0]
+3570 cmd kill @e[tag=atlas1]
+3570 cmd kill @e[tag=atlas2]
+3570 cmd kill @e[tag=atlas3]
+3570 cmd kill @e[tag=atlas4]
+3570 cmd kill @e[tag=atlas5]
+3570 cmd kill @e[tag=atlas6]
+3570 cmd kill @e[tag=atlas7]
+3571 cmd kill @e[type=minecraft:item,x=0,y=100,z=0,distance=..14]
+3571 cmd kill @e[type=minecraft:item,x=96,y=100,z=0,distance=..14]
+3571 cmd kill @e[type=minecraft:item,x=192,y=100,z=0,distance=..14]
+3571 cmd kill @e[type=minecraft:item,x=288,y=100,z=0,distance=..14]
+3571 cmd kill @e[type=minecraft:item,x=384,y=100,z=0,distance=..14]
+3571 cmd kill @e[type=minecraft:item,x=480,y=100,z=0,distance=..14]
+3571 cmd kill @e[type=minecraft:item,x=576,y=100,z=0,distance=..14]
+3571 cmd kill @e[type=minecraft:item,x=672,y=100,z=0,distance=..14]
+3580 interact iwdissi_keeper0 10
+3580 interact iwdissi_keeper1 10
+3580 interact iwdissi_keeper2 10
+3580 interact iwdissi_keeper3 10
+3580 interact iwdissi_keeper4 10
+3580 interact iwdissi_keeper5 10
+3580 interact iwdissi_keeper6 10
+3580 interact iwdissi_keeper7 10
+3605 interact iwdissi_keeper0 10
+3605 interact iwdissi_keeper1 10
+3605 interact iwdissi_keeper2 10
+3605 interact iwdissi_keeper3 10
+3605 interact iwdissi_keeper4 10
+3605 interact iwdissi_keeper5 10
+3605 interact iwdissi_keeper6 10
+3605 interact iwdissi_keeper7 10
+3620 cmd summon minecraft:horse -6 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+3620 cmd summon minecraft:horse -6 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+3620 cmd summon minecraft:horse -6 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+3620 cmd summon minecraft:donkey 0 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+3620 cmd summon minecraft:donkey 0 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+3620 cmd summon minecraft:donkey 0 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+3620 cmd summon minecraft:llama 6 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+3620 cmd summon minecraft:llama 6 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+3620 cmd summon minecraft:llama 6 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+3620 cmd summon minecraft:cat 90 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+3620 cmd summon minecraft:cat 90 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+3620 cmd summon minecraft:cat 90 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+3620 cmd summon minecraft:wolf 96 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+3620 cmd summon minecraft:wolf 96 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+3620 cmd summon minecraft:wolf 96 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+3620 cmd summon minecraft:parrot 102 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+3620 cmd summon minecraft:parrot 102 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+3620 cmd summon minecraft:parrot 102 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+3620 cmd summon minecraft:fox 186 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+3620 cmd summon minecraft:fox 186 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+3620 cmd summon minecraft:fox 186 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+3620 cmd summon minecraft:rabbit 192 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+3620 cmd summon minecraft:rabbit 192 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+3620 cmd summon minecraft:rabbit 192 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+3620 cmd summon minecraft:axolotl 198 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+3620 cmd summon minecraft:axolotl 198 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+3620 cmd summon minecraft:axolotl 198 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+3620 cmd summon minecraft:mooshroom 282 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+3620 cmd summon minecraft:mooshroom 282 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+3620 cmd summon minecraft:mooshroom 282 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+3620 cmd summon minecraft:panda 288 100 -2 {MainGene:"weak",HiddenGene:"weak",Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+3620 cmd summon minecraft:panda 288 100 0 {MainGene:"brown",HiddenGene:"brown",Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+3620 cmd summon minecraft:panda 288 100 2 {MainGene:"lazy",HiddenGene:"normal",Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+3620 cmd summon minecraft:goat 294 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+3620 cmd summon minecraft:goat 294 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+3620 cmd summon minecraft:goat 294 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+3620 cmd summon minecraft:villager 378 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+3620 cmd summon minecraft:villager 378 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+3620 cmd summon minecraft:villager 378 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+3620 cmd summon minecraft:sheep 384 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+3620 cmd summon minecraft:sheep 384 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+3620 cmd summon minecraft:sheep 384 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+3620 cmd summon minecraft:pig 390 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+3620 cmd summon minecraft:pig 390 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+3620 cmd summon minecraft:pig 390 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+3620 cmd summon minecraft:turtle 474 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+3620 cmd summon minecraft:turtle 474 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+3620 cmd summon minecraft:turtle 474 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+3620 cmd summon minecraft:frog 480 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+3620 cmd summon minecraft:frog 480 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+3620 cmd summon minecraft:frog 480 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+3620 cmd summon minecraft:sniffer 486 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+3620 cmd summon minecraft:sniffer 486 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+3620 cmd summon minecraft:sniffer 486 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+3620 cmd summon minecraft:camel 570 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+3620 cmd summon minecraft:camel 570 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+3620 cmd summon minecraft:camel 570 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+3620 cmd summon minecraft:armadillo 576 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+3620 cmd summon minecraft:armadillo 576 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+3620 cmd summon minecraft:armadillo 576 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+3620 cmd summon minecraft:bee 582 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+3620 cmd summon minecraft:bee 582 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+3620 cmd summon minecraft:bee 582 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+3620 cmd summon minecraft:mule 666 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+3620 cmd summon minecraft:mule 666 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+3620 cmd summon minecraft:mule 666 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+3620 cmd summon minecraft:trader_llama 672 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+3620 cmd summon minecraft:trader_llama 672 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+3620 cmd summon minecraft:trader_llama 672 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+3620 cmd summon minecraft:ocelot 678 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+3620 cmd summon minecraft:ocelot 678 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+3620 cmd summon minecraft:ocelot 678 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+3622 cmd execute as @e[tag=atlas0,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+3622 cmd execute as @e[tag=atlas0] run data modify entity @s Owner set from entity iwdissi_keeper0 UUID
+3622 cmd execute as @e[tag=atlas1,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+3622 cmd execute as @e[tag=atlas1] run data modify entity @s Owner set from entity iwdissi_keeper1 UUID
+3622 cmd execute as @e[tag=atlas2,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+3622 cmd execute as @e[tag=atlas2] run data modify entity @s Owner set from entity iwdissi_keeper2 UUID
+3622 cmd execute as @e[tag=atlas3,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+3622 cmd execute as @e[tag=atlas3] run data modify entity @s Owner set from entity iwdissi_keeper3 UUID
+3622 cmd execute as @e[tag=atlas4,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+3622 cmd execute as @e[tag=atlas4] run data modify entity @s Owner set from entity iwdissi_keeper4 UUID
+3622 cmd execute as @e[tag=atlas5,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+3622 cmd execute as @e[tag=atlas5] run data modify entity @s Owner set from entity iwdissi_keeper5 UUID
+3622 cmd execute as @e[tag=atlas6,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+3622 cmd execute as @e[tag=atlas6] run data modify entity @s Owner set from entity iwdissi_keeper6 UUID
+3622 cmd execute as @e[tag=atlas7,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+3622 cmd execute as @e[tag=atlas7] run data modify entity @s Owner set from entity iwdissi_keeper7 UUID
+3625 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+3625 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+3625 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+3625 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+3625 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+3625 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+3625 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+3625 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+3630 interact iwdissi_keeper0 10
+3630 interact iwdissi_keeper1 10
+3630 interact iwdissi_keeper2 10
+3630 interact iwdissi_keeper3 10
+3630 interact iwdissi_keeper4 10
+3630 interact iwdissi_keeper5 10
+3630 interact iwdissi_keeper6 10
+3630 interact iwdissi_keeper7 10
+3655 interact iwdissi_keeper0 10
+3655 interact iwdissi_keeper1 10
+3655 interact iwdissi_keeper2 10
+3655 interact iwdissi_keeper3 10
+3655 interact iwdissi_keeper4 10
+3655 interact iwdissi_keeper5 10
+3655 interact iwdissi_keeper6 10
+3655 interact iwdissi_keeper7 10
+3680 interact iwdissi_keeper0 10
+3680 interact iwdissi_keeper1 10
+3680 interact iwdissi_keeper2 10
+3680 interact iwdissi_keeper3 10
+3680 interact iwdissi_keeper4 10
+3680 interact iwdissi_keeper5 10
+3680 interact iwdissi_keeper6 10
+3680 interact iwdissi_keeper7 10
+3705 interact iwdissi_keeper0 10
+3705 interact iwdissi_keeper1 10
+3705 interact iwdissi_keeper2 10
+3705 interact iwdissi_keeper3 10
+3705 interact iwdissi_keeper4 10
+3705 interact iwdissi_keeper5 10
+3705 interact iwdissi_keeper6 10
+3705 interact iwdissi_keeper7 10
+3725 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+3725 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+3725 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+3725 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+3725 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+3725 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+3725 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+3725 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+3730 interact iwdissi_keeper0 10
+3730 interact iwdissi_keeper1 10
+3730 interact iwdissi_keeper2 10
+3730 interact iwdissi_keeper3 10
+3730 interact iwdissi_keeper4 10
+3730 interact iwdissi_keeper5 10
+3730 interact iwdissi_keeper6 10
+3730 interact iwdissi_keeper7 10
+3755 interact iwdissi_keeper0 10
+3755 interact iwdissi_keeper1 10
+3755 interact iwdissi_keeper2 10
+3755 interact iwdissi_keeper3 10
+3755 interact iwdissi_keeper4 10
+3755 interact iwdissi_keeper5 10
+3755 interact iwdissi_keeper6 10
+3755 interact iwdissi_keeper7 10
+3780 interact iwdissi_keeper0 10
+3780 interact iwdissi_keeper1 10
+3780 interact iwdissi_keeper2 10
+3780 interact iwdissi_keeper3 10
+3780 interact iwdissi_keeper4 10
+3780 interact iwdissi_keeper5 10
+3780 interact iwdissi_keeper6 10
+3780 interact iwdissi_keeper7 10
+3805 interact iwdissi_keeper0 10
+3805 interact iwdissi_keeper1 10
+3805 interact iwdissi_keeper2 10
+3805 interact iwdissi_keeper3 10
+3805 interact iwdissi_keeper4 10
+3805 interact iwdissi_keeper5 10
+3805 interact iwdissi_keeper6 10
+3805 interact iwdissi_keeper7 10
+3825 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+3825 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+3825 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+3825 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+3825 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+3825 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+3825 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+3825 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+3830 interact iwdissi_keeper0 10
+3830 interact iwdissi_keeper1 10
+3830 interact iwdissi_keeper2 10
+3830 interact iwdissi_keeper3 10
+3830 interact iwdissi_keeper4 10
+3830 interact iwdissi_keeper5 10
+3830 interact iwdissi_keeper6 10
+3830 interact iwdissi_keeper7 10
+3855 interact iwdissi_keeper0 10
+3855 interact iwdissi_keeper1 10
+3855 interact iwdissi_keeper2 10
+3855 interact iwdissi_keeper3 10
+3855 interact iwdissi_keeper4 10
+3855 interact iwdissi_keeper5 10
+3855 interact iwdissi_keeper6 10
+3855 interact iwdissi_keeper7 10
+3880 interact iwdissi_keeper0 10
+3880 interact iwdissi_keeper1 10
+3880 interact iwdissi_keeper2 10
+3880 interact iwdissi_keeper3 10
+3880 interact iwdissi_keeper4 10
+3880 interact iwdissi_keeper5 10
+3880 interact iwdissi_keeper6 10
+3880 interact iwdissi_keeper7 10
+3905 interact iwdissi_keeper0 10
+3905 interact iwdissi_keeper1 10
+3905 interact iwdissi_keeper2 10
+3905 interact iwdissi_keeper3 10
+3905 interact iwdissi_keeper4 10
+3905 interact iwdissi_keeper5 10
+3905 interact iwdissi_keeper6 10
+3905 interact iwdissi_keeper7 10
+3925 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+3925 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+3925 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+3925 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+3925 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+3925 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+3925 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+3925 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+3930 interact iwdissi_keeper0 10
+3930 interact iwdissi_keeper1 10
+3930 interact iwdissi_keeper2 10
+3930 interact iwdissi_keeper3 10
+3930 interact iwdissi_keeper4 10
+3930 interact iwdissi_keeper5 10
+3930 interact iwdissi_keeper6 10
+3930 interact iwdissi_keeper7 10
+3955 interact iwdissi_keeper0 10
+3955 interact iwdissi_keeper1 10
+3955 interact iwdissi_keeper2 10
+3955 interact iwdissi_keeper3 10
+3955 interact iwdissi_keeper4 10
+3955 interact iwdissi_keeper5 10
+3955 interact iwdissi_keeper6 10
+3955 interact iwdissi_keeper7 10
+3980 interact iwdissi_keeper0 10
+3980 interact iwdissi_keeper1 10
+3980 interact iwdissi_keeper2 10
+3980 interact iwdissi_keeper3 10
+3980 interact iwdissi_keeper4 10
+3980 interact iwdissi_keeper5 10
+3980 interact iwdissi_keeper6 10
+3980 interact iwdissi_keeper7 10
+4005 interact iwdissi_keeper0 10
+4005 interact iwdissi_keeper1 10
+4005 interact iwdissi_keeper2 10
+4005 interact iwdissi_keeper3 10
+4005 interact iwdissi_keeper4 10
+4005 interact iwdissi_keeper5 10
+4005 interact iwdissi_keeper6 10
+4005 interact iwdissi_keeper7 10
+4025 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+4025 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+4025 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+4025 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+4025 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+4025 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+4025 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+4025 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+4030 interact iwdissi_keeper0 10
+4030 interact iwdissi_keeper1 10
+4030 interact iwdissi_keeper2 10
+4030 interact iwdissi_keeper3 10
+4030 interact iwdissi_keeper4 10
+4030 interact iwdissi_keeper5 10
+4030 interact iwdissi_keeper6 10
+4030 interact iwdissi_keeper7 10
+4055 interact iwdissi_keeper0 10
+4055 interact iwdissi_keeper1 10
+4055 interact iwdissi_keeper2 10
+4055 interact iwdissi_keeper3 10
+4055 interact iwdissi_keeper4 10
+4055 interact iwdissi_keeper5 10
+4055 interact iwdissi_keeper6 10
+4055 interact iwdissi_keeper7 10
+4080 interact iwdissi_keeper0 10
+4080 interact iwdissi_keeper1 10
+4080 interact iwdissi_keeper2 10
+4080 interact iwdissi_keeper3 10
+4080 interact iwdissi_keeper4 10
+4080 interact iwdissi_keeper5 10
+4080 interact iwdissi_keeper6 10
+4080 interact iwdissi_keeper7 10
+4105 interact iwdissi_keeper0 10
+4105 interact iwdissi_keeper1 10
+4105 interact iwdissi_keeper2 10
+4105 interact iwdissi_keeper3 10
+4105 interact iwdissi_keeper4 10
+4105 interact iwdissi_keeper5 10
+4105 interact iwdissi_keeper6 10
+4105 interact iwdissi_keeper7 10
+4125 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+4125 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+4125 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+4125 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+4125 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+4125 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+4125 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+4125 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+4130 interact iwdissi_keeper0 10
+4130 interact iwdissi_keeper1 10
+4130 interact iwdissi_keeper2 10
+4130 interact iwdissi_keeper3 10
+4130 interact iwdissi_keeper4 10
+4130 interact iwdissi_keeper5 10
+4130 interact iwdissi_keeper6 10
+4130 interact iwdissi_keeper7 10
+4155 interact iwdissi_keeper0 10
+4155 interact iwdissi_keeper1 10
+4155 interact iwdissi_keeper2 10
+4155 interact iwdissi_keeper3 10
+4155 interact iwdissi_keeper4 10
+4155 interact iwdissi_keeper5 10
+4155 interact iwdissi_keeper6 10
+4155 interact iwdissi_keeper7 10
+4180 interact iwdissi_keeper0 10
+4180 interact iwdissi_keeper1 10
+4180 interact iwdissi_keeper2 10
+4180 interact iwdissi_keeper3 10
+4180 interact iwdissi_keeper4 10
+4180 interact iwdissi_keeper5 10
+4180 interact iwdissi_keeper6 10
+4180 interact iwdissi_keeper7 10
+4205 interact iwdissi_keeper0 10
+4205 interact iwdissi_keeper1 10
+4205 interact iwdissi_keeper2 10
+4205 interact iwdissi_keeper3 10
+4205 interact iwdissi_keeper4 10
+4205 interact iwdissi_keeper5 10
+4205 interact iwdissi_keeper6 10
+4205 interact iwdissi_keeper7 10
+4225 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+4225 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+4225 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+4225 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+4225 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+4225 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+4225 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+4225 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+4230 interact iwdissi_keeper0 10
+4230 interact iwdissi_keeper1 10
+4230 interact iwdissi_keeper2 10
+4230 interact iwdissi_keeper3 10
+4230 interact iwdissi_keeper4 10
+4230 interact iwdissi_keeper5 10
+4230 interact iwdissi_keeper6 10
+4230 interact iwdissi_keeper7 10
+4255 interact iwdissi_keeper0 10
+4255 interact iwdissi_keeper1 10
+4255 interact iwdissi_keeper2 10
+4255 interact iwdissi_keeper3 10
+4255 interact iwdissi_keeper4 10
+4255 interact iwdissi_keeper5 10
+4255 interact iwdissi_keeper6 10
+4255 interact iwdissi_keeper7 10
+4280 interact iwdissi_keeper0 10
+4280 interact iwdissi_keeper1 10
+4280 interact iwdissi_keeper2 10
+4280 interact iwdissi_keeper3 10
+4280 interact iwdissi_keeper4 10
+4280 interact iwdissi_keeper5 10
+4280 interact iwdissi_keeper6 10
+4280 interact iwdissi_keeper7 10
+4305 interact iwdissi_keeper0 10
+4305 interact iwdissi_keeper1 10
+4305 interact iwdissi_keeper2 10
+4305 interact iwdissi_keeper3 10
+4305 interact iwdissi_keeper4 10
+4305 interact iwdissi_keeper5 10
+4305 interact iwdissi_keeper6 10
+4305 interact iwdissi_keeper7 10
+4325 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+4325 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+4325 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+4325 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+4325 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+4325 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+4325 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+4325 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+4330 interact iwdissi_keeper0 10
+4330 interact iwdissi_keeper1 10
+4330 interact iwdissi_keeper2 10
+4330 interact iwdissi_keeper3 10
+4330 interact iwdissi_keeper4 10
+4330 interact iwdissi_keeper5 10
+4330 interact iwdissi_keeper6 10
+4330 interact iwdissi_keeper7 10
+4355 interact iwdissi_keeper0 10
+4355 interact iwdissi_keeper1 10
+4355 interact iwdissi_keeper2 10
+4355 interact iwdissi_keeper3 10
+4355 interact iwdissi_keeper4 10
+4355 interact iwdissi_keeper5 10
+4355 interact iwdissi_keeper6 10
+4355 interact iwdissi_keeper7 10
+4380 interact iwdissi_keeper0 10
+4380 interact iwdissi_keeper1 10
+4380 interact iwdissi_keeper2 10
+4380 interact iwdissi_keeper3 10
+4380 interact iwdissi_keeper4 10
+4380 interact iwdissi_keeper5 10
+4380 interact iwdissi_keeper6 10
+4380 interact iwdissi_keeper7 10
+4405 interact iwdissi_keeper0 10
+4405 interact iwdissi_keeper1 10
+4405 interact iwdissi_keeper2 10
+4405 interact iwdissi_keeper3 10
+4405 interact iwdissi_keeper4 10
+4405 interact iwdissi_keeper5 10
+4405 interact iwdissi_keeper6 10
+4405 interact iwdissi_keeper7 10
+4430 interact iwdissi_keeper0 10
+4430 interact iwdissi_keeper1 10
+4430 interact iwdissi_keeper2 10
+4430 interact iwdissi_keeper3 10
+4430 interact iwdissi_keeper4 10
+4430 interact iwdissi_keeper5 10
+4430 interact iwdissi_keeper6 10
+4430 interact iwdissi_keeper7 10
+4455 interact iwdissi_keeper0 10
+4455 interact iwdissi_keeper1 10
+4455 interact iwdissi_keeper2 10
+4455 interact iwdissi_keeper3 10
+4455 interact iwdissi_keeper4 10
+4455 interact iwdissi_keeper5 10
+4455 interact iwdissi_keeper6 10
+4455 interact iwdissi_keeper7 10
+4470 cmd kill @e[tag=atlas0]
+4470 cmd kill @e[tag=atlas1]
+4470 cmd kill @e[tag=atlas2]
+4470 cmd kill @e[tag=atlas3]
+4470 cmd kill @e[tag=atlas4]
+4470 cmd kill @e[tag=atlas5]
+4470 cmd kill @e[tag=atlas6]
+4470 cmd kill @e[tag=atlas7]
+4471 cmd kill @e[type=minecraft:item,x=0,y=100,z=0,distance=..14]
+4471 cmd kill @e[type=minecraft:item,x=96,y=100,z=0,distance=..14]
+4471 cmd kill @e[type=minecraft:item,x=192,y=100,z=0,distance=..14]
+4471 cmd kill @e[type=minecraft:item,x=288,y=100,z=0,distance=..14]
+4471 cmd kill @e[type=minecraft:item,x=384,y=100,z=0,distance=..14]
+4471 cmd kill @e[type=minecraft:item,x=480,y=100,z=0,distance=..14]
+4471 cmd kill @e[type=minecraft:item,x=576,y=100,z=0,distance=..14]
+4471 cmd kill @e[type=minecraft:item,x=672,y=100,z=0,distance=..14]
+4480 interact iwdissi_keeper0 10
+4480 interact iwdissi_keeper1 10
+4480 interact iwdissi_keeper2 10
+4480 interact iwdissi_keeper3 10
+4480 interact iwdissi_keeper4 10
+4480 interact iwdissi_keeper5 10
+4480 interact iwdissi_keeper6 10
+4480 interact iwdissi_keeper7 10
+4505 interact iwdissi_keeper0 10
+4505 interact iwdissi_keeper1 10
+4505 interact iwdissi_keeper2 10
+4505 interact iwdissi_keeper3 10
+4505 interact iwdissi_keeper4 10
+4505 interact iwdissi_keeper5 10
+4505 interact iwdissi_keeper6 10
+4505 interact iwdissi_keeper7 10
+4520 cmd summon minecraft:horse -6 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+4520 cmd summon minecraft:horse -6 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+4520 cmd summon minecraft:horse -6 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+4520 cmd summon minecraft:donkey 0 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+4520 cmd summon minecraft:donkey 0 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+4520 cmd summon minecraft:donkey 0 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+4520 cmd summon minecraft:llama 6 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+4520 cmd summon minecraft:llama 6 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+4520 cmd summon minecraft:llama 6 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+4520 cmd summon minecraft:cat 90 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+4520 cmd summon minecraft:cat 90 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+4520 cmd summon minecraft:cat 90 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+4520 cmd summon minecraft:wolf 96 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+4520 cmd summon minecraft:wolf 96 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+4520 cmd summon minecraft:wolf 96 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+4520 cmd summon minecraft:parrot 102 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+4520 cmd summon minecraft:parrot 102 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+4520 cmd summon minecraft:parrot 102 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+4520 cmd summon minecraft:fox 186 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+4520 cmd summon minecraft:fox 186 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+4520 cmd summon minecraft:fox 186 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+4520 cmd summon minecraft:rabbit 192 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+4520 cmd summon minecraft:rabbit 192 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+4520 cmd summon minecraft:rabbit 192 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+4520 cmd summon minecraft:axolotl 198 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+4520 cmd summon minecraft:axolotl 198 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+4520 cmd summon minecraft:axolotl 198 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+4520 cmd summon minecraft:mooshroom 282 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+4520 cmd summon minecraft:mooshroom 282 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+4520 cmd summon minecraft:mooshroom 282 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+4520 cmd summon minecraft:panda 288 100 -2 {MainGene:"brown",HiddenGene:"weak",Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+4520 cmd summon minecraft:panda 288 100 0 {MainGene:"lazy",HiddenGene:"brown",Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+4520 cmd summon minecraft:panda 288 100 2 {MainGene:"worried",HiddenGene:"normal",Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+4520 cmd summon minecraft:goat 294 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+4520 cmd summon minecraft:goat 294 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+4520 cmd summon minecraft:goat 294 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+4520 cmd summon minecraft:villager 378 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+4520 cmd summon minecraft:villager 378 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+4520 cmd summon minecraft:villager 378 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+4520 cmd summon minecraft:sheep 384 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+4520 cmd summon minecraft:sheep 384 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+4520 cmd summon minecraft:sheep 384 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+4520 cmd summon minecraft:pig 390 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+4520 cmd summon minecraft:pig 390 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+4520 cmd summon minecraft:pig 390 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+4520 cmd summon minecraft:turtle 474 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+4520 cmd summon minecraft:turtle 474 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+4520 cmd summon minecraft:turtle 474 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+4520 cmd summon minecraft:frog 480 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+4520 cmd summon minecraft:frog 480 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+4520 cmd summon minecraft:frog 480 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+4520 cmd summon minecraft:sniffer 486 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+4520 cmd summon minecraft:sniffer 486 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+4520 cmd summon minecraft:sniffer 486 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+4520 cmd summon minecraft:camel 570 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+4520 cmd summon minecraft:camel 570 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+4520 cmd summon minecraft:camel 570 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+4520 cmd summon minecraft:armadillo 576 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+4520 cmd summon minecraft:armadillo 576 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+4520 cmd summon minecraft:armadillo 576 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+4520 cmd summon minecraft:bee 582 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+4520 cmd summon minecraft:bee 582 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+4520 cmd summon minecraft:bee 582 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+4520 cmd summon minecraft:mule 666 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+4520 cmd summon minecraft:mule 666 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+4520 cmd summon minecraft:mule 666 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+4520 cmd summon minecraft:trader_llama 672 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+4520 cmd summon minecraft:trader_llama 672 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+4520 cmd summon minecraft:trader_llama 672 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+4520 cmd summon minecraft:ocelot 678 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+4520 cmd summon minecraft:ocelot 678 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+4520 cmd summon minecraft:ocelot 678 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+4522 cmd execute as @e[tag=atlas0,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+4522 cmd execute as @e[tag=atlas0] run data modify entity @s Owner set from entity iwdissi_keeper0 UUID
+4522 cmd execute as @e[tag=atlas1,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+4522 cmd execute as @e[tag=atlas1] run data modify entity @s Owner set from entity iwdissi_keeper1 UUID
+4522 cmd execute as @e[tag=atlas2,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+4522 cmd execute as @e[tag=atlas2] run data modify entity @s Owner set from entity iwdissi_keeper2 UUID
+4522 cmd execute as @e[tag=atlas3,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+4522 cmd execute as @e[tag=atlas3] run data modify entity @s Owner set from entity iwdissi_keeper3 UUID
+4522 cmd execute as @e[tag=atlas4,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+4522 cmd execute as @e[tag=atlas4] run data modify entity @s Owner set from entity iwdissi_keeper4 UUID
+4522 cmd execute as @e[tag=atlas5,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+4522 cmd execute as @e[tag=atlas5] run data modify entity @s Owner set from entity iwdissi_keeper5 UUID
+4522 cmd execute as @e[tag=atlas6,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+4522 cmd execute as @e[tag=atlas6] run data modify entity @s Owner set from entity iwdissi_keeper6 UUID
+4522 cmd execute as @e[tag=atlas7,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+4522 cmd execute as @e[tag=atlas7] run data modify entity @s Owner set from entity iwdissi_keeper7 UUID
+4525 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+4525 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+4525 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+4525 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+4525 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+4525 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+4525 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+4525 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+4530 interact iwdissi_keeper0 10
+4530 interact iwdissi_keeper1 10
+4530 interact iwdissi_keeper2 10
+4530 interact iwdissi_keeper3 10
+4530 interact iwdissi_keeper4 10
+4530 interact iwdissi_keeper5 10
+4530 interact iwdissi_keeper6 10
+4530 interact iwdissi_keeper7 10
+4555 interact iwdissi_keeper0 10
+4555 interact iwdissi_keeper1 10
+4555 interact iwdissi_keeper2 10
+4555 interact iwdissi_keeper3 10
+4555 interact iwdissi_keeper4 10
+4555 interact iwdissi_keeper5 10
+4555 interact iwdissi_keeper6 10
+4555 interact iwdissi_keeper7 10
+4580 interact iwdissi_keeper0 10
+4580 interact iwdissi_keeper1 10
+4580 interact iwdissi_keeper2 10
+4580 interact iwdissi_keeper3 10
+4580 interact iwdissi_keeper4 10
+4580 interact iwdissi_keeper5 10
+4580 interact iwdissi_keeper6 10
+4580 interact iwdissi_keeper7 10
+4605 interact iwdissi_keeper0 10
+4605 interact iwdissi_keeper1 10
+4605 interact iwdissi_keeper2 10
+4605 interact iwdissi_keeper3 10
+4605 interact iwdissi_keeper4 10
+4605 interact iwdissi_keeper5 10
+4605 interact iwdissi_keeper6 10
+4605 interact iwdissi_keeper7 10
+4625 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+4625 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+4625 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+4625 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+4625 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+4625 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+4625 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+4625 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+4630 interact iwdissi_keeper0 10
+4630 interact iwdissi_keeper1 10
+4630 interact iwdissi_keeper2 10
+4630 interact iwdissi_keeper3 10
+4630 interact iwdissi_keeper4 10
+4630 interact iwdissi_keeper5 10
+4630 interact iwdissi_keeper6 10
+4630 interact iwdissi_keeper7 10
+4655 interact iwdissi_keeper0 10
+4655 interact iwdissi_keeper1 10
+4655 interact iwdissi_keeper2 10
+4655 interact iwdissi_keeper3 10
+4655 interact iwdissi_keeper4 10
+4655 interact iwdissi_keeper5 10
+4655 interact iwdissi_keeper6 10
+4655 interact iwdissi_keeper7 10
+4680 interact iwdissi_keeper0 10
+4680 interact iwdissi_keeper1 10
+4680 interact iwdissi_keeper2 10
+4680 interact iwdissi_keeper3 10
+4680 interact iwdissi_keeper4 10
+4680 interact iwdissi_keeper5 10
+4680 interact iwdissi_keeper6 10
+4680 interact iwdissi_keeper7 10
+4705 interact iwdissi_keeper0 10
+4705 interact iwdissi_keeper1 10
+4705 interact iwdissi_keeper2 10
+4705 interact iwdissi_keeper3 10
+4705 interact iwdissi_keeper4 10
+4705 interact iwdissi_keeper5 10
+4705 interact iwdissi_keeper6 10
+4705 interact iwdissi_keeper7 10
+4725 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+4725 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+4725 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+4725 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+4725 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+4725 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+4725 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+4725 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+4730 interact iwdissi_keeper0 10
+4730 interact iwdissi_keeper1 10
+4730 interact iwdissi_keeper2 10
+4730 interact iwdissi_keeper3 10
+4730 interact iwdissi_keeper4 10
+4730 interact iwdissi_keeper5 10
+4730 interact iwdissi_keeper6 10
+4730 interact iwdissi_keeper7 10
+4755 interact iwdissi_keeper0 10
+4755 interact iwdissi_keeper1 10
+4755 interact iwdissi_keeper2 10
+4755 interact iwdissi_keeper3 10
+4755 interact iwdissi_keeper4 10
+4755 interact iwdissi_keeper5 10
+4755 interact iwdissi_keeper6 10
+4755 interact iwdissi_keeper7 10
+4780 interact iwdissi_keeper0 10
+4780 interact iwdissi_keeper1 10
+4780 interact iwdissi_keeper2 10
+4780 interact iwdissi_keeper3 10
+4780 interact iwdissi_keeper4 10
+4780 interact iwdissi_keeper5 10
+4780 interact iwdissi_keeper6 10
+4780 interact iwdissi_keeper7 10
+4805 interact iwdissi_keeper0 10
+4805 interact iwdissi_keeper1 10
+4805 interact iwdissi_keeper2 10
+4805 interact iwdissi_keeper3 10
+4805 interact iwdissi_keeper4 10
+4805 interact iwdissi_keeper5 10
+4805 interact iwdissi_keeper6 10
+4805 interact iwdissi_keeper7 10
+4825 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+4825 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+4825 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+4825 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+4825 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+4825 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+4825 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+4825 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+4830 interact iwdissi_keeper0 10
+4830 interact iwdissi_keeper1 10
+4830 interact iwdissi_keeper2 10
+4830 interact iwdissi_keeper3 10
+4830 interact iwdissi_keeper4 10
+4830 interact iwdissi_keeper5 10
+4830 interact iwdissi_keeper6 10
+4830 interact iwdissi_keeper7 10
+4855 interact iwdissi_keeper0 10
+4855 interact iwdissi_keeper1 10
+4855 interact iwdissi_keeper2 10
+4855 interact iwdissi_keeper3 10
+4855 interact iwdissi_keeper4 10
+4855 interact iwdissi_keeper5 10
+4855 interact iwdissi_keeper6 10
+4855 interact iwdissi_keeper7 10
+4880 interact iwdissi_keeper0 10
+4880 interact iwdissi_keeper1 10
+4880 interact iwdissi_keeper2 10
+4880 interact iwdissi_keeper3 10
+4880 interact iwdissi_keeper4 10
+4880 interact iwdissi_keeper5 10
+4880 interact iwdissi_keeper6 10
+4880 interact iwdissi_keeper7 10
+4905 interact iwdissi_keeper0 10
+4905 interact iwdissi_keeper1 10
+4905 interact iwdissi_keeper2 10
+4905 interact iwdissi_keeper3 10
+4905 interact iwdissi_keeper4 10
+4905 interact iwdissi_keeper5 10
+4905 interact iwdissi_keeper6 10
+4905 interact iwdissi_keeper7 10
+4925 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+4925 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+4925 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+4925 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+4925 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+4925 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+4925 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+4925 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+4930 interact iwdissi_keeper0 10
+4930 interact iwdissi_keeper1 10
+4930 interact iwdissi_keeper2 10
+4930 interact iwdissi_keeper3 10
+4930 interact iwdissi_keeper4 10
+4930 interact iwdissi_keeper5 10
+4930 interact iwdissi_keeper6 10
+4930 interact iwdissi_keeper7 10
+4955 interact iwdissi_keeper0 10
+4955 interact iwdissi_keeper1 10
+4955 interact iwdissi_keeper2 10
+4955 interact iwdissi_keeper3 10
+4955 interact iwdissi_keeper4 10
+4955 interact iwdissi_keeper5 10
+4955 interact iwdissi_keeper6 10
+4955 interact iwdissi_keeper7 10
+4980 interact iwdissi_keeper0 10
+4980 interact iwdissi_keeper1 10
+4980 interact iwdissi_keeper2 10
+4980 interact iwdissi_keeper3 10
+4980 interact iwdissi_keeper4 10
+4980 interact iwdissi_keeper5 10
+4980 interact iwdissi_keeper6 10
+4980 interact iwdissi_keeper7 10
+5005 interact iwdissi_keeper0 10
+5005 interact iwdissi_keeper1 10
+5005 interact iwdissi_keeper2 10
+5005 interact iwdissi_keeper3 10
+5005 interact iwdissi_keeper4 10
+5005 interact iwdissi_keeper5 10
+5005 interact iwdissi_keeper6 10
+5005 interact iwdissi_keeper7 10
+5025 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+5025 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+5025 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+5025 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+5025 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+5025 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+5025 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+5025 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+5030 interact iwdissi_keeper0 10
+5030 interact iwdissi_keeper1 10
+5030 interact iwdissi_keeper2 10
+5030 interact iwdissi_keeper3 10
+5030 interact iwdissi_keeper4 10
+5030 interact iwdissi_keeper5 10
+5030 interact iwdissi_keeper6 10
+5030 interact iwdissi_keeper7 10
+5055 interact iwdissi_keeper0 10
+5055 interact iwdissi_keeper1 10
+5055 interact iwdissi_keeper2 10
+5055 interact iwdissi_keeper3 10
+5055 interact iwdissi_keeper4 10
+5055 interact iwdissi_keeper5 10
+5055 interact iwdissi_keeper6 10
+5055 interact iwdissi_keeper7 10
+5080 interact iwdissi_keeper0 10
+5080 interact iwdissi_keeper1 10
+5080 interact iwdissi_keeper2 10
+5080 interact iwdissi_keeper3 10
+5080 interact iwdissi_keeper4 10
+5080 interact iwdissi_keeper5 10
+5080 interact iwdissi_keeper6 10
+5080 interact iwdissi_keeper7 10
+5105 interact iwdissi_keeper0 10
+5105 interact iwdissi_keeper1 10
+5105 interact iwdissi_keeper2 10
+5105 interact iwdissi_keeper3 10
+5105 interact iwdissi_keeper4 10
+5105 interact iwdissi_keeper5 10
+5105 interact iwdissi_keeper6 10
+5105 interact iwdissi_keeper7 10
+5125 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+5125 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+5125 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+5125 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+5125 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+5125 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+5125 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+5125 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+5130 interact iwdissi_keeper0 10
+5130 interact iwdissi_keeper1 10
+5130 interact iwdissi_keeper2 10
+5130 interact iwdissi_keeper3 10
+5130 interact iwdissi_keeper4 10
+5130 interact iwdissi_keeper5 10
+5130 interact iwdissi_keeper6 10
+5130 interact iwdissi_keeper7 10
+5155 interact iwdissi_keeper0 10
+5155 interact iwdissi_keeper1 10
+5155 interact iwdissi_keeper2 10
+5155 interact iwdissi_keeper3 10
+5155 interact iwdissi_keeper4 10
+5155 interact iwdissi_keeper5 10
+5155 interact iwdissi_keeper6 10
+5155 interact iwdissi_keeper7 10
+5180 interact iwdissi_keeper0 10
+5180 interact iwdissi_keeper1 10
+5180 interact iwdissi_keeper2 10
+5180 interact iwdissi_keeper3 10
+5180 interact iwdissi_keeper4 10
+5180 interact iwdissi_keeper5 10
+5180 interact iwdissi_keeper6 10
+5180 interact iwdissi_keeper7 10
+5205 interact iwdissi_keeper0 10
+5205 interact iwdissi_keeper1 10
+5205 interact iwdissi_keeper2 10
+5205 interact iwdissi_keeper3 10
+5205 interact iwdissi_keeper4 10
+5205 interact iwdissi_keeper5 10
+5205 interact iwdissi_keeper6 10
+5205 interact iwdissi_keeper7 10
+5225 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+5225 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+5225 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+5225 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+5225 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+5225 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+5225 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+5225 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+5230 interact iwdissi_keeper0 10
+5230 interact iwdissi_keeper1 10
+5230 interact iwdissi_keeper2 10
+5230 interact iwdissi_keeper3 10
+5230 interact iwdissi_keeper4 10
+5230 interact iwdissi_keeper5 10
+5230 interact iwdissi_keeper6 10
+5230 interact iwdissi_keeper7 10
+5255 interact iwdissi_keeper0 10
+5255 interact iwdissi_keeper1 10
+5255 interact iwdissi_keeper2 10
+5255 interact iwdissi_keeper3 10
+5255 interact iwdissi_keeper4 10
+5255 interact iwdissi_keeper5 10
+5255 interact iwdissi_keeper6 10
+5255 interact iwdissi_keeper7 10
+5280 interact iwdissi_keeper0 10
+5280 interact iwdissi_keeper1 10
+5280 interact iwdissi_keeper2 10
+5280 interact iwdissi_keeper3 10
+5280 interact iwdissi_keeper4 10
+5280 interact iwdissi_keeper5 10
+5280 interact iwdissi_keeper6 10
+5280 interact iwdissi_keeper7 10
+5305 interact iwdissi_keeper0 10
+5305 interact iwdissi_keeper1 10
+5305 interact iwdissi_keeper2 10
+5305 interact iwdissi_keeper3 10
+5305 interact iwdissi_keeper4 10
+5305 interact iwdissi_keeper5 10
+5305 interact iwdissi_keeper6 10
+5305 interact iwdissi_keeper7 10
+5330 interact iwdissi_keeper0 10
+5330 interact iwdissi_keeper1 10
+5330 interact iwdissi_keeper2 10
+5330 interact iwdissi_keeper3 10
+5330 interact iwdissi_keeper4 10
+5330 interact iwdissi_keeper5 10
+5330 interact iwdissi_keeper6 10
+5330 interact iwdissi_keeper7 10
+5355 interact iwdissi_keeper0 10
+5355 interact iwdissi_keeper1 10
+5355 interact iwdissi_keeper2 10
+5355 interact iwdissi_keeper3 10
+5355 interact iwdissi_keeper4 10
+5355 interact iwdissi_keeper5 10
+5355 interact iwdissi_keeper6 10
+5355 interact iwdissi_keeper7 10
+5370 cmd kill @e[tag=atlas0]
+5370 cmd kill @e[tag=atlas1]
+5370 cmd kill @e[tag=atlas2]
+5370 cmd kill @e[tag=atlas3]
+5370 cmd kill @e[tag=atlas4]
+5370 cmd kill @e[tag=atlas5]
+5370 cmd kill @e[tag=atlas6]
+5370 cmd kill @e[tag=atlas7]
+5371 cmd kill @e[type=minecraft:item,x=0,y=100,z=0,distance=..14]
+5371 cmd kill @e[type=minecraft:item,x=96,y=100,z=0,distance=..14]
+5371 cmd kill @e[type=minecraft:item,x=192,y=100,z=0,distance=..14]
+5371 cmd kill @e[type=minecraft:item,x=288,y=100,z=0,distance=..14]
+5371 cmd kill @e[type=minecraft:item,x=384,y=100,z=0,distance=..14]
+5371 cmd kill @e[type=minecraft:item,x=480,y=100,z=0,distance=..14]
+5371 cmd kill @e[type=minecraft:item,x=576,y=100,z=0,distance=..14]
+5371 cmd kill @e[type=minecraft:item,x=672,y=100,z=0,distance=..14]
+5380 interact iwdissi_keeper0 10
+5380 interact iwdissi_keeper1 10
+5380 interact iwdissi_keeper2 10
+5380 interact iwdissi_keeper3 10
+5380 interact iwdissi_keeper4 10
+5380 interact iwdissi_keeper5 10
+5380 interact iwdissi_keeper6 10
+5380 interact iwdissi_keeper7 10
+5405 interact iwdissi_keeper0 10
+5405 interact iwdissi_keeper1 10
+5405 interact iwdissi_keeper2 10
+5405 interact iwdissi_keeper3 10
+5405 interact iwdissi_keeper4 10
+5405 interact iwdissi_keeper5 10
+5405 interact iwdissi_keeper6 10
+5405 interact iwdissi_keeper7 10
+5420 cmd summon minecraft:horse -6 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+5420 cmd summon minecraft:horse -6 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+5420 cmd summon minecraft:horse -6 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+5420 cmd summon minecraft:donkey 0 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+5420 cmd summon minecraft:donkey 0 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+5420 cmd summon minecraft:donkey 0 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+5420 cmd summon minecraft:llama 6 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+5420 cmd summon minecraft:llama 6 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+5420 cmd summon minecraft:llama 6 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas0"]}
+5420 cmd summon minecraft:cat 90 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+5420 cmd summon minecraft:cat 90 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+5420 cmd summon minecraft:cat 90 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+5420 cmd summon minecraft:wolf 96 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+5420 cmd summon minecraft:wolf 96 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+5420 cmd summon minecraft:wolf 96 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+5420 cmd summon minecraft:parrot 102 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+5420 cmd summon minecraft:parrot 102 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+5420 cmd summon minecraft:parrot 102 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas1"]}
+5420 cmd summon minecraft:fox 186 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+5420 cmd summon minecraft:fox 186 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+5420 cmd summon minecraft:fox 186 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+5420 cmd summon minecraft:rabbit 192 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+5420 cmd summon minecraft:rabbit 192 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+5420 cmd summon minecraft:rabbit 192 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+5420 cmd summon minecraft:axolotl 198 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+5420 cmd summon minecraft:axolotl 198 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+5420 cmd summon minecraft:axolotl 198 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas2"]}
+5420 cmd summon minecraft:mooshroom 282 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+5420 cmd summon minecraft:mooshroom 282 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+5420 cmd summon minecraft:mooshroom 282 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+5420 cmd summon minecraft:panda 288 100 -2 {MainGene:"lazy",HiddenGene:"weak",Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+5420 cmd summon minecraft:panda 288 100 0 {MainGene:"worried",HiddenGene:"brown",Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+5420 cmd summon minecraft:panda 288 100 2 {MainGene:"playful",HiddenGene:"normal",Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+5420 cmd summon minecraft:goat 294 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+5420 cmd summon minecraft:goat 294 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+5420 cmd summon minecraft:goat 294 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas3"]}
+5420 cmd summon minecraft:villager 378 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+5420 cmd summon minecraft:villager 378 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+5420 cmd summon minecraft:villager 378 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+5420 cmd summon minecraft:sheep 384 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+5420 cmd summon minecraft:sheep 384 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+5420 cmd summon minecraft:sheep 384 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+5420 cmd summon minecraft:pig 390 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+5420 cmd summon minecraft:pig 390 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+5420 cmd summon minecraft:pig 390 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas4"]}
+5420 cmd summon minecraft:turtle 474 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+5420 cmd summon minecraft:turtle 474 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+5420 cmd summon minecraft:turtle 474 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+5420 cmd summon minecraft:frog 480 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+5420 cmd summon minecraft:frog 480 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+5420 cmd summon minecraft:frog 480 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+5420 cmd summon minecraft:sniffer 486 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+5420 cmd summon minecraft:sniffer 486 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+5420 cmd summon minecraft:sniffer 486 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas5"]}
+5420 cmd summon minecraft:camel 570 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+5420 cmd summon minecraft:camel 570 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+5420 cmd summon minecraft:camel 570 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+5420 cmd summon minecraft:armadillo 576 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+5420 cmd summon minecraft:armadillo 576 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+5420 cmd summon minecraft:armadillo 576 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+5420 cmd summon minecraft:bee 582 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+5420 cmd summon minecraft:bee 582 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+5420 cmd summon minecraft:bee 582 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas6"]}
+5420 cmd summon minecraft:mule 666 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+5420 cmd summon minecraft:mule 666 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+5420 cmd summon minecraft:mule 666 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+5420 cmd summon minecraft:trader_llama 672 100 -2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+5420 cmd summon minecraft:trader_llama 672 100 0 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+5420 cmd summon minecraft:trader_llama 672 100 2 {Tame:1b,Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+5420 cmd summon minecraft:ocelot 678 100 -2 {Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+5420 cmd summon minecraft:ocelot 678 100 0 {Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+5420 cmd summon minecraft:ocelot 678 100 2 {Age:0,PersistenceRequired:1b,Tags:["atlas7"]}
+5422 cmd execute as @e[tag=atlas0,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+5422 cmd execute as @e[tag=atlas0] run data modify entity @s Owner set from entity iwdissi_keeper0 UUID
+5422 cmd execute as @e[tag=atlas1,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+5422 cmd execute as @e[tag=atlas1] run data modify entity @s Owner set from entity iwdissi_keeper1 UUID
+5422 cmd execute as @e[tag=atlas2,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+5422 cmd execute as @e[tag=atlas2] run data modify entity @s Owner set from entity iwdissi_keeper2 UUID
+5422 cmd execute as @e[tag=atlas3,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+5422 cmd execute as @e[tag=atlas3] run data modify entity @s Owner set from entity iwdissi_keeper3 UUID
+5422 cmd execute as @e[tag=atlas4,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+5422 cmd execute as @e[tag=atlas4] run data modify entity @s Owner set from entity iwdissi_keeper4 UUID
+5422 cmd execute as @e[tag=atlas5,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+5422 cmd execute as @e[tag=atlas5] run data modify entity @s Owner set from entity iwdissi_keeper5 UUID
+5422 cmd execute as @e[tag=atlas6,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+5422 cmd execute as @e[tag=atlas6] run data modify entity @s Owner set from entity iwdissi_keeper6 UUID
+5422 cmd execute as @e[tag=atlas7,type=#minecraft:can_breathe_under_water] run data merge entity @s {}
+5422 cmd execute as @e[tag=atlas7] run data modify entity @s Owner set from entity iwdissi_keeper7 UUID
+5425 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+5425 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+5425 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+5425 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+5425 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+5425 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+5425 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+5425 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+5430 interact iwdissi_keeper0 10
+5430 interact iwdissi_keeper1 10
+5430 interact iwdissi_keeper2 10
+5430 interact iwdissi_keeper3 10
+5430 interact iwdissi_keeper4 10
+5430 interact iwdissi_keeper5 10
+5430 interact iwdissi_keeper6 10
+5430 interact iwdissi_keeper7 10
+5455 interact iwdissi_keeper0 10
+5455 interact iwdissi_keeper1 10
+5455 interact iwdissi_keeper2 10
+5455 interact iwdissi_keeper3 10
+5455 interact iwdissi_keeper4 10
+5455 interact iwdissi_keeper5 10
+5455 interact iwdissi_keeper6 10
+5455 interact iwdissi_keeper7 10
+5480 interact iwdissi_keeper0 10
+5480 interact iwdissi_keeper1 10
+5480 interact iwdissi_keeper2 10
+5480 interact iwdissi_keeper3 10
+5480 interact iwdissi_keeper4 10
+5480 interact iwdissi_keeper5 10
+5480 interact iwdissi_keeper6 10
+5480 interact iwdissi_keeper7 10
+5505 interact iwdissi_keeper0 10
+5505 interact iwdissi_keeper1 10
+5505 interact iwdissi_keeper2 10
+5505 interact iwdissi_keeper3 10
+5505 interact iwdissi_keeper4 10
+5505 interact iwdissi_keeper5 10
+5505 interact iwdissi_keeper6 10
+5505 interact iwdissi_keeper7 10
+5525 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+5525 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+5525 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+5525 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+5525 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+5525 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+5525 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+5525 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+5530 interact iwdissi_keeper0 10
+5530 interact iwdissi_keeper1 10
+5530 interact iwdissi_keeper2 10
+5530 interact iwdissi_keeper3 10
+5530 interact iwdissi_keeper4 10
+5530 interact iwdissi_keeper5 10
+5530 interact iwdissi_keeper6 10
+5530 interact iwdissi_keeper7 10
+5555 interact iwdissi_keeper0 10
+5555 interact iwdissi_keeper1 10
+5555 interact iwdissi_keeper2 10
+5555 interact iwdissi_keeper3 10
+5555 interact iwdissi_keeper4 10
+5555 interact iwdissi_keeper5 10
+5555 interact iwdissi_keeper6 10
+5555 interact iwdissi_keeper7 10
+5580 interact iwdissi_keeper0 10
+5580 interact iwdissi_keeper1 10
+5580 interact iwdissi_keeper2 10
+5580 interact iwdissi_keeper3 10
+5580 interact iwdissi_keeper4 10
+5580 interact iwdissi_keeper5 10
+5580 interact iwdissi_keeper6 10
+5580 interact iwdissi_keeper7 10
+5605 interact iwdissi_keeper0 10
+5605 interact iwdissi_keeper1 10
+5605 interact iwdissi_keeper2 10
+5605 interact iwdissi_keeper3 10
+5605 interact iwdissi_keeper4 10
+5605 interact iwdissi_keeper5 10
+5605 interact iwdissi_keeper6 10
+5605 interact iwdissi_keeper7 10
+5625 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+5625 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+5625 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+5625 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+5625 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+5625 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+5625 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+5625 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+5630 interact iwdissi_keeper0 10
+5630 interact iwdissi_keeper1 10
+5630 interact iwdissi_keeper2 10
+5630 interact iwdissi_keeper3 10
+5630 interact iwdissi_keeper4 10
+5630 interact iwdissi_keeper5 10
+5630 interact iwdissi_keeper6 10
+5630 interact iwdissi_keeper7 10
+5655 interact iwdissi_keeper0 10
+5655 interact iwdissi_keeper1 10
+5655 interact iwdissi_keeper2 10
+5655 interact iwdissi_keeper3 10
+5655 interact iwdissi_keeper4 10
+5655 interact iwdissi_keeper5 10
+5655 interact iwdissi_keeper6 10
+5655 interact iwdissi_keeper7 10
+5680 interact iwdissi_keeper0 10
+5680 interact iwdissi_keeper1 10
+5680 interact iwdissi_keeper2 10
+5680 interact iwdissi_keeper3 10
+5680 interact iwdissi_keeper4 10
+5680 interact iwdissi_keeper5 10
+5680 interact iwdissi_keeper6 10
+5680 interact iwdissi_keeper7 10
+5705 interact iwdissi_keeper0 10
+5705 interact iwdissi_keeper1 10
+5705 interact iwdissi_keeper2 10
+5705 interact iwdissi_keeper3 10
+5705 interact iwdissi_keeper4 10
+5705 interact iwdissi_keeper5 10
+5705 interact iwdissi_keeper6 10
+5705 interact iwdissi_keeper7 10
+5725 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+5725 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+5725 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+5725 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+5725 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+5725 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+5725 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+5725 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+5730 interact iwdissi_keeper0 10
+5730 interact iwdissi_keeper1 10
+5730 interact iwdissi_keeper2 10
+5730 interact iwdissi_keeper3 10
+5730 interact iwdissi_keeper4 10
+5730 interact iwdissi_keeper5 10
+5730 interact iwdissi_keeper6 10
+5730 interact iwdissi_keeper7 10
+5755 interact iwdissi_keeper0 10
+5755 interact iwdissi_keeper1 10
+5755 interact iwdissi_keeper2 10
+5755 interact iwdissi_keeper3 10
+5755 interact iwdissi_keeper4 10
+5755 interact iwdissi_keeper5 10
+5755 interact iwdissi_keeper6 10
+5755 interact iwdissi_keeper7 10
+5780 interact iwdissi_keeper0 10
+5780 interact iwdissi_keeper1 10
+5780 interact iwdissi_keeper2 10
+5780 interact iwdissi_keeper3 10
+5780 interact iwdissi_keeper4 10
+5780 interact iwdissi_keeper5 10
+5780 interact iwdissi_keeper6 10
+5780 interact iwdissi_keeper7 10
+5805 interact iwdissi_keeper0 10
+5805 interact iwdissi_keeper1 10
+5805 interact iwdissi_keeper2 10
+5805 interact iwdissi_keeper3 10
+5805 interact iwdissi_keeper4 10
+5805 interact iwdissi_keeper5 10
+5805 interact iwdissi_keeper6 10
+5805 interact iwdissi_keeper7 10
+5825 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+5825 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+5825 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+5825 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+5825 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+5825 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+5825 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+5825 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+5830 interact iwdissi_keeper0 10
+5830 interact iwdissi_keeper1 10
+5830 interact iwdissi_keeper2 10
+5830 interact iwdissi_keeper3 10
+5830 interact iwdissi_keeper4 10
+5830 interact iwdissi_keeper5 10
+5830 interact iwdissi_keeper6 10
+5830 interact iwdissi_keeper7 10
+5855 interact iwdissi_keeper0 10
+5855 interact iwdissi_keeper1 10
+5855 interact iwdissi_keeper2 10
+5855 interact iwdissi_keeper3 10
+5855 interact iwdissi_keeper4 10
+5855 interact iwdissi_keeper5 10
+5855 interact iwdissi_keeper6 10
+5855 interact iwdissi_keeper7 10
+5880 interact iwdissi_keeper0 10
+5880 interact iwdissi_keeper1 10
+5880 interact iwdissi_keeper2 10
+5880 interact iwdissi_keeper3 10
+5880 interact iwdissi_keeper4 10
+5880 interact iwdissi_keeper5 10
+5880 interact iwdissi_keeper6 10
+5880 interact iwdissi_keeper7 10
+5905 interact iwdissi_keeper0 10
+5905 interact iwdissi_keeper1 10
+5905 interact iwdissi_keeper2 10
+5905 interact iwdissi_keeper3 10
+5905 interact iwdissi_keeper4 10
+5905 interact iwdissi_keeper5 10
+5905 interact iwdissi_keeper6 10
+5905 interact iwdissi_keeper7 10
+5925 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+5925 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+5925 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+5925 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+5925 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+5925 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+5925 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+5925 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+5930 interact iwdissi_keeper0 10
+5930 interact iwdissi_keeper1 10
+5930 interact iwdissi_keeper2 10
+5930 interact iwdissi_keeper3 10
+5930 interact iwdissi_keeper4 10
+5930 interact iwdissi_keeper5 10
+5930 interact iwdissi_keeper6 10
+5930 interact iwdissi_keeper7 10
+5955 interact iwdissi_keeper0 10
+5955 interact iwdissi_keeper1 10
+5955 interact iwdissi_keeper2 10
+5955 interact iwdissi_keeper3 10
+5955 interact iwdissi_keeper4 10
+5955 interact iwdissi_keeper5 10
+5955 interact iwdissi_keeper6 10
+5955 interact iwdissi_keeper7 10
+6000 stop
+6025 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+6025 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+6025 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+6025 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+6025 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+6025 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+6025 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+6025 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+6125 cmd execute as @e[tag=atlas0] run data merge entity @s {InLove:600,Age:0}
+6125 cmd execute as @e[tag=atlas1] run data merge entity @s {InLove:600,Age:0}
+6125 cmd execute as @e[tag=atlas2] run data merge entity @s {InLove:600,Age:0}
+6125 cmd execute as @e[tag=atlas3] run data merge entity @s {InLove:600,Age:0}
+6125 cmd execute as @e[tag=atlas4] run data merge entity @s {InLove:600,Age:0}
+6125 cmd execute as @e[tag=atlas5] run data merge entity @s {InLove:600,Age:0}
+6125 cmd execute as @e[tag=atlas6] run data merge entity @s {InLove:600,Age:0}
+6125 cmd execute as @e[tag=atlas7] run data merge entity @s {InLove:600,Age:0}
+6270 cmd kill @e[tag=atlas0]
+6270 cmd kill @e[tag=atlas1]
+6270 cmd kill @e[tag=atlas2]
+6270 cmd kill @e[tag=atlas3]
+6270 cmd kill @e[tag=atlas4]
+6270 cmd kill @e[tag=atlas5]
+6270 cmd kill @e[tag=atlas6]
+6270 cmd kill @e[tag=atlas7]
+6271 cmd kill @e[type=minecraft:item,x=0,y=100,z=0,distance=..14]
+6271 cmd kill @e[type=minecraft:item,x=96,y=100,z=0,distance=..14]
+6271 cmd kill @e[type=minecraft:item,x=192,y=100,z=0,distance=..14]
+6271 cmd kill @e[type=minecraft:item,x=288,y=100,z=0,distance=..14]
+6271 cmd kill @e[type=minecraft:item,x=384,y=100,z=0,distance=..14]
+6271 cmd kill @e[type=minecraft:item,x=480,y=100,z=0,distance=..14]
+6271 cmd kill @e[type=minecraft:item,x=576,y=100,z=0,distance=..14]
+6271 cmd kill @e[type=minecraft:item,x=672,y=100,z=0,distance=..14]

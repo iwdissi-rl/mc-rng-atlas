@@ -1,0 +1,16 @@
+java/security/SecureRandom
+java/util/Random
+java/util/SplittableRandom
+java/util/concurrent/ThreadLocalRandom
+java/util/random/RandomGenerator
+net/minecraft/util/RandomSource
+net/minecraft/world/RandomSequences$DirtyMarkingRandomSource
+net/minecraft/world/level/levelgen/BitRandomSource
+net/minecraft/world/level/levelgen/LegacyRandomSource
+net/minecraft/world/level/levelgen/LegacyRandomSource$LegacyPositionalRandomFactory
+net/minecraft/world/level/levelgen/PositionalRandomFactory
+net/minecraft/world/level/levelgen/SingleThreadedRandomSource
+net/minecraft/world/level/levelgen/ThreadSafeLegacyRandomSource
+net/minecraft/world/level/levelgen/WorldgenRandom
+net/minecraft/world/level/levelgen/XoroshiroRandomSource
+net/minecraft/world/level/levelgen/XoroshiroRandomSource$XoroshiroPositionalRandomFactory

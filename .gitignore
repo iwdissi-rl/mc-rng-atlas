@@ -8,3 +8,6 @@ agent/build/
 runs/
 data/events/
 data/duckdb-tmp/
+.venv/
+data/atlas-snapshot.duckdb
+data/events-by-version/

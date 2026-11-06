@@ -12,21 +12,20 @@ Driver script (.drv): timed fake-player actions run on the server thread by atla
 
     run_scenario.py --scenario scenarios/smoke.txt --seed 42 --out runs/smoke-42
 """
-import argparse, os, shutil, socket, subprocess, sys, threading, time
+import argparse, os, re, shutil, socket, subprocess, sys, threading, time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 JAVA = os.environ.get("ATLAS_JAVA", "/usr/lib/jvm/java-25-openjdk-amd64/bin/java")
-# RNG type list from the static scan; the agent tags every call on these types. Regenerated if missing.
-RNG_TYPES = ROOT / "agent/rng-types-26.3.txt"
-
-
-def ensure_rng_types():
-    if not RNG_TYPES.exists():
+def rng_types_file(version):
+    """RNG type list from the static scan; the agent tags every call on these types. Regenerated if missing."""
+    f = ROOT / f"agent/rng-types-{version}.txt"
+    if not f.exists():
         q = subprocess.run([str(ROOT / "crates/atlas/target/release/atlas"), "query",
-                            "SELECT class FROM rng_types WHERE version='26.3' ORDER BY class"],
+                            f"SELECT class FROM rng_types WHERE version='{version}' ORDER BY class"],
                            cwd=ROOT, capture_output=True, text=True, check=True)
-        RNG_TYPES.write_text("\n".join(q.stdout.splitlines()[1:]) + "\n")
+        f.write_text("\n".join(q.stdout.splitlines()[1:]) + "\n")
+    return f
 
 
 def free_port():
@@ -50,14 +49,17 @@ def run_once():
     ap.add_argument("--scenario", required=True)
     ap.add_argument("--seed", default="42")
     ap.add_argument("--out", required=True, help="run directory (server files + atlas logs)")
-    ap.add_argument("--jar", default=str(ROOT / "work/versions/26.3-server.jar"))
+    ap.add_argument("--version", default="26.3")
+    ap.add_argument("--jar", default="", help="server jar (default work/versions/<version>-server.jar)")
+    ap.add_argument("--driver", default="", help="driver script to run alongside a console (.txt) scenario")
     ap.add_argument("--port", type=int, default=0, help="0 = ask the OS for a free port")
     ap.add_argument("--xmx", default="4G")
     ap.add_argument("--cpus", type=int, default=0, help="limit the JVM's visible cores (sizes worker pools); 0 = all")
     ap.add_argument("--timeout", type=int, default=1800)
     a = ap.parse_args()
 
-    ensure_rng_types()
+    rng_types = rng_types_file(a.version)
+    a.jar = a.jar or str(ROOT / f"work/versions/{a.version}-server.jar")
     out = Path(a.out).resolve()
     if out.exists():
         shutil.rmtree(out)
@@ -68,15 +70,16 @@ def run_once():
     (srv / "server.properties").write_text(
         f"level-seed={a.seed}\nserver-port={port}\nonline-mode=false\nenable-query=false\n"
         "enable-rcon=false\nspawn-protection=0\nsync-chunk-writes=false\nmax-tick-time=-1\n"
-        "view-distance=4\nsimulation-distance=4\n"
+        "view-distance=4\nsimulation-distance=4\nwhite-list=false\nenforce-whitelist=false\n"
     )
     cmd = [
         JAVA, f"-Xmx{a.xmx}", "-XX:+UseParallelGC",
         *([f"-XX:ActiveProcessorCount={a.cpus}"] if a.cpus else []),
         f"-javaagent:{ROOT}/agent/build/atlas-agent.jar={ROOT}/agent/build/atlas-hook.jar",
         f"-Datlas.out={out / 'atlas'}",
-        f"-Datlas.rngTypes={RNG_TYPES}", *os.environ.get("ATLAS_JVM_EXTRA", "").split(),
+        f"-Datlas.rngTypes={rng_types}", *os.environ.get("ATLAS_JVM_EXTRA", "").split(),
         *([f"-Datlas.driver={Path(a.scenario).resolve()}"] if a.scenario.endswith(".drv") else []),
+        *([f"-Datlas.driver={Path(a.driver).resolve()}"] if a.driver else []),
         "-jar", a.jar, "nogui",
     ]
     log = open(out / "server.log", "w")
@@ -122,6 +125,10 @@ def run_once():
             time.sleep(float(line.split()[1]))
         elif line.startswith("#await"):
             await_text(line.split(None, 1)[1])
+        elif line.startswith("#exec"):
+            subprocess.run(line.split(None, 1)[1], shell=True, env=dict(os.environ, DISPLAY=SHOT_DISPLAY))
+        elif line.startswith("#shot"):
+            take_shot(out, line.split(None, 1)[1])
         elif line.startswith("#"):
             continue
         else:
@@ -136,6 +143,32 @@ def run_once():
     meta = (out / "atlas" / "meta.txt")
     print(f"{out.name}: exit={p.returncode} in {time.time()-t0:.1f}s; " + (meta.read_text().replace("\n", " ") if meta.exists() else "no atlas meta"))
     return p.returncode
+
+
+SHOT_DISPLAY = os.environ.get("ATLAS_DISPLAY", ":147")  # dedicated Xvfb for the atlas client
+CLIENT_SHOTS = Path(os.environ.get("ATLAS_CLIENT_GAMEDIR", str(ROOT / "work/client/game"))) / "screenshots"
+
+
+def take_shot(out, name):
+    """Hide the HUD, press F2 in the headless client window, move the game's screenshot to out/shots/NAME.png."""
+    env = dict(os.environ, DISPLAY=SHOT_DISPLAY)
+    tree = subprocess.run(["xwininfo", "-root", "-tree"], env=env, capture_output=True, text=True).stdout
+    win = re.findall(r'(0x[0-9a-f]+) "Minecraft [0-9][^"]*"', tree)
+    if not win:
+        print(f"#shot {name}: no client window on {SHOT_DISPLAY}", file=sys.stderr)
+        return
+    before = set(CLIENT_SHOTS.glob("*.png")) if CLIENT_SHOTS.exists() else set()
+    subprocess.run(["xdotool", "key", "--window", win[0], "F2"], env=env)
+    for _ in range(40):
+        time.sleep(0.25)
+        new = (set(CLIENT_SHOTS.glob("*.png")) if CLIENT_SHOTS.exists() else set()) - before
+        if new:
+            time.sleep(0.5)
+            dest = out / "shots" / f"{name}.png"
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            shutil.move(str(new.pop()), dest)
+            return
+    print(f"#shot {name}: client did not save a screenshot", file=sys.stderr)
 
 
 class BindFailed(Exception):

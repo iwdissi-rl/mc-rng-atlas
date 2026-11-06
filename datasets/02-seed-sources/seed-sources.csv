@@ -1,0 +1,647 @@
+version,class,method,bci,kind,target,categories,score,hints
+1.12.2,net/minecraft/world/gen/structure/template/PlacementSettings,getRandom,53,construct,java/util/Random.<init>,"wall_clock,world_seed",4,call System.currentTimeMillis | get PlacementSettings.setSeed | call Long.longValue
+1.12.2,net/minecraft/client/renderer/entity/RenderEntityItem,doRender,43,reseed,java/util/Random.setSeed,entity_identity,4,[call ItemStack.getItem call Item.getIdFromItem call ItemStack.getMetadata]
+1.12.2,net/minecraft/world/gen/ChunkGeneratorHell,<init>,210,construct,java/util/Random.<init>,unknown,3,arg3
+1.12.2,net/minecraft/entity/passive/EntitySquid,<init>,24,reseed,java/util/Random.setSeed,unknown,3,call EntitySquid.getEntityId
+1.12.2,net/minecraft/inventory/ContainerEnchantment,onCraftMatrixChanged,399,reseed,java/util/Random.setSeed,"position,world_seed",3,get ContainerEnchantment.xpSeed
+1.12.2,net/minecraft/inventory/ContainerEnchantment,getEnchantmentList,11,reseed,java/util/Random.setSeed,"position,world_seed",3,get ContainerEnchantment.xpSeed | arg2
+1.12.2,net/minecraft/client/renderer/RenderGlobal,renderStars,7,construct,java/util/Random.<init>,constant,3,const 10842L
+1.12.2,net/minecraft/world/biome/Biome,<clinit>,99,construct,java/util/Random.<init>,constant,3,const 1234L
+1.12.2,net/minecraft/world/biome/Biome,<clinit>,120,construct,java/util/Random.<init>,constant,3,const 2345L
+1.12.2,net/minecraft/client/renderer/EntityRenderer,renderRainSnow,472,reseed,java/util/Random.setSeed,constant,3,[[get Entity.posZ call MathHelper.floor] local17] | [[get Entity.posZ call MathHelper.floor] local17] | mul | const 418711 | mul | [[get Entity.posZ call MathHelper.floor] local17] | mul | xor
+1.12.2,net/minecraft/client/renderer/EntityRenderer,addRainParticles,49,reseed,java/util/Random.setSeed,constant,3,get EntityRenderer.rendererUpdateCount | const 312987231L | mul
+1.12.2,net/minecraft/client/gui/GuiIngame,renderPlayerStats,203,reseed,java/util/Random.setSeed,constant,3,get GuiIngame.updateCounter | const 312871 | mul
+1.12.2,net/minecraft/world/biome/BiomeEndDecorator$SpikeCacheLoader,load,31,construct,java/util/Random.<init>,unknown,3,call Long.longValue
+1.12.2,net/minecraft/world/gen/structure/template/PlacementSettings,getRandom,68,construct,java/util/Random.<init>,wall_clock,3,call System.currentTimeMillis
+1.12.2,net/minecraft/world/gen/MapGenCaves,addTunnel,32,construct,java/util/Random.<init>,unknown,3,arg1
+1.12.2,net/minecraft/world/gen/structure/MapGenMineshaft,getNearestStructurePos,142,reseed,java/util/Random.setSeed,"position,world_seed",3,[[call BlockPos.getX] [local7]] | [[call BlockPos.getZ] [local7]] | xor | call World.getSeed | xor
+1.12.2,net/minecraft/world/gen/MapGenCavesHell,addTunnel,32,construct,java/util/Random.<init>,unknown,3,arg1
+1.12.2,net/minecraft/world/biome/BiomeMesa,generateBands,24,construct,java/util/Random.<init>,unknown,3,arg1
+1.12.2,net/minecraft/world/gen/ChunkGeneratorEnd,generateChunk,17,reseed,java/util/Random.setSeed,constant,3,arg1 | const 341873128712L | mul | arg2 | const 132897987541L | mul
+1.12.2,net/minecraft/world/gen/ChunkGeneratorEnd,<init>,49,construct,java/util/Random.<init>,unknown,3,arg3
+1.12.2,net/minecraft/world/gen/MapGenBase,setupChunkSeed,2,reseed,java/util/Random.setSeed,unknown,3,arg0
+1.12.2,net/minecraft/world/gen/MapGenBase,setupChunkSeed,40,reseed,java/util/Random.setSeed,unknown,3,[arg3 local5 mul] | [local4 local7 mul] | xor | arg0 | xor
+1.12.2,net/minecraft/client/renderer/entity/RenderLightningBolt,doRender,137,construct,java/util/Random.<init>,unknown,3,get EntityLightningBolt.boltVertex
+1.12.2,net/minecraft/world/gen/ChunkGeneratorFlat,<init>,36,construct,java/util/Random.<init>,unknown,3,arg2
+1.12.2,net/minecraft/client/renderer/entity/RenderLightningBolt,doRender,56,construct,java/util/Random.<init>,unknown,3,get EntityLightningBolt.boltVertex
+1.12.2,net/minecraft/world/gen/ChunkGeneratorOverworld,generateChunk,17,reseed,java/util/Random.setSeed,constant,3,arg1 | const 341873128712L | mul | arg2 | const 132897987541L | mul
+1.12.2,net/minecraft/world/gen/ChunkGeneratorOverworld,<init>,140,construct,java/util/Random.<init>,unknown,3,arg2
+1.12.2,net/minecraft/world/gen/ChunkGeneratorHell,generateChunk,17,reseed,java/util/Random.setSeed,constant,3,arg1 | const 341873128712L | mul | arg2 | const 132897987541L | mul
+1.12.2,net/minecraft/world/gen/feature/WorldGenBigTree,generate,19,construct,java/util/Random.<init>,unknown,3,""
+1.12.2,net/minecraft/world/gen/structure/MapGenEndCity,getYPosForStructure,11,construct,java/util/Random.<init>,constant,3,arg0 | arg1 | const 10387313 | mul
+1.12.2,net/minecraft/util/EnchantmentNameParts,reseedRandomGenerator,5,reseed,java/util/Random.setSeed,unknown,3,arg1
+1.12.2,net/minecraft/client/model/ModelGhast,<init>,71,construct,java/util/Random.<init>,constant,3,const 1660L
+1.12.2,net/minecraft/client/renderer/entity/layers/LayerArrow,doRenderLayer,46,construct,java/util/Random.<init>,unknown,3,call EntityLivingBase.getEntityId
+1.12.2,net/minecraft/world/gen/MapGenRavine,addTunnel,5,construct,java/util/Random.<init>,unknown,3,arg1
+1.12.2,net/minecraft/client/renderer/tileentity/TileEntityEndPortalRenderer,render,9,reseed,java/util/Random.setSeed,constant,3,const 31100L
+1.12.2,net/minecraft/client/renderer/tileentity/TileEntityEndPortalRenderer,<clinit>,33,construct,java/util/Random.<init>,constant,3,const 31100L
+1.12.2,net/minecraft/client/gui/GuiWinGame,initGui,126,construct,java/util/Random.<init>,constant,3,const 8124371L
+1.12.2,net/minecraft/client/gui/GuiWinGame,drawScreen,382,reseed,java/util/Random.setSeed,constant,3,get GuiWinGame.fontRenderer | local11 | const 4238972211L | mul | get GuiWinGame.time | const 4f
+1.12.2,net/minecraft/client/renderer/entity/layers/LayerEnderDragonDeath,doRenderLayer,64,construct,java/util/Random.<init>,constant,3,const 432L
+1.12.2,net/minecraft/world/gen/structure/MapGenEndCity$Start,create,13,construct,java/util/Random.<init>,constant,3,arg4 | arg5 | const 10387313 | mul
+1.12.2,net/minecraft/world/gen/structure/template/PlacementSettings,getRandom,38,construct,java/util/Random.<init>,wall_clock,3,call System.currentTimeMillis
+1.12.2,net/minecraft/world/chunk/Chunk,getRandomWithSeed,63,construct,java/util/Random.<init>,position,2,mul | const 4392871L | mul | get Chunk.z | const 389711 | mul | arg1 | xor
+1.12.2,net/minecraft/tileentity/TileEntityEndGateway,findExitPortal,243,construct,java/util/Random.<init>,position,2,call WorldGenEndIsland.<init> | get TileEntityEndGateway.world | get TileEntityEndGateway.exitPortal | call BlockPos.toLong
+1.12.2,net/minecraft/world/gen/structure/template/PlacementSettings,getRandom,117,construct,java/util/Random.<init>,position,2,mul | const 4392871L | mul | [call BlockPos.getZ] | const 389711 | mul | const 987234911L | xor
+1.12.2,net/minecraft/world/chunk/EmptyChunk,getRandomWithSeed,60,construct,java/util/Random.<init>,position,2,mul | const 4392871L | mul | get EmptyChunk.z | const 389711 | mul | arg1 | xor
+1.12.2,net/minecraft/entity/item/EntityMinecartContainer,addLoot,55,construct,java/util/Random.<init>,world_seed,1,get EntityMinecartContainer.lootTableSeed
+1.12.2,net/minecraft/world/gen/structure/MapGenStronghold,generatePositions,96,reseed,java/util/Random.setSeed,world_seed,1,get MapGenStronghold.world | call World.getSeed
+1.12.2,net/minecraft/world/gen/ChunkGeneratorOverworld,populate,58,reseed,java/util/Random.setSeed,world_seed,1,get ChunkGeneratorOverworld.world | call World.getSeed
+1.12.2,net/minecraft/world/gen/ChunkGeneratorOverworld,populate,122,reseed,java/util/Random.setSeed,world_seed,1,[const 2L const 2L mul] | mul | arg2 | [const 2L const 2L mul] | mul | get ChunkGeneratorOverworld.world | call World.getSeed | xor
+1.12.2,net/minecraft/world/gen/ChunkGeneratorFlat,populate,128,reseed,java/util/Random.setSeed,world_seed,1,[const 2L const 2L mul] | mul | arg2 | [const 2L const 2L mul] | mul | get ChunkGeneratorFlat.world | call World.getSeed | xor
+1.12.2,net/minecraft/world/gen/ChunkGeneratorFlat,populate,64,reseed,java/util/Random.setSeed,world_seed,1,get ChunkGeneratorFlat.world | call World.getSeed
+1.12.2,net/minecraft/world/end/DragonFightManager,<init>,264,construct,java/util/Random.<init>,world_seed,1,get DragonFightManager.gateways | call WorldServer.getSeed
+1.12.2,net/minecraft/world/gen/MapGenBase,generate,100,reseed,java/util/Random.setSeed,world_seed,1,[[arg2 [get MapGenBase.range]] local6 mul] | [[arg3 [get MapGenBase.range]] local8 mul] | xor | call World.getSeed | xor
+1.12.2,net/minecraft/world/gen/MapGenBase,generate,19,reseed,java/util/Random.setSeed,world_seed,1,call World.getSeed
+1.12.2,net/minecraft/world/biome/BiomeMesa,genTerrainBlocks,61,construct,java/util/Random.<init>,world_seed,1,get BiomeMesa.worldSeed
+1.12.2,net/minecraft/world/Teleporter,<init>,32,construct,java/util/Random.<init>,world_seed,1,call WorldServer.getSeed
+1.12.2,net/minecraft/world/World,setRandomSeed,32,reseed,java/util/Random.setSeed,world_seed,1,[const 341873128712L mul arg2 const 132897987541L mul call World.getWorldInfo call WorldInfo.getSeed arg3]
+1.12.2,net/minecraft/world/gen/structure/MapGenNetherBridge,canSpawnStructureAtCoords,28,reseed,java/util/Random.setSeed,world_seed,1,[arg1] | [arg2] | xor | get MapGenNetherBridge.world | call World.getSeed | xor
+1.12.2,net/minecraft/tileentity/TileEntityLockableLoot,fillWithLoot,55,construct,java/util/Random.<init>,world_seed,1,get TileEntityLockableLoot.lootTableSeed
+1.12.2,net/minecraft/world/gen/structure/StructureNetherBridgePieces$End,addComponentParts,9,construct,java/util/Random.<init>,world_seed,1,get StructureNetherBridgePieces$End.fillSeed
+1.12.2,net/minecraft/world/biome/BiomeEndDecorator,getSpikesForWorld,8,construct,java/util/Random.<init>,world_seed,1,call World.getSeed
+1.12.2,net/minecraft/world/gen/structure/StructureOceanMonument$StartMonument,create,5,reseed,java/util/Random.setSeed,world_seed,1,call World.getSeed
+1.12.2,net/minecraft/world/gen/structure/StructureOceanMonument$StartMonument,create,46,reseed,java/util/Random.setSeed,world_seed,1,[arg3 local5 mul] | [arg4 local7 mul] | xor | call World.getSeed | xor
+1.12.2,net/minecraft/entity/EntityLiving,dropLoot,123,construct,java/util/Random.<init>,world_seed,1,get EntityLiving.deathLootTableSeed
+1.12.2,net/minecraft/world/WorldServer,createSpawnPosition,84,construct,java/util/Random.<init>,world_seed,1,call WorldServer.getSeed
+1.16.1,net/minecraft/world/entity/projectile/FishingHook,tick,19,reseed,java/util/Random.setSeed,"game_time,entity_identity",6,call FishingHook.getUUID | call UUID.getLeastSignificantBits | get FishingHook.level | call Level.getGameTime | xor
+1.16.1,net/minecraft/world/entity/monster/piglin/PiglinAi,wantsToDance,23,construct,java/util/Random.<init>,game_time,5,get LivingEntity.level | call Level.getGameTime
+1.16.1,net/minecraft/world/inventory/EnchantmentMenu,lambda$slotsChanged$0,266,reseed,java/util/Random.setSeed,"player_state,world_seed",5,get EnchantmentMenu.enchantmentSeed | call DataSlot.get
+1.16.1,net/minecraft/world/inventory/EnchantmentMenu,getEnchantmentList,14,reseed,java/util/Random.setSeed,"player_state,world_seed",5,get EnchantmentMenu.enchantmentSeed | call DataSlot.get | arg2
+1.16.1,net/minecraft/network/protocol/game/DebugEntityNameGenerator,getRandom,11,construct,java/util/Random.<init>,"entity_identity,string_hash",5,call UUID.hashCode
+1.16.1,net/minecraft/client/renderer/entity/layers/StuckInBodyLayer,render,18,construct,java/util/Random.<init>,entity_identity,4,call LivingEntity.getId
+1.16.1,net/minecraft/world/entity/animal/Squid,<init>,15,reseed,java/util/Random.setSeed,entity_identity,4,call WaterAnimal.<init> | call Squid.getId
+1.16.1,net/minecraft/client/renderer/entity/ItemEntityRenderer,render,48,reseed,java/util/Random.setSeed,entity_identity,4,[call ItemStack.getItem call Item.getId call ItemStack.getDamageValue]
+1.16.1,net/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings,getRandom,35,construct,java/util/Random.<init>,"wall_clock,world_seed",4,call Util.getMillis | call Mth.getSeed
+1.16.1,net/minecraft/world/level/levelgen/NoiseBasedChunkGenerator,<init>,283,construct,net/minecraft/world/level/levelgen/WorldgenRandom.<init>,unknown,3,arg3
+1.16.1,net/minecraft/world/level/levelgen/carver/WorldCarver,carveSphere,13,construct,java/util/Random.<init>,unknown,3,arg3 | arg6 | arg7
+1.16.1,net/minecraft/world/level/levelgen/surfacebuilders/NetherSurfaceBuilder,initNoise,26,construct,net/minecraft/world/level/levelgen/WorldgenRandom.<init>,unknown,3,arg1
+1.16.1,net/minecraft/world/level/levelgen/surfacebuilders/NetherForestSurfaceBuilder,initNoise,26,construct,net/minecraft/world/level/levelgen/WorldgenRandom.<init>,unknown,3,arg1
+1.16.1,net/minecraft/client/model/GhastModel,<init>,64,construct,java/util/Random.<init>,constant,3,const 1660L
+1.16.1,net/minecraft/client/gui/screens/inventory/EnchantmentNames,initSeed,5,reseed,java/util/Random.setSeed,unknown,3,arg1
+1.16.1,net/minecraft/client/gui/screens/WinScreen,init,95,construct,java/util/Random.<init>,constant,3,const 8124371L
+1.16.1,net/minecraft/client/gui/screens/WinScreen,render,354,reseed,java/util/Random.setSeed,constant,3,get WinScreen.font | local10 | const 4238972211L | mul | get WinScreen.time | const 4f
+1.16.1,net/minecraft/world/level/levelgen/surfacebuilders/FrozenOceanSurfaceBuilder,initNoise,28,construct,net/minecraft/world/level/levelgen/WorldgenRandom.<init>,unknown,3,arg1
+1.16.1,net/minecraft/client/renderer/blockentity/TheEndPortalRenderer,render,6,reseed,java/util/Random.setSeed,constant,3,const 31100L
+1.16.1,net/minecraft/client/renderer/blockentity/TheEndPortalRenderer,<clinit>,31,construct,java/util/Random.<init>,constant,3,const 31100L
+1.16.1,net/minecraft/client/renderer/block/ModelBlockRenderer,tesselateWithAO,64,reseed,java/util/Random.setSeed,unknown,3,arg9
+1.16.1,net/minecraft/client/renderer/block/ModelBlockRenderer,tesselateWithAO,145,reseed,java/util/Random.setSeed,unknown,3,arg9
+1.16.1,net/minecraft/client/renderer/block/ModelBlockRenderer,tesselateWithoutAO,44,reseed,java/util/Random.setSeed,unknown,3,arg9
+1.16.1,net/minecraft/client/renderer/block/ModelBlockRenderer,tesselateWithoutAO,141,reseed,java/util/Random.setSeed,unknown,3,arg9
+1.16.1,net/minecraft/client/renderer/block/ModelBlockRenderer,renderModel,46,reseed,java/util/Random.setSeed,constant,3,const 42L
+1.16.1,net/minecraft/client/renderer/block/ModelBlockRenderer,renderModel,87,reseed,java/util/Random.setSeed,constant,3,const 42L
+1.16.1,net/minecraft/world/level/levelgen/surfacebuilders/NetherCappedSurfaceBuilder,initPerlinNoises,48,construct,net/minecraft/world/level/levelgen/WorldgenRandom.<init>,unknown,3,arg1
+1.16.1,net/minecraft/world/level/levelgen/surfacebuilders/BadlandsSurfaceBuilder,generateBands,24,construct,net/minecraft/world/level/levelgen/WorldgenRandom.<init>,unknown,3,arg1
+1.16.1,net/minecraft/world/level/dimension/end/EndDragonFight,<init>,270,construct,java/util/Random.<init>,unknown,3,get EndDragonFight.gateways | arg2
+1.16.1,net/minecraft/client/resources/model/MultiPartBakedModel,getQuads,177,construct,java/util/Random.<init>,unknown,3,get MultiPartBakedModel.selectors | local8 | call List.get | call Pair.getRight | local6
+1.16.1,net/minecraft/client/renderer/entity/ItemRenderer,renderModelLists,46,reseed,java/util/Random.setSeed,constant,3,const 42L
+1.16.1,net/minecraft/client/renderer/entity/ItemRenderer,renderModelLists,83,reseed,java/util/Random.setSeed,constant,3,const 42L
+1.16.1,net/minecraft/world/level/levelgen/carver/CaveWorldCarver,genTunnel,5,construct,java/util/Random.<init>,unknown,3,arg3
+1.16.1,net/minecraft/world/level/levelgen/carver/CanyonWorldCarver,genCanyon,5,construct,java/util/Random.<init>,unknown,3,arg3
+1.16.1,net/minecraft/client/renderer/entity/EnderDragonRenderer,render,332,construct,java/util/Random.<init>,constant,3,const 432L
+1.16.1,net/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings,getRandom,23,construct,java/util/Random.<init>,wall_clock,3,call Util.getMillis
+1.16.1,net/minecraft/world/level/levelgen/feature/SpikeFeature$SpikeCacheLoader,load,32,construct,java/util/Random.<init>,unknown,3,call Long.longValue
+1.16.1,net/minecraft/client/gui/Gui,renderPlayerHealth,189,reseed,java/util/Random.setSeed,constant,3,get Gui.tickCount | const 312871 | mul
+1.16.1,net/minecraft/client/renderer/LevelRenderer,renderSnowAndRain,366,construct,java/util/Random.<init>,constant,3,[[call Mth.floor] local16] | [[call Mth.floor] local16] | mul | const 418711 | mul | [[call Mth.floor] local16] | mul | xor
+1.16.1,net/minecraft/client/renderer/LevelRenderer,tickRain,44,construct,java/util/Random.<init>,constant,3,get LevelRenderer.ticks | const 312987231L | mul
+1.16.1,net/minecraft/client/renderer/LevelRenderer,drawStars,7,construct,java/util/Random.<init>,constant,3,const 10842L
+1.16.1,net/minecraft/world/level/levelgen/feature/PillagerOutpostFeature,isFeatureChunk,24,reseed,net/minecraft/world/level/levelgen/WorldgenRandom.setSeed,unknown,3,[arg6] | [arg7] | xor | arg3 | xor
+1.16.1,net/minecraft/world/level/storage/loot/LootContext$Builder,withOptionalRandomSeed,12,construct,java/util/Random.<init>,unknown,3,arg1
+1.16.1,net/minecraft/world/level/storage/loot/LootContext$Builder,withOptionalRandomSeed,20,construct,java/util/Random.<init>,unknown,3,arg1
+1.16.1,net/minecraft/world/level/levelgen/synth/PerlinNoise,<init>,208,construct,net/minecraft/world/level/levelgen/WorldgenRandom.<init>,constant,3,[call ImprovedNoise.noise const 9223372036854776000d]
+1.16.1,net/minecraft/world/level/levelgen/surfacebuilders/BadlandsSurfaceBuilder,initNoise,49,construct,net/minecraft/world/level/levelgen/WorldgenRandom.<init>,unknown,3,arg1
+1.16.1,net/minecraft/world/entity/monster/Slime,checkSlimeSpawnRules,141,construct,net/minecraft/world/level/levelgen/WorldgenRandom.seedSlimeChunk,"position,world_seed",3,get ChunkPos.x | get ChunkPos.z | call WorldGenLevel.getSeed | const 987234911L
+1.16.1,net/minecraft/world/level/newbiome/context/LazyAreaContext,<init>,24,construct,java/util/Random.<init>,unknown,3,arg2
+1.16.1,net/minecraft/world/level/levelgen/surfacebuilders/NetherCappedSurfaceBuilder,initNoise,97,construct,net/minecraft/world/level/levelgen/WorldgenRandom.<init>,unknown,3,arg1 | get NetherCappedSurfaceBuilder.floorNoises | call ImmutableMap.size | get NetherCappedSurfaceBuilder.ceilingNoises | call ImmutableMap.size
+1.16.1,net/minecraft/world/level/biome/FrozenOceanBiome,<clinit>,11,construct,net/minecraft/world/level/levelgen/WorldgenRandom.<init>,constant,3,const 3456L
+1.16.1,net/minecraft/world/level/biome/MultiNoiseBiomeSource,<init>,88,construct,net/minecraft/world/level/levelgen/WorldgenRandom.<init>,unknown,3,arg1
+1.16.1,net/minecraft/world/level/biome/MultiNoiseBiomeSource,<init>,111,construct,net/minecraft/world/level/levelgen/WorldgenRandom.<init>,unknown,3,arg1
+1.16.1,net/minecraft/world/level/biome/MultiNoiseBiomeSource,<init>,136,construct,net/minecraft/world/level/levelgen/WorldgenRandom.<init>,constant,3,arg1 | const 2L
+1.16.1,net/minecraft/world/level/biome/MultiNoiseBiomeSource,<init>,161,construct,net/minecraft/world/level/levelgen/WorldgenRandom.<init>,constant,3,arg1 | const 3L
+1.16.1,net/minecraft/world/level/biome/DeepFrozenOceanBiome,<clinit>,11,construct,net/minecraft/world/level/levelgen/WorldgenRandom.<init>,constant,3,const 3456L
+1.16.1,net/minecraft/world/level/biome/TheEndBiomeSource,<init>,17,construct,net/minecraft/world/level/levelgen/WorldgenRandom.<init>,unknown,3,arg1
+1.16.1,net/minecraft/world/level/block/entity/StructureBlockEntity,createRandom,22,construct,java/util/Random.<init>,wall_clock,3,call Util.getMillis | arg0
+1.16.1,net/minecraft/world/level/biome/Biome,<clinit>,44,construct,net/minecraft/world/level/levelgen/WorldgenRandom.<init>,constant,3,const 1234L
+1.16.1,net/minecraft/world/level/biome/Biome,<clinit>,71,construct,net/minecraft/world/level/levelgen/WorldgenRandom.<init>,constant,3,const 2345L
+1.16.1,net/minecraft/world/level/levelgen/WorldgenRandom,<init>,2,construct,java/util/Random.<init>,unknown,3,arg1
+1.16.1,net/minecraft/world/level/levelgen/WorldgenRandom,setBaseChunkSeed,16,reseed,net/minecraft/world/level/levelgen/WorldgenRandom.setSeed,constant,3,[arg1 const 341873128712L mul arg2 const 132897987541L mul]
+1.16.1,net/minecraft/world/level/levelgen/WorldgenRandom,setDecorationSeed,2,reseed,net/minecraft/world/level/levelgen/WorldgenRandom.setSeed,unknown,3,arg1
+1.16.1,net/minecraft/world/level/levelgen/WorldgenRandom,setDecorationSeed,40,reseed,net/minecraft/world/level/levelgen/WorldgenRandom.setSeed,unknown,3,[arg3 local5 mul local4 local7 mul arg1 xor]
+1.16.1,net/minecraft/world/level/levelgen/WorldgenRandom,setFeatureSeed,17,reseed,net/minecraft/world/level/levelgen/WorldgenRandom.setSeed,unknown,3,[arg1 arg3 local4 mul]
+1.16.1,net/minecraft/world/level/levelgen/NoiseBasedChunkGenerator,<init>,121,construct,net/minecraft/world/level/levelgen/WorldgenRandom.<init>,unknown,3,arg3
+1.16.1,net/minecraft/world/level/levelgen/WorldgenRandom,setLargeFeatureSeed,36,reseed,net/minecraft/world/level/levelgen/WorldgenRandom.setSeed,unknown,3,[local5 mul local4 local7 mul xor arg1 xor]
+1.16.1,net/minecraft/world/level/levelgen/WorldgenRandom,setLargeFeatureWithSalt,25,reseed,net/minecraft/world/level/levelgen/WorldgenRandom.setSeed,constant,3,[arg3 const 341873128712L mul arg4 const 132897987541L mul arg1 local5]
+1.16.1,net/minecraft/world/level/levelgen/WorldgenRandom,seedSlimeChunk,37,construct,java/util/Random.<init>,constant,3,mul | const 4392871L | mul | arg1 | const 389711 | mul | local4 | xor
+1.16.1,net/minecraft/world/level/block/entity/StructureBlockEntity,createRandom,13,construct,java/util/Random.<init>,wall_clock,3,call Util.getMillis
+1.16.1,net/minecraft/world/level/levelgen/feature/EndCityFeature,getYPositionForFeature,11,construct,java/util/Random.<init>,constant,3,arg0 | arg1 | const 10387313 | mul
+1.16.1,net/minecraft/world/level/levelgen/WorldgenRandom,setLargeFeatureSeed,2,reseed,net/minecraft/world/level/levelgen/WorldgenRandom.setSeed,unknown,3,arg1
+1.16.1,net/minecraft/world/level/block/entity/TheEndGatewayBlockEntity,findExitPortal,248,construct,java/util/Random.<init>,position,2,get Feature.END_ISLAND | get FeatureConfiguration.NONE | call Feature.configured | call ServerLevel.structureFeatureManager | call ServerLevel.getChunkSource | call ServerChunkCache.getGenerator | get TheEndGatewayBlockEntity.exitPortal | call BlockPos.asLong
+1.16.1,net/minecraft/world/level/levelgen/synth/PerlinSimplexNoise,<init>,218,construct,net/minecraft/world/level/levelgen/WorldgenRandom.<init>,position,2,[get SimplexNoise.xo get SimplexNoise.yo get SimplexNoise.zo call SimplexNoise.getValue const 9223372036854776000d]
+1.16.1,net/minecraft/world/level/levelgen/feature/SpikeFeature,getSpikesForLevel,10,construct,java/util/Random.<init>,world_seed,1,call WorldGenLevel.getSeed
+1.16.1,net/minecraft/world/level/chunk/ChunkGenerator,generateStrongholds,125,reseed,java/util/Random.setSeed,world_seed,1,get ChunkGenerator.strongholdSeed
+1.16.1,net/minecraft/world/level/PortalForcer,<init>,18,construct,java/util/Random.<init>,world_seed,1,call ServerLevel.getSeed
+1.16.1,net/minecraft/world/level/levelgen/structure/templatesystem/RuleProcessor,processBlock,12,construct,java/util/Random.<init>,world_seed,1,get StructureTemplate$StructureBlockInfo.pos | call Mth.getSeed
+1.16.1,net/minecraft/client/renderer/entity/LightningBoltRenderer,render,129,construct,java/util/Random.<init>,world_seed,1,get LightningBolt.seed
+1.16.1,net/minecraft/client/renderer/entity/LightningBoltRenderer,render,26,construct,java/util/Random.<init>,world_seed,1,get LightningBolt.seed
+1.16.1,net/minecraft/world/level/levelgen/structure/NetherBridgePieces$BridgeEndFiller,postProcess,9,construct,java/util/Random.<init>,world_seed,1,get NetherBridgePieces$BridgeEndFiller.selfSeed
+1.16.1,net/minecraft/server/MinecraftServer,setInitialSpawn,71,construct,java/util/Random.<init>,world_seed,1,call ServerLevel.getSeed
+1.21.11,net/minecraft/world/entity/projectile/FishingHook,tick,19,reseed,net/minecraft/util/RandomSource.setSeed,"game_time,entity_identity",6,call FishingHook.getUUID | call UUID.getLeastSignificantBits | call FishingHook.level | call Level.getGameTime | xor
+1.21.11,net/minecraft/network/protocol/game/DebugEntityNameGenerator,getRandom,7,construct,net/minecraft/util/RandomSource.create,"entity_identity,string_hash",5,call UUID.hashCode
+1.21.11,net/minecraft/world/entity/animal/goat/Goat,createHorn,8,construct,net/minecraft/util/RandomSource.create,"entity_identity,string_hash",5,call Goat.getUUID | call UUID.hashCode
+1.21.11,net/minecraft/world/inventory/EnchantmentMenu,getEnchantmentList,14,reseed,net/minecraft/util/RandomSource.setSeed,"player_state,world_seed",5,get EnchantmentMenu.enchantmentSeed | call DataSlot.get | arg3
+1.21.11,net/minecraft/world/inventory/EnchantmentMenu,lambda$slotsChanged$0,82,reseed,net/minecraft/util/RandomSource.setSeed,"player_state,world_seed",5,get EnchantmentMenu.enchantmentSeed | call DataSlot.get
+1.21.11,net/minecraft/world/entity/monster/piglin/PiglinAi,wantsToDance,19,construct,net/minecraft/util/RandomSource.create,game_time,5,call LivingEntity.level | call Level.getGameTime
+1.21.11,net/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings,getRandom,27,construct,net/minecraft/util/RandomSource.create,"wall_clock,world_seed",4,call Util.getMillis | call Mth.getSeed
+1.21.11,net/minecraft/world/level/levelgen/LegacyRandomSource$LegacyPositionalRandomFactory,fromHashOf,16,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,"string_hash,world_seed",4,[call String.hashCode] | get LegacyRandomSource$LegacyPositionalRandomFactory.seed | xor
+1.21.11,net/minecraft/world/entity/animal/squid/Squid,<init>,22,reseed,net/minecraft/util/RandomSource.setSeed,entity_identity,4,call Squid.getId
+1.21.11,net/minecraft/world/level/levelgen/SurfaceSystem,getSurfaceDepth,29,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,constant,3,const 2.75d | const 3d | arg1 | arg2
+1.21.11,net/minecraft/client/renderer/WeatherEffectRenderer,tickRainParticles,21,construct,net/minecraft/util/RandomSource.create,constant,3,arg3 | const 312987231L | mul
+1.21.11,net/minecraft/world/level/biome/Biome,<clinit>,95,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,constant,3,const 3456L
+1.21.11,net/minecraft/world/level/biome/Biome,<clinit>,138,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,constant,3,const 2345L
+1.21.11,net/minecraft/client/renderer/SkyRenderer,buildStars,3,construct,net/minecraft/util/RandomSource.create,constant,3,const 10842L
+1.21.11,net/minecraft/client/multiplayer/ClientLevel,playSound,36,construct,net/minecraft/util/RandomSource.create,unknown,3,local12
+1.21.11,net/minecraft/world/level/levelgen/PositionalRandomFactory,fromHashOf,5,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.fromHashOf,unknown,3,call Identifier.toString
+1.21.11,net/minecraft/world/level/levelgen/LegacyRandomSource,<init>,29,reseed,net/minecraft/world/level/levelgen/LegacyRandomSource.setSeed,unknown,3,arg1
+1.21.11,net/minecraft/world/level/levelgen/LegacyRandomSource,fork,8,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,""
+1.21.11,net/minecraft/world/level/levelgen/LegacyRandomSource,forkPositional,8,construct,net/minecraft/world/level/levelgen/LegacyRandomSource$LegacyPositionalRandomFactory.<init>,unknown,3,""
+1.21.11,net/minecraft/client/gui/Gui,renderPlayerHealth,184,reseed,net/minecraft/util/RandomSource.setSeed,constant,3,get Gui.tickCount | const 312871 | mul
+1.21.11,net/minecraft/util/Mth,wobble,13,construct,net/minecraft/util/RandomSource.create,constant,3,const 2d | const 3000d | call Mth.floor
+1.21.11,net/minecraft/world/level/levelgen/OreVeinifier,lambda$create$0,132,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,unknown,3,call DensityFunction$FunctionContext.blockX | [call DensityFunction$FunctionContext.blockY] | call DensityFunction$FunctionContext.blockZ
+1.21.11,net/minecraft/world/level/levelgen/WorldgenRandom,<init>,2,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,""
+1.21.11,net/minecraft/world/level/levelgen/WorldgenRandom,setSeed,13,reseed,net/minecraft/util/RandomSource.setSeed,unknown,3,arg1
+1.21.11,net/minecraft/world/level/levelgen/WorldgenRandom,setDecorationSeed,2,reseed,net/minecraft/world/level/levelgen/WorldgenRandom.setSeed,unknown,3,arg1
+1.21.11,net/minecraft/world/level/levelgen/WorldgenRandom,setDecorationSeed,40,reseed,net/minecraft/world/level/levelgen/WorldgenRandom.setSeed,unknown,3,[arg3 local5 mul local4 local7 mul arg1 xor]
+1.21.11,net/minecraft/world/level/levelgen/WorldgenRandom,setFeatureSeed,17,reseed,net/minecraft/world/level/levelgen/WorldgenRandom.setSeed,unknown,3,[arg1 arg3 local4 mul]
+1.21.11,net/minecraft/world/level/levelgen/WorldgenRandom,setLargeFeatureSeed,2,reseed,net/minecraft/world/level/levelgen/WorldgenRandom.setSeed,unknown,3,arg1
+1.21.11,net/minecraft/world/level/levelgen/WorldgenRandom,setLargeFeatureSeed,36,reseed,net/minecraft/world/level/levelgen/WorldgenRandom.setSeed,unknown,3,[local5 mul local4 local7 mul xor arg1 xor]
+1.21.11,net/minecraft/world/level/levelgen/WorldgenRandom,setLargeFeatureWithSalt,25,reseed,net/minecraft/world/level/levelgen/WorldgenRandom.setSeed,constant,3,[arg3 const 341873128712L mul arg4 const 132897987541L mul arg1 local5]
+1.21.11,net/minecraft/world/level/levelgen/WorldgenRandom,seedSlimeChunk,33,construct,net/minecraft/util/RandomSource.create,constant,3,mul | const 4392871L | mul | arg1 | const 389711 | mul | local4 | xor
+1.21.11,net/minecraft/world/level/levelgen/SingleThreadedRandomSource,<init>,18,reseed,net/minecraft/world/level/levelgen/SingleThreadedRandomSource.setSeed,unknown,3,arg1
+1.21.11,net/minecraft/world/level/levelgen/SingleThreadedRandomSource,fork,8,construct,net/minecraft/world/level/levelgen/SingleThreadedRandomSource.<init>,unknown,3,""
+1.21.11,net/minecraft/world/level/levelgen/SingleThreadedRandomSource,forkPositional,8,construct,net/minecraft/world/level/levelgen/LegacyRandomSource$LegacyPositionalRandomFactory.<init>,unknown,3,""
+1.21.11,net/minecraft/world/level/levelgen/ThreadSafeLegacyRandomSource,<init>,29,reseed,net/minecraft/world/level/levelgen/ThreadSafeLegacyRandomSource.setSeed,unknown,3,arg1
+1.21.11,net/minecraft/world/level/levelgen/ThreadSafeLegacyRandomSource,fork,8,construct,net/minecraft/world/level/levelgen/ThreadSafeLegacyRandomSource.<init>,unknown,3,""
+1.21.11,net/minecraft/world/level/levelgen/ThreadSafeLegacyRandomSource,forkPositional,8,construct,net/minecraft/world/level/levelgen/LegacyRandomSource$LegacyPositionalRandomFactory.<init>,unknown,3,""
+1.21.11,net/minecraft/world/level/levelgen/Noises,instantiate,24,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.fromHashOf,unknown,3,call Holder.unwrapKey | call Optional.orElseThrow | call ResourceKey.identifier
+1.21.11,net/minecraft/world/level/biome/Biome,<clinit>,61,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,constant,3,const 1234L
+1.21.11,net/minecraft/world/level/levelgen/RandomState,<init>,59,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.fromHashOf,string_hash,3,"const ""ore"" | call Identifier.withDefaultNamespace"
+1.21.11,net/minecraft/world/level/levelgen/RandomState,lambda$getOrCreateRandomFactory$1,5,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.fromHashOf,unknown,3,""
+1.21.11,net/minecraft/world/level/levelgen/feature/stateproviders/DualNoiseProvider,<init>,38,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,arg4
+1.21.11,net/minecraft/world/level/levelgen/carver/CanyonWorldCarver,doCarve,2,construct,net/minecraft/util/RandomSource.create,unknown,3,arg5
+1.21.11,net/minecraft/world/level/block/entity/StructureBlockEntity,createRandom,9,construct,net/minecraft/util/RandomSource.create,wall_clock,3,call Util.getMillis
+1.21.11,net/minecraft/world/level/block/entity/StructureBlockEntity,createRandom,14,construct,net/minecraft/util/RandomSource.create,wall_clock,3,call Util.getMillis | arg0
+1.21.11,net/minecraft/world/level/levelgen/structure/placement/RandomSpreadStructurePlacement,getPotentialStructureChunk,30,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,""
+1.21.11,net/minecraft/client/renderer/block/ModelBlockRenderer,renderModel,4,construct,net/minecraft/util/RandomSource.create,constant,3,const 42L
+1.21.11,net/minecraft/world/level/levelgen/feature/stateproviders/NoiseBasedStateProvider,<init>,30,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,arg1
+1.21.11,net/minecraft/world/level/levelgen/structure/placement/StructurePlacement,probabilityReducer,9,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,""
+1.21.11,net/minecraft/world/level/levelgen/structure/placement/StructurePlacement,legacyProbabilityReducerWithDouble,9,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,""
+1.21.11,net/minecraft/world/level/levelgen/structure/placement/StructurePlacement,legacyArbitrarySaltProbabilityReducer,9,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,""
+1.21.11,net/minecraft/world/level/levelgen/structure/placement/StructurePlacement,legacyPillagerOutpostReducer,20,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,""
+1.21.11,net/minecraft/world/level/levelgen/structure/placement/StructurePlacement,legacyPillagerOutpostReducer,40,reseed,net/minecraft/world/level/levelgen/WorldgenRandom.setSeed,unknown,3,[arg3] | [arg4] | xor | arg0 | xor
+1.21.11,net/minecraft/world/level/levelgen/carver/CaveWorldCarver,createTunnel,2,construct,net/minecraft/util/RandomSource.create,unknown,3,arg5
+1.21.11,net/minecraft/client/renderer/entity/layers/StuckInBodyLayer,submit,20,construct,net/minecraft/util/RandomSource.create,unknown,3,get AvatarRenderState.id
+1.21.11,net/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings,getRandom,19,construct,net/minecraft/util/RandomSource.create,wall_clock,3,call Util.getMillis
+1.21.11,net/minecraft/world/level/dimension/end/EndDragonFight,lambda$new$0,28,construct,net/minecraft/util/RandomSource.create,unknown,3,arg0
+1.21.11,net/minecraft/util/RandomSource,create,5,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,arg0
+1.21.11,net/minecraft/world/entity/monster/Slime,checkSlimeSpawnRules,171,construct,net/minecraft/world/level/levelgen/WorldgenRandom.seedSlimeChunk,"position,world_seed",3,get ChunkPos.x | get ChunkPos.z | call WorldGenLevel.getSeed | const 987234911L
+1.21.11,net/minecraft/world/item/crafting/display/SlotDisplay$SmithingTrimDemoSlotDisplay,resolve,34,construct,net/minecraft/util/RandomSource.create,unknown,3,call System.identityHashCode
+1.21.11,net/minecraft/client/renderer/entity/EnderDragonRenderer,lambda$submitRays$0,45,construct,net/minecraft/util/RandomSource.create,constant,3,const 432L
+1.21.11,net/minecraft/world/level/levelgen/SurfaceSystem,<init>,39,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.fromHashOf,string_hash,3,"const ""clay_bands"" | call Identifier.withDefaultNamespace"
+1.21.11,net/minecraft/world/level/levelgen/feature/SpikeFeature$SpikeCacheLoader,load,10,construct,net/minecraft/util/RandomSource.create,unknown,3,call IntStream.range | call Long.longValue
+1.21.11,net/minecraft/world/level/levelgen/SurfaceSystem,frozenOceanExtension,222,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,unknown,3,arg5 | arg6
+1.21.11,net/minecraft/world/level/levelgen/structure/pools/alias/PoolAliasLookup,create,14,construct,net/minecraft/util/RandomSource.create,unknown,3,get PoolAliasLookup.EMPTY | arg2
+1.21.11,net/minecraft/world/level/levelgen/structure/pools/alias/PoolAliasLookup,create,23,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,unknown,3,get PoolAliasLookup.EMPTY | arg2
+1.21.11,net/minecraft/world/level/levelgen/RandomState$1NoiseWiringHelper,wrapNew,39,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.fromHashOf,string_hash,3,"call RandomState$1NoiseWiringHelper.newLegacyInstance | get RandomState$1NoiseWiringHelper.this$0 | const ""terrain"" | call Identifier.withDefaultNamespace"
+1.21.11,net/minecraft/world/level/levelgen/RandomState,<init>,36,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.fromHashOf,string_hash,3,"const ""aquifer"" | call Identifier.withDefaultNamespace"
+1.21.11,net/minecraft/world/level/levelgen/blending/Blender,<clinit>,31,construct,net/minecraft/world/level/levelgen/XoroshiroRandomSource.<init>,constant,3,const 42L
+1.21.11,net/minecraft/world/level/levelgen/RandomState$1NoiseWiringHelper,visitNoise,133,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.fromHashOf,unknown,3,get RandomState$1NoiseWiringHelper.this$0 | get Noises.SHIFT | call ResourceKey.identifier
+1.21.11,net/minecraft/world/level/levelgen/synth/PerlinNoise,<init>,122,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.fromHashOf,unknown,3,get PerlinNoise.noiseLevels | local7 | [get PerlinNoise.firstOctave local7]
+1.21.11,net/minecraft/world/level/levelgen/Aquifer$NoiseBasedAquifer,computeSubstance,275,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,unknown,3,[[get Blocks.AIR call Block.defaultBlockState get Blocks.LAVA call Block.defaultBlockState [call DensityFunction$FunctionContext.blockX] call Aquifer$NoiseBasedAquifer.gridX] local19] | [[[call DensityFunction$FunctionContext.blockY] call Aquifer$NoiseBasedAquifer.gridY] local20] | [[[call DensityFunction$FunctionContext.blockZ] call Aquifer$NoiseBasedAquifer.gridZ] local21]
+1.21.11,net/minecraft/world/level/storage/loot/LootContext$Builder,withOptionalRandomSeed,8,construct,net/minecraft/util/RandomSource.create,unknown,3,arg1
+1.21.11,net/minecraft/world/level/levelgen/synth/BlendedNoise,createUnseeded,9,construct,net/minecraft/world/level/levelgen/XoroshiroRandomSource.<init>,unknown,3,""
+1.21.11,net/minecraft/world/level/levelgen/DensityFunctions$EndIslandDensityFunction,<init>,9,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,call Object.<init> | arg1
+1.21.11,net/minecraft/world/level/levelgen/structure/Structure$GenerationContext,makeRandom,9,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,""
+1.21.11,net/minecraft/world/level/levelgen/LegacyRandomSource$LegacyPositionalRandomFactory,fromSeed,5,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,arg1
+1.21.11,net/minecraft/world/level/chunk/ChunkGenerator,lambda$createStructures$14,199,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,""
+1.21.11,net/minecraft/world/level/levelgen/SurfaceRules$VerticalGradientConditionSource$1VerticalGradientCondition,compute,65,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,unknown,3,get SurfaceRules$VerticalGradientConditionSource$1VerticalGradientCondition.context | get SurfaceRules$Context.blockX | [get SurfaceRules$VerticalGradientConditionSource$1VerticalGradientCondition.context get SurfaceRules$Context.blockY] | get SurfaceRules$VerticalGradientConditionSource$1VerticalGradientCondition.context | get SurfaceRules$Context.blockZ
+1.21.11,net/minecraft/world/RandomSequences$DirtyMarkingRandomSource,setSeed,12,reseed,net/minecraft/util/RandomSource.setSeed,unknown,3,arg1
+1.21.11,net/minecraft/client/gui/screens/inventory/EnchantmentNames,initSeed,5,reseed,net/minecraft/util/RandomSource.setSeed,unknown,3,arg1
+1.21.11,net/minecraft/client/model/monster/ghast/GhastModel,createBodyLayer,53,construct,net/minecraft/util/RandomSource.create,constant,3,const 1660L
+1.21.11,net/minecraft/client/gui/screens/WinScreen,addPoemFile,12,construct,net/minecraft/util/RandomSource.create,constant,3,const 8124371L
+1.21.11,net/minecraft/client/renderer/block/model/multipart/MultiPartModel,collectParts,64,reseed,net/minecraft/util/RandomSource.setSeed,unknown,3,local3
+1.21.11,net/minecraft/client/renderer/EndFlashState,calculateFlashParameters,16,construct,net/minecraft/util/RandomSource.create,constant,3,[arg1 const 600L]
+1.21.11,net/minecraft/client/resources/sounds/EntityBoundSoundInstance,<init>,5,construct,net/minecraft/util/RandomSource.create,unknown,3,arg6
+1.21.11,net/minecraft/client/renderer/WeatherEffectRenderer,extractRenderState,255,reseed,net/minecraft/util/RandomSource.setSeed,position,2,[[[get Vec3.z call Mth.floor] get WeatherRenderState.radius] [[get Vec3.z call Mth.floor] get WeatherRenderState.radius] mul const 418711 mul [[get Vec3.z call Mth.floor] get WeatherRenderState.radius] mul xor]
+1.21.11,net/minecraft/world/level/levelgen/synth/PerlinSimplexNoise,<init>,224,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,position,2,[get SimplexNoise.xo get SimplexNoise.yo get SimplexNoise.zo call SimplexNoise.getValue const 9223372036854776000d]
+1.21.11,net/minecraft/util/RandomSource,createNewThreadLocalInstance,10,construct,net/minecraft/world/level/levelgen/SingleThreadedRandomSource.<init>,other_rng,2,call ThreadLocalRandom.current | call ThreadLocalRandom.nextLong
+1.21.11,net/minecraft/server/level/WorldGenRegion,<init>,110,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,position,2,call ServerLevel.getChunkSource | call ServerChunkCache.randomState | get WorldGenRegion.WORLDGEN_REGION_RANDOM | call RandomState.getOrCreateRandomFactory | get WorldGenRegion.center | call ChunkAccess.getPos | call ChunkPos.getWorldPosition
+1.21.11,net/minecraft/world/level/levelgen/XoroshiroRandomSource,forkPositional,18,construct,net/minecraft/world/level/levelgen/XoroshiroRandomSource$XoroshiroPositionalRandomFactory.<init>,other_rng,2,get XoroshiroRandomSource.randomNumberGenerator | call Xoroshiro128PlusPlus.nextLong | get XoroshiroRandomSource.randomNumberGenerator | call Xoroshiro128PlusPlus.nextLong
+1.21.11,net/minecraft/world/level/levelgen/XoroshiroRandomSource,fork,18,construct,net/minecraft/world/level/levelgen/XoroshiroRandomSource.<init>,other_rng,2,get XoroshiroRandomSource.randomNumberGenerator | call Xoroshiro128PlusPlus.nextLong | get XoroshiroRandomSource.randomNumberGenerator | call Xoroshiro128PlusPlus.nextLong
+1.21.11,net/minecraft/world/level/levelgen/PositionalRandomFactory,at,13,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,position,2,call BlockPos.getX | call BlockPos.getY | call BlockPos.getZ
+1.21.11,net/minecraft/world/level/block/entity/TheEndGatewayBlockEntity,lambda$findOrCreateValidTeleportPos$1,19,construct,net/minecraft/util/RandomSource.create,position,2,call Holder$Reference.value | call ServerLevel.getChunkSource | call ServerChunkCache.getGenerator | call BlockPos.asLong
+1.21.11,net/minecraft/world/level/levelgen/structure/structures/DesertPyramidStructure,afterPlace,129,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,world_seed,1,call WorldGenLevel.getSeed | call PiecesContainer.calculateBoundingBox | call BoundingBox.getCenter
+1.21.11,net/minecraft/client/renderer/feature/BlockFeatureRenderer,render,63,construct,net/minecraft/util/RandomSource.create,world_seed,1,call BlockRenderDispatcher.getBlockModel | get MovingBlockRenderState.randomSeedPos | call BlockState.getSeed
+1.21.11,net/minecraft/client/renderer/block/BlockRenderDispatcher,renderBreakingTexture,30,reseed,net/minecraft/util/RandomSource.setSeed,world_seed,1,call BlockState.getSeed
+1.21.11,net/minecraft/client/renderer/chunk/SectionCompiler,compile,251,reseed,net/minecraft/util/RandomSource.setSeed,world_seed,1,call BlockState.getSeed
+1.21.11,net/minecraft/client/renderer/entity/LightningBoltRenderer,submit,22,construct,net/minecraft/util/RandomSource.create,world_seed,1,get LightningBoltRenderState.seed
+1.21.11,net/minecraft/client/renderer/entity/ItemEntityRenderer,submitMultipleFromCount,19,reseed,net/minecraft/util/RandomSource.setSeed,world_seed,1,get ItemClusterRenderState.seed
+1.21.11,net/minecraft/client/renderer/entity/ItemEntityRenderer,renderMultipleFromCount,28,reseed,net/minecraft/util/RandomSource.setSeed,world_seed,1,get ItemClusterRenderState.seed
+1.21.11,net/minecraft/world/level/levelgen/structure/structures/NetherFortressPieces$BridgeEndFiller,postProcess,5,construct,net/minecraft/util/RandomSource.create,world_seed,1,get NetherFortressPieces$BridgeEndFiller.selfSeed
+1.21.11,net/minecraft/world/level/levelgen/structure/templatesystem/RuleProcessor,processBlock,8,construct,net/minecraft/util/RandomSource.create,world_seed,1,call StructureTemplate$StructureBlockInfo.pos | call Mth.getSeed
+1.21.11,net/minecraft/world/level/levelgen/XoroshiroRandomSource$XoroshiroPositionalRandomFactory,at,27,construct,net/minecraft/world/level/levelgen/XoroshiroRandomSource.<init>,world_seed,1,[[arg1 arg2 arg3 call Mth.getSeed] get XoroshiroRandomSource$XoroshiroPositionalRandomFactory.seedLo xor] | get XoroshiroRandomSource$XoroshiroPositionalRandomFactory.seedHi
+1.21.11,net/minecraft/world/level/levelgen/XoroshiroRandomSource$XoroshiroPositionalRandomFactory,fromSeed,16,construct,net/minecraft/world/level/levelgen/XoroshiroRandomSource.<init>,world_seed,1,arg1 | get XoroshiroRandomSource$XoroshiroPositionalRandomFactory.seedLo | xor | arg1 | get XoroshiroRandomSource$XoroshiroPositionalRandomFactory.seedHi | xor
+1.21.11,net/minecraft/world/level/levelgen/LegacyRandomSource$LegacyPositionalRandomFactory,at,23,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,world_seed,1,[[arg1 arg2 arg3 call Mth.getSeed] get LegacyRandomSource$LegacyPositionalRandomFactory.seed xor]
+1.21.11,net/minecraft/world/level/levelgen/structure/structures/DesertPyramidPiece,placeCollapsedRoof,68,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,world_seed,1,call WorldGenLevel.getSeed | arg3 | arg4 | arg5 | call DesertPyramidPiece.getWorldPos
+1.21.11,net/minecraft/world/level/levelgen/structure/structures/DesertPyramidPiece,placeCollapsedRoof,51,construct,net/minecraft/util/RandomSource.create,world_seed,1,call WorldGenLevel.getSeed
+1.21.11,net/minecraft/world/level/levelgen/structure/structures/NetherFossilPieces$NetherFossilPiece,placeDriedGhast,6,construct,net/minecraft/util/RandomSource.create,world_seed,1,call WorldGenLevel.getSeed
+1.21.11,net/minecraft/world/level/levelgen/structure/structures/NetherFossilPieces$NetherFossilPiece,placeDriedGhast,18,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,world_seed,1,call WorldGenLevel.getSeed | call BoundingBox.getCenter
+1.21.11,net/minecraft/world/level/chunk/ChunkGenerator,applyBiomeDecoration,101,construct,net/minecraft/world/level/levelgen/XoroshiroRandomSource.<init>,world_seed,1,call RandomSupport.generateUniqueSeed
+1.21.11,net/minecraft/world/level/levelgen/feature/GeodeFeature,place,67,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,world_seed,1,call WorldGenLevel.getSeed
+1.21.11,net/minecraft/world/level/levelgen/NoiseBasedChunkGenerator,spawnOriginalMobs,51,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,world_seed,1,call RandomSupport.generateUniqueSeed
+1.21.11,net/minecraft/world/level/levelgen/RandomState$1NoiseWiringHelper,newLegacyInstance,10,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,world_seed,1,get RandomState$1NoiseWiringHelper.val$seed | arg1
+1.21.11,net/minecraft/world/level/levelgen/NoiseBasedChunkGenerator,applyCarvers,33,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,world_seed,1,call RandomSupport.generateUniqueSeed
+1.21.11,net/minecraft/world/level/levelgen/feature/SpikeFeature,getSpikesForLevel,6,construct,net/minecraft/util/RandomSource.create,world_seed,1,call WorldGenLevel.getSeed
+1.21.11,net/minecraft/world/level/levelgen/structure/structures/DesertPyramidStructure,afterPlace,113,construct,net/minecraft/util/RandomSource.create,world_seed,1,call WorldGenLevel.getSeed
+1.21.11,net/minecraft/world/level/levelgen/structure/templatesystem/CappedProcessor,finalizeProcessing,83,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,world_seed,1,call ServerLevelAccessor.getLevel | call ServerLevel.getSeed
+1.21.11,net/minecraft/util/RandomSource,create,3,construct,net/minecraft/util/RandomSource.create,world_seed,1,call RandomSupport.generateUniqueSeed
+1.21.11,net/minecraft/util/RandomSource,createThreadSafe,7,construct,net/minecraft/world/level/levelgen/ThreadSafeLegacyRandomSource.<init>,world_seed,1,call RandomSupport.generateUniqueSeed
+1.21.11,net/minecraft/world/level/levelgen/structure/templatesystem/CappedProcessor,finalizeProcessing,74,construct,net/minecraft/util/RandomSource.create,world_seed,1,call ServerLevelAccessor.getLevel | call ServerLevel.getSeed
+1.21.11,net/minecraft/world/level/levelgen/structure/structures/OceanMonumentStructure,regeneratePiecesAfterLoad,20,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,world_seed,1,call RandomSupport.generateUniqueSeed
+1.21.11,net/minecraft/world/level/chunk/ChunkGeneratorStructureState,generateRingPositions,67,reseed,net/minecraft/util/RandomSource.setSeed,world_seed,1,get ChunkGeneratorStructureState.concentricRingsSeed
+1.21.11,net/minecraft/client/renderer/entity/LightningBoltRenderer,lambda$submit$0,20,construct,net/minecraft/util/RandomSource.create,world_seed,1,get LightningBoltRenderState.seed
+26.1.2,net/minecraft/world/entity/projectile/FishingHook,tick,19,reseed,net/minecraft/util/RandomSource.setSeed,"game_time,entity_identity",6,call FishingHook.getUUID | call UUID.getLeastSignificantBits | call FishingHook.level | call Level.getGameTime | xor
+26.1.2,net/minecraft/world/entity/monster/piglin/PiglinAi,wantsToDance,19,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,game_time,5,call LivingEntity.level | call Level.getGameTime
+26.1.2,net/minecraft/world/inventory/EnchantmentMenu,getEnchantmentList,14,reseed,net/minecraft/util/RandomSource.setSeed,"player_state,world_seed",5,get EnchantmentMenu.enchantmentSeed | call DataSlot.get | arg3
+26.1.2,net/minecraft/network/protocol/game/DebugEntityNameGenerator,getEntityName,7,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,"entity_identity,string_hash",5,call UUID.hashCode
+26.1.2,net/minecraft/world/inventory/EnchantmentMenu,lambda$slotsChanged$0,82,reseed,net/minecraft/util/RandomSource.setSeed,"player_state,world_seed",5,get EnchantmentMenu.enchantmentSeed | call DataSlot.get
+26.1.2,net/minecraft/world/entity/animal/goat/Goat,createHorn,8,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,"entity_identity,string_hash",5,call Goat.getUUID | call UUID.hashCode
+26.1.2,net/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings,getRandom,27,construct,net/minecraft/util/RandomSource.create,"wall_clock,world_seed",4,call Util.getMillis | call Mth.getSeed
+26.1.2,net/minecraft/world/entity/animal/squid/Squid,<init>,22,reseed,net/minecraft/util/RandomSource.setSeed,entity_identity,4,call Squid.getId
+26.1.2,net/minecraft/world/level/levelgen/LegacyRandomSource$LegacyPositionalRandomFactory,fromHashOf,16,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,"string_hash,world_seed",4,[call String.hashCode] | get LegacyRandomSource$LegacyPositionalRandomFactory.seed | xor
+26.1.2,net/minecraft/client/gui/Gui,extractPlayerHealth,184,reseed,net/minecraft/util/RandomSource.setSeed,constant,3,get Gui.tickCount | const 312871 | mul
+26.1.2,net/minecraft/world/level/levelgen/synth/BlendedNoise,createUnseeded,9,construct,net/minecraft/world/level/levelgen/XoroshiroRandomSource.<init>,unknown,3,""
+26.1.2,net/minecraft/client/resources/sounds/EntityBoundSoundInstance,<init>,5,construct,net/minecraft/util/RandomSource.create,unknown,3,arg6
+26.1.2,net/minecraft/client/renderer/EndFlashState,calculateFlashParameters,16,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,constant,3,[arg1 const 600L]
+26.1.2,net/minecraft/util/Mth,wobble,13,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,constant,3,const 2d | const 3000d | call Mth.floor
+26.1.2,net/minecraft/client/renderer/entity/EnderDragonRenderer,lambda$submitRays$0,45,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,constant,3,const 432L
+26.1.2,net/minecraft/client/renderer/block/dispatch/multipart/MultiPartModel,collectParts,64,reseed,net/minecraft/util/RandomSource.setSeed,unknown,3,local3
+26.1.2,net/minecraft/util/RandomSource,create,5,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,arg0
+26.1.2,net/minecraft/client/multiplayer/ClientLevel,playSound,36,construct,net/minecraft/util/RandomSource.create,unknown,3,local12
+26.1.2,net/minecraft/util/RandomSource,createThreadLocalInstance,5,construct,net/minecraft/world/level/levelgen/SingleThreadedRandomSource.<init>,unknown,3,arg0
+26.1.2,net/minecraft/world/RandomSequences$DirtyMarkingRandomSource,setSeed,12,reseed,net/minecraft/util/RandomSource.setSeed,unknown,3,arg1
+26.1.2,net/minecraft/world/entity/monster/Slime,checkSlimeSpawnRules,167,construct,net/minecraft/world/level/levelgen/WorldgenRandom.seedSlimeChunk,"position,world_seed",3,call ChunkPos.x | call ChunkPos.z | call WorldGenLevel.getSeed | const 987234911L
+26.1.2,net/minecraft/world/item/crafting/display/SlotDisplay$SmithingTrimDemoSlotDisplay,resolve,5,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,unknown,3,call System.identityHashCode
+26.1.2,net/minecraft/world/level/biome/Biome,<clinit>,61,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,constant,3,const 1234L
+26.1.2,net/minecraft/world/level/biome/Biome,<clinit>,95,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,constant,3,const 3456L
+26.1.2,net/minecraft/world/level/biome/Biome,<clinit>,138,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,constant,3,const 2345L
+26.1.2,net/minecraft/world/level/block/entity/StructureBlockEntity,createRandom,9,construct,net/minecraft/util/RandomSource.create,wall_clock,3,call Util.getMillis
+26.1.2,net/minecraft/world/level/block/entity/StructureBlockEntity,createRandom,14,construct,net/minecraft/util/RandomSource.create,wall_clock,3,call Util.getMillis | arg0
+26.1.2,net/minecraft/client/model/monster/ghast/GhastModel,createBodyLayer,53,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,constant,3,const 1660L
+26.1.2,net/minecraft/client/renderer/block/ModelBlockRenderer,tesselateBlock,6,reseed,net/minecraft/util/RandomSource.setSeed,unknown,3,arg9
+26.1.2,net/minecraft/world/level/chunk/ChunkGenerator,lambda$createStructures$0,199,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,""
+26.1.2,net/minecraft/client/renderer/block/ModelBlockRenderer,<init>,6,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,unknown,3,call Object.<init>
+26.1.2,net/minecraft/world/level/dimension/end/EnderDragonFight,init,133,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,unknown,3,arg2
+26.1.2,net/minecraft/world/level/levelgen/Aquifer$NoiseBasedAquifer,computeSubstance,271,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,unknown,3,[[get Blocks.AIR call Block.defaultBlockState get Blocks.LAVA call Block.defaultBlockState [call DensityFunction$FunctionContext.blockX] call Aquifer$NoiseBasedAquifer.gridX] local19] | [[[call DensityFunction$FunctionContext.blockY] call Aquifer$NoiseBasedAquifer.gridY] local20] | [[[call DensityFunction$FunctionContext.blockZ] call Aquifer$NoiseBasedAquifer.gridZ] local21]
+26.1.2,net/minecraft/world/level/levelgen/DensityFunctions$EndIslandDensityFunction,<init>,9,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,call Object.<init> | arg1
+26.1.2,net/minecraft/client/renderer/block/BlockModelRenderState,scratchRandomSource,23,reseed,net/minecraft/util/RandomSource.setSeed,unknown,3,arg1
+26.1.2,net/minecraft/world/level/levelgen/LegacyRandomSource$LegacyPositionalRandomFactory,fromSeed,5,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,arg1
+26.1.2,net/minecraft/world/level/levelgen/LegacyRandomSource,<init>,29,reseed,net/minecraft/world/level/levelgen/LegacyRandomSource.setSeed,unknown,3,arg1
+26.1.2,net/minecraft/world/level/levelgen/LegacyRandomSource,fork,8,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,""
+26.1.2,net/minecraft/world/level/levelgen/LegacyRandomSource,forkPositional,8,construct,net/minecraft/world/level/levelgen/LegacyRandomSource$LegacyPositionalRandomFactory.<init>,unknown,3,""
+26.1.2,net/minecraft/client/renderer/block/BlockModelRenderState,scratchRandomSource,9,construct,net/minecraft/util/RandomSource.create,unknown,3,arg1
+26.1.2,net/minecraft/client/renderer/WeatherEffectRenderer,tickRainParticles,21,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,constant,3,arg3 | const 312987231L | mul
+26.1.2,net/minecraft/world/level/levelgen/Noises,instantiate,13,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.fromHashOf,unknown,3,call ResourceKey.identifier
+26.1.2,net/minecraft/world/level/levelgen/OreVeinifier,lambda$create$0,132,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,unknown,3,call DensityFunction$FunctionContext.blockX | [call DensityFunction$FunctionContext.blockY] | call DensityFunction$FunctionContext.blockZ
+26.1.2,net/minecraft/client/gui/screens/inventory/EnchantmentNames,initSeed,5,reseed,net/minecraft/util/RandomSource.setSeed,unknown,3,arg1
+26.1.2,net/minecraft/world/level/levelgen/PositionalRandomFactory,fromHashOf,5,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.fromHashOf,unknown,3,call Identifier.toString
+26.1.2,net/minecraft/client/gui/screens/WinScreen,addPoemFile,12,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,constant,3,const 8124371L
+26.1.2,net/minecraft/world/level/levelgen/RandomState$1NoiseWiringHelper,wrapNew,39,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.fromHashOf,string_hash,3,"call RandomState$1NoiseWiringHelper.newLegacyInstance | get RandomState$1NoiseWiringHelper.this$0 | const ""terrain"" | call Identifier.withDefaultNamespace"
+26.1.2,net/minecraft/world/level/levelgen/RandomState,<init>,36,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.fromHashOf,string_hash,3,"const ""aquifer"" | call Identifier.withDefaultNamespace"
+26.1.2,net/minecraft/world/level/levelgen/RandomState,<init>,59,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.fromHashOf,string_hash,3,"const ""ore"" | call Identifier.withDefaultNamespace"
+26.1.2,net/minecraft/world/level/levelgen/RandomState,lambda$getOrCreateRandomFactory$0,5,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.fromHashOf,unknown,3,""
+26.1.2,net/minecraft/world/level/levelgen/SingleThreadedRandomSource,<init>,6,reseed,net/minecraft/world/level/levelgen/SingleThreadedRandomSource.setSeed,unknown,3,call Object.<init> | arg1
+26.1.2,net/minecraft/world/level/levelgen/SingleThreadedRandomSource,fork,8,construct,net/minecraft/world/level/levelgen/SingleThreadedRandomSource.<init>,unknown,3,""
+26.1.2,net/minecraft/world/level/levelgen/SingleThreadedRandomSource,forkPositional,8,construct,net/minecraft/world/level/levelgen/LegacyRandomSource$LegacyPositionalRandomFactory.<init>,unknown,3,""
+26.1.2,net/minecraft/world/level/levelgen/SurfaceRules$VerticalGradientConditionSource$1VerticalGradientCondition,compute,65,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,unknown,3,get SurfaceRules$VerticalGradientConditionSource$1VerticalGradientCondition.context | get SurfaceRules$Context.blockX | [get SurfaceRules$VerticalGradientConditionSource$1VerticalGradientCondition.context get SurfaceRules$Context.blockY] | get SurfaceRules$VerticalGradientConditionSource$1VerticalGradientCondition.context | get SurfaceRules$Context.blockZ
+26.1.2,net/minecraft/world/level/levelgen/SurfaceSystem,<init>,39,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.fromHashOf,string_hash,3,"const ""clay_bands"" | call Identifier.withDefaultNamespace"
+26.1.2,net/minecraft/world/level/levelgen/SurfaceSystem,getSurfaceDepth,29,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,constant,3,const 2.75d | const 3d | arg1 | arg2
+26.1.2,net/minecraft/world/level/levelgen/SurfaceSystem,frozenOceanExtension,222,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,unknown,3,arg5 | arg6
+26.1.2,net/minecraft/world/level/levelgen/ThreadSafeLegacyRandomSource,<init>,29,reseed,net/minecraft/world/level/levelgen/ThreadSafeLegacyRandomSource.setSeed,unknown,3,arg1
+26.1.2,net/minecraft/world/level/levelgen/ThreadSafeLegacyRandomSource,fork,8,construct,net/minecraft/world/level/levelgen/ThreadSafeLegacyRandomSource.<init>,unknown,3,""
+26.1.2,net/minecraft/world/level/levelgen/ThreadSafeLegacyRandomSource,forkPositional,8,construct,net/minecraft/world/level/levelgen/LegacyRandomSource$LegacyPositionalRandomFactory.<init>,unknown,3,""
+26.1.2,net/minecraft/world/level/levelgen/WorldgenRandom,<init>,2,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,""
+26.1.2,net/minecraft/world/level/levelgen/WorldgenRandom,setSeed,13,reseed,net/minecraft/util/RandomSource.setSeed,unknown,3,arg1
+26.1.2,net/minecraft/world/level/levelgen/WorldgenRandom,setDecorationSeed,2,reseed,net/minecraft/world/level/levelgen/WorldgenRandom.setSeed,unknown,3,arg1
+26.1.2,net/minecraft/world/level/levelgen/WorldgenRandom,setDecorationSeed,40,reseed,net/minecraft/world/level/levelgen/WorldgenRandom.setSeed,unknown,3,[arg3 local5 mul local4 local7 mul arg1 xor]
+26.1.2,net/minecraft/world/level/levelgen/WorldgenRandom,setFeatureSeed,17,reseed,net/minecraft/world/level/levelgen/WorldgenRandom.setSeed,unknown,3,[arg1 arg3 local4 mul]
+26.1.2,net/minecraft/world/level/levelgen/WorldgenRandom,setLargeFeatureSeed,2,reseed,net/minecraft/world/level/levelgen/WorldgenRandom.setSeed,unknown,3,arg1
+26.1.2,net/minecraft/world/level/levelgen/WorldgenRandom,setLargeFeatureSeed,36,reseed,net/minecraft/world/level/levelgen/WorldgenRandom.setSeed,unknown,3,[local5 mul local4 local7 mul xor arg1 xor]
+26.1.2,net/minecraft/world/level/levelgen/WorldgenRandom,setLargeFeatureWithSalt,25,reseed,net/minecraft/world/level/levelgen/WorldgenRandom.setSeed,constant,3,[arg3 const 341873128712L mul arg4 const 132897987541L mul arg1 local5]
+26.1.2,net/minecraft/world/level/levelgen/WorldgenRandom,seedSlimeChunk,33,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,constant,3,mul | const 4392871L | mul | arg1 | const 389711 | mul | local4 | xor
+26.1.2,net/minecraft/world/level/storage/loot/LootContext$Builder,withOptionalRandomSeed,8,construct,net/minecraft/util/RandomSource.create,unknown,3,arg1
+26.1.2,net/minecraft/world/level/levelgen/synth/PerlinNoise,<init>,122,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.fromHashOf,unknown,3,get PerlinNoise.noiseLevels | local7 | [get PerlinNoise.firstOctave local7]
+26.1.2,net/minecraft/world/level/levelgen/blending/Blender,<clinit>,31,construct,net/minecraft/world/level/levelgen/XoroshiroRandomSource.<init>,constant,3,const 42L
+26.1.2,net/minecraft/world/level/levelgen/carver/CanyonWorldCarver,doCarve,2,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,unknown,3,arg5
+26.1.2,net/minecraft/world/level/levelgen/carver/CaveWorldCarver,createTunnel,2,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,unknown,3,arg5
+26.1.2,net/minecraft/world/level/levelgen/feature/EndSpikeFeature$SpikeCacheLoader,load,10,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,unknown,3,call IntStream.range | call Long.longValue
+26.1.2,net/minecraft/world/level/levelgen/feature/stateproviders/DualNoiseProvider,<init>,38,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,arg4
+26.1.2,net/minecraft/world/level/levelgen/feature/stateproviders/NoiseBasedStateProvider,<init>,30,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,arg1
+26.1.2,net/minecraft/world/level/levelgen/structure/Structure$GenerationContext,makeRandom,9,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,""
+26.1.2,net/minecraft/world/level/levelgen/structure/placement/RandomSpreadStructurePlacement,getPotentialStructureChunk,30,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,""
+26.1.2,net/minecraft/world/level/levelgen/structure/placement/StructurePlacement,probabilityReducer,9,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,""
+26.1.2,net/minecraft/world/level/levelgen/structure/placement/StructurePlacement,legacyProbabilityReducerWithDouble,9,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,""
+26.1.2,net/minecraft/world/level/levelgen/structure/placement/StructurePlacement,legacyArbitrarySaltProbabilityReducer,9,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,""
+26.1.2,net/minecraft/world/level/levelgen/structure/placement/StructurePlacement,legacyPillagerOutpostReducer,20,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,""
+26.1.2,net/minecraft/world/level/levelgen/structure/placement/StructurePlacement,legacyPillagerOutpostReducer,40,reseed,net/minecraft/world/level/levelgen/WorldgenRandom.setSeed,unknown,3,[arg3] | [arg4] | xor | arg0 | xor
+26.1.2,net/minecraft/world/level/levelgen/structure/pools/alias/PoolAliasLookup,create,14,construct,net/minecraft/util/RandomSource.create,unknown,3,get PoolAliasLookup.EMPTY | arg2
+26.1.2,net/minecraft/world/level/levelgen/structure/pools/alias/PoolAliasLookup,create,23,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,unknown,3,get PoolAliasLookup.EMPTY | arg2
+26.1.2,net/minecraft/client/renderer/entity/layers/StuckInBodyLayer,submit,20,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,unknown,3,get AvatarRenderState.id
+26.1.2,net/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings,getRandom,19,construct,net/minecraft/util/RandomSource.create,wall_clock,3,call Util.getMillis
+26.1.2,net/minecraft/client/renderer/feature/BlockFeatureRenderer,<init>,17,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,unknown,3,""
+26.1.2,net/minecraft/client/renderer/SkyRenderer,buildStars,3,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,constant,3,const 10842L
+26.1.2,net/minecraft/world/level/levelgen/XoroshiroRandomSource,forkPositional,18,construct,net/minecraft/world/level/levelgen/XoroshiroRandomSource$XoroshiroPositionalRandomFactory.<init>,other_rng,2,get XoroshiroRandomSource.randomNumberGenerator | call Xoroshiro128PlusPlus.nextLong | get XoroshiroRandomSource.randomNumberGenerator | call Xoroshiro128PlusPlus.nextLong
+26.1.2,net/minecraft/world/level/levelgen/synth/PerlinSimplexNoise,<init>,224,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,position,2,[get SimplexNoise.xo get SimplexNoise.yo get SimplexNoise.zo call SimplexNoise.getValue const 9223372036854776000d]
+26.1.2,net/minecraft/world/level/levelgen/XoroshiroRandomSource,fork,18,construct,net/minecraft/world/level/levelgen/XoroshiroRandomSource.<init>,other_rng,2,get XoroshiroRandomSource.randomNumberGenerator | call Xoroshiro128PlusPlus.nextLong | get XoroshiroRandomSource.randomNumberGenerator | call Xoroshiro128PlusPlus.nextLong
+26.1.2,net/minecraft/client/renderer/WeatherEffectRenderer,extractRenderState,255,reseed,net/minecraft/util/RandomSource.setSeed,position,2,[[[get Vec3.z call Mth.floor] get WeatherRenderState.radius] [[get Vec3.z call Mth.floor] get WeatherRenderState.radius] mul const 418711 mul [[get Vec3.z call Mth.floor] get WeatherRenderState.radius] mul xor]
+26.1.2,net/minecraft/world/level/levelgen/PositionalRandomFactory,at,13,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,position,2,call BlockPos.getX | call BlockPos.getY | call BlockPos.getZ
+26.1.2,net/minecraft/world/level/block/entity/TheEndGatewayBlockEntity,lambda$findOrCreateValidTeleportPos$1,19,construct,net/minecraft/util/RandomSource.create,position,2,call Holder$Reference.value | call ServerLevel.getChunkSource | call ServerChunkCache.getGenerator | call BlockPos.asLong
+26.1.2,net/minecraft/util/RandomSource,createThreadLocalInstance,10,construct,net/minecraft/world/level/levelgen/SingleThreadedRandomSource.<init>,other_rng,2,call ThreadLocalRandom.current | call ThreadLocalRandom.nextLong
+26.1.2,net/minecraft/server/level/WorldGenRegion,<init>,110,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,position,2,call ServerLevel.getChunkSource | call ServerChunkCache.randomState | get WorldGenRegion.WORLDGEN_REGION_RANDOM | call RandomState.getOrCreateRandomFactory | get WorldGenRegion.center | call ChunkAccess.getPos | call ChunkPos.getWorldPosition
+26.1.2,net/minecraft/world/level/levelgen/NoiseBasedChunkGenerator,applyCarvers,33,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,world_seed,1,call RandomSupport.generateUniqueSeed
+26.1.2,net/minecraft/world/level/levelgen/structure/structures/OceanMonumentStructure,regeneratePiecesAfterLoad,20,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,world_seed,1,call RandomSupport.generateUniqueSeed
+26.1.2,net/minecraft/world/level/levelgen/structure/templatesystem/RuleProcessor,processBlock,8,construct,net/minecraft/util/RandomSource.create,world_seed,1,call StructureTemplate$StructureBlockInfo.pos | call Mth.getSeed
+26.1.2,net/minecraft/world/level/levelgen/XoroshiroRandomSource$XoroshiroPositionalRandomFactory,at,27,construct,net/minecraft/world/level/levelgen/XoroshiroRandomSource.<init>,world_seed,1,[[arg1 arg2 arg3 call Mth.getSeed] get XoroshiroRandomSource$XoroshiroPositionalRandomFactory.seedLo xor] | get XoroshiroRandomSource$XoroshiroPositionalRandomFactory.seedHi
+26.1.2,net/minecraft/world/level/levelgen/XoroshiroRandomSource$XoroshiroPositionalRandomFactory,fromSeed,16,construct,net/minecraft/world/level/levelgen/XoroshiroRandomSource.<init>,world_seed,1,arg1 | get XoroshiroRandomSource$XoroshiroPositionalRandomFactory.seedLo | xor | arg1 | get XoroshiroRandomSource$XoroshiroPositionalRandomFactory.seedHi | xor
+26.1.2,net/minecraft/world/level/levelgen/feature/EndSpikeFeature,getSpikesForLevel,6,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,world_seed,1,call WorldGenLevel.getSeed
+26.1.2,net/minecraft/world/level/levelgen/structure/structures/DesertPyramidPiece,placeCollapsedRoof,51,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,world_seed,1,call WorldGenLevel.getSeed
+26.1.2,net/minecraft/world/level/levelgen/structure/structures/DesertPyramidPiece,placeCollapsedRoof,68,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,world_seed,1,call WorldGenLevel.getSeed | arg3 | arg4 | arg5 | call DesertPyramidPiece.getWorldPos
+26.1.2,net/minecraft/world/level/levelgen/structure/structures/DesertPyramidStructure,afterPlace,113,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,world_seed,1,call WorldGenLevel.getSeed
+26.1.2,net/minecraft/world/level/levelgen/structure/structures/DesertPyramidStructure,afterPlace,129,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,world_seed,1,call WorldGenLevel.getSeed | call PiecesContainer.calculateBoundingBox | call BoundingBox.getCenter
+26.1.2,net/minecraft/world/level/levelgen/structure/structures/NetherFortressPieces$BridgeEndFiller,postProcess,5,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,world_seed,1,get NetherFortressPieces$BridgeEndFiller.selfSeed
+26.1.2,net/minecraft/world/level/levelgen/structure/structures/NetherFossilPieces$NetherFossilPiece,placeDriedGhast,6,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,world_seed,1,call WorldGenLevel.getSeed
+26.1.2,net/minecraft/world/level/levelgen/structure/structures/NetherFossilPieces$NetherFossilPiece,placeDriedGhast,18,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,world_seed,1,call WorldGenLevel.getSeed | call BoundingBox.getCenter
+26.1.2,net/minecraft/world/level/levelgen/feature/GeodeFeature,place,69,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,world_seed,1,call WorldGenLevel.getSeed
+26.1.2,net/minecraft/world/level/levelgen/structure/templatesystem/CappedProcessor,finalizeProcessing,76,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,world_seed,1,call ServerLevelAccessor.getLevel | call ServerLevel.getSeed
+26.1.2,net/minecraft/util/RandomSource,createThreadSafe,7,construct,net/minecraft/world/level/levelgen/ThreadSafeLegacyRandomSource.<init>,world_seed,1,call RandomSupport.generateUniqueSeed
+26.1.2,net/minecraft/world/level/levelgen/RandomState$1NoiseWiringHelper,newLegacyInstance,10,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,world_seed,1,get RandomState$1NoiseWiringHelper.val$seed | arg1
+26.1.2,net/minecraft/world/level/levelgen/NoiseBasedChunkGenerator,spawnOriginalMobs,51,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,world_seed,1,call RandomSupport.generateUniqueSeed
+26.1.2,net/minecraft/client/renderer/feature/BlockFeatureRenderer,renderBreakingBlockModelSubmits,94,reseed,net/minecraft/util/RandomSource.setSeed,world_seed,1,call SubmitNodeStorage$BreakingBlockModelSubmit.seed
+26.1.2,net/minecraft/world/level/levelgen/LegacyRandomSource$LegacyPositionalRandomFactory,at,23,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,world_seed,1,[[arg1 arg2 arg3 call Mth.getSeed] get LegacyRandomSource$LegacyPositionalRandomFactory.seed xor]
+26.1.2,net/minecraft/world/level/chunk/ChunkGeneratorStructureState,generateRingPositions,67,reseed,net/minecraft/util/RandomSource.setSeed,world_seed,1,get ChunkGeneratorStructureState.concentricRingsSeed
+26.1.2,net/minecraft/world/level/chunk/ChunkGenerator,applyBiomeDecoration,101,construct,net/minecraft/world/level/levelgen/XoroshiroRandomSource.<init>,world_seed,1,call RandomSupport.generateUniqueSeed
+26.1.2,net/minecraft/util/RandomSource,create,3,construct,net/minecraft/util/RandomSource.create,world_seed,1,call RandomSupport.generateUniqueSeed
+26.1.2,net/minecraft/client/renderer/entity/ItemEntityRenderer,submitMultipleFromCount,19,reseed,net/minecraft/util/RandomSource.setSeed,world_seed,1,get ItemClusterRenderState.seed
+26.1.2,net/minecraft/client/renderer/entity/ItemEntityRenderer,renderMultipleFromCount,28,reseed,net/minecraft/util/RandomSource.setSeed,world_seed,1,get ItemClusterRenderState.seed
+26.1.2,net/minecraft/client/renderer/entity/LightningBoltRenderer,submit,22,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,world_seed,1,get LightningBoltRenderState.seed
+26.1.2,net/minecraft/client/renderer/entity/LightningBoltRenderer,lambda$submit$0,20,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,world_seed,1,get LightningBoltRenderState.seed
+26.1.2,net/minecraft/world/level/levelgen/structure/templatesystem/CappedProcessor,finalizeProcessing,85,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,world_seed,1,call ServerLevelAccessor.getLevel | call ServerLevel.getSeed
+26.2,net/minecraft/world/entity/projectile/FishingHook,tick,19,reseed,net/minecraft/util/RandomSource.setSeed,"game_time,entity_identity",6,call FishingHook.getUUID | call UUID.getLeastSignificantBits | call FishingHook.level | call Level.getGameTime | xor
+26.2,net/minecraft/world/entity/animal/goat/Goat,createHorn,8,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,"entity_identity,string_hash",5,call Goat.getUUID | call UUID.hashCode
+26.2,net/minecraft/client/multiplayer/ClientLevel,tickWeatherEffects,58,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,game_time,5,call ClientLevel.getGameTime | const 312987231L | mul
+26.2,net/minecraft/network/protocol/game/DebugEntityNameGenerator,getEntityName,7,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,"entity_identity,string_hash",5,call UUID.hashCode
+26.2,net/minecraft/world/entity/monster/piglin/PiglinAi,wantsToDance,19,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,game_time,5,call LivingEntity.level | call Level.getGameTime
+26.2,net/minecraft/world/inventory/EnchantmentMenu,getEnchantmentList,14,reseed,net/minecraft/util/RandomSource.setSeed,"player_state,world_seed",5,get EnchantmentMenu.enchantmentSeed | call DataSlot.get | arg3
+26.2,net/minecraft/world/inventory/EnchantmentMenu,lambda$slotsChanged$0,82,reseed,net/minecraft/util/RandomSource.setSeed,"player_state,world_seed",5,get EnchantmentMenu.enchantmentSeed | call DataSlot.get
+26.2,net/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings,getRandom,27,construct,net/minecraft/util/RandomSource.create,"wall_clock,world_seed",4,call Util.getMillis | call Mth.getSeed
+26.2,net/minecraft/world/level/levelgen/LegacyRandomSource$LegacyPositionalRandomFactory,fromHashOf,16,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,"string_hash,world_seed",4,[call String.hashCode] | get LegacyRandomSource$LegacyPositionalRandomFactory.seed | xor
+26.2,net/minecraft/world/level/levelgen/WorldgenRandom,setLargeFeatureSeed,36,reseed,net/minecraft/world/level/levelgen/WorldgenRandom.setSeed,unknown,3,[local5 mul local4 local7 mul xor arg1 xor]
+26.2,net/minecraft/world/level/levelgen/synth/PerlinNoise,<init>,122,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.fromHashOf,unknown,3,get PerlinNoise.noiseLevels | local7 | [get PerlinNoise.firstOctave local7]
+26.2,net/minecraft/util/RandomSource,create,5,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,arg0
+26.2,net/minecraft/client/renderer/entity/layers/StuckInBodyLayer,submit,20,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,unknown,3,get AvatarRenderState.id
+26.2,net/minecraft/util/RandomSource,createThreadLocalInstance,5,construct,net/minecraft/world/level/levelgen/SingleThreadedRandomSource.<init>,unknown,3,arg0
+26.2,net/minecraft/world/RandomSequences$DirtyMarkingRandomSource,setSeed,12,reseed,net/minecraft/util/RandomSource.setSeed,unknown,3,arg1
+26.2,net/minecraft/world/entity/monster/cubemob/Slime,checkSlimeSpawnRules,174,construct,net/minecraft/world/level/levelgen/WorldgenRandom.seedSlimeChunk,"position,world_seed",3,call ChunkPos.x | call ChunkPos.z | call WorldGenLevel.getSeed | const 987234911L
+26.2,net/minecraft/world/item/crafting/display/SlotDisplay$SmithingTrimDemoSlotDisplay,resolve,5,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,unknown,3,call System.identityHashCode
+26.2,net/minecraft/world/level/biome/Biome,<clinit>,61,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,constant,3,const 1234L
+26.2,net/minecraft/world/level/biome/Biome,<clinit>,95,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,constant,3,const 3456L
+26.2,net/minecraft/world/level/biome/Biome,<clinit>,138,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,constant,3,const 2345L
+26.2,net/minecraft/client/renderer/entity/EnderDragonRenderer,lambda$submitRays$0,45,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,constant,3,const 432L
+26.2,net/minecraft/client/renderer/block/dispatch/multipart/MultiPartModel,collectParts,64,reseed,net/minecraft/util/RandomSource.setSeed,unknown,3,local3
+26.2,net/minecraft/world/level/block/entity/StructureBlockEntity,createRandom,9,construct,net/minecraft/util/RandomSource.create,wall_clock,3,call Util.getMillis
+26.2,net/minecraft/world/level/block/entity/StructureBlockEntity,createRandom,14,construct,net/minecraft/util/RandomSource.create,wall_clock,3,call Util.getMillis | arg0
+26.2,net/minecraft/client/renderer/block/ModelBlockRenderer,tesselateBlock,6,reseed,net/minecraft/util/RandomSource.setSeed,unknown,3,arg9
+26.2,net/minecraft/client/renderer/block/ModelBlockRenderer,<init>,6,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,unknown,3,call Object.<init>
+26.2,net/minecraft/world/level/chunk/ChunkGenerator,lambda$createStructures$0,199,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,""
+26.2,net/minecraft/client/renderer/block/BlockModelRenderState,scratchRandomSource,23,reseed,net/minecraft/util/RandomSource.setSeed,unknown,3,arg1
+26.2,net/minecraft/world/level/dimension/end/EnderDragonFight,init,133,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,unknown,3,arg2
+26.2,net/minecraft/world/level/levelgen/Aquifer$NoiseBasedAquifer,computeSubstance,271,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,unknown,3,[[get Blocks.AIR call Block.defaultBlockState get Blocks.LAVA call Block.defaultBlockState [call DensityFunction$FunctionContext.blockX] call Aquifer$NoiseBasedAquifer.gridX] local19] | [[[call DensityFunction$FunctionContext.blockY] call Aquifer$NoiseBasedAquifer.gridY] local20] | [[[call DensityFunction$FunctionContext.blockZ] call Aquifer$NoiseBasedAquifer.gridZ] local21]
+26.2,net/minecraft/world/level/levelgen/DensityFunctions$EndIslandDensityFunction,<init>,9,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,call Object.<init> | arg1
+26.2,net/minecraft/client/renderer/block/BlockModelRenderState,scratchRandomSource,9,construct,net/minecraft/util/RandomSource.create,unknown,3,arg1
+26.2,net/minecraft/world/level/levelgen/LegacyRandomSource$LegacyPositionalRandomFactory,fromSeed,5,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,arg1
+26.2,net/minecraft/world/level/levelgen/LegacyRandomSource,<init>,29,reseed,net/minecraft/world/level/levelgen/LegacyRandomSource.setSeed,unknown,3,arg1
+26.2,net/minecraft/world/level/levelgen/LegacyRandomSource,fork,8,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,""
+26.2,net/minecraft/world/level/levelgen/LegacyRandomSource,forkPositional,8,construct,net/minecraft/world/level/levelgen/LegacyRandomSource$LegacyPositionalRandomFactory.<init>,unknown,3,""
+26.2,net/minecraft/client/renderer/SkyRenderer,buildStars,3,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,constant,3,const 10842L
+26.2,net/minecraft/client/renderer/EndFlashState,calculateFlashParameters,16,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,constant,3,[arg1 const 600L]
+26.2,net/minecraft/world/level/levelgen/Noises,instantiate,13,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.fromHashOf,unknown,3,call ResourceKey.identifier
+26.2,net/minecraft/client/multiplayer/ClientLevel,playSound,36,construct,net/minecraft/util/RandomSource.create,unknown,3,local12
+26.2,net/minecraft/client/model/monster/ghast/GhastModel,createBodyLayer,53,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,constant,3,const 1660L
+26.2,net/minecraft/world/level/levelgen/PositionalRandomFactory,fromHashOf,5,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.fromHashOf,unknown,3,call Identifier.toString
+26.2,net/minecraft/client/gui/screens/inventory/EnchantmentNames,initSeed,5,reseed,net/minecraft/util/RandomSource.setSeed,unknown,3,arg1
+26.2,net/minecraft/world/level/levelgen/RandomState$1NoiseWiringHelper,wrapNew,39,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.fromHashOf,string_hash,3,"call RandomState$1NoiseWiringHelper.newLegacyInstance | get RandomState$1NoiseWiringHelper.this$0 | const ""terrain"" | call Identifier.withDefaultNamespace"
+26.2,net/minecraft/world/level/levelgen/RandomState,<init>,36,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.fromHashOf,string_hash,3,"const ""aquifer"" | call Identifier.withDefaultNamespace"
+26.2,net/minecraft/world/level/levelgen/RandomState,<init>,59,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.fromHashOf,string_hash,3,"const ""ore"" | call Identifier.withDefaultNamespace"
+26.2,net/minecraft/world/level/levelgen/RandomState,lambda$getOrCreateRandomFactory$0,5,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.fromHashOf,unknown,3,""
+26.2,net/minecraft/world/level/levelgen/SingleThreadedRandomSource,<init>,6,reseed,net/minecraft/world/level/levelgen/SingleThreadedRandomSource.setSeed,unknown,3,call Object.<init> | arg1
+26.2,net/minecraft/world/level/levelgen/SingleThreadedRandomSource,fork,8,construct,net/minecraft/world/level/levelgen/SingleThreadedRandomSource.<init>,unknown,3,""
+26.2,net/minecraft/world/level/levelgen/SingleThreadedRandomSource,forkPositional,8,construct,net/minecraft/world/level/levelgen/LegacyRandomSource$LegacyPositionalRandomFactory.<init>,unknown,3,""
+26.2,net/minecraft/world/level/levelgen/SurfaceRules$VerticalGradientConditionSource$1VerticalGradientCondition,compute,65,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,unknown,3,get SurfaceRules$VerticalGradientConditionSource$1VerticalGradientCondition.context | get SurfaceRules$Context.blockX | [get SurfaceRules$VerticalGradientConditionSource$1VerticalGradientCondition.context get SurfaceRules$Context.blockY] | get SurfaceRules$VerticalGradientConditionSource$1VerticalGradientCondition.context | get SurfaceRules$Context.blockZ
+26.2,net/minecraft/world/level/levelgen/SurfaceSystem,<init>,39,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.fromHashOf,string_hash,3,"const ""clay_bands"" | call Identifier.withDefaultNamespace"
+26.2,net/minecraft/world/level/levelgen/SurfaceSystem,getSurfaceDepth,29,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,constant,3,const 2.75d | const 3d | arg1 | arg2
+26.2,net/minecraft/world/level/levelgen/SurfaceSystem,frozenOceanExtension,222,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,unknown,3,arg5 | arg6
+26.2,net/minecraft/world/level/levelgen/ThreadSafeLegacyRandomSource,<init>,29,reseed,net/minecraft/world/level/levelgen/ThreadSafeLegacyRandomSource.setSeed,unknown,3,arg1
+26.2,net/minecraft/world/level/levelgen/ThreadSafeLegacyRandomSource,fork,8,construct,net/minecraft/world/level/levelgen/ThreadSafeLegacyRandomSource.<init>,unknown,3,""
+26.2,net/minecraft/world/level/levelgen/ThreadSafeLegacyRandomSource,forkPositional,8,construct,net/minecraft/world/level/levelgen/LegacyRandomSource$LegacyPositionalRandomFactory.<init>,unknown,3,""
+26.2,net/minecraft/world/level/levelgen/WorldgenRandom,<init>,2,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,""
+26.2,net/minecraft/world/level/levelgen/WorldgenRandom,setSeed,13,reseed,net/minecraft/util/RandomSource.setSeed,unknown,3,arg1
+26.2,net/minecraft/world/level/levelgen/WorldgenRandom,setDecorationSeed,2,reseed,net/minecraft/world/level/levelgen/WorldgenRandom.setSeed,unknown,3,arg1
+26.2,net/minecraft/world/level/levelgen/WorldgenRandom,setDecorationSeed,40,reseed,net/minecraft/world/level/levelgen/WorldgenRandom.setSeed,unknown,3,[arg3 local5 mul local4 local7 mul arg1 xor]
+26.2,net/minecraft/world/level/levelgen/WorldgenRandom,setFeatureSeed,17,reseed,net/minecraft/world/level/levelgen/WorldgenRandom.setSeed,unknown,3,[arg1 arg3 local4 mul]
+26.2,net/minecraft/world/level/levelgen/WorldgenRandom,setLargeFeatureSeed,2,reseed,net/minecraft/world/level/levelgen/WorldgenRandom.setSeed,unknown,3,arg1
+26.2,net/minecraft/util/Mth,wobble,13,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,constant,3,const 2d | const 3000d | call Mth.floor
+26.2,net/minecraft/world/level/levelgen/WorldgenRandom,setLargeFeatureWithSalt,25,reseed,net/minecraft/world/level/levelgen/WorldgenRandom.setSeed,constant,3,[arg3 const 341873128712L mul arg4 const 132897987541L mul arg1 local5]
+26.2,net/minecraft/world/level/levelgen/WorldgenRandom,seedSlimeChunk,33,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,constant,3,mul | const 4392871L | mul | arg1 | const 389711 | mul | local4 | xor
+26.2,net/minecraft/client/gui/screens/WinScreen,addPoemFile,12,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,constant,3,const 8124371L
+26.2,net/minecraft/client/gui/Hud,extractPlayerHealth,184,reseed,net/minecraft/util/RandomSource.setSeed,constant,3,get Hud.tickCount | const 312871 | mul
+26.2,net/minecraft/world/level/levelgen/OreVeinifier,lambda$create$0,132,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,unknown,3,call DensityFunction$FunctionContext.blockX | [call DensityFunction$FunctionContext.blockY] | call DensityFunction$FunctionContext.blockZ
+26.2,net/minecraft/world/level/levelgen/blending/Blender,<clinit>,31,construct,net/minecraft/world/level/levelgen/XoroshiroRandomSource.<init>,constant,3,const 42L
+26.2,net/minecraft/world/level/levelgen/carver/CanyonWorldCarver,doCarve,2,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,unknown,3,arg5
+26.2,net/minecraft/world/level/levelgen/carver/CaveWorldCarver,createTunnel,2,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,unknown,3,arg5
+26.2,net/minecraft/world/level/levelgen/feature/EndSpikeFeature$SpikeCacheLoader,load,10,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,unknown,3,call IntStream.range | call Long.longValue
+26.2,net/minecraft/world/level/levelgen/feature/stateproviders/DualNoiseProvider,<init>,38,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,arg4
+26.2,net/minecraft/world/level/levelgen/feature/stateproviders/NoiseBasedStateProvider,<init>,30,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,arg1
+26.2,net/minecraft/world/level/levelgen/structure/Structure$GenerationContext,makeRandom,9,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,""
+26.2,net/minecraft/world/level/levelgen/structure/placement/RandomSpreadStructurePlacement,getPotentialStructureChunk,30,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,""
+26.2,net/minecraft/world/level/levelgen/structure/placement/StructurePlacement,probabilityReducer,9,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,""
+26.2,net/minecraft/world/level/levelgen/structure/placement/StructurePlacement,legacyProbabilityReducerWithDouble,9,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,""
+26.2,net/minecraft/world/level/levelgen/structure/placement/StructurePlacement,legacyArbitrarySaltProbabilityReducer,9,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,""
+26.2,net/minecraft/world/level/levelgen/structure/placement/StructurePlacement,legacyPillagerOutpostReducer,20,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,""
+26.2,net/minecraft/world/level/levelgen/structure/placement/StructurePlacement,legacyPillagerOutpostReducer,40,reseed,net/minecraft/world/level/levelgen/WorldgenRandom.setSeed,unknown,3,[arg3] | [arg4] | xor | arg0 | xor
+26.2,net/minecraft/world/level/levelgen/structure/pools/alias/PoolAliasLookup,create,14,construct,net/minecraft/util/RandomSource.create,unknown,3,get PoolAliasLookup.EMPTY | arg2
+26.2,net/minecraft/world/level/levelgen/structure/pools/alias/PoolAliasLookup,create,23,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,unknown,3,get PoolAliasLookup.EMPTY | arg2
+26.2,net/minecraft/client/resources/sounds/EntityBoundSoundInstance,<init>,5,construct,net/minecraft/util/RandomSource.create,unknown,3,arg6
+26.2,net/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings,getRandom,19,construct,net/minecraft/util/RandomSource.create,wall_clock,3,call Util.getMillis
+26.2,net/minecraft/world/level/levelgen/synth/BlendedNoise,createUnseeded,9,construct,net/minecraft/world/level/levelgen/XoroshiroRandomSource.<init>,unknown,3,""
+26.2,net/minecraft/world/level/storage/loot/LootContext$Builder,withOptionalRandomSeed,8,construct,net/minecraft/util/RandomSource.create,unknown,3,arg1
+26.2,net/minecraft/world/level/levelgen/XoroshiroRandomSource,fork,18,construct,net/minecraft/world/level/levelgen/XoroshiroRandomSource.<init>,other_rng,2,get XoroshiroRandomSource.randomNumberGenerator | call Xoroshiro128PlusPlus.nextLong | get XoroshiroRandomSource.randomNumberGenerator | call Xoroshiro128PlusPlus.nextLong
+26.2,net/minecraft/world/level/levelgen/XoroshiroRandomSource,forkPositional,18,construct,net/minecraft/world/level/levelgen/XoroshiroRandomSource$XoroshiroPositionalRandomFactory.<init>,other_rng,2,get XoroshiroRandomSource.randomNumberGenerator | call Xoroshiro128PlusPlus.nextLong | get XoroshiroRandomSource.randomNumberGenerator | call Xoroshiro128PlusPlus.nextLong
+26.2,net/minecraft/util/RandomSource,createThreadLocalInstance,10,construct,net/minecraft/world/level/levelgen/SingleThreadedRandomSource.<init>,other_rng,2,call ThreadLocalRandom.current | call ThreadLocalRandom.nextLong
+26.2,net/minecraft/world/level/block/entity/TheEndGatewayBlockEntity,lambda$findOrCreateValidTeleportPos$1,19,construct,net/minecraft/util/RandomSource.create,position,2,call Holder$Reference.value | call ServerLevel.getChunkSource | call ServerChunkCache.getGenerator | call BlockPos.asLong
+26.2,net/minecraft/client/renderer/WeatherEffectRenderer,extractRenderState,251,reseed,net/minecraft/util/RandomSource.setSeed,position,2,[[[get Vec3.z call Mth.floor] get WeatherRenderState.radius] [[get Vec3.z call Mth.floor] get WeatherRenderState.radius] mul const 418711 mul [[get Vec3.z call Mth.floor] get WeatherRenderState.radius] mul xor]
+26.2,net/minecraft/world/level/levelgen/PositionalRandomFactory,at,13,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,position,2,call BlockPos.getX | call BlockPos.getY | call BlockPos.getZ
+26.2,net/minecraft/server/level/WorldGenRegion,<init>,110,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,position,2,call ServerLevel.getChunkSource | call ServerChunkCache.randomState | get WorldGenRegion.WORLDGEN_REGION_RANDOM | call RandomState.getOrCreateRandomFactory | get WorldGenRegion.center | call ChunkAccess.getPos | call ChunkPos.getWorldPosition
+26.2,net/minecraft/world/level/levelgen/synth/PerlinSimplexNoise,<init>,224,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,position,2,[get SimplexNoise.xo get SimplexNoise.yo get SimplexNoise.zo call SimplexNoise.getValue const 9223372036854776000d]
+26.2,net/minecraft/world/level/levelgen/structure/structures/DesertPyramidStructure,afterPlace,113,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,world_seed,1,call WorldGenLevel.getSeed
+26.2,net/minecraft/world/level/levelgen/structure/templatesystem/RuleProcessor,processBlock,8,construct,net/minecraft/util/RandomSource.create,world_seed,1,call StructureTemplate$StructureBlockInfo.pos | call Mth.getSeed
+26.2,net/minecraft/world/level/levelgen/structure/templatesystem/CappedProcessor,finalizeProcessing,85,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,world_seed,1,call ServerLevelAccessor.getLevel | call ServerLevel.getSeed
+26.2,net/minecraft/world/level/levelgen/feature/GeodeFeature,place,69,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,world_seed,1,call WorldGenLevel.getSeed
+26.2,net/minecraft/util/RandomSource,create,3,construct,net/minecraft/util/RandomSource.create,world_seed,1,call RandomSupport.generateUniqueSeed
+26.2,net/minecraft/world/level/levelgen/feature/EndSpikeFeature,getSpikesForLevel,6,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,world_seed,1,call WorldGenLevel.getSeed
+26.2,net/minecraft/world/level/levelgen/structure/structures/DesertPyramidPiece,placeCollapsedRoof,51,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,world_seed,1,call WorldGenLevel.getSeed
+26.2,net/minecraft/world/level/levelgen/structure/structures/DesertPyramidPiece,placeCollapsedRoof,68,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,world_seed,1,call WorldGenLevel.getSeed | arg3 | arg4 | arg5 | call DesertPyramidPiece.getWorldPos
+26.2,net/minecraft/world/level/block/entity/PotentSulfurBlockEntity,geyserPositional,12,construct,net/minecraft/world/level/levelgen/XoroshiroRandomSource.<init>,world_seed,1,call ServerLevel.getSeed | const -904011478L | xor
+26.2,net/minecraft/world/level/levelgen/XoroshiroRandomSource$XoroshiroPositionalRandomFactory,fromSeed,16,construct,net/minecraft/world/level/levelgen/XoroshiroRandomSource.<init>,world_seed,1,arg1 | get XoroshiroRandomSource$XoroshiroPositionalRandomFactory.seedLo | xor | arg1 | get XoroshiroRandomSource$XoroshiroPositionalRandomFactory.seedHi | xor
+26.2,net/minecraft/world/level/levelgen/XoroshiroRandomSource$XoroshiroPositionalRandomFactory,at,27,construct,net/minecraft/world/level/levelgen/XoroshiroRandomSource.<init>,world_seed,1,[[arg1 arg2 arg3 call Mth.getSeed] get XoroshiroRandomSource$XoroshiroPositionalRandomFactory.seedLo xor] | get XoroshiroRandomSource$XoroshiroPositionalRandomFactory.seedHi
+26.2,net/minecraft/world/level/levelgen/RandomState$1NoiseWiringHelper,newLegacyInstance,10,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,world_seed,1,get RandomState$1NoiseWiringHelper.val$seed | arg1
+26.2,net/minecraft/world/level/levelgen/structure/structures/NetherFortressPieces$BridgeEndFiller,postProcess,5,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,world_seed,1,get NetherFortressPieces$BridgeEndFiller.selfSeed
+26.2,net/minecraft/world/level/levelgen/structure/structures/OceanMonumentStructure,regeneratePiecesAfterLoad,20,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,world_seed,1,call RandomSupport.generateUniqueSeed
+26.2,net/minecraft/util/RandomSource,createThreadSafe,7,construct,net/minecraft/world/level/levelgen/ThreadSafeLegacyRandomSource.<init>,world_seed,1,call RandomSupport.generateUniqueSeed
+26.2,net/minecraft/client/renderer/LevelRenderer,submitBlockDestroyAnimation,192,reseed,net/minecraft/util/RandomSource.setSeed,world_seed,1,call BlockBreakingRenderState.blockState | call BlockState.getSeed
+26.2,net/minecraft/world/level/levelgen/NoiseBasedChunkGenerator,spawnOriginalMobs,51,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,world_seed,1,call RandomSupport.generateUniqueSeed
+26.2,net/minecraft/world/level/levelgen/structure/structures/NetherFossilPieces$NetherFossilPiece,placeDriedGhast,18,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,world_seed,1,call WorldGenLevel.getSeed | call BoundingBox.getCenter
+26.2,net/minecraft/world/level/levelgen/NoiseBasedChunkGenerator,applyCarvers,33,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,world_seed,1,call RandomSupport.generateUniqueSeed
+26.2,net/minecraft/world/level/levelgen/LegacyRandomSource$LegacyPositionalRandomFactory,at,23,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,world_seed,1,[[arg1 arg2 arg3 call Mth.getSeed] get LegacyRandomSource$LegacyPositionalRandomFactory.seed xor]
+26.2,net/minecraft/world/level/chunk/ChunkGeneratorStructureState,generateRingPositions,67,reseed,net/minecraft/util/RandomSource.setSeed,world_seed,1,get ChunkGeneratorStructureState.concentricRingsSeed
+26.2,net/minecraft/world/level/chunk/ChunkGenerator,applyBiomeDecoration,101,construct,net/minecraft/world/level/levelgen/XoroshiroRandomSource.<init>,world_seed,1,call RandomSupport.generateUniqueSeed
+26.2,net/minecraft/world/level/levelgen/structure/structures/NetherFossilPieces$NetherFossilPiece,placeDriedGhast,6,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,world_seed,1,call WorldGenLevel.getSeed
+26.2,net/minecraft/world/level/block/entity/PotentSulfurBlockEntity,geyserPositional,19,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,world_seed,1,call ServerLevel.getSeed | const -904011478L | xor
+26.2,net/minecraft/client/renderer/entity/ItemEntityRenderer,submitMultipleFromCount,19,reseed,net/minecraft/util/RandomSource.setSeed,world_seed,1,get ItemClusterRenderState.seed
+26.2,net/minecraft/client/renderer/entity/ItemEntityRenderer,renderMultipleFromCount,28,reseed,net/minecraft/util/RandomSource.setSeed,world_seed,1,get ItemClusterRenderState.seed
+26.2,net/minecraft/client/renderer/entity/LightningBoltRenderer,submit,22,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,world_seed,1,get LightningBoltRenderState.seed
+26.2,net/minecraft/client/renderer/entity/LightningBoltRenderer,lambda$submit$0,20,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,world_seed,1,get LightningBoltRenderState.seed
+26.2,net/minecraft/world/level/levelgen/structure/structures/DesertPyramidStructure,afterPlace,129,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,world_seed,1,call WorldGenLevel.getSeed | call PiecesContainer.calculateBoundingBox | call BoundingBox.getCenter
+26.2,net/minecraft/world/level/levelgen/structure/templatesystem/CappedProcessor,finalizeProcessing,76,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,world_seed,1,call ServerLevelAccessor.getLevel | call ServerLevel.getSeed
+26.3,net/minecraft/world/entity/projectile/FishingHook,tick,19,reseed,net/minecraft/util/RandomSource.setSeed,"game_time,entity_identity",6,call FishingHook.getUUID | call UUID.getLeastSignificantBits | call FishingHook.level | call Level.getGameTime | xor
+26.3,net/minecraft/client/multiplayer/ClientLevel,tickWeatherEffects,58,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,game_time,5,call ClientLevel.getGameTime | const 312987231L | mul
+26.3,net/minecraft/network/protocol/game/DebugEntityNameGenerator,getEntityName,7,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,"entity_identity,string_hash",5,call UUID.hashCode
+26.3,net/minecraft/world/inventory/EnchantmentMenu,getEnchantmentList,14,reseed,net/minecraft/util/RandomSource.setSeed,"player_state,world_seed",5,get EnchantmentMenu.enchantmentSeed | call DataSlot.get | arg3
+26.3,net/minecraft/world/inventory/EnchantmentMenu,lambda$slotsChanged$0,82,reseed,net/minecraft/util/RandomSource.setSeed,"player_state,world_seed",5,get EnchantmentMenu.enchantmentSeed | call DataSlot.get
+26.3,net/minecraft/world/entity/animal/goat/Goat,createHorn,8,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,"entity_identity,string_hash",5,call Goat.getUUID | call UUID.hashCode
+26.3,net/minecraft/world/entity/monster/piglin/PiglinAi,wantsToDance,19,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,game_time,5,call LivingEntity.level | call Level.getGameTime
+26.3,net/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings,getRandom,27,construct,net/minecraft/util/RandomSource.create,"wall_clock,world_seed",4,call Util.getMillis | call Mth.getSeed
+26.3,net/minecraft/world/level/levelgen/LegacyRandomSource$LegacyPositionalRandomFactory,fromHashOf,16,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,"string_hash,world_seed",4,[call String.hashCode] | get LegacyRandomSource$LegacyPositionalRandomFactory.seed | xor
+26.3,net/minecraft/client/model/monster/ghast/GhastModel,createBodyLayer,53,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,constant,3,const 1660L
+26.3,net/minecraft/world/level/levelgen/structure/pools/alias/PoolAliasLookup,create,23,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,unknown,3,get PoolAliasLookup.EMPTY | arg2
+26.3,net/minecraft/util/Mth,wobble,13,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,constant,3,const 2d | const 3000d | call Mth.floor
+26.3,net/minecraft/client/renderer/entity/EnderDragonRenderer,lambda$submitRays$0,45,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,constant,3,const 432L
+26.3,net/minecraft/client/renderer/block/dispatch/multipart/MultiPartModel,collectParts,64,reseed,net/minecraft/util/RandomSource.setSeed,unknown,3,local3
+26.3,net/minecraft/util/RandomSource,create,5,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,arg0
+26.3,net/minecraft/world/level/levelgen/material/MaterialSystem,getSurfaceDepth,32,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,constant,3,const 2.75d | const 3d | arg1 | arg2
+26.3,net/minecraft/util/RandomSource,createThreadLocalInstance,5,construct,net/minecraft/world/level/levelgen/SingleThreadedRandomSource.<init>,unknown,3,arg0
+26.3,net/minecraft/world/RandomSequences$DirtyMarkingRandomSource,setSeed,12,reseed,net/minecraft/util/RandomSource.setSeed,unknown,3,arg1
+26.3,net/minecraft/world/entity/monster/cubemob/Slime,checkSlimeSpawnRules,174,construct,net/minecraft/world/level/levelgen/WorldgenRandom.seedSlimeChunk,"position,world_seed",3,call ChunkPos.x | call ChunkPos.z | call WorldGenLevel.getSeed | const 987234911L
+26.3,net/minecraft/world/item/crafting/display/SlotDisplay$SmithingTrimDemoSlotDisplay,resolve,5,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,unknown,3,call System.identityHashCode
+26.3,net/minecraft/world/level/biome/Biome,lambda$static$10,11,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,constant,3,const 3456L
+26.3,net/minecraft/world/level/biome/Biome,<clinit>,61,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,constant,3,const 1234L
+26.3,net/minecraft/world/level/biome/Biome,<clinit>,103,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,constant,3,const 2345L
+26.3,net/minecraft/client/renderer/block/ModelBlockRenderer,tesselateBlock,6,reseed,net/minecraft/util/RandomSource.setSeed,unknown,3,arg9
+26.3,net/minecraft/client/renderer/block/ModelBlockRenderer,<init>,6,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,unknown,3,call Object.<init>
+26.3,net/minecraft/world/level/block/entity/StructureBlockEntity,createRandom,9,construct,net/minecraft/util/RandomSource.create,wall_clock,3,call Util.getMillis
+26.3,net/minecraft/world/level/block/entity/StructureBlockEntity,createRandom,14,construct,net/minecraft/util/RandomSource.create,wall_clock,3,call Util.getMillis | arg0
+26.3,net/minecraft/client/gui/screens/WinScreen,addPoemFile,12,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,constant,3,const 8124371L
+26.3,net/minecraft/client/renderer/block/BlockModelRenderState,scratchRandomSource,23,reseed,net/minecraft/util/RandomSource.setSeed,unknown,3,arg1
+26.3,net/minecraft/world/level/chunk/ChunkGenerator,lambda$createStructures$0,199,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,""
+26.3,net/minecraft/world/level/storage/loot/LootContext$Builder,withOptionalRandomSeed,8,construct,net/minecraft/util/RandomSource.create,unknown,3,arg1
+26.3,net/minecraft/world/level/dimension/end/EnderDragonFight,init,133,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,unknown,3,arg2
+26.3,net/minecraft/world/level/levelgen/Aquifer$NoiseBasedAquifer,computeSubstance,243,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,unknown,3,[[get Blocks.AIR call Block.defaultBlockState get Blocks.LAVA call Block.defaultBlockState arg1 call Aquifer$NoiseBasedAquifer.gridX] local18] | [[arg2 call Aquifer$NoiseBasedAquifer.gridY] local19] | [[arg3 call Aquifer$NoiseBasedAquifer.gridZ] local20]
+26.3,net/minecraft/world/level/levelgen/synth/NormalNoise,create,83,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.fromHashOf,unknown,3,""
+26.3,net/minecraft/world/level/levelgen/LegacyRandomSource$LegacyPositionalRandomFactory,fromSeed,5,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,arg1
+26.3,net/minecraft/world/level/levelgen/LegacyRandomSource,<init>,29,reseed,net/minecraft/world/level/levelgen/LegacyRandomSource.setSeed,unknown,3,arg1
+26.3,net/minecraft/world/level/levelgen/LegacyRandomSource,fork,8,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,""
+26.3,net/minecraft/world/level/levelgen/LegacyRandomSource,forkPositional,8,construct,net/minecraft/world/level/levelgen/LegacyRandomSource$LegacyPositionalRandomFactory.<init>,unknown,3,""
+26.3,net/minecraft/client/renderer/SkyRenderer,buildStars,3,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,constant,3,const 10842L
+26.3,net/minecraft/client/renderer/EndFlashState,calculateFlashParameters,16,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,constant,3,[arg1 const 600L]
+26.3,net/minecraft/world/level/levelgen/Noises,instantiate,22,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.fromHashOf,unknown,3,call Holder.value | call ResourceKey.identifier
+26.3,net/minecraft/world/level/levelgen/synth/NormalNoise,create,66,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.fromHashOf,unknown,3,""
+26.3,net/minecraft/world/level/levelgen/PositionalRandomFactory,fromHashOf,5,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.fromHashOf,unknown,3,call Identifier.toString
+26.3,net/minecraft/client/multiplayer/ClientLevel,playSound,36,construct,net/minecraft/util/RandomSource.create,unknown,3,local12
+26.3,net/minecraft/world/level/levelgen/RandomState$1,createRandom,31,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.fromHashOf,unknown,3,call RandomState$1.newLegacyInstance | get RandomState$1.this$0
+26.3,net/minecraft/client/resources/sounds/EntityBoundSoundInstance,<init>,5,construct,net/minecraft/util/RandomSource.create,unknown,3,arg6
+26.3,net/minecraft/world/level/levelgen/RandomState,lambda$getOrCreateRandomFactory$0,5,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.fromHashOf,unknown,3,""
+26.3,net/minecraft/world/level/levelgen/SingleThreadedRandomSource,<init>,6,reseed,net/minecraft/world/level/levelgen/SingleThreadedRandomSource.setSeed,unknown,3,call Object.<init> | arg1
+26.3,net/minecraft/world/level/levelgen/SingleThreadedRandomSource,fork,8,construct,net/minecraft/world/level/levelgen/SingleThreadedRandomSource.<init>,unknown,3,""
+26.3,net/minecraft/world/level/levelgen/SingleThreadedRandomSource,forkPositional,8,construct,net/minecraft/world/level/levelgen/LegacyRandomSource$LegacyPositionalRandomFactory.<init>,unknown,3,""
+26.3,net/minecraft/world/level/levelgen/ThreadSafeLegacyRandomSource,<init>,29,reseed,net/minecraft/world/level/levelgen/ThreadSafeLegacyRandomSource.setSeed,unknown,3,arg1
+26.3,net/minecraft/world/level/levelgen/ThreadSafeLegacyRandomSource,fork,8,construct,net/minecraft/world/level/levelgen/ThreadSafeLegacyRandomSource.<init>,unknown,3,""
+26.3,net/minecraft/world/level/levelgen/ThreadSafeLegacyRandomSource,forkPositional,8,construct,net/minecraft/world/level/levelgen/LegacyRandomSource$LegacyPositionalRandomFactory.<init>,unknown,3,""
+26.3,net/minecraft/world/level/levelgen/WorldgenRandom,<init>,2,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,""
+26.3,net/minecraft/world/level/levelgen/WorldgenRandom,setSeed,13,reseed,net/minecraft/util/RandomSource.setSeed,unknown,3,arg1
+26.3,net/minecraft/world/level/levelgen/WorldgenRandom,setDecorationSeed,2,reseed,net/minecraft/world/level/levelgen/WorldgenRandom.setSeed,unknown,3,arg1
+26.3,net/minecraft/world/level/levelgen/WorldgenRandom,setDecorationSeed,40,reseed,net/minecraft/world/level/levelgen/WorldgenRandom.setSeed,unknown,3,[arg3 local5 mul local4 local7 mul arg1 xor]
+26.3,net/minecraft/world/level/levelgen/WorldgenRandom,setFeatureSeed,17,reseed,net/minecraft/world/level/levelgen/WorldgenRandom.setSeed,unknown,3,[arg1 arg3 local4 mul]
+26.3,net/minecraft/world/level/levelgen/WorldgenRandom,setLargeFeatureSeed,2,reseed,net/minecraft/world/level/levelgen/WorldgenRandom.setSeed,unknown,3,arg1
+26.3,net/minecraft/world/level/levelgen/WorldgenRandom,setLargeFeatureSeed,36,reseed,net/minecraft/world/level/levelgen/WorldgenRandom.setSeed,unknown,3,[local5 mul local4 local7 mul xor arg1 xor]
+26.3,net/minecraft/world/level/levelgen/WorldgenRandom,setLargeFeatureWithSalt,25,reseed,net/minecraft/world/level/levelgen/WorldgenRandom.setSeed,constant,3,[arg3 const 341873128712L mul arg4 const 132897987541L mul arg1 local5]
+26.3,net/minecraft/world/level/levelgen/WorldgenRandom,seedSlimeChunk,33,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,constant,3,mul | const 4392871L | mul | arg1 | const 389711 | mul | local4 | xor
+26.3,net/minecraft/client/gui/Hud,extractPlayerHealth,184,reseed,net/minecraft/util/RandomSource.setSeed,constant,3,get Hud.tickCount | const 312871 | mul
+26.3,net/minecraft/client/renderer/entity/layers/StuckInBodyLayer,submit,20,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,unknown,3,get AvatarRenderState.id
+26.3,net/minecraft/world/level/levelgen/structure/templatesystem/StructurePlaceSettings,getRandom,19,construct,net/minecraft/util/RandomSource.create,wall_clock,3,call Util.getMillis
+26.3,net/minecraft/world/level/levelgen/blending/Blender,<clinit>,62,construct,net/minecraft/world/level/levelgen/XoroshiroRandomSource.<init>,constant,3,get NoiseData.DEFAULT_SHIFT | const 42L
+26.3,net/minecraft/world/level/levelgen/carver/CanyonWorldCarver,doCarve,1,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,unknown,3,arg3
+26.3,net/minecraft/world/level/levelgen/carver/CaveWorldCarver,createTunnel,1,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,unknown,3,arg2
+26.3,net/minecraft/world/level/levelgen/feature/EndSpikeFeature$SpikeCacheLoader,load,10,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,unknown,3,call IntStream.range | call Long.longValue
+26.3,net/minecraft/world/level/levelgen/feature/stateproviders/DualNoiseProvider,<init>,39,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,arg4
+26.3,net/minecraft/world/level/levelgen/feature/stateproviders/NoiseBasedStateProvider,<init>,31,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,arg1
+26.3,net/minecraft/world/level/levelgen/material/MaterialSystem,<init>,45,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.fromHashOf,string_hash,3,"const ""clay_bands"" | call Identifier.withDefaultNamespace"
+26.3,net/minecraft/client/gui/screens/inventory/EnchantmentNames,initSeed,5,reseed,net/minecraft/util/RandomSource.setSeed,unknown,3,arg1
+26.3,net/minecraft/world/level/levelgen/material/MaterialSystem,frozenOceanExtension,223,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,unknown,3,arg5 | arg6
+26.3,net/minecraft/world/level/levelgen/material/condition/VerticalGradientCondition$1,compute,65,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,unknown,3,get VerticalGradientCondition$1.context | call MaterialRuleContext.blockX | [get VerticalGradientCondition$1.context call MaterialRuleContext.blockY] | get VerticalGradientCondition$1.context | call MaterialRuleContext.blockZ
+26.3,net/minecraft/world/level/levelgen/material/rule/OreVeinRule,lambda$compile$1,24,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,unknown,3,arg7 | arg8 | arg9
+26.3,net/minecraft/world/level/levelgen/structure/Structure$GenerationContext,makeRandom,9,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,""
+26.3,net/minecraft/world/level/levelgen/structure/placement/AbstractSpreadingStructurePlacement,probabilityReducer,9,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,""
+26.3,net/minecraft/world/level/levelgen/structure/placement/AbstractSpreadingStructurePlacement,legacyProbabilityReducerWithDouble,9,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,""
+26.3,net/minecraft/world/level/levelgen/structure/placement/AbstractSpreadingStructurePlacement,legacyArbitrarySaltProbabilityReducer,9,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,""
+26.3,net/minecraft/world/level/levelgen/structure/placement/AbstractSpreadingStructurePlacement,legacyPillagerOutpostReducer,20,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,""
+26.3,net/minecraft/world/level/levelgen/structure/placement/AbstractSpreadingStructurePlacement,legacyPillagerOutpostReducer,40,reseed,net/minecraft/world/level/levelgen/WorldgenRandom.setSeed,unknown,3,[arg3] | [arg4] | xor | arg0 | xor
+26.3,net/minecraft/world/level/levelgen/structure/placement/RandomSpreadStructurePlacement,getPotentialStructureChunk,30,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,unknown,3,""
+26.3,net/minecraft/world/level/levelgen/structure/pools/alias/PoolAliasLookup,create,14,construct,net/minecraft/util/RandomSource.create,unknown,3,get PoolAliasLookup.EMPTY | arg2
+26.3,net/minecraft/client/renderer/block/BlockModelRenderState,scratchRandomSource,9,construct,net/minecraft/util/RandomSource.create,unknown,3,arg1
+26.3,net/minecraft/world/level/levelgen/XoroshiroRandomSource,forkPositional,18,construct,net/minecraft/world/level/levelgen/XoroshiroRandomSource$XoroshiroPositionalRandomFactory.<init>,other_rng,2,get XoroshiroRandomSource.randomNumberGenerator | call Xoroshiro128PlusPlus.nextLong | get XoroshiroRandomSource.randomNumberGenerator | call Xoroshiro128PlusPlus.nextLong
+26.3,net/minecraft/world/level/levelgen/XoroshiroRandomSource,fork,18,construct,net/minecraft/world/level/levelgen/XoroshiroRandomSource.<init>,other_rng,2,get XoroshiroRandomSource.randomNumberGenerator | call Xoroshiro128PlusPlus.nextLong | get XoroshiroRandomSource.randomNumberGenerator | call Xoroshiro128PlusPlus.nextLong
+26.3,net/minecraft/world/level/levelgen/PositionalRandomFactory,at,13,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,position,2,call BlockPos.getX | call BlockPos.getY | call BlockPos.getZ
+26.3,net/minecraft/client/renderer/WeatherEffectRenderer,extractRenderState,251,reseed,net/minecraft/util/RandomSource.setSeed,position,2,[[[get Vec3.z call Mth.floor] get WeatherRenderState.radius] [[get Vec3.z call Mth.floor] get WeatherRenderState.radius] mul const 418711 mul [[get Vec3.z call Mth.floor] get WeatherRenderState.radius] mul xor]
+26.3,net/minecraft/server/level/WorldGenRegion,<init>,125,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,position,2,get WorldGenRegion.WORLDGEN_REGION_RANDOM | call RandomState.getOrCreateRandomFactory | get WorldGenRegion.center | call ChunkAccess.getPos | call ChunkPos.getWorldPosition
+26.3,net/minecraft/world/level/block/entity/TheEndGatewayBlockEntity,lambda$findOrCreateValidTeleportPos$1,19,construct,net/minecraft/util/RandomSource.create,position,2,call Holder$Reference.value | call ServerLevel.getChunkSource | call ServerChunkCache.getGenerator | call BlockPos.asLong
+26.3,net/minecraft/util/RandomSource,createThreadLocalInstance,10,construct,net/minecraft/world/level/levelgen/SingleThreadedRandomSource.<init>,other_rng,2,call ThreadLocalRandom.current | call ThreadLocalRandom.nextLong
+26.3,net/minecraft/world/level/levelgen/XoroshiroRandomSource$XoroshiroPositionalRandomFactory,at,27,construct,net/minecraft/world/level/levelgen/XoroshiroRandomSource.<init>,world_seed,1,[[arg1 arg2 arg3 call Mth.getSeed] get XoroshiroRandomSource$XoroshiroPositionalRandomFactory.seedLo xor] | get XoroshiroRandomSource$XoroshiroPositionalRandomFactory.seedHi
+26.3,net/minecraft/client/renderer/entity/LightningBoltRenderer,lambda$submit$0,20,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,world_seed,1,get LightningBoltRenderState.seed
+26.3,net/minecraft/world/level/levelgen/structure/structures/NetherFossilPieces$NetherFossilPiece,placeDriedGhast,18,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,world_seed,1,call WorldGenLevel.getSeed | call BoundingBox.getCenter
+26.3,net/minecraft/world/level/levelgen/structure/structures/OceanMonumentStructure,regeneratePiecesAfterLoad,20,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,world_seed,1,call RandomSupport.generateUniqueSeed
+26.3,net/minecraft/world/level/levelgen/structure/templatesystem/CappedProcessor,finalizeProcessing,76,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,world_seed,1,call ServerLevelAccessor.getLevel | call ServerLevel.getSeed
+26.3,net/minecraft/world/level/levelgen/structure/templatesystem/CappedProcessor,finalizeProcessing,85,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,world_seed,1,call ServerLevelAccessor.getLevel | call ServerLevel.getSeed
+26.3,net/minecraft/world/level/levelgen/structure/templatesystem/RuleProcessor,processBlock,8,construct,net/minecraft/util/RandomSource.create,world_seed,1,call StructureTemplate$StructureBlockInfo.pos | call Mth.getSeed
+26.3,net/minecraft/world/level/levelgen/feature/EndSpikeFeature,getSpikesForLevel,6,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,world_seed,1,call WorldGenLevel.getSeed
+26.3,net/minecraft/world/level/levelgen/feature/GeodeFeature,place,34,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,world_seed,1,get GeodeFeature.NOISE_PARAMETERS | call WorldGenLevel.getSeed
+26.3,net/minecraft/world/level/levelgen/XoroshiroRandomSource$XoroshiroPositionalRandomFactory,fromSeed,16,construct,net/minecraft/world/level/levelgen/XoroshiroRandomSource.<init>,world_seed,1,arg1 | get XoroshiroRandomSource$XoroshiroPositionalRandomFactory.seedLo | xor | arg1 | get XoroshiroRandomSource$XoroshiroPositionalRandomFactory.seedHi | xor
+26.3,net/minecraft/world/level/levelgen/structure/structures/DesertPyramidPiece,placeCollapsedRoof,51,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,world_seed,1,call WorldGenLevel.getSeed
+26.3,net/minecraft/world/level/levelgen/synth/NormalNoise,perlinParityConfigString,181,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.fromHashOf,world_seed,1,call Optional.get | call NormalNoise$OctaveInfo.seed
+26.3,net/minecraft/world/level/levelgen/structure/structures/DesertPyramidPiece,placeCollapsedRoof,68,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,world_seed,1,call WorldGenLevel.getSeed | arg3 | arg4 | arg5 | call DesertPyramidPiece.getWorldPos
+26.3,net/minecraft/world/level/levelgen/structure/structures/DesertPyramidStructure,afterPlace,113,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,world_seed,1,call WorldGenLevel.getSeed
+26.3,net/minecraft/world/level/levelgen/structure/structures/DesertPyramidStructure,afterPlace,129,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,world_seed,1,call WorldGenLevel.getSeed | call PiecesContainer.calculateBoundingBox | call BoundingBox.getCenter
+26.3,net/minecraft/world/level/levelgen/structure/structures/NetherFortressPieces$BridgeEndFiller,postProcess,5,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,world_seed,1,get NetherFortressPieces$BridgeEndFiller.selfSeed
+26.3,net/minecraft/util/RandomSource,createThreadSafe,7,construct,net/minecraft/world/level/levelgen/ThreadSafeLegacyRandomSource.<init>,world_seed,1,call RandomSupport.generateUniqueSeed
+26.3,net/minecraft/world/level/levelgen/RandomState$1,createEndIslandRandom,8,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,world_seed,1,get RandomState$1.val$seed
+26.3,net/minecraft/world/level/levelgen/RandomState$1,newLegacyInstance,10,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,world_seed,1,get RandomState$1.val$seed | arg1
+26.3,net/minecraft/client/renderer/LevelRenderer,submitBlockDestroyAnimation,192,reseed,net/minecraft/util/RandomSource.setSeed,world_seed,1,call BlockBreakingRenderState.blockState | call BlockState.getSeed
+26.3,net/minecraft/world/level/levelgen/NoiseBasedChunkGenerator,spawnOriginalMobs,47,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,world_seed,1,call RandomSupport.generateUniqueSeed
+26.3,net/minecraft/world/level/levelgen/NoiseBasedChunkGenerator,generateCarvers,39,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,world_seed,1,call RandomSupport.generateUniqueSeed
+26.3,net/minecraft/world/level/levelgen/LegacyRandomSource$LegacyPositionalRandomFactory,at,23,construct,net/minecraft/world/level/levelgen/LegacyRandomSource.<init>,world_seed,1,[[arg1 arg2 arg3 call Mth.getSeed] get LegacyRandomSource$LegacyPositionalRandomFactory.seed xor]
+26.3,net/minecraft/world/level/chunk/ChunkGeneratorStructureState,generateRingPositions,67,reseed,net/minecraft/util/RandomSource.setSeed,world_seed,1,get ChunkGeneratorStructureState.concentricRingsSeed
+26.3,net/minecraft/world/level/chunk/ChunkGenerator,applyBiomeDecoration,101,construct,net/minecraft/world/level/levelgen/XoroshiroRandomSource.<init>,world_seed,1,call RandomSupport.generateUniqueSeed
+26.3,net/minecraft/world/level/block/entity/PotentSulfurBlockEntity,geyserPositional,19,derive,net/minecraft/world/level/levelgen/PositionalRandomFactory.at,world_seed,1,call ServerLevel.getSeed | const -904011478L | xor
+26.3,net/minecraft/world/level/block/entity/PotentSulfurBlockEntity,geyserPositional,12,construct,net/minecraft/world/level/levelgen/XoroshiroRandomSource.<init>,world_seed,1,call ServerLevel.getSeed | const -904011478L | xor
+26.3,net/minecraft/util/RandomSource,create,3,construct,net/minecraft/util/RandomSource.create,world_seed,1,call RandomSupport.generateUniqueSeed
+26.3,net/minecraft/client/renderer/entity/ItemEntityRenderer,submitMultipleFromCount,19,reseed,net/minecraft/util/RandomSource.setSeed,world_seed,1,get ItemClusterRenderState.seed
+26.3,net/minecraft/client/renderer/entity/ItemEntityRenderer,renderMultipleFromCount,28,reseed,net/minecraft/util/RandomSource.setSeed,world_seed,1,get ItemClusterRenderState.seed
+26.3,net/minecraft/client/renderer/entity/LightningBoltRenderer,submit,22,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,world_seed,1,get LightningBoltRenderState.seed
+26.3,net/minecraft/world/level/levelgen/structure/structures/NetherFossilPieces$NetherFossilPiece,placeDriedGhast,6,construct,net/minecraft/util/RandomSource.createThreadLocalInstance,world_seed,1,call WorldGenLevel.getSeed

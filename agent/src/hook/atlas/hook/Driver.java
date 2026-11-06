@@ -25,6 +25,7 @@ import java.util.*;
  *   enchant NAME X Y Z BUTTON    open the enchanting table at X Y Z, enchant the held item with lapis, take it back
  *   trade NAME [RADIUS]          open the nearest villager/trader and buy every offer once (needs payment items)
  *   fish NAME CATCHES            keep casting and reel in on every bite until CATCHES catches (stateful)
+ *   insomnia NAME TICKS          set the player's time-since-rest statistic (phantom spawning)
  *   stop                         halt the server
  */
 public final class Driver {
@@ -125,6 +126,11 @@ public final class Driver {
             case "enchant" -> enchant(p(a[2]), blockPos(a[3], a[4], a[5]), Integer.parseInt(a[6]));
             case "trade" -> trade(p(a[2]), a.length > 3 ? d(a[3]) : 4.0);
             case "fish" -> FISHING.put(a[2], new int[] {Integer.parseInt(a[3]), 0, 0, 0});
+            case "insomnia" -> { // set time-since-rest (phantoms spawn for players awake 3+ in-game days)
+                Object p = p(a[2]);
+                Object stat = call(staticField("net.minecraft.stats.Stats", "CUSTOM"), "get", staticField("net.minecraft.stats.Stats", "TIME_SINCE_REST"));
+                call(call(p, "getStats"), "setValue", p, stat, Integer.parseInt(a[3]));
+            }
             case "stop" -> call(server, "halt", false);
             default -> log("unknown action " + act);
         }

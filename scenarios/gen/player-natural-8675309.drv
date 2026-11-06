@@ -11,34 +11,34 @@
 3 cmd forceload add 2496 -3064 2623 -2937
 3 cmd forceload add 3008 -3064 3135 -2937
 3 cmd forceload add 3520 -3064 3647 -2937
-6 player wanderer0 0.5 140 -2999.5
-6 player wanderer1 512.5 140 -2999.5
-6 player wanderer2 1024.5 140 -2999.5
-6 player wanderer3 1536.5 140 -2999.5
-6 player wanderer4 2048.5 140 -2999.5
-6 player wanderer5 2560.5 140 -2999.5
-6 player wanderer6 3072.5 140 -2999.5
-6 player wanderer7 3584.5 140 -2999.5
-8 cmd effect give wanderer0 minecraft:resistance infinite 255 true
-8 cmd execute as wanderer0 at @s positioned over motion_blocking run tp @s ~ ~ ~
-8 cmd effect give wanderer1 minecraft:resistance infinite 255 true
-8 cmd execute as wanderer1 at @s positioned over motion_blocking run tp @s ~ ~ ~
-8 cmd effect give wanderer2 minecraft:resistance infinite 255 true
-8 cmd execute as wanderer2 at @s positioned over motion_blocking run tp @s ~ ~ ~
-8 cmd effect give wanderer3 minecraft:resistance infinite 255 true
-8 cmd execute as wanderer3 at @s positioned over motion_blocking run tp @s ~ ~ ~
-8 cmd effect give wanderer4 minecraft:resistance infinite 255 true
-8 cmd execute as wanderer4 at @s positioned over motion_blocking run tp @s ~ ~ ~
-8 cmd effect give wanderer5 minecraft:resistance infinite 255 true
-8 cmd execute as wanderer5 at @s positioned over motion_blocking run tp @s ~ ~ ~
-8 cmd effect give wanderer6 minecraft:resistance infinite 255 true
-8 cmd execute as wanderer6 at @s positioned over motion_blocking run tp @s ~ ~ ~
-8 cmd effect give wanderer7 minecraft:resistance infinite 255 true
-8 cmd execute as wanderer7 at @s positioned over motion_blocking run tp @s ~ ~ ~
-9 cmd effect give wanderer4 minecraft:bad_omen 120000 0
-9 cmd effect give wanderer5 minecraft:bad_omen 120000 0
-9 cmd effect give wanderer6 minecraft:bad_omen 120000 0
-9 cmd effect give wanderer7 minecraft:bad_omen 120000 0
+6 player iwdissi_wander0 0.5 140 -2999.5
+6 player iwdissi_wander1 512.5 140 -2999.5
+6 player iwdissi_wander2 1024.5 140 -2999.5
+6 player iwdissi_wander3 1536.5 140 -2999.5
+6 player iwdissi_wander4 2048.5 140 -2999.5
+6 player iwdissi_wander5 2560.5 140 -2999.5
+6 player iwdissi_wander6 3072.5 140 -2999.5
+6 player iwdissi_wander7 3584.5 140 -2999.5
+8 cmd effect give iwdissi_wander0 minecraft:resistance infinite 255 true
+8 cmd execute as iwdissi_wander0 at @s positioned over motion_blocking run tp @s ~ ~ ~
+8 cmd effect give iwdissi_wander1 minecraft:resistance infinite 255 true
+8 cmd execute as iwdissi_wander1 at @s positioned over motion_blocking run tp @s ~ ~ ~
+8 cmd effect give iwdissi_wander2 minecraft:resistance infinite 255 true
+8 cmd execute as iwdissi_wander2 at @s positioned over motion_blocking run tp @s ~ ~ ~
+8 cmd effect give iwdissi_wander3 minecraft:resistance infinite 255 true
+8 cmd execute as iwdissi_wander3 at @s positioned over motion_blocking run tp @s ~ ~ ~
+8 cmd effect give iwdissi_wander4 minecraft:resistance infinite 255 true
+8 cmd execute as iwdissi_wander4 at @s positioned over motion_blocking run tp @s ~ ~ ~
+8 cmd effect give iwdissi_wander5 minecraft:resistance infinite 255 true
+8 cmd execute as iwdissi_wander5 at @s positioned over motion_blocking run tp @s ~ ~ ~
+8 cmd effect give iwdissi_wander6 minecraft:resistance infinite 255 true
+8 cmd execute as iwdissi_wander6 at @s positioned over motion_blocking run tp @s ~ ~ ~
+8 cmd effect give iwdissi_wander7 minecraft:resistance infinite 255 true
+8 cmd execute as iwdissi_wander7 at @s positioned over motion_blocking run tp @s ~ ~ ~
+9 cmd effect give iwdissi_wander4 minecraft:bad_omen 120000 0
+9 cmd effect give iwdissi_wander5 minecraft:bad_omen 120000 0
+9 cmd effect give iwdissi_wander6 minecraft:bad_omen 120000 0
+9 cmd effect give iwdissi_wander7 minecraft:bad_omen 120000 0
 10 cmd gamerule spawn_mobs true
 10 cmd gamerule advance_time true
 10 cmd gamerule advance_weather true

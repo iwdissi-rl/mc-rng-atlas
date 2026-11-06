@@ -12,7 +12,8 @@
 use anyhow::Result;
 use duckdb::Connection;
 
-pub fn run(conn: &Connection, events_glob: &str, threads: usize, memory: &str, temp: &str) -> Result<()> {
+/// `run_filter`: regex on the event file path selecting which runs to analyse (e.g. one game version).
+pub fn run(conn: &Connection, events_glob: &str, run_filter: &str, threads: usize, memory: &str, temp: &str) -> Result<()> {
     conn.execute_batch(&format!(
         "SET threads = {threads}; SET memory_limit = '{memory}'; SET temp_directory = '{temp}';
          SET preserve_insertion_order = false;"
@@ -51,6 +52,7 @@ pub fn run(conn: &Connection, events_glob: &str, threads: usize, memory: &str, t
                     arg_min(output, seq) FILTER (type IN (1, 3)) first_out,
                     arg_min(bits, seq) FILTER (type IN (1, 3)) first_bits
              FROM read_parquet('{events_glob}', filename = true)
+             WHERE regexp_matches(filename, '{run_filter}')
              GROUP BY ALL"
         ),
     )?;
@@ -62,7 +64,7 @@ pub fn run(conn: &Connection, events_glob: &str, threads: usize, memory: &str, t
             "CREATE OR REPLACE TABLE an_edges AS
              WITH e AS (
                SELECT regexp_extract(filename, '/([^/]+)/part-[0-9]+\\.parquet$', 1) AS run, gen, site
-               FROM read_parquet('{events_glob}', filename = true) WHERE type IN (1, 3))
+               FROM read_parquet('{events_glob}', filename = true) WHERE type IN (1, 3) AND regexp_matches(filename, '{run_filter}'))
              SELECT o.site_key AS origin, d.site_key AS draw_site, count(*) events,
                     approx_count_distinct(e.run || ':' || e.gen) generators, count(DISTINCT e.run) runs
              FROM e JOIN an_gens g USING (run, gen)

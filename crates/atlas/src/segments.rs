@@ -131,9 +131,14 @@ fn scan_run(dir: &Path) -> Result<RunOut> {
     Ok(RunOut { run, stats, seed_pairs, segments })
 }
 
-pub fn run(conn: &mut Connection, events_dir: &str) -> Result<()> {
+/// `prefix`: only runs whose name starts with it; empty = 26.3 runs (names without a `v<version>-` prefix).
+pub fn run(conn: &mut Connection, events_dir: &str, prefix: &str) -> Result<()> {
     let t = std::time::Instant::now();
-    let mut dirs: Vec<PathBuf> = std::fs::read_dir(events_dir)?.filter_map(|e| e.ok().map(|e| e.path())).filter(|p| p.is_dir()).collect();
+    let keep = |p: &PathBuf| {
+        let n = p.file_name().unwrap().to_string_lossy().into_owned();
+        if prefix.is_empty() { !(n.starts_with('v') && n[1..].starts_with(|c: char| c.is_ascii_digit())) } else { n.starts_with(prefix) }
+    };
+    let mut dirs: Vec<PathBuf> = std::fs::read_dir(events_dir)?.filter_map(|e| e.ok().map(|e| e.path())).filter(|p| p.is_dir() && keep(p)).collect();
     dirs.sort();
     let outs: Vec<RunOut> = dirs.par_iter().map(|d| scan_run(d)).collect::<Result<_>>()?;
     let segs: u64 = outs.iter().map(|o| o.segments).sum();

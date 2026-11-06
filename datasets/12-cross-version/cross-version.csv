@@ -1,0 +1,4 @@
+version,runs,events,draws_confirmed,mismatches,gameplay_draw_sites,gameplay_sites_exercised,coverage_pct,rediscovered,checks,piglin_dance_seeded_by_game_time,enchant_seed_plus_slot_reseed,enchant_first_draw_serial_r,enchant_pairs,structure_palette_serial_r,level_random_consumer_classes
+26.1.2,146,12493552328,11391825027,0,1722,1319,76.6,18,18,True,True,0.916,518776,0.504,226
+26.2,145,12478981084,11430352358,0,1727,1323,76.6,18,18,True,True,0.915,518526,0.504,228
+26.3,148,12111530459,11279619309,0,1650,1303,79.0,18,18,True,True,0.917,519129,0.502,230

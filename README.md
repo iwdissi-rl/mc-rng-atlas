@@ -12,6 +12,57 @@ atlas aims to cover every source, across versions, confirmed against the running
 > tools. It does **not** ship client mods for cracking seeds or predicting outcomes on multiplayer
 > servers. No Mojang code, jars or decompiled source are committed, only names and our own analysis.
 
+## Browse the data
+
+**[`datasets/`](datasets/)** has one folder per dataset: the data files (CSV), charts, in-game screenshots and a
+README with exact numbers generated from the data plus a short plain-language explanation.
+
+| Folder | What's in it |
+|---|---|
+| [01-static-catalog](datasets/01-static-catalog/) | every RNG call site in 26.3, 26.2, 26.1.2, 1.21.11, 1.16.1, 1.12.2 |
+| [02-seed-sources](datasets/02-seed-sources/) | what every generator is seeded from |
+| [03-version-diffs](datasets/03-version-diffs/) | what changed between versions |
+| [04-runtime-runs](datasets/04-runtime-runs/) | 439 headless runs, 37.1 billion RNG events, all replay-confirmed |
+| [05-coverage](datasets/05-coverage/) | which RNG code actually ran |
+| [06-generator-graph](datasets/06-generator-graph/) | which mechanics share a random generator |
+| [07-crackability](datasets/07-crackability/) | how predictable each generator is |
+| [08-anomalies](datasets/08-anomalies/) | bias, serial correlation, identical streams |
+| [09-rediscovery](datasets/09-rediscovery/) | **18/18 community-known facts rediscovered** |
+| [10-findings](datasets/10-findings/) | piglin dance windows, enchanting slots, structure palettes, shared chunk seeds |
+| [11-mechanics](datasets/11-mechanics/) | 20 mechanic families with in-game screenshots |
+| [12-cross-version](datasets/12-cross-version/) | the whole process repeated on 26.1.2, 26.2, 26.3 |
+
+![Fake player iwdissi_ench7 at a 15-bookshelf enchanting table](datasets/10-findings/enchanting-slot-correlation/screenshots/enchanting-0-a.jpg)
+
+<sub>In-game screenshot from the headless client `iwdissi` (spectator) watching fake player `iwdissi_ench7` enchant.</sub>
+
+**Does it find what's already known?** The atlas was never told about any known mechanic, yet it rediscovers all 18
+checked facts (slime-chunk and structure salts, enchantment seed and re-roll, per-entity and per-dimension RNG,
+item-drop player RNG, fishing hook RNG, random ticks, stronghold rings, end spikes, bedrock positional RNG,
+decoration seeds, old `Math.random` TNT, goat horn UUID seed, piglin game-time seed, and that **hunger uses no
+randomness at all**), in every runtime version.
+
+**Do the findings hold across versions?**
+
+| | 26.1.2 | 26.2 | 26.3 |
+|---|---|---|---|
+| RNG events (all draws replay-confirmed) | 12.49 B | 12.48 B | 12.11 B |
+| Mismatches | 0 | 0 | 0 |
+| Server gameplay draw sites exercised | 76.6% | 76.6% | 79.0% |
+| Known facts rediscovered | 18/18 | 18/18 | 18/18 |
+| Piglin dance seeded by game time | yes | yes | yes |
+| Enchanting slots: first-draw correlation r | 0.916 | 0.915 | 0.917 |
+| Structure palette correlation r | 0.504 | 0.504 | 0.502 |
+
+**How the READMEs are written.** Numbers, tables and charts are generated from the data. The *In simple terms*
+paragraphs are written by a local LLM (Qwen3.8-Flash-Next via llama.cpp, running on the build machine) from those
+numbers only, and automatically fact-checked: any number not in the facts gets the paragraph regenerated, and
+after four failures it's left out.
+
+**Screenshots** come from the vanilla client running headless (Xvfb, software OpenGL) as offline player `iwdissi`,
+connected to the local test server; fake players are named `iwdissi_<role><n>`. See `tools/client.py` and
+`tools/showcase.py`.
+
 ## Status
 
 | Stage | What | Status |
@@ -19,7 +70,7 @@ atlas aims to cover every source, across versions, confirmed against the running
 | 1 | Static bytecode scanner + interprocedural root resolver | **done: 26.3, 1.16.1, 1.12.2** |
 | 1b | Seed provenance: classify and rank what every generator is seeded from (`atlas seeds`) | **done** (interprocedural seed tracing: todo) |
 | 1c | Cross-check 1.12.2 against KillTheRNG's call-site list | todo |
-| 2 | Runtime logger (Java agent) + scripted headless scenarios | **done for 26.3** (server side) |
+| 2 | Runtime logger (Java agent) + scripted headless scenarios | **done for 26.3, 26.2, 26.1.2** (server side + headless client screenshots) |
 | 3 | Confirmation engine: replay every generator's state machine, match sites to static table | **done** (chain replay); scenario coverage: in progress |
 | 4 | Correlation CLI: shared-generator graph, crackability scoring, anomaly search | **done**, see [docs/stage4-findings.md](docs/stage4-findings.md) |
 

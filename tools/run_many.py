@@ -23,6 +23,7 @@ def main():
     ap.add_argument("--runs", default=str(ROOT / "runs"))
     ap.add_argument("--only", default="", help="substring filter on scenario names")
     ap.add_argument("--keep-raw", action="store_true", help="keep raw .bin logs after ingest")
+    ap.add_argument("--version", default="26.3", help="game version; runs are named v<version>-<scenario> unless 26.3")
     a = ap.parse_args()
 
     todo = []
@@ -32,13 +33,19 @@ def main():
         if a.only in path.stem:
             todo.append((path, seed))
     print(f"{len(todo)} scenarios, {a.jobs} parallel servers x {a.cpus} cores", flush=True)
+    # create the agent's RNG type list once, before servers start (they'd race on the database otherwise)
+    sys.path.insert(0, str(ROOT / "tools"))
+    import run_scenario
+    run_scenario.rng_types_file(a.version)
+
+    prefix = "" if a.version == "26.3" else f"v{a.version}-"
 
     def run(scen, seed):
-        out = Path(a.runs) / scen.stem
+        out = Path(a.runs) / f"{prefix}{scen.stem}"
         t = time.time()
         r = subprocess.run([sys.executable, str(ROOT / "tools/run_scenario.py"), "--scenario", str(scen), "--seed", seed,
-                            "--out", str(out), "--cpus", str(a.cpus), "--xmx", a.xmx], capture_output=True, text=True)
-        return scen.stem, out, r.returncode, (r.stdout + r.stderr).strip().splitlines()[-1:] or [""], time.time() - t
+                            "--out", str(out), "--cpus", str(a.cpus), "--xmx", a.xmx, "--version", a.version], capture_output=True, text=True)
+        return out.name, out, r.returncode, (r.stdout + r.stderr).strip().splitlines()[-1:] or [""], time.time() - t
 
     t0, ok, failed = time.time(), 0, []
     with ThreadPoolExecutor(a.jobs) as ex:
@@ -49,7 +56,7 @@ def main():
                 failed.append(name)
                 print(f"FAIL {name} ({dt:.0f}s): {last[0]}", flush=True)
                 continue
-            ing = subprocess.run([str(ATLAS), "ingest", str(out), "--name", name], cwd=ROOT, capture_output=True, text=True)
+            ing = subprocess.run([str(ATLAS), "ingest", str(out), "--name", name, "--version", a.version], cwd=ROOT, capture_output=True, text=True)
             if ing.returncode != 0:
                 failed.append(name)
                 print(f"INGEST FAIL {name}: {ing.stderr.strip()[-300:]}", flush=True)

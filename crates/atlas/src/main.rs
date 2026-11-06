@@ -70,11 +70,17 @@ enum Cmd {
         memory: String,
         #[arg(long, default_value = "data/duckdb-tmp")]
         temp: String,
+        /// regex on event file paths; default: 26.3 runs (no v<version>- prefix)
+        #[arg(long, default_value = "/events/[^v/][^/]*/part-")]
+        run_filter: String,
     },
     /// Stage 4: per-reseed segment pass (all runs in parallel): first-draw bias, serial correlation, seed collisions
     Segments {
         #[arg(long, default_value = "data/events")]
         events: String,
+        /// only runs with this name prefix (e.g. v26.2-); default: 26.3 runs
+        #[arg(long, default_value = "")]
+        prefix: String,
     },
     /// Shared-generator graph: origins whose generators feed the most distinct draw sites
     Graph {
@@ -182,14 +188,14 @@ fn main() -> Result<()> {
                 FROM st LEFT JOIN rt USING (class, method, bci) WHERE rt.class IS NULL AND kind = 'draw'
                 GROUP BY ALL ORDER BY unexercised DESC LIMIT 15")?;
         }
-        Cmd::Analyze { events, threads, memory, temp } => {
+        Cmd::Analyze { events, threads, memory, temp, run_filter } => {
             let threads = if threads == 0 { std::thread::available_parallelism()?.get() } else { threads };
             std::fs::create_dir_all(&temp)?;
             let t = std::time::Instant::now();
-            analyze::run(&conn, &events, threads, &memory, &temp)?;
+            analyze::run(&conn, &events, &run_filter, threads, &memory, &temp)?;
             println!("analysis done in {:.1?} on {threads} threads", t.elapsed());
         }
-        Cmd::Segments { events } => segments::run(&mut conn, &events)?,
+        Cmd::Segments { events, prefix } => segments::run(&mut conn, &events, &prefix)?,
         Cmd::Graph { origin, limit } => {
             println!("== origins feeding the most distinct draw sites (runtime shared-generator graph)");
             print_query(&conn, &format!(
