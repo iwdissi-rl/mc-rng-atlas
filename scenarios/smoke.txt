@@ -1,3 +1,0 @@
-# Smoke test: world load + a short tick sprint
-tick sprint 100
-#await Sprint completed

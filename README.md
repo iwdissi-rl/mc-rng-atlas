@@ -1,263 +1,41 @@
 # Minecraft RNG Atlas
 
-A map of every source of randomness in Minecraft: Java Edition. For each one it records where it is
-seeded, which generator it draws from, what else shares that generator, and whether a player can
-observe or predict it.
+Every random number in Minecraft: Java Edition, mapped from the bytecode, logged while the game ran
+(**37.1 billion draws** across 26.1.2, 26.2 and 26.3, every one replay-verified), then searched for correlations.
 
-Most existing work covers one source in depth (seed cracking, enchanting, fishing), or lists call
-sites for one old version ([KillTheRNG](https://github.com/MinecraftTAS/KillTheRNG), 1.12.2). The
-atlas aims to cover every source, across versions, confirmed against the running game.
+## Findings
 
-> **Scope:** this is documentation and research. The repo ships the catalog, the data and analysis
-> tools. It does **not** ship client mods for cracking seeds or predicting outcomes on multiplayer
-> servers. No Mojang code, jars or decompiled source are committed, only names and our own analysis.
+| | Finding | Holds in |
+|---|---|---|
+| 🐷 | [**Piglin victory dances come in time windows.**](findings/01-piglin-dance-windows/) They're seeded with game time, so dances cluster into windows up to 51 s long with gaps up to 23 min, predictable from `/time query gametime`. | 26.1.2 – 26.3 |
+| ✨ | [**The three enchanting-table offers share their first level modifier.**](findings/02-enchanting-slot-correlation/) Slots are seeded `s, s+1, s+2`; for enchantability 12–15 items all three match 99.5% of the time (6.2% if independent). | 26.1.2 – 26.3 |
+| 🏛️ | [**Structure template palettes are spatially correlated**](findings/03-structure-palette-correlation/) (r ≈ 0.50 between consecutive placements). | 26.1.2 – 26.3 |
+| ⛏️ | [**One chunk seed feeds unrelated generation steps**](findings/04-shared-chunk-seeds/): caves, mineshafts, ruined portals and initial mob spawns. | 26.3 |
 
-## Browse the data
+![Piglin dance windows](findings/01-piglin-dance-windows/dance-timeline.png)
 
-**[`datasets/`](datasets/)** has one folder per dataset: the data files (CSV), charts, in-game screenshots and a
-README with exact numbers generated from the data plus a short plain-language explanation.
+![Enchanting slots](findings/02-enchanting-slot-correlation/same-modifier.png)
 
-| Folder | What's in it |
-|---|---|
-| [01-static-catalog](datasets/01-static-catalog/) | every RNG call site in 26.3, 26.2, 26.1.2, 1.21.11, 1.16.1, 1.12.2 |
-| [02-seed-sources](datasets/02-seed-sources/) | what every generator is seeded from |
-| [03-version-diffs](datasets/03-version-diffs/) | what changed between versions |
-| [04-runtime-runs](datasets/04-runtime-runs/) | 439 headless runs, 37.1 billion RNG events, all replay-confirmed |
-| [05-coverage](datasets/05-coverage/) | which RNG code actually ran |
-| [06-generator-graph](datasets/06-generator-graph/) | which mechanics share a random generator |
-| [07-crackability](datasets/07-crackability/) | how predictable each generator is |
-| [08-anomalies](datasets/08-anomalies/) | bias, serial correlation, identical streams |
-| [09-rediscovery](datasets/09-rediscovery/) | **19/19 community-known facts rediscovered** (incl. jolt cracking) |
-| [10-findings](datasets/10-findings/) | piglin dance windows, enchanting slots, structure palettes, shared chunk seeds |
-| [11-mechanics](datasets/11-mechanics/) | 20 mechanic families with in-game screenshots |
-| [12-cross-version](datasets/12-cross-version/) | the whole process repeated on 26.1.2, 26.2, 26.3 |
+## Sanity check: 19/19 known facts rediscovered
 
-![Fake player iwdissi_ench7 at a 15-bookshelf enchanting table](datasets/10-findings/enchanting-slot-correlation/screenshots/enchanting-0-a.jpg)
+Without being told about any of them, the atlas finds slime-chunk and structure salts, enchantment-seed cracking,
+player/entity RNG, bedrock patterns, stronghold rings, end pillars, goat horns, **jolt cracking** (the hunger bar
+shakes from a HUD `Random` seeded with `tickCount * 312871`) and more. See [rediscovery/](rediscovery/).
 
-<sub>In-game screenshot from the headless client `iwdissi` (spectator) watching fake player `iwdissi_ench7` enchant.</sub>
-
-**Does it find what's already known?** The atlas was never told about any known mechanic, yet it rediscovers all 19
-checked facts (slime-chunk and structure salts, enchantment seed and re-roll, per-entity and per-dimension RNG,
-item-drop player RNG, fishing hook RNG, random ticks, stronghold rings, end spikes, bedrock positional RNG,
-decoration seeds, old `Math.random` TNT, goat horn UUID seed, piglin game-time seed, the **hunger-bar jolt** used by jolt cracking
-(HUD `Random` reseeded with `tickCount * 312871`, found statically in all 6 versions), and that server-side hunger
-uses no randomness at all), in every runtime version.
-
-**Do the findings hold across versions?**
+## Across versions
 
 | | 26.1.2 | 26.2 | 26.3 |
 |---|---|---|---|
-| RNG events (all draws replay-confirmed) | 12.49 B | 12.48 B | 12.11 B |
-| Mismatches | 0 | 0 | 0 |
-| Server gameplay draw sites exercised | 76.6% | 76.6% | 79.0% |
+| RNG draws logged (all replay-verified, 0 mismatches) | 12.49 B | 12.48 B | 12.11 B |
 | Known facts rediscovered | 19/19 | 19/19 | 19/19 |
-| Piglin dance seeded by game time | yes | yes | yes |
-| Enchanting slots: first-draw correlation r | 0.916 | 0.915 | 0.917 |
+| Enchanting-slot correlation r | 0.916 | 0.915 | 0.917 |
 | Structure palette correlation r | 0.504 | 0.504 | 0.502 |
 
-**How the READMEs are written.** Numbers, tables and charts are generated from the data. The *In simple terms*
-paragraphs are written by a local LLM (Qwen3.8-Flash-Next via llama.cpp, running on the build machine) from those
-numbers only, and automatically fact-checked: any number not in the facts gets the paragraph regenerated, and
-after four failures it's left out.
+More comparisons in [charts/](charts/).
 
-**Screenshots** come from the vanilla client running headless (Xvfb, software OpenGL) as offline player `iwdissi`,
-connected to the local test server; fake players are named `iwdissi_<role><n>`. See `tools/client.py` and
-`tools/showcase.py`.
+## Full database
 
-## Status
+The full dataset (~500 GB: every logged draw, per-generator and per-seed tables, static catalogs for six
+versions) isn't hosted here. **DM `IWDissi_` on Discord** if you want it.
 
-| Stage | What | Status |
-|---|---|---|
-| 1 | Static bytecode scanner + interprocedural root resolver | **done: 26.3, 1.16.1, 1.12.2** |
-| 1b | Seed provenance: classify and rank what every generator is seeded from (`atlas seeds`) | **done** (interprocedural seed tracing: todo) |
-| 1c | Cross-check 1.12.2 against KillTheRNG's call-site list | todo |
-| 2 | Runtime logger (Java agent) + scripted headless scenarios | **done for 26.3, 26.2, 26.1.2** (server side + headless client screenshots) |
-| 3 | Confirmation engine: replay every generator's state machine, match sites to static table | **done** (chain replay); scenario coverage: in progress |
-| 4 | Correlation CLI: shared-generator graph, crackability scoring, anomaly search | **done**, see [docs/stage4-findings.md](docs/stage4-findings.md) |
-
-| Version | Names from | Classes | RNG types | Generator fields | Draw sites | Global (`Math.random` etc.) |
-|---|---|---|---|---|---|---|
-| 26.3 | unobfuscated jar | 11,383 | 16 | 51 | 2,492 | 26 |
-| 1.16.1 | Mojang official mappings | 5,463 | 8 | 47 | 2,280 | 85 |
-| 1.12.2 | MCP `stable_39` (Forge names) | 3,310 | 7 | 41 | 2,003 | 84 |
-
-Each draw is traced to a root generator. Unresolved edges, mostly lambdas called through functional
-interfaces and a few cycles, are kept and flagged for review. Static edges are *possible* flows:
-virtual dispatch makes them over-approximate, and stage 2 confirms which ones actually happen.
-
-## How it works
-
-1. **Scan** (`atlas scan`) walks every method's bytecode. It finds RNG types through the jar's own
-   class hierarchy (anything implementing `RandomSource`, `java.util.Random`, `RandomGenerator`, …),
-   every generator field, and every call site:
-   - `draw`: `nextInt`, `nextFloat`, …, including method references like `random::nextFloat`
-   - `construct`, `reseed`, `fork`, `derive`: where generators are created or reseeded, with hints
-     about the seed source (e.g. `get EnchantmentMenu.enchantmentSeed`)
-   - `passthrough`: a generator handed to another method, mapped to the parameter it lands in
-   - `global`: unseeded process-wide randomness: `Math.random`, `UUID.randomUUID`,
-     `Collections.shuffle(list)`
-2. **Resolve** (`atlas resolve`) traces each draw back to its root generator. It follows parameters
-   through every caller (with virtual dispatch over the class hierarchy), getters through what they
-   return, lambda captures into the lambda bodies, and inherited fields to their declaring class.
-   Roots look like:
-   - `field:net/minecraft/world/entity/Entity.random`: one generator per entity
-   - `field:net/minecraft/world/level/Level.random`: one shared generator per dimension
-   - `factory:RandomSource.create@EnderDragonFight.spawnExitPortal`: a fresh generator built at that call
-   - `at(forkPositional(...))`: positional generators derived from a parent
-
-## Getting readable jars
-
-26.3+ ships unobfuscated. Older versions are remapped with `tools/remap/Remap.java` (tiny-remapper + mapping-io + ASM):
-
-```sh
-CP=$(ls work/tools/*.jar | tr '\n' ':')
-java -cp "$CP" tools/remap/Remap.java proguard 1.16.1-client.jar 1.16.1-named.jar 1.16.1-client_mappings.txt
-java -cp "$CP" tools/remap/Remap.java mcp 1.12.2-client.jar 1.12.2-named.jar joined.srg fields.csv methods.csv
-```
-
-Jars come from Mojang's version manifest. Mojang mappings come from the version JSON. MCP comes from
-`maven.minecraftforge.net` (`de.oceanlabs.mcp:mcp:1.12.2:srg`, `mcp_stable:39-1.12`). None are committed.
-
-## Usage
-
-```sh
-cargo build --release --manifest-path crates/atlas/Cargo.toml
-B=crates/atlas/target/release/atlas
-
-# All versions in parallel: scan + resolve + seed classification (about 1.3 s for all three)
-$B scan-all --jar 26.3=26.3-client.jar --jar 1.16.1=1.16.1-named.jar --jar 1.12.2=1.12.2-named.jar
-
-# Or one step at a time
-$B scan    --version 26.3 --jar path/to/26.3-client.jar
-$B resolve --version 26.3
-$B seeds   --version 26.3
-$B export  --out data/parquet          # sorted, zstd-compressed Parquet
-
-# Which generators feed the most draw sites?
-$B query "SELECT root, count(*) sites, count(DISTINCT class) classes
-          FROM draw_roots WHERE kind='draw' GROUP BY root ORDER BY sites DESC LIMIT 20"
-
-# Every gameplay outcome that uses unseeded global randomness
-$B query "SELECT class, method, target_owner||'.'||target_name FROM call_sites WHERE kind='global'"
-```
-
-## Runtime confirmation (stage 2)
-
-`agent/` is a Java agent for the 26.3 server. It hooks the generator primitives
-(`LegacyRandomSource`/`SingleThreadedRandomSource`/`ThreadSafeLegacyRandomSource.next(bits)`,
-`setSeed`, `Xoroshiro128PlusPlus.nextLong` and its constructors) and tags every call on an RNG type
-with a site id at class-load time. Each event records generator id, global sequence, tick and
-pre-state. `atlas ingest` replays every generator: a draw is **confirmed** when its logged pre-state
-equals the state predicted from that generator's previous event, so any unlogged change shows up as
-a mismatch.
-
-```sh
-agent/build.sh
-python3 tools/gen_scenarios.py                       # scenarios from the jar's own data
-python3 tools/run_many.py --jobs 24 --cpus 4         # parallel headless servers + ingest
-crates/atlas/target/release/atlas coverage           # what the static catalog has confirmed
-```
-
-**Coverage so far** (124 runs on up to 32 parallel servers):
-
-| | |
-|---|---|
-| RNG events logged | 5,908,701,550 |
-| Generators observed | 323,265,227 |
-| Draws confirmed by replay | 5,423,670,161 |
-| Mismatches | **0** |
-| Server gameplay draw sites exercised | **1,108 / 1,650 (67.2%)** |
-| Client-side methods in shared classes (`animateTick`, particles, `handleEntityEvent`, …) | 36 / 370, need a client |
-| Client packages | 0 / 468, need a client |
-
-Scenario families: world generation (3 dimensions × 4 seeds), every configured feature and structure,
-every loot table, every mob type, random ticks for every block, dispensers and droppers, and
-fake-player families. **Fake players** (`agent/src/hook/atlas/hook/Driver.java`) are real `ServerPlayer`s
-placed through an embedded connection, the way Mojang's gametest framework does it, and driven by
-timed scripts. They fish (reeling on each bite), enchant at tables with 0 to 15 bookshelves, trade
-with every profession and level, mine with fortune, silk touch and unbreaking tools, fight melee and
-ranged (bows, crossbows, tridents), throw and eat items, barter with piglins, trigger raids, trial
-spawners and vaults, breed and tame animals, fight bosses, and survive hazards (drowning, lightning,
-fire, zombie sieges, breaking tools, brushing suspicious blocks), plus natural spawning with time and
-weather running.
-
-```sh
-python3 tools/gen_scenarios.py && python3 tools/gen_player_scenarios.py
-python3 tools/run_many.py --manifest scenarios/gen/manifest.tsv        --jobs 24 --cpus 4
-python3 tools/run_many.py --manifest scenarios/gen/manifest-player.tsv --jobs 32 --cpus 4 --xmx 5G
-```
-
-Runtime sites that join with the static table: every tagged site. The only runtime-only sites are
-**functional-interface draws**: a generator method passed as a function (`random::nextInt` handed to
-`AbstractHorse.generateJumpStrength`, `XoroshiroRandomSource::new` stored in
-`WorldgenRandom$Algorithm`). The static table lists those at the method-reference creation site,
-and runtime sees them where the function is invoked.
-
-## Correlation analysis (stage 4)
-
-```sh
-atlas analyze    # per-generator table, shared-generator graph, origins + tiers (~1 min, all cores)
-atlas segments   # one parallel pass over every reseed segment: bias, serial correlation, seed collisions
-atlas graph [--origin EnderDragonFight]   # which draw sites share generators from an origin
-atlas crack      # crackability tiers per generator origin
-atlas anomalies  # identical-stream collisions, first-draw bias, correlated consecutive reseeds
-```
-
-Headline candidates (details, numbers and caveats in [docs/stage4-findings.md](docs/stage4-findings.md)):
-- **Piglin victory dances come in time windows.** They're seeded with consecutive game times, so "dance"
-  ticks cluster into windows up to 51 s long with gaps up to 23 min. Still 10% overall, but not independent per kill.
-- **Enchanting-table slots share their first level modifier.** Seeds `s, s+1, s+2` give the same first
-  modifier on all three slots 99.5% of the time for enchantability 12–15 items (6.2% if independent).
-- **Structure template palettes and processors are spatially correlated** (r = 0.47 between consecutive placements).
-
-## Data model
-
-| Table | One row per |
-|---|---|
-| `rng_types` | class that is an RNG type, with the root interface it descends from |
-| `rng_fields` | field holding a generator (`is_static` = process-wide) |
-| `call_sites` | RNG-related instruction: kind, target, generator identity, seed hints |
-| `draw_roots` | (call site, possible root generator) edge |
-| `seed_sources` | seed-taking site with seed categories (`game_time`, `entity_identity`, `position`, `world_seed`, `constant`, `wall_clock`, …) and an unusualness score |
-| `generator_roots` (view) | root generator with draw/reseed/fork counts and whether it is seeded, unseeded or process-global |
-| `classes`, `methods` | hierarchy used for dispatch resolution |
-| `rng_invokes` | every call on an RNG type with its per-method ordinal and bytecode offset (joins runtime tags to static sites) |
-| `rt_runs`, `rt_sites` | per runtime run / per runtime call site: events, confirmed, mismatched, generators |
-| `data/events/<run>/*.parquet` | every runtime event (`gen, seq, tick, type, a, b, bits, site, verdict, output`), not committed |
-
-## Early findings (26.3)
-
-- `Entity.random` (976 draw sites) and `Level.random` (827) carry most gameplay randomness.
-- Enchanting: `EnchantmentMenu.random` is reseeded from `Player.enchantmentSeed`, which is
-  re-rolled from the player's own `Entity.random` in `Player.onEnchantmentPerformed`. This is the
-  known chain behind enchantment cracking, found by the scanner with no prior hints.
-- Piglin victory dances (`PiglinAi.wantsToDance`) are seeded with the world's **game time**, not the
-  piglin's own generator. Every piglin that decides in the same tick gets the same roll, so on a
-  given tick either all eligible piglins dance or none do. Anyone who knows the game time can predict it.
-- `FishingHook.syncronizedRandom` is reseeded every tick with `UUID.getLeastSignificantBits() ^ gameTime`.
-  The client knows both values, so it can reproduce the generator (it keeps the bobber's motion in sync).
-  The catch itself uses the hook's own `random`, which is not reseeded.
-- Goat horn variants are seeded with the goat's `UUID.hashCode()`, so they're fixed per goat.
-- Mob AI in `InsideBrownianWalk` and `LongJumpToRandomPos` uses `Collections.shuffle` with the JDK's
-  global unseeded generator, so those outcomes can't be predicted from any game seed.
-
-## Early findings (older versions)
-
-- **1.16.1 has a process-wide `static Item.random`** shared by every item. Bytecode check:
-  underwater bone meal (`BoneMealItem.growWaterPlant`: seagrass and coral placement) draws from
-  it directly, while land bone meal (`growCrop`) uses `Level.random`. Other flows the resolver
-  reports into world features are over-approximated by dispatch and still need runtime confirmation.
-- **Use of `Math.random` dropped over time.** Outside client code: 29 sites in 1.12.2 (XP orb and
-  item-drop motion, TNT fuse direction, `EntityLivingBase.<init>`, mob spawning), 16 in 1.16.1 and 2
-  in 26.3. In old versions those outcomes come from the JVM's single unseeded global generator.
-
-## Credits / prior work
-
-KillTheRNG (MinecraftTAS), Earthcomputer's clientcommands and RNG research, SeedcrackerX, the
-seedfinding community and Minecraft@Home. This project builds on what they found.
-
-## License
-
-MIT for this project's code and data (see [LICENSE](LICENSE)). Minecraft is a trademark of Mojang
-Studios; this project is not affiliated with Mojang or Microsoft. No game code, jars or mappings are
-distributed. The data contains only class and method names and this project's own analysis.
+<sub>MIT licensed. Not affiliated with Mojang or Microsoft; no game code is included.</sub>

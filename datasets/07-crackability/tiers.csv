@@ -1,6 +1,0 @@
-tier,origins,generators,draws
-A: fixed per world seed,6,121.0,728.0
-A: predictable from public inputs,7,41707248.0,42324753.0
-"B-: 48-bit LCG, short-lived streams",8,23189927.0,12343183.0
-B: crackable from a few observed outputs (48-bit LCG),35,39886109.0,9349558435.0
-"C: 128-bit state, needs many observations",17,448831464.0,1873951289.0

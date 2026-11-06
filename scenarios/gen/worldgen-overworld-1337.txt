@@ -1,4 +1,0 @@
-gamerule spawn_mobs false
-execute in minecraft:overworld run forceload add -128 -128 127 127
-tick sprint 400
-#await Sprint completed

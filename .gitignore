@@ -1,13 +1,13 @@
-# Mojang jars, mappings and anything derived from game code stay local
-work/
-# Generated databases (regenerate with `atlas scan` + `atlas resolve`)
-data/*.duckdb
-data/*.duckdb.wal
-target/
-agent/build/
+# Public repo = findings + charts only. Code, tooling and data live on the local `full-project` branch / disk.
+agent/
+crates/
+tools/
+scenarios/
+data/
+datasets/
+docs/
+logs/
 runs/
-data/events/
-data/duckdb-tmp/
+work/
 .venv/
-data/atlas-snapshot.duckdb
-data/events-by-version/
+target/
